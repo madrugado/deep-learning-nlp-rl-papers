@@ -224,6 +224,11 @@ Table of Contents
       * [Building Large Machine Reading-Comprehension Datasets using Paragraph Vectors](#building-large-machine-reading-comprehension-datasets-using-paragraph-vectors)
       * [Multi-Perspective Context Matching for Machine Comprehension](#multi-perspective-context-matching-for-machine-comprehension)
       * [Information Extraction with Character-level Neural Networks and Noisy Supervision](#information-extraction-with-character-level-neural-networks-and-noisy-supervision)
+      * [Structured Sequence Modeling with Graph Convolutional Recurrent Networks](#structured-sequence-modeling-with-graph-convolutional-recurrent-networks)
+      * [Highway and Residual Networks learn Unrolled Iterative Estimation](#highway-and-residual-networks-learn-unrolled-iterative-estimation)
+      * [Continuous multilinguality with language vectors](#continuous-multilinguality-with-language-vectors)
+      * [Language Modeling with Gated Convolutional Networks](#language-modeling-with-gated-convolutional-networks)
+      * [A Context\-aware Attention Network for Interactive Question Answering](#a-context-aware-attention-network-for-interactive-question-answering)
 
 
 
@@ -2342,7 +2347,7 @@ We further propose a variation that is capable of automatically adjusting its di
 
 **URL:** https://arxiv.org/abs/1612.04211
 
-**Notes:** новая модель по reading comprehension, основывается на SQuAD
+**Notes:** new model for reading comprehension, based on SQuAD
 
 ### Information Extraction with Character-level Neural Networks and Noisy Supervision
 
@@ -2352,4 +2357,54 @@ We further propose a variation that is capable of automatically adjusting its di
 
 **URL:** https://arxiv.org/abs/1612.04118
 
-**Notes:** noisy supervision - надо посмотреть,как может помочь нам
+**Notes:** noisy supervision - it could be helpful for us
+
+### Structured Sequence Modeling with Graph Convolutional Recurrent Networks
+
+**Authors:** Youngjoo Seo, Michaël Defferrard, Pierre Vandergheynst, Xavier Bresson
+
+**Abstract:** This paper introduces Graph Convolutional Recurrent Network (GCRN), a deep learning model able to predict structured sequences of data. Precisely, GCRN is a generalization of classical recurrent neural networks (RNN) to data structured by an arbitrary graph. Such structured sequences can represent series of frames in videos, spatio-temporal measurements on a network of sensors, or random walks on a vocabulary graph for natural language modeling. The proposed model combines convolutional neural networks (CNN) on graphs to identify spatial structures and RNN to find dynamic patterns. We study two possible architectures of GCRN, and apply the models to two practical problems: predicting moving MNIST data, and modeling natural language with the Penn Treebank dataset. Experiments show that exploiting simultaneously graph spatial and dynamic information about data can improve both precision and learning speed.
+
+**URL:** https://arxiv.org/abs/1612.07659
+
+**Notes:** graph models for sequence learning
+
+### Highway and Residual Networks learn Unrolled Iterative Estimation
+
+**Authors:** Klaus Greff, Rupesh K. Srivastava, Jürgen Schmidhuber
+
+**Abstract:** The past year saw the introduction of new architectures such as Highway networks and Residual networks which, for the first time, enabled the training of feedforward networks with dozens to hundreds of layers using simple gradient descent. While depth of representation has been posited as a primary reason for their success, there are indications that these architectures defy a popular view of deep learning as a hierarchical computation of increasingly abstract features at each layer.
+In this report, we argue that this view is incomplete and does not adequately explain several recent findings. We propose an alternative viewpoint based on unrolled iterative estimation---a group of successive layers iteratively refine their estimates of the same features instead of computing an entirely new representation. We demonstrate that this viewpoint directly leads to the construction of Highway and Residual networks. Finally we provide preliminary experiments to discuss the similarities and differences between the two architectures. 
+
+**URL:** https://arxiv.org/abs/1612.07771
+
+**Notes:** fresh paper from Schmidhuber, more on residual networks
+
+### Continuous multilinguality with language vectors
+
+**Authors:** Robert Östling, Jörg Tiedemann
+
+**Abstract:** Most existing models for multilingual natural language processing (NLP) treat language as a discrete category, and make predictions for either one language or the other. In contrast, we propose using continuous vector representations of language. We show that these can be learned efficiently with a character-based neural language model, and used to improve inference about language varieties not seen during training. In experiments with 1303 Bible translations into 990 different languages, we empirically explore the capacity of multilingual language models, and also show that the language vectors capture genetic relationships between languages. 
+https://arxiv.org/abs/1612.07486
+
+**Notes:** fresh paper for joint multilingual word vector representations
+
+### Language Modeling with Gated Convolutional Networks
+
+**Authors:** Yann N. Dauphin, Angela Fan, Michael Auli, David Grangier
+
+**Abstract:** The pre-dominant approach to language modeling to date is based on recurrent neural networks. In this paper we present a convolutional approach to language modeling. We introduce a novel gating mechanism that eases gradient propagation and which performs better than the LSTM-style gating of (Oord et al, 2016) despite being simpler. We achieve a new state of the art on WikiText-103 as well as a new best single-GPU result on the Google Billion Word benchmark. In settings where latency is important, our model achieves an order of magnitude speed-up compared to a recurrent baseline since computation can be parallelized over time. To our knowledge, this is the first time a non-recurrent approach outperforms strong recurrent models on these tasks.
+
+**URL:** https://arxiv.org/abs/1612.08083
+
+**Notes:** the next step in architectures from RNN to CNN, after Socher's semi-RNNs
+
+### A Context-aware Attention Network for Interactive Question Answering
+
+**Authors:** Huayu Li, Martin Renqiang Min, Yong Ge, Asim Kadav
+
+**Abstract:** We develop a new model for Interactive Question Answering (IQA), using Gated-Recurrent-Unit recurrent networks (GRUs) as encoders for statements and questions, and another GRU as a decoder for outputs. Distinct from previous work, our approach employs context-dependent word-level attention for more accurate statement representations and question-guided sentence-level attention for better context modeling. Employing these mechanisms, our model accurately understands when it can output an answer or when it requires generating a supplementary question for additional input. When available, user's feedback is encoded and directly applied to update sentence-level attention to infer the answer. Extensive experiments on QA and IQA datasets demonstrate quantitatively the effectiveness of our model with significant improvement over conventional QA models.
+
+**URL:** https://arxiv.org/abs/1612.07411
+
+**Notes:** interactive user-interaction, like Human-in-the-Loop paper from FAIR, and more generally active learning approach
