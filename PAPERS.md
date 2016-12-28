@@ -2408,3 +2408,33 @@ https://arxiv.org/abs/1612.07486
 **URL:** https://arxiv.org/abs/1612.07411
 
 **Notes:** interactive user-interaction, like Human-in-the-Loop paper from FAIR, and more generally active learning approach
+
+### Understanding Neural Networks through Representation Erasure
+
+**Authors:** Jiwei Li, Will Monroe, Dan Jurafsky
+
+**Abstract:** While neural networks have been successfully applied to many natural language processing tasks, they come at the cost of interpretability. In this paper, we propose a general methodology to analyze and interpret decisions from a neural model by observing the effects on the model of erasing various parts of the representation, such as input word-vector dimensions, intermediate hidden units, or input words. We present several approaches to analyzing the effects of such erasure, from computing the relative difference in evaluation metrics, to using reinforcement learning to erase the minimum set of input words in order to flip a neural model's decision. In a comprehensive analysis of multiple NLP tasks, including linguistic feature classification, sentence-level sentiment analysis, and document level sentiment aspect prediction, we show that the proposed methodology not only offers clear explanations about neural model decisions, but also provides a way to conduct error analysis on neural models. 
+
+**URL:** https://arxiv.org/abs/1612.08220
+
+**Notes:** fresh paper from Dan Jurafsky's group about RL application to NLP, they promise error analisys
+
+### Abstractive Headline Generation for Spoken Content by Attentive Recurrent Neural Networks with ASR Error Modeling
+
+**Authors:** Lang-Chi Yu, Hung-yi Lee, Lin-shan Lee
+
+**Abstract:** Headline generation for spoken content is important since spoken content is difficult to be shown on the screen and browsed by the user. It is a special type of abstractive summarization, for which the summaries are generated word by word from scratch without using any part of the original content. Many deep learning approaches for headline generation from text document have been proposed recently, all requiring huge quantities of training data, which is difficult for spoken document summarization. In this paper, we propose an ASR error modeling approach to learn the underlying structure of ASR error patterns and incorporate this model in an Attentive Recurrent Neural Network (ARNN) architecture. In this way, the model for abstractive headline generation for spoken content can be learned from abundant text data and the ASR data for some recognizers. Experiments showed very encouraging results and verified that the proposed ASR error model works well even when the input spoken content is recognized by a recognizer very different from the one the model learned from.
+
+**URL:** https://arxiv.org/abs/1612.08375
+
+**Notes:** interesting by ASR error modeling, could be useful for me
+
+### Text Summarization using Deep Learning and Ridge Regression
+
+**Authors:** Karthik Bangalore Mani
+
+**Abstract:** We develop models and extract relevant features for automatic text summarization and investigate the performance of different models on the DUC 2001 dataset. Two different models were developed, one being a ridge regressor and the other one was a multi-layer perceptron. The hyperparameters were varied and their performance were noted. We segregated the summarization task into 2 main steps, the first being sentence ranking and the second step being sentence selection. In the first step, given a document, we sort the sentences based on their Importance, and in the second step, in order to obtain non-redundant sentences, we weed out the sentences that are have high similarity with the previously selected sentences.
+
+**URL:** https://arxiv.org/abs/1612.08333
+
+**Notes:** ranking-selection for text summarization, little bit outdated approah as for me, but could be interesting to compare with
