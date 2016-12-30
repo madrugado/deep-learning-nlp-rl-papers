@@ -229,7 +229,13 @@ Table of Contents
       * [Continuous multilinguality with language vectors](#continuous-multilinguality-with-language-vectors)
       * [Language Modeling with Gated Convolutional Networks](#language-modeling-with-gated-convolutional-networks)
       * [A Context\-aware Attention Network for Interactive Question Answering](#a-context-aware-attention-network-for-interactive-question-answering)
-
+      * [Here's My Point: Argumentation Mining with Pointer Networks](#heres-my-point-argumentation-mining-with-pointer-networks)
+      * [Deep Semi\-Supervised Learning with Linguistically Motivated Sequence Labeling Task Hierarchies](#deep-semi-supervised-learning-with-linguistically-motivated-sequence-labeling-task-hierarchies)
+      * [Modeling documents with Generative Adversarial Networks](#modeling-documents-with-generative-adversarial-networks)
+      * [The Predictron: End\-To\-End Learning and Planning](#the-predictron-end-to-end-learning-and-planning)
+      * [Efficient iterative policy optimization](#efficient-iterative-policy-optimization)
+      * [Deep Learning and Hierarchal Generative Models](#deep-learning-and-hierarchal-generative-models)
+      * [A Basic Recurrent Neural Network Model](#a-basic-recurrent-neural-network-model)
 
 
 Articles
