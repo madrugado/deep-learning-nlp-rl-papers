@@ -2438,3 +2438,76 @@ https://arxiv.org/abs/1612.07486
 **URL:** https://arxiv.org/abs/1612.08333
 
 **Notes:** ranking-selection for text summarization, little bit outdated approah as for me, but could be interesting to compare with
+
+### Here's My Point: Argumentation Mining with Pointer Networks
+
+**Authors:** Peter Potash, Alexey Romanov, Anna Rumshisky
+
+**Abstract:** One of the major goals in automated argumentation mining is to uncover the argument structure present in argumentative text. In order to determine this structure, one must understand how different individual components of the overall argument are linked. General consensus in this field dictates that the argument components form a hierarchy of persuasion, which manifests itself in a tree structure. This work provides the first neural network-based approach to argumentation mining, focusing on the two tasks of extracting links between argument components, and classifying types of argument components. In order to solve this problem, we propose to use a joint model that is based on a Pointer Network architecture. A Pointer Network is appealing for this task for the following reasons: 1) It takes into account the sequential nature of argument components; 2) By construction, it enforces certain properties of the tree structure present in argument relations; 3) The hidden representations can be applied to auxiliary tasks. In order to extend the contribution of the original Pointer Network model, we construct a joint model that simultaneously attempts to learn the type of argument component, as well as continuing to predict links between argument components. The proposed joint model achieves state-of-the-art results on two separate evaluation corpora, achieving far superior performance than a regular Pointer Network model. Our results show that optimizing for both tasks, and adding a fully-connected layer prior to recurrent neural network input, is crucial for high performance. 
+
+**URL:** https://arxiv.org/abs/1612.08994
+
+**Notes:** pointer networks, augmentation, seems to be interesting
+
+
+
+### Deep Semi-Supervised Learning with Linguistically Motivated Sequence Labeling Task Hierarchies
+
+**Authors:** Jonathan Godwin, Pontus Stenetorp, Sebastian Riedel
+
+**Abstract:** In this paper we present a novel Neural Network algorithm for conducting semi-supervised learning for sequence labeling tasks arranged in a linguistically motivated hierarchy. This relationship is exploited to regularise the representations of supervised tasks by backpropagating the error of the unsupervised task through the supervised tasks. We introduce a neural network where lower layers are supervised by junior downstream tasks and the final layer task is an auxiliary unsupervised task. The architecture shows improvements of up to two percentage points F1 for Chunking compared to a plausible baseline.
+
+**URL:** https://arxiv.org/abs/1612.09113
+
+**Notes:** semi-supervised learning in natural language sequences
+
+
+
+### Modeling documents with Generative Adversarial Networks
+
+**Authors:** John Glover
+
+**Abstract:** This paper describes a method for using Generative Adversarial Networks to learn distributed representations of natural language documents. We propose a model that is based on the recently proposed Energy-Based GAN, but instead uses a Denoising Autoencoder as the discriminator network. Document representations are extracted from the hidden layer of the discriminator and evaluated both quantitatively and qualitatively. 
+
+**URL:** https://arxiv.org/abs/1612.09122
+
+**Notes:** LDA + GANs seems to be
+
+### The Predictron: End-To-End Learning and Planning
+
+**Authors:** David Silver, Hado van Hasselt, Matteo Hessel, Tom Schaul, Arthur Guez, Tim Harley, Gabriel Dulac-Arnold, David Reichert, Neil Rabinowitz, Andre Barreto, Thomas Degris
+
+**Abstract:** One of the key challenges of artificial intelligence is to learn models that are effective in the context of planning. In this document we introduce the predictron architecture. The predictron consists of a fully abstract model, represented by a Markov reward process, that can be rolled forward multiple "imagined" planning steps. Each forward pass of the predictron accumulates internal rewards and values over multiple planning depths. The predictron is trained end-to-end so as to make these accumulated values accurately approximate the true value function. We applied the predictron to procedurally generated random mazes and a simulator for the game of pool. The predictron yielded significantly more accurate predictions than conventional deep neural network architectures. 
+
+**URL:** https://arxiv.org/abs/1612.08810
+
+**Notes:** fresh paper from Silver, end-to-end rl
+
+### Efficient iterative policy optimization
+
+**Authors:** Nicolas Le Roux
+
+**Abstract:** We tackle the issue of finding a good policy when the number of policy updates is limited. This is done by approximating the expected policy reward as a sequence of concave lower bounds which can be efficiently maximized, drastically reducing the number of policy updates required to achieve good performance. We also extend existing methods to negative rewards, enabling the use of control variates. 
+
+**URL:** https://arxiv.org/abs/1612.08967
+
+**Notes:** new policy iteration method
+
+### Deep Learning and Hierarchal Generative Models
+
+**Authors:** Elchanan Mossel
+
+**Abstract:** In this paper we propose a new prism for studying deep learning motivated by connections between deep learning and evolution. Our main contributions are: 1, We introduce of a sequence of increasingly complex hierarchal generative models which interpolate between standard Markov models on trees (phylogenetic models) and deep learning models. 2. Formal definitions of classes of algorithms that are not deep. 3. Rigorous proofs showing that such classes are information theoretically much weaker than optimal "deep" learning algorithms. In our models, deep learning is performed efficiently and proven to classify correctly with high probability. All of the models and results are in the semi-supervised setting. Many open problems and future directions are presented. 
+https://arxiv.org/abs/1612.09057
+
+**Notes:** some proofs for hierarchical generative models
+
+### A Basic Recurrent Neural Network Model
+
+**Authors:** Fathi M. Salem
+
+**Abstract:** We present a model of a basic recurrent neural network (or bRNN) that includes a separate linear term with a slightly "stable" fixed matrix to guarantee bounded solutions and fast dynamic response. We formulate a state space viewpoint and adapt the constrained optimization Lagrange Multiplier (CLM) technique and the vector Calculus of Variations (CoV) to derive the (stochastic) gradient descent. In this process, one avoids the commonly used re-application of the circular chain-rule and identifies the error back-propagation with the co-state backward dynamic equations. We assert that this bRNN can successfully perform regression tracking of time-series. Moreover, the "vanishing and exploding" gradients are explicitly quantified and explained through the co-state dynamics and the update laws. The adapted CoV framework, in addition, can correctly and principally integrate new loss functions in the network on any variable and for varied goals, e.g., for supervised learning on the outputs and unsupervised learning on the internal (hidden) states.
+
+**URL:** https://arxiv.org/abs/1612.09022
+
+**Notes:** new theoretical results for RNNs
