@@ -1,5 +1,6 @@
 import argparse
 import commands
+import stat
 import tempfile
 import os
 
@@ -72,9 +73,25 @@ class ArticleFormatter:
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--toc-maker", help="path to ToC making tool", default="./gh-md-toc")
+parser.add_argument("--toc-maker", help="path to ToC making tool")
 
 known_args, unknown_args = parser.parse_known_args()
+
+if not known_args.toc_maker:
+    known_args.toc_maker = "./gh-md-toc"
+    if not os.path.isfile(known_args.toc_maker):
+        s = commands.getoutput("uname -s").lower()
+        f = "gh-md-toc.%s.amd64.tgz" % s
+        URL = "https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.6.0/%s" % f
+        if not os.path.isfile(f):
+            if commands.getstatusoutput("wget %s" % URL)[0] != 0:
+                raise EnvironmentError("Cannot download toc maker from URL: %s" % URL)
+        if commands.getstatusoutput("tar xzf %s" % f)[0] != 0:
+                raise EnvironmentError("Cannot untar toc maker from file %s" % f)
+        os.remove(f)
+
+        current_permissions = stat.S_IMODE(os.lstat(known_args.toc_maker).st_mode)
+        os.chmod(known_args.toc_maker, current_permissions & stat.S_IXUSR)
 
 if unknown_args:
     filepath = unknown_args[0]
@@ -102,10 +119,10 @@ with open(filepath) as f:
             formatted += formatter(l)
 
 temp = tempfile.NamedTemporaryFile(delete=False)
-temp.write("Table of Contents\n=================\n" + formatted)
+temp.write(formatted)
 temp.close()
 toc = commands.getoutput("%s %s" % (known_args.toc_maker, temp.name))
-os.unlink(temp.name)
+os.remove(temp.name)
 
 with open(filepath, "wt") as f:
     f.write(toc[:-74] + formatted)
