@@ -9,3 +9,6 @@ I've decided to keep list size feasible, so I've created a new list for 2017. Th
 
 ## License
 ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png)
+
+## Table of Contents
+I'm using [toc maker](https://github.com/ekalinin/github-markdown-toc.go) from Eugeny Kalinin, it is very useful, thank him for this tool.
