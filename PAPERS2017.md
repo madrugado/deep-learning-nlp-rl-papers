@@ -2,7 +2,6 @@
 Table of Contents
 =================
 
-  * [Table of Contents](#table-of-contents)
   * [Articles](#articles)
     * [2017\-01](#2017-01)
       * [A Simple and Accurate Syntax\-Agnostic Neural Model for Dependency\-based Semantic Role Labeling](#a-simple-and-accurate-syntax-agnostic-neural-model-for-dependency-based-semantic-role-labeling)
@@ -18,6 +17,9 @@ Table of Contents
       * [NIPS 2016 Tutorial: Generative Adversarial Networks](#nips-2016-tutorial-generative-adversarial-networks)
       * [Dense Associative Memory is Robust to Adversarial Inputs](#dense-associative-memory-is-robust-to-adversarial-inputs)
       * [A K\-fold Method for Baseline Estimation in Policy Gradient Algorithms](#a-k-fold-method-for-baseline-estimation-in-policy-gradient-algorithms)
+      * [Generating Long and Diverse Responses with Neural Conversation Models](#generating-long-and-diverse-responses-with-neural-conversation-models)
+      * [Simplified Gating in Long Short\-term Memory (LSTM) Recurrent Neural Networks](#simplified-gating-in-long-short-term-memory-lstm-recurrent-neural-networks)
+      * [Modularized Morphing of Neural Networks](#modularized-morphing-of-neural-networks)
 
 Articles
 ========
@@ -151,4 +153,34 @@ Articles
 **URL:** https://arxiv.org/abs/1701.00867
 
 **Notes:** Simple baseline for policy gradient
+
+### Generating Long and Diverse Responses with Neural Conversation Models
+
+**Authors:** Louis Shao, Stephan Gouws, Denny Britz, Anna Goldie, Brian Strope, Ray Kurzweil
+
+**Abstract:** Building general-purpose conversation agents is a very challenging task, but necessary on the road toward intelligent agents that can interact with humans in natural language. Neural conversation models — purely data-driven systems trained end-to-end on dialogue corpora — have shown great promise recently, yet they often produce short and generic responses. This work presents new training and decoding methods that improve the quality, coherence, and diversity of long responses generated using sequence-to-sequence models. Our approach adds self-attention to the decoder to maintain coherence in longer responses, and we propose a practical approach, called the glimpse-model, for scaling to large datasets. We introduce a stochastic beam-search algorithm with segment-by-segment reranking which lets us inject diversity earlier in the generation process. We trained on a combined data set of over 2.3B conversation messages mined from the web. In human evaluation studies, our method produces longer responses overall, with a higher proportion rated as acceptable and excellent as length increases, compared to baseline sequence-to-sequence models with explicit length-promotion. A back-off strategy produces better responses overall, in the full spectrum of lengths.
+
+**URL:** https://arxiv.org/abs/1701.03185
+
+**Notes:** more diversity for responces, we should look over this work, since the beam search isn't satisfying
+
+### Simplified Gating in Long Short-term Memory (LSTM) Recurrent Neural Networks
+
+**Authors:** Yuzhen Lu, Fathi M. Salem
+
+**Abstract:** The standard LSTM recurrent neural networks while very powerful in long-range dependency sequence applications have highly complex structure and relatively large (adaptive) parameters. In this work, we present empirical comparison between the standard LSTM recurrent neural network architecture and three new parameter-reduced variants obtained by eliminating combinations of the input signal, bias, and hidden unit signals from individual gating signals. The experiments on two sequence datasets show that the three new variants, called simply as LSTM1, LSTM2, and LSTM3, can achieve comparable performance to the standard LSTM model with less (adaptive) parameters.
+
+**URL:** https://arxiv.org/abs/1701.03441
+
+**Notes:** that's a pity, I had the similar idea, you need to go fast with trying ideas this days!
+
+### Modularized Morphing of Neural Networks
+
+**Authors:** Tao Wei, Changhu Wang, Chang Wen Chen
+
+**Abstract:** In this work we study the problem of network morphism, an effective learning scheme to morph a well-trained neural network to a new one with the network function completely preserved. Different from existing work where basic morphing types on the layer level were addressed, we target at the central problem of network morphism at a higher level, i.e., how a convolutional layer can be morphed into an arbitrary module of a neural network. To simplify the representation of a network, we abstract a module as a graph with blobs as vertices and convolutional layers as edges, based on which the morphing process is able to be formulated as a graph transformation problem. Two atomic morphing operations are introduced to compose the graphs, based on which modules are classified into two families, i.e., simple morphable modules and complex modules. We present practical morphing solutions for both of these two families, and prove that any reasonable module can be morphed from a single convolutional layer. Extensive experiments have been conducted based on the state-of-the-art ResNet on benchmark datasets, and the effectiveness of the proposed solution has been verified.
+
+**URL:** https://arxiv.org/abs/1701.03281
+
+**Notes:** modularization is a fresh idea, I cannot get morphing aside the brain damage (zeroing small weights) yet
 
