@@ -20,6 +20,13 @@ Table of Contents
       * [Generating Long and Diverse Responses with Neural Conversation Models](#generating-long-and-diverse-responses-with-neural-conversation-models)
       * [Simplified Gating in Long Short\-term Memory (LSTM) Recurrent Neural Networks](#simplified-gating-in-long-short-term-memory-lstm-recurrent-neural-networks)
       * [Modularized Morphing of Neural Networks](#modularized-morphing-of-neural-networks)
+      * [A Copy\-Augmented Sequence\-to\-Sequence Architecture Gives Good Performance on Task\-Oriented Dialogue](#a-copy-augmented-sequence-to-sequence-architecture-gives-good-performance-on-task-oriented-dialogue)
+      * [Dialog Context Language Modeling with Recurrent Neural Networks](#dialog-context-language-modeling-with-recurrent-neural-networks)
+      * [Neural Models for Sequence Chunking](#neural-models-for-sequence-chunking)
+      * [DyNet: The Dynamic Neural Network Toolkit](#dynet-the-dynamic-neural-network-toolkit)
+      * [Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](#understanding-the-effective-receptive-field-in-deep-convolutional-neural-networks)
+      * [Agent\-Agnostic Human\-in\-the\-Loop Reinforcement Learning](#agent-agnostic-human-in-the-loop-reinforcement-learning)
+      * [Minimally Naturalistic Artificial Intelligence](#minimally-naturalistic-artificial-intelligence)
 
 Articles
 ========
@@ -183,4 +190,74 @@ Articles
 **URL:** https://arxiv.org/abs/1701.03281
 
 **Notes:** modularization is a fresh idea, I cannot get morphing aside the brain damage (zeroing small weights) yet
+
+### A Copy-Augmented Sequence-to-Sequence Architecture Gives Good Performance on Task-Oriented Dialogue
+
+**Authors:** Mihail Eric, Christopher D. Manning
+
+**Abstract:** Task-oriented dialogue focuses on conversational agents that participate in user-initiated dialogues on domain-specific topics. In contrast to chatbots, which simply seek to sustain open-ended meaningful discourse, existing task-oriented agents usually explicitly model user intent and belief states. This paper examines bypassing such an explicit representation by depending on a latent neural embedding of state and learning selective attention to dialogue history together with copying to incorporate relevant prior context. We complement recent work by showing the effectiveness of simple sequence-to-sequence neural architectures with a copy mechanism. Our model outperforms more complex memory-augmented models by 7% in per-response generation and is on par with the current state-of-the-art on DSTC2.
+
+**URL:** https://arxiv.org/abs/1701.04024
+
+**Notes:** Seq2Seq still has some tricks up its sleeve, copying as context is a bright idea
+
+### Dialog Context Language Modeling with Recurrent Neural Networks
+
+**Authors:** Bing Liu, Ian Lane
+
+**Abstract:** In this work, we propose contextual language models that incorporate dialog level discourse information into language modeling. Previous works on contextual language model treat preceding utterances as a sequence of inputs, without considering dialog interactions. We design recurrent neural network (RNN) based contextual language models that specially track the interactions between speakers in a dialog. Experiment results on Switchboard Dialog Act Corpus show that the proposed model outperforms conventional single turn based RNN language model by 3.3% on perplexity. The proposed models also demonstrate advantageous performance over other competitive contextual language models.
+
+**URL:** https://arxiv.org/abs/1701.04056
+
+**Notes:** Another context incorporation with RNN
+
+### Neural Models for Sequence Chunking
+
+**Authors:** Feifei Zhai, Saloni Potdar, Bing Xiang, Bowen Zhou
+
+**Abstract:** Many natural language understanding (NLU) tasks, such as shallow parsing (i.e., text chunking) and semantic slot filling, require the assignment of representative labels to the meaningful chunks in a sentence. Most of the current deep neural network (DNN) based methods consider these tasks as a sequence labeling problem, in which a word, rather than a chunk, is treated as the basic unit for labeling. These chunks are then inferred by the standard IOB (Inside-Outside-Beginning) labels. In this paper, we propose an alternative approach by investigating the use of DNN for sequence chunking, and propose three neural models so that each chunk can be treated as a complete unit for labeling. Experimental results show that the proposed neural sequence chunking models can achieve start-of-the-art performance on both the text chunking and slot filling tasks.
+
+**URL:** https://arxiv.org/abs/1701.04027
+
+**Notes:** Sequence chunking is common task for asian languages in the first place, but since we are going to go chars, for european ones too
+
+### DyNet: The Dynamic Neural Network Toolkit
+
+**Authors:** Graham Neubig, Chris Dyer, Yoav Goldberg, Austin Matthews, Waleed Ammar, Antonios Anastasopoulos, Miguel Ballesteros, David Chiang, Daniel Clothiaux, Trevor Cohn, Kevin Duh, Manaal Faruqui, Cynthia Gan, Dan Garrette, Yangfeng Ji, Lingpeng Kong, Adhiguna Kuncoro, Gaurav Kumar, Chaitanya Malaviya, Paul Michel, Yusuke Oda, Matthew Richardson, Naomi Saphra, Swabha Swayamdipta, Pengcheng Yin
+
+**Abstract:** We describe DyNet, a toolkit for implementing neural network models based on dynamic declaration of network structure. In the static declaration strategy that is used in toolkits like Theano, CNTK, and TensorFlow, the user first defines a computation graph (a symbolic representation of the computation), and then examples are fed into an engine that executes this computation and computes its derivatives. In DyNet's dynamic declaration strategy, computation graph construction is mostly transparent, being implicitly constructed by executing procedural code that computes the network outputs, and the user is free to use different network structures for each input. Dynamic declaration thus facilitates the implementation of more complicated network architectures, and DyNet is specifically designed to allow users to implement their models in a way that is idiomatic in their preferred programming language (C++ or Python). One challenge with dynamic declaration is that because the symbolic computation graph is defined anew for every training example, its construction must have low overhead. To achieve this, DyNet has an optimized C++ backend and lightweight graph representation. Experiments show that DyNet's speeds are faster than or comparable with static declaration toolkits, and significantly faster than Chainer, another dynamic declaration toolkit. DyNet is released open-source under the Apache 2.0 license and available at this http URL
+
+**URL:** https://arxiv.org/abs/1701.03980
+
+**Notes:** The paper has remarkable list of authors - DeepMind, Google, IBM Watson, CMU, AI2 & MSR. And more! Very interesting initiative.
+
+### Understanding the Effective Receptive Field in Deep Convolutional Neural Networks
+
+**Authors:** Wenjie Luo, Yujia Li, Raquel Urtasun, Richard Zemel
+
+**Abstract:** We study characteristics of receptive fields of units in deep convolutional networks. The receptive field size is a crucial issue in many visual tasks, as the output must respond to large enough areas in the image to capture information about large objects. We introduce the notion of an effective receptive field, and show that it both has a Gaussian distribution and only occupies a fraction of the full theoretical receptive field. We analyze the effective receptive field in several architecture designs, and the effect of nonlinear activations, dropout, sub-sampling and skip connections on it. This leads to suggestions for ways to address its tendency to be too small.
+
+**URL:** https://arxiv.org/abs/1701.04128
+
+**Notes:** The topic I was always curious about, shoud read it carefully, since now CNN are in rising at NLP field
+
+### Agent-Agnostic Human-in-the-Loop Reinforcement Learning
+
+**Authors:** David Abel, John Salvatier, Andreas Stuhlmüller, Owain Evans
+
+**Abstract:** Providing Reinforcement Learning agents with expert advice can dramatically improve various aspects of learning. Prior work has developed teaching protocols that enable agents to learn efficiently in complex environments; many of these methods tailor the teacher's guidance to agents with a particular representation or underlying learning scheme, offering effective but specialized teaching procedures. In this work, we explore protocol programs, an agent-agnostic schema for Human-in-the-Loop Reinforcement Learning. Our goal is to incorporate the beneficial properties of a human teacher into Reinforcement Learning without making strong assumptions about the inner workings of the agent. We show how to represent existing approaches such as action pruning, reward shaping, and training in simulation as special cases of our schema and conduct preliminary experiments on simple domains.
+
+**URL:** https://arxiv.org/abs/1701.04079
+
+**Notes:** Next step for FAIR human in the loop approach
+
+### Minimally Naturalistic Artificial Intelligence
+
+**Authors:** Steven Stenberg Hansen
+
+**Abstract:** The rapid advancement of machine learning techniques has re-energized research into general artificial intelligence. While the idea of domain-agnostic meta-learning is appealing, this emerging field must come to terms with its relationship to human cognition and the statistics and structure of the tasks humans perform. The position of this article is that only by aligning our agents' abilities and environments with those of humans do we stand a chance at developing general artificial intelligence (GAI). A broad reading of the famous 'No Free Lunch' theorem is that there is no universally optimal inductive bias or, equivalently, bias-free learning is impossible. This follows from the fact that there are an infinite number of ways to extrapolate data, any of which might be the one used by the data generating environment; an inductive bias prefers some of these extrapolations to others, which lowers performance in environments using these adversarial extrapolations. We may posit that the optimal GAI is the one that maximally exploits the statistics of its environment to create its inductive bias; accepting the fact that this agent is guaranteed to be extremely sub-optimal for some alternative environments. This trade-off appears benign when thinking about the environment as being the physical universe, as performance on any fictive universe is obviously irrelevant. But, we should expect a sharper inductive bias if we further constrain our environment. Indeed, we implicitly do so by defining GAI in terms of accomplishing that humans consider useful. One common version of this is need the for 'common-sense reasoning', which implicitly appeals to the statistics of physical universe as perceived by humans.
+
+**URL:** https://arxiv.org/abs/1701.03868
+
+**Notes:** Seems to be little bit too loud name, but we should check inside.
 
