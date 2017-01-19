@@ -27,6 +27,7 @@ Table of Contents
       * [Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](#understanding-the-effective-receptive-field-in-deep-convolutional-neural-networks)
       * [Agent\-Agnostic Human\-in\-the\-Loop Reinforcement Learning](#agent-agnostic-human-in-the-loop-reinforcement-learning)
       * [Minimally Naturalistic Artificial Intelligence](#minimally-naturalistic-artificial-intelligence)
+      * [Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks](#adversarial-variational-bayes-unifying-variational-autoencoders-and-generative-adversarial-networks)
 
 Articles
 ========
@@ -260,4 +261,14 @@ Articles
 **URL:** https://arxiv.org/abs/1701.03868
 
 **Notes:** Seems to be little bit too loud name, but we should check inside.
+
+### Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks
+
+**Authors:** Lars Mescheder, Sebastian Nowozin, Andreas Geiger
+
+**Abstract:** Variational Autoencoders (VAEs) are expressive latent variable models that can be used to learn complex probability distributions from training data. However, the quality of the resulting model crucially relies on the expressiveness of the inference model used during training. We introduce Adversarial Variational Bayes (AVB), a technique for training Variational Autoencoders with arbitrarily expressive inference models. We achieve this by introducing an auxiliary discriminative network that allows to rephrase the maximum-likelihood-problem as a two-player game, hence establishing a principled connection between VAEs and Generative Adversarial Networks (GANs). We show that in the nonparametric limit our method yields an exact maximum-likelihood assignment for the parameters of the generative model, as well as the exact posterior distribution over the latent variables given an observation. Contrary to competing approaches which combine VAEs with GANs, our approach has a clear theoretical justification, retains most advantages of standard Variational Autoencoders and is easy to implement.
+
+**URL:** https://arxiv.org/abs/1701.04722
+
+**Notes:** Convergence of autoencoders & GANs, neat!
 
