@@ -28,6 +28,9 @@ Table of Contents
       * [Agent\-Agnostic Human\-in\-the\-Loop Reinforcement Learning](#agent-agnostic-human-in-the-loop-reinforcement-learning)
       * [Minimally Naturalistic Artificial Intelligence](#minimally-naturalistic-artificial-intelligence)
       * [Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks](#adversarial-variational-bayes-unifying-variational-autoencoders-and-generative-adversarial-networks)
+      * [Adversarial Learning for Neural Dialogue Generation](#adversarial-learning-for-neural-dialogue-generation)
+      * [A Multichannel Convolutional Neural Network For Cross\-language Dialog State Tracking](#a-multichannel-convolutional-neural-network-for-cross-language-dialog-state-tracking)
+      * [Learning to Decode for Future Success](#learning-to-decode-for-future-success)
 
 Articles
 ========
@@ -271,4 +274,34 @@ Articles
 **URL:** https://arxiv.org/abs/1701.04722
 
 **Notes:** Convergence of autoencoders & GANs, neat!
+
+### Adversarial Learning for Neural Dialogue Generation
+
+**Authors:** Jiwei Li, Will Monroe, Tianlin Shi, Alan Ritter, Dan Jurafsky
+
+**Abstract:** In this paper, drawing intuition from the Turing test, we propose using adversarial training for open-domain dialogue generation: the system is trained to produce sequences that are indistinguishable from human-generated dialogue utterances. We cast the task as a reinforcement learning (RL) problem where we jointly train two systems, a generative model to produce response sequences, and a discriminator---analagous to the human evaluator in the Turing test-— to distinguish between the human-generated dialogues and the machine-generated ones. The outputs from the discriminator are then used as rewards for the generative model, pushing the system to generate dialogues that mostly resemble human dialogues. In addition to adversarial training we describe a model for adversarial {\em evaluation} that uses success in fooling an adversary as a dialogue evaluation metric, while avoiding a number of potential pitfalls. Experimental results on several metrics, including adversarial evaluation, demonstrate that the adversarially-trained system generates higher-quality responses than previous baselines.
+
+**URL:** https://arxiv.org/abs/1701.06547
+
+**Notes:** HOT! GAN-RL!
+
+### A Multichannel Convolutional Neural Network For Cross-language Dialog State Tracking
+
+**Authors:** Hongjie Shi, Takashi Ushio, Mitsuru Endo, Katsuyoshi Yamagami, Noriaki Horii
+
+**Abstract:** The fifth Dialog State Tracking Challenge (DSTC5) introduces a new cross-language dialog state tracking scenario, where the participants are asked to build their trackers based on the English training corpus, while evaluating them with the unlabeled Chinese corpus. Although the computer-generated translations for both English and Chinese corpus are provided in the dataset, these translations contain errors and careless use of them can easily hurt the performance of the built trackers. To address this problem, we propose a multichannel Convolutional Neural Networks (CNN) architecture, in which we treat English and Chinese language as different input channels of one single CNN model. In the evaluation of DSTC5, we found that such multichannel architecture can effectively improve the robustness against translation errors. Additionally, our method for DSTC5 is purely machine learning based and requires no prior knowledge about the target language. We consider this a desirable property for building a tracker in the cross-language context, as not every developer will be familiar with both languages.
+
+**URL:** https://arxiv.org/abs/1701.06247
+
+**Notes:** CNN for dialog state tracking
+
+### Learning to Decode for Future Success
+
+**Authors:** Jiwei Li, Will Monroe, Dan Jurafsky
+
+**Abstract:** We introduce a general strategy for improving neural sequence generation by incorporating knowledge about the future. Our decoder combines a standard sequence decoder with a `soothsayer' prediction function Q that estimates the outcome in the future of generating a word in the present. Our model draws on the same intuitions as reinforcement learning, but is both simpler and higher performing, avoiding known problems with the use of reinforcement learning in tasks with enormous search spaces like sequence generation. We demonstrate our model by incorporating Q functions that incrementally predict what the future BLEU or ROUGE score of the completed sequence will be, its future length, and the backwards probability of the source given the future target sequence. Experimental results show that future rediction yields improved performance in abstractive summarization and conversational response generation and the state-of-the-art in machine translation, while also enabling the decoder to generate outputs that have specific properties.
+
+**URL:** https://arxiv.org/abs/1701.06549
+
+**Notes:** future prediction with Q-learning
 
