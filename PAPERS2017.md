@@ -31,6 +31,8 @@ Table of Contents
       * [Adversarial Learning for Neural Dialogue Generation](#adversarial-learning-for-neural-dialogue-generation)
       * [A Multichannel Convolutional Neural Network For Cross\-language Dialog State Tracking](#a-multichannel-convolutional-neural-network-for-cross-language-dialog-state-tracking)
       * [Learning to Decode for Future Success](#learning-to-decode-for-future-success)
+      * [Outrageously Large Neural Networks: The Sparsely\-Gated Mixture\-of\-Experts Layer](#outrageously-large-neural-networks-the-sparsely-gated-mixture-of-experts-layer)
+      * [Regularizing Neural Networks by Penalizing Confident Output Distributions](#regularizing-neural-networks-by-penalizing-confident-output-distributions)
 
 Articles
 ========
@@ -304,4 +306,24 @@ Articles
 **URL:** https://arxiv.org/abs/1701.06549
 
 **Notes:** future prediction with Q-learning
+
+### Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer
+
+**Authors:** Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, Jeff Dean
+
+**Abstract:** The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation. In practice, however, there are significant algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost.
+
+**URL:** https://arxiv.org/abs/1701.06538
+
+**Notes:** dropout analog from Dean & Hinton
+
+### Regularizing Neural Networks by Penalizing Confident Output Distributions
+
+**Authors:** Gabriel Pereyra, George Tucker, Jan Chorowski, Łukasz Kaiser, Geoffrey Hinton
+
+**Abstract:** We systematically explore regularizing neural networks by penalizing low entropy output distributions. We show that penalizing low entropy output distributions, which has been shown to improve exploration in reinforcement learning, acts as a strong regularizer in supervised learning. Furthermore, we connect a maximum entropy based confidence penalty to label smoothing through the direction of the KL divergence. We exhaustively evaluate the proposed confidence penalty and label smoothing on 6 common benchmarks: image classification (MNIST and Cifar-10), language modeling (Penn Treebank), machine translation (WMT'14 English-to-German), and speech recognition (TIMIT and WSJ). We find that both label smoothing and the confidence penalty improve state-of-the-art models across benchmarks without modifying existing hyperparameters, suggesting the wide applicability of these regularizers.
+
+**URL:** https://arxiv.org/abs/1701.06548
+
+**Notes:** smart regularization from Hinton
 
