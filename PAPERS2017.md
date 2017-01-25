@@ -33,6 +33,7 @@ Table of Contents
       * [Learning to Decode for Future Success](#learning-to-decode-for-future-success)
       * [Outrageously Large Neural Networks: The Sparsely\-Gated Mixture\-of\-Experts Layer](#outrageously-large-neural-networks-the-sparsely-gated-mixture-of-experts-layer)
       * [Regularizing Neural Networks by Penalizing Confident Output Distributions](#regularizing-neural-networks-by-penalizing-confident-output-distributions)
+      * [Discriminative Neural Topic Models](#discriminative-neural-topic-models)
 
 Articles
 ========
@@ -326,4 +327,14 @@ Articles
 **URL:** https://arxiv.org/abs/1701.06548
 
 **Notes:** smart regularization from Hinton
+
+### Discriminative Neural Topic Models
+
+**Authors:** Gaurav Pandey, Ambedkar Dukkipati
+
+**Abstract:** We propose a neural network based approach for learning topics from text and image datasets. The model makes no assumptions about the conditional distribution of the observed features given the latent topics. This allows us to perform topic modelling efficiently using sentences of documents and patches of images as observed features, rather than limiting ourselves to words. Moreover, the proposed approach is online, and hence can be used for streaming data. Furthermore, since the approach utilizes neural networks, it can be implemented on GPU with ease, and hence it is very scalable.
+
+**URL:** https://arxiv.org/abs/1701.06796
+
+**Notes:** don't like topic modeling but you should stay in touch with advances these days
 
