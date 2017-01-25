@@ -49,3 +49,4 @@ venv/
 ENV/
 .spyderproject
 .ropeproject
+gh-md-toc
