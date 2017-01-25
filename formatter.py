@@ -1,8 +1,15 @@
+from __future__ import print_function
+
 import argparse
-import commands
 import stat
 import tempfile
 import os
+import sys
+
+if sys.version_info[0] == 2: 
+    import commands as cmd
+else:  # assuming that it is python 3
+    import subprocess as cmd
 
 
 class ArticleFormatter:
@@ -49,7 +56,7 @@ class ArticleFormatter:
             self.has_notes = True
 
     def _print(self):
-        self.buf = filter(lambda x: x, self.buf)
+        self.buf = list(filter(lambda x: x, self.buf))
         if len(self.buf) != 5:
             raise ValueError("Wrong article description format!")
         printed = ""
@@ -80,13 +87,13 @@ known_args, unknown_args = parser.parse_known_args()
 if not known_args.toc_maker:
     known_args.toc_maker = "./gh-md-toc"
     if not os.path.isfile(known_args.toc_maker):
-        s = commands.getoutput("uname -s").lower()
+        s = cmd.getoutput("uname -s").lower()
         f = "gh-md-toc.%s.amd64.tgz" % s
         URL = "https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.6.0/%s" % f
         if not os.path.isfile(f):
-            if commands.getstatusoutput("wget %s" % URL)[0] != 0:
+            if cmd.getstatusoutput("wget %s" % URL)[0] != 0:
                 raise EnvironmentError("Cannot download toc maker from URL: %s" % URL)
-        if commands.getstatusoutput("tar xzf %s" % f)[0] != 0:
+        if cmd.getstatusoutput("tar xzf %s" % f)[0] != 0:
                 raise EnvironmentError("Cannot untar toc maker from file %s" % f)
         os.remove(f)
 
@@ -96,7 +103,7 @@ if not known_args.toc_maker:
 if unknown_args:
     filepath = unknown_args[0]
 else:
-    print "You should specify the path for file to work with!"
+    print("You should specify the path for file to work with!")
     quit(1)
 
 formatted = ""
@@ -118,10 +125,10 @@ with open(filepath) as f:
         elif not pass_lines:
             formatted += formatter(l)
 
-temp = tempfile.NamedTemporaryFile(delete=False)
+temp = tempfile.NamedTemporaryFile(delete=False, mode='wt')
 temp.write(formatted)
 temp.close()
-toc = commands.getoutput("%s %s" % (known_args.toc_maker, temp.name))
+toc = cmd.getoutput("%s %s" % (known_args.toc_maker, temp.name))
 os.remove(temp.name)
 
 with open(filepath, "wt") as f:
