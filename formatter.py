@@ -40,7 +40,7 @@ class ArticleFormatter:
 
     def _analyze(self):
         if not self.has_title:
-            if 0 < len(self.buf[-1]) < 100:
+            if 0 < len(self.buf[-1]) < 150:
                 self.has_title = True
         elif not self.has_authors:
             if 0 < len(self.buf[-1]):
