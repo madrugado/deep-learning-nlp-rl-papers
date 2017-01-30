@@ -35,6 +35,8 @@ Table of Contents
       * [Regularizing Neural Networks by Penalizing Confident Output Distributions](#regularizing-neural-networks-by-penalizing-confident-output-distributions)
       * [Discriminative Neural Topic Models](#discriminative-neural-topic-models)
       * [Hierarchical Recurrent Attention Network for Response Generation](#hierarchical-recurrent-attention-network-for-response-generation)
+      * [Wasserstein GAN](#wasserstein-gan)
+      * [Reinforced backpropagation improves test performance of deep networks: a toy\-model study](#reinforced-backpropagation-improves-test-performance-of-deep-networks-a-toy-model-study)
 
 Articles
 ========
@@ -348,4 +350,24 @@ Articles
 **URL:** https://arxiv.org/abs/1701.07149
 
 **Notes:** responce genration with hierarchical network is not that fresh idea, but may be these guys have the results
+
+### Wasserstein GAN
+
+**Authors:** Martin Arjovsky, Soumith Chintala, Léon Bottou
+
+**Abstract:** We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to other distances between distributions.
+
+**URL:** https://arxiv.org/abs/1701.07875
+
+**Notes:** New enhancement for GANs, could be useful.
+
+### Reinforced backpropagation improves test performance of deep networks: a toy-model study
+
+**Authors:** Haiping Huang, Taro Toyoizumi
+
+**Abstract:** Standard error backpropagation is used in almost all modern deep network training. However, it typically suffers from proliferation of saddle points in high-dimensional parameter space. Therefore, it is highly desirable to design an efficient algorithm to escape from these saddle points and reach a good parameter region of better generalization capabilities, especially based on rough insights about the landscape of the error surface. Here, we propose a simple extension of the backpropagation, namely reinforced backpropagation, which simply adds previous first-order gradients in a stochastic manner with a probability that increases with learning time. Extensive numerical simulations on a toy deep learning model verify its excellent performance. The reinforced backpropagation can significantly improve test performance of the deep network training, especially when the data are scarce. The performance is even better than that of state-of-the-art stochastic optimization algorithm called Adam, with an extra advantage of less computer memory required.
+
+**URL:** https://arxiv.org/abs/1701.07974
+
+**Notes:** seems to be analogue for momentum in SGD, could be helpful may be
 
