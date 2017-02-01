@@ -37,6 +37,7 @@ Table of Contents
       * [Hierarchical Recurrent Attention Network for Response Generation](#hierarchical-recurrent-attention-network-for-response-generation)
       * [Wasserstein GAN](#wasserstein-gan)
       * [Reinforced backpropagation improves test performance of deep networks: a toy\-model study](#reinforced-backpropagation-improves-test-performance-of-deep-networks-a-toy-model-study)
+      * [CommAI: Evaluating the first steps towards a useful general AI](#commai-evaluating-the-first-steps-towards-a-useful-general-ai)
 
 Articles
 ========
@@ -370,4 +371,14 @@ Articles
 **URL:** https://arxiv.org/abs/1701.07974
 
 **Notes:** seems to be analogue for momentum in SGD, could be helpful may be
+
+### CommAI: Evaluating the first steps towards a useful general AI
+
+**Authors:** Marco Baroni, Armand Joulin, Allan Jabri, Germàn Kruszewski, Angeliki Lazaridou, Klemen Simonic, Tomas Mikolov
+
+**Abstract:** With machine learning successfully applied to new daunting problems almost every day, general AI starts looking like an attainable goal. However, most current research focuses instead on important but narrow applications, such as image classification or machine translation. We believe this to be largely due to the lack of objective ways to measure progress towards broad machine intelligence. In order to fill this gap, we propose here a set of concrete desiderata for general AI, together with a platform to test machines on how well they satisfy such desiderata, while keeping all further complexities to a minimum.
+
+**URL:** https://arxiv.org/abs/1701.08954
+
+**Notes:** Fresh article from Mikolov about actual path to general AI.
 
