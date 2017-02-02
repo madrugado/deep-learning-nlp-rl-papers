@@ -38,6 +38,12 @@ Table of Contents
       * [Wasserstein GAN](#wasserstein-gan)
       * [Reinforced backpropagation improves test performance of deep networks: a toy\-model study](#reinforced-backpropagation-improves-test-performance-of-deep-networks-a-toy-model-study)
       * [CommAI: Evaluating the first steps towards a useful general AI](#commai-evaluating-the-first-steps-towards-a-useful-general-ai)
+    * [2017\-02](#2017-02)
+      * [Low\-Dose CT with a Residual Encoder\-Decoder Convolutional Neural Network (RED\-CNN)](#low-dose-ct-with-a-residual-encoder-decoder-convolutional-neural-network-red-cnn)
+      * [On orthogonality and learning recurrent networks with long term dependencies](#on-orthogonality-and-learning-recurrent-networks-with-long-term-dependencies)
+      * [Understanding trained CNNs by indexing neuron selectivity](#understanding-trained-cnns-by-indexing-neuron-selectivity)
+      * [Design, Analysis and Application of A Volumetric Convolutional Neural Network](#design-analysis-and-application-of-a-volumetric-convolutional-neural-network)
+      * [On SGD's Failure in Practice: Characterizing and Overcoming Stalling](#on-sgds-failure-in-practice-characterizing-and-overcoming-stalling)
 
 Articles
 ========
@@ -381,4 +387,55 @@ Articles
 **URL:** https://arxiv.org/abs/1701.08954
 
 **Notes:** Fresh article from Mikolov about actual path to general AI.
+
+## 2017-02
+### Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)
+
+**Authors:** Hu Chen, Yi Zhang, Mannudeep K. Kalra, Feng Lin, Peixi Liao, Jiliu Zhou, Ge Wang
+
+**Abstract:** Given the potential X-ray radiation risk to the patient, low-dose CT has attracted a considerable interest in the medical imaging field. The current main stream low-dose CT methods include vendor-specific sinogram domain filtration and iterative reconstruction, but they need to access original raw data whose formats are not transparent to most users. Due to the difficulty of modeling the statistical characteristics in the image domain, the existing methods for directly processing reconstructed images cannot eliminate image noise very well while keeping structural details. Inspired by the idea of deep learning, here we combine the autoencoder, the deconvolution network, and shortcut connections into the residual encoder-decoder convolutional neural network (RED-CNN) for low-dose CT imaging. After patch-based training, the proposed RED-CNN achieves a competitive performance relative to the-state-of-art methods in both simulated and clinical cases. Especially, our method has been favorably evaluated in terms of noise suppression, structural preservation and lesion detection.
+
+**URL:** https://arxiv.org/abs/1702.00288
+
+**Notes:** similar architecture we've used for sentence representation task
+
+### On orthogonality and learning recurrent networks with long term dependencies
+
+**Authors:** Eugene Vorontsov, Chiheb Trabelsi, Samuel Kadoury, Chris Pal
+
+**Abstract:** It is well known that it is challenging to train deep neural networks and recurrent neural networks for tasks that exhibit long term dependencies. The vanishing or exploding gradient problem is a well known issue associated with these challenges. One approach to addressing vanishing and exploding gradients is to use either soft or hard constraints on weight matrices so as to encourage or enforce orthogonality. Orthogonal matrices preserve gradient norm during backpropagation and can therefore be a desirable property; however, we find that hard constraints on orthogonality can negatively affect the speed of convergence and model performance. This paper explores the issues of optimization convergence, speed and gradient stability using a variety of different methods for encouraging or enforcing orthogonality. In particular we propose a weight matrix factorization and parameterization strategy through which we can bound matrix norms and therein control the degree of expansivity induced during backpropagation.
+
+**URL:** https://arxiv.org/abs/1702.00071
+
+**Notes:** long-term dependencies for text are really important, so I should this check out
+
+### Understanding trained CNNs by indexing neuron selectivity
+
+**Authors:** Ivet Rafegas, Maria Vanrell, Luis A. Alexandre
+
+**Abstract:** The impressive performance and plasticity of convolutional neural networks to solve different vision problems are shadowed by their black-box nature and its consequent lack of full understanding. To reduce this gap we propose to describe the activity of individual neurons by quantifying their inherent selectivity to specific properties. Our approach is based on the definition of feature selectivity indexes that allow the ranking of neurons according to specific properties. Here we report the results of exploring selectivity indexes for: (a) an image feature (color); and (b) an image label (class membership). Our contribution is a framework to seek or classify neurons by indexing on these selectivity properties. It helps to find color selective neurons, such as a red-mushroom neuron in layer conv4 or class selective neurons such as dog-face neurons in layer conv5, and establishes a methodology to derive other selectivity properties. Indexing on neuron selectivity can statistically draw how features and classes are represented through layers at a moment when the size of trained nets is growing and automatic tools to index can be helpful.
+
+**URL:** https://arxiv.org/abs/1702.00382
+
+**Notes:** 1st article about understanding CNN today
+
+### Design, Analysis and Application of A Volumetric Convolutional Neural Network
+
+**Authors:** Xiaqing Pan, Yueru Chen, C.-C. Jay Kuo
+
+**Abstract:** The design, analysis and application of a volumetric convolutional neural network (VCNN) are studied in this work. Although many CNNs have been proposed in the literature, their design is empirical. In the design of the VCNN, we propose a feed-forward K-means clustering algorithm to determine the filter number and size at each convolutional layer systematically. For the analysis of the VCNN, the cause of confusing classes in the output of the VCNN is explained by analyzing the relationship between the filter weights (also known as anchor vectors) from the last fully-connected layer to the output. Furthermore, a hierarchical clustering method followed by a random forest classification method is proposed to boost the classification performance among confusing classes. For the application of the VCNN, we examine the 3D shape classification problem and conduct experiments on a popular ModelNet40 dataset. The proposed VCNN offers the state-of-the-art performance among all volume-based CNN methods.
+
+**URL:** https://arxiv.org/abs/1702.00158
+
+**Notes:** 2nd article about understanding CNN
+
+### On SGD's Failure in Practice: Characterizing and Overcoming Stalling
+
+**Authors:** Vivak Patel
+
+**Abstract:** Stochastic Gradient Descent (SGD) is widely used in machine learning problems to efficiently perform empirical risk minimization, yet, in practice, SGD is known to stall before reaching the actual minimizer of the empirical risk. SGD stalling has often been attributed to its sensitivity to the conditioning of the problem; however, as we demonstrate, SGD will stall even when applied to a simple linear regression problem with unity condition number for standard learning rates. Thus, in this work, we numerically demonstrate and mathematically argue that stalling is a crippling and generic limitation of SGD and its variants in practice. Once we have established the problem of stalling, we introduce a framework for hedging against its effects, which (1) deters SGD and its variants from stalling, (2) still provides convergence guarantees, and (3) makes SGD and its variants more practical methods for minimization.
+
+**URL:** https://arxiv.org/abs/1702.00317
+
+**Notes:** SGD failures should be understood to work with it
 
