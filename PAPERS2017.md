@@ -44,6 +44,7 @@ Table of Contents
       * [Understanding trained CNNs by indexing neuron selectivity](#understanding-trained-cnns-by-indexing-neuron-selectivity)
       * [Design, Analysis and Application of A Volumetric Convolutional Neural Network](#design-analysis-and-application-of-a-volumetric-convolutional-neural-network)
       * [On SGD's Failure in Practice: Characterizing and Overcoming Stalling](#on-sgds-failure-in-practice-characterizing-and-overcoming-stalling)
+      * [Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey](#symbolic-distributed-and-distributional-representations-for-natural-language-processing-in-the-era-of-deep-learning-a-survey)
 
 Articles
 ========
@@ -438,4 +439,14 @@ Articles
 **URL:** https://arxiv.org/abs/1702.00317
 
 **Notes:** SGD failures should be understood to work with it
+
+### Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey
+
+**Authors:** Lorenzo Ferrone, Fabio Massimo Zanzotto
+
+**Abstract:** Natural language and symbols are intimately correlated. Recent advances in machine learning (ML) and in natural language processing (NLP) seem to contradict the above intuition: symbols are fading away, erased by vectors or tensors called distributed and distributional representations. However, there is a strict link between distributed/distributional representations and symbols, being the first an approximation of the second. A clearer understanding of the strict link between distributed/distributional representations and symbols will certainly lead to radically new deep learning networks. In this paper we make a survey that aims to draw the link between symbolic representations and distributed/distributional representations. This is the right time to revitalize the area of interpreting how symbols are represented inside neural networks.
+
+**URL:** https://arxiv.org/abs/1702.00764
+
+**Notes:** review of nlp representations
 
