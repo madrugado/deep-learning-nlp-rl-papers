@@ -45,6 +45,7 @@ Table of Contents
       * [Design, Analysis and Application of A Volumetric Convolutional Neural Network](#design-analysis-and-application-of-a-volumetric-convolutional-neural-network)
       * [On SGD's Failure in Practice: Characterizing and Overcoming Stalling](#on-sgds-failure-in-practice-characterizing-and-overcoming-stalling)
       * [Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey](#symbolic-distributed-and-distributional-representations-for-natural-language-processing-in-the-era-of-deep-learning-a-survey)
+      * [Multilingual Multi\-modal Embeddings for Natural Language Processing](#multilingual-multi-modal-embeddings-for-natural-language-processing)
 
 Articles
 ========
@@ -449,4 +450,14 @@ Articles
 **URL:** https://arxiv.org/abs/1702.00764
 
 **Notes:** review of nlp representations
+
+### Multilingual Multi-modal Embeddings for Natural Language Processing
+
+**Authors:** Iacer Calixto, Qun Liu, Nick Campbell
+
+**Abstract:** We propose a novel discriminative model that learns embeddings from multilingual and multi-modal data, meaning that our model can take advantage of images and descriptions in multiple languages to improve embedding quality. To that end, we introduce a modification of a pairwise contrastive estimation optimisation function as our training objective. We evaluate our embeddings on an image-sentence ranking (ISR), a semantic textual similarity (STS), and a neural machine translation (NMT) task. We find that the additional multilingual signals lead to improvements on both the ISR and STS tasks, and the discriminative cost can also be used in re-ranking n-best lists produced by NMT models, yielding strong improvements.
+
+**URL:** https://arxiv.org/abs/1702.01101
+
+**Notes:** yet another embedding, should hurry to publish mine
 
