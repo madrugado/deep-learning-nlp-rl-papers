@@ -53,6 +53,7 @@ Table of Contents
       * [Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks](#reluplex-an-efficient-smt-solver-for-verifying-deep-neural-networks)
       * [Neural Semantic Parsing over Multiple Knowledge\-bases](#neural-semantic-parsing-over-multiple-knowledge-bases)
       * [All\-but\-the\-Top: Simple and Effective Postprocessing for Word Representations](#all-but-the-top-simple-and-effective-postprocessing-for-word-representations)
+      * [Deep Learning With Denamic Computation Graph](#deep-learning-with-denamic-computation-graph)
 
 Articles
 ========
@@ -537,4 +538,14 @@ Articles
 **URL:** https://arxiv.org/abs/1702.01417
 
 **Notes:** interesting wistle for the word vectors
+
+### Deep Learning With Denamic Computation Graph
+
+**Authors:** Moshe Looks, Marcello Herreshoff, DeLesley Hutchins & Peter Norvig
+
+**Abstract:** Neural networks that compute over graph structures are a natural fit for problems in a variety of domains, including natural language (parse trees) and cheminformatics (molecular graphs). However, since the computation graph has a different shape and size for every input, such networks do not directly support batched training or inference. They are also difficult to implement in popular deep learning libraries, which are based on static data-flow graphs. We introduce a technique called dynamic batching, which not only batches together operations between different input graphs of dissimilar shape, but also between different nodes within a single input graph. The technique allows us to create static graphs, using popular libraries, that emulate dynamic computation graphs of arbitrary shape and size. We further present a high-level library1 of compositional blocks that simplifies the creation of dynamic graph models. Using the library, we demonstrate concise and batch-wise parallel implementations for a variety of models from the literature.
+
+**URL:** https://openreview.net/pdf?id=ryrGawqex
+
+**Notes:** Fresh paper from DeepMind about TF dynamic batching. HOT!
 
