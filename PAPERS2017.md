@@ -46,6 +46,13 @@ Table of Contents
       * [On SGD's Failure in Practice: Characterizing and Overcoming Stalling](#on-sgds-failure-in-practice-characterizing-and-overcoming-stalling)
       * [Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey](#symbolic-distributed-and-distributional-representations-for-natural-language-processing-in-the-era-of-deep-learning-a-survey)
       * [Multilingual Multi\-modal Embeddings for Natural Language Processing](#multilingual-multi-modal-embeddings-for-natural-language-processing)
+      * [Doubly\-Attentive Decoder for Multi\-modal Neural Machine Translation](#doubly-attentive-decoder-for-multi-modal-neural-machine-translation)
+      * [Opinion Recommendation using Neural Memory Model](#opinion-recommendation-using-neural-memory-model)
+      * [Search Intelligence: Deep Learning For Dominant Category Prediction](#search-intelligence-deep-learning-for-dominant-category-prediction)
+      * [Syntax\-aware Neural Machine Translation Using CCG](#syntax-aware-neural-machine-translation-using-ccg)
+      * [Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks](#reluplex-an-efficient-smt-solver-for-verifying-deep-neural-networks)
+      * [Neural Semantic Parsing over Multiple Knowledge\-bases](#neural-semantic-parsing-over-multiple-knowledge-bases)
+      * [All\-but\-the\-Top: Simple and Effective Postprocessing for Word Representations](#all-but-the-top-simple-and-effective-postprocessing-for-word-representations)
 
 Articles
 ========
@@ -460,4 +467,74 @@ Articles
 **URL:** https://arxiv.org/abs/1702.01101
 
 **Notes:** yet another embedding, should hurry to publish mine
+
+### Doubly-Attentive Decoder for Multi-modal Neural Machine Translation
+
+**Authors:** Iacer Calixto, Qun Liu, Nick Campbell
+
+**Abstract:** We introduce a Multi-modal Neural Machine Translation model in which a doubly-attentive decoder naturally incorporates spatial visual features obtained using pre-trained convolutional neural networks, bridging the gap between image description and translation. Our decoder learns to attend to source-language words and parts of an image independently by means of two separate attention mechanisms as it generates words in the target language. We find that our model can efficiently exploit not just back-translated in-domain multi-modal data but also large general-domain text-only MT corpora. We also report state-of-the-art results on the Multi30k data set.
+
+**URL:** https://arxiv.org/abs/1702.01287
+
+**Notes:** double attention for NMT
+
+### Opinion Recommendation using Neural Memory Model
+
+**Authors:** Zhongqing Wang, Yue Zhang
+
+**Abstract:** We present opinion recommendation, a novel task of jointly predicting a custom review with a rating score that a certain user would give to a certain product or service, given existing reviews and rating scores to the product or service by other users, and the reviews that the user has given to other products and services. A characteristic of opinion recommendation is the reliance of multiple data sources for multi-task joint learning, which is the strength of neural models. We use a single neural network to model users and products, capturing their correlation and generating customised product representations using a deep memory network, from which customised ratings and reviews are constructed jointly. Results show that our opinion recommendation system gives ratings that are closer to real user ratings on Yelp.com data compared with Yelp's own ratings, and our methods give better results compared to several pipelines baselines using state-of-the-art sentiment rating and summarization systems.
+
+**URL:** https://arxiv.org/abs/1702.01517
+
+**Notes:** opinion recommendation - neмук seen such task before
+
+### Search Intelligence: Deep Learning For Dominant Category Prediction
+
+**Authors:** Zeeshan Khawar Malik, Mo Kobrosli, Peter Maas
+
+**Abstract:** Deep Neural Networks, and specifically fully-connected convolutional neural networks are achieving remarkable results across a wide variety of domains. They have been trained to achieve state-of-the-art performance when applied to problems such as speech recognition, image classification, natural language processing and bioinformatics. Most of these deep learning models when applied to classification employ the softmax activation function for prediction and aim to minimize cross-entropy loss. In this paper, we have proposed a supervised model for dominant category prediction to improve search recall across all eBay classifieds platforms. The dominant category label for each query in the last 90 days is first calculated by summing the total number of collaborative clicks among all categories. The category having the highest number of collaborative clicks for the given query will be considered its dominant category. Second, each query is transformed to a numeric vector by mapping each unique word in the query document to a unique integer value; all padded to equal length based on the maximum document length within the pre-defined vocabulary size. A fully-connected deep convolutional neural network (CNN) is then applied for classification. The proposed model achieves very high classification accuracy compared to other state-of-the-art machine learning techniques.
+
+**URL:** https://arxiv.org/abs/1702.01717
+
+**Notes:** CNN for classification is classic approach now, but this thing is working with click streams
+
+### Syntax-aware Neural Machine Translation Using CCG
+
+**Authors:** Maria Nadejde, Siva Reddy, Rico Sennrich, Tomasz Dwojak, Marcin Junczys-Dowmunt, Philipp Koehn, Alexandra Birch
+
+**Abstract:** Neural machine translation (NMT) models are able to partially learn syntactic information from sequential lexical information. Still, some complex syntactic phenomena such as prepositional phrase attachment are poorly modeled. This work aims to answer two questions: 1) Does explicitly modeling source or target language syntax help NMT? 2) Is tight integration of words and syntax better than multitask training? We introduce syntactic information in the form of CCG supertags either in the source as an extra feature in the embedding, or in the target, by interleaving the target supertags with the word sequence. Our results on WMT data show that explicitly modeling syntax improves machine translation quality for English-German, a high-resource pair, and for English-Romanian, a low-resource pair and also several syntactic phenomena including prepositional phrase attachment. Furthermore, a tight coupling of words and syntax improves translation quality more than multitask training.
+
+**URL:** https://arxiv.org/abs/1702.01147
+
+**Notes:** NMT with syntax awareness from Philipp Koehn
+
+### Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks
+
+**Authors:** Guy Katz, Clark Barrett, David Dill, Kyle Julian, Mykel Kochenderfer
+
+**Abstract:** Deep neural networks have emerged as a widely used and effective means for tackling complex, real-world problems. However, a major obstacle in applying them to safety-critical systems is the great difficulty in providing formal guarantees about their behavior. We present a novel, scalable, and efficient technique for verifying properties of deep neural networks (or providing counter-examples). The technique is based on the simplex method, extended to handle the non-convex Rectified Linear Unit (ReLU) activation function, which is a crucial ingredient in many modern neural networks. The verification procedure tackles neural networks as a whole, without making any simplifying assumptions. We evaluated our technique on a prototype deep neural network implementation of the next-generation Airborne Collision Avoidance System for unmanned aircraft (ACAS Xu). Results show that our technique can successfully prove properties of networks that are an order of magnitude larger than the largest networks verified using existing methods.
+
+**URL:** https://arxiv.org/abs/1702.01135
+
+**Notes:** SMT based on collision avoidance system that is something new
+
+### Neural Semantic Parsing over Multiple Knowledge-bases
+
+**Authors:** Jonathan Herzig, Jonathan Berant
+
+**Abstract:** A fundamental challenge in developing semantic parsers is the paucity of strong supervision in the form of language utterances annotated with logical form. In this paper, we propose to exploit structural regularities in language in different domains, and train semantic parsers over multiple knowledge-bases (KBs), while sharing information across datasets. We find that we can substantially improve parsing accuracy by training a single sequence-to-sequence model over multiple KBs, when providing an encoding of the domain at decoding time. Our model achieves state-of-the-art performance on the Overnight dataset (containing eight domains), improves performance over a single KB baseline from 75.6% to 79.6%, while obtaining a 7x reduction in the number of model parameters.
+
+**URL:** https://arxiv.org/abs/1702.01569
+
+**Notes:** KBs are generally not my area, but this worth to check out since they propose simplification
+
+### All-but-the-Top: Simple and Effective Postprocessing for Word Representations
+
+**Authors:** Jiaqi Mu, Suma Bhat, Pramod Viswanath
+
+**Abstract:** Real-valued word representations have transformed NLP applications, popular examples are word2vec and GloVe, recognized for their ability to capture linguistic regularities. In this paper, we demonstrate a very simple, and yet counter-intuitive, postprocessing technique — eliminate the common mean vector and a few top dominating directions from the word vectors — that renders off-the-shelf representations even stronger. The postprocessing is empirically validated on a variety of lexical-level intrinsic tasks (word similarity, concept categorization, word analogy) and sentence-level extrinsic tasks (semantic textual similarity) on multiple datasets and with a variety of representation methods and hyperparameter choices in multiple languages, in each case, the processed representations are consistently better than the original ones. Furthermore, we demonstrate quantitatively in downstream applications that neural network architectures "automatically learn" the postprocessing operation.
+
+**URL:** https://arxiv.org/abs/1702.01417
+
+**Notes:** interesting wistle for the word vectors
 
