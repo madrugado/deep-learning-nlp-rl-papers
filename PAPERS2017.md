@@ -54,6 +54,15 @@ Table of Contents
       * [Neural Semantic Parsing over Multiple Knowledge\-bases](#neural-semantic-parsing-over-multiple-knowledge-bases)
       * [All\-but\-the\-Top: Simple and Effective Postprocessing for Word Representations](#all-but-the-top-simple-and-effective-postprocessing-for-word-representations)
       * [Deep Learning With Denamic Computation Graph](#deep-learning-with-denamic-computation-graph)
+      * [A Knowledge\-Grounded Neural Conversation Model](#a-knowledge-grounded-neural-conversation-model)
+      * [Comparative Study of CNN and RNN for Natural Language Processing](#comparative-study-of-cnn-and-rnn-for-natural-language-processing)
+      * [Neural Discourse Structure for Text Categorization](#neural-discourse-structure-for-text-categorization)
+      * [Living a discrete life in a continuous world: Reference with distributed representations](#living-a-discrete-life-in-a-continuous-world-reference-with-distributed-representations)
+      * [Beam Search Strategies for Neural Machine Translation](#beam-search-strategies-for-neural-machine-translation)
+      * [Ensemble Distillation for Neural Machine Translation](#ensemble-distillation-for-neural-machine-translation)
+      * [Multi\-task Coupled Attentions for Category\-specific Aspect and Opinion Terms Co\-extraction](#multi-task-coupled-attentions-for-category-specific-aspect-and-opinion-terms-co-extraction)
+      * [Fast and Accurate Sequence Labeling with Iterated Dilated Convolutions](#fast-and-accurate-sequence-labeling-with-iterated-dilated-convolutions)
+      * [Learning similarity preserving representations with neural similarity encoders](#learning-similarity-preserving-representations-with-neural-similarity-encoders)
 
 Articles
 ========
@@ -548,4 +557,94 @@ Articles
 **URL:** https://openreview.net/pdf?id=ryrGawqex
 
 **Notes:** Fresh paper from DeepMind about TF dynamic batching. HOT!
+
+### A Knowledge-Grounded Neural Conversation Model
+
+**Authors:** Marjan Ghazvininejad, Chris Brockett, Ming-Wei Chang, Bill Dolan, Jianfeng Gao, Wen-tau Yih, Michel Galley
+
+**Abstract:** Neural network models are capable of generating extremely natural sounding conversational interactions. Nevertheless, these models have yet to demonstrate that they can incorporate content in the form of factual information or entity-grounded opinion that would enable them to serve in more task-oriented conversational applications. This paper presents a novel, fully data-driven, and knowledge-grounded neural conversation model aimed at producing more contentful responses without slot filling. We generalize the widely-used Seq2Seq approach by conditioning responses on both conversation history and external "facts", allowing the model to be versatile and applicable in an open-domain setting. Our approach yields significant improvements over a competitive Seq2Seq baseline. Human judges found that our outputs are significantly more informative.
+
+**URL:** https://arxiv.org/abs/1702.01932
+
+**Notes:** seq2seq with external facts
+
+### Comparative Study of CNN and RNN for Natural Language Processing
+
+**Authors:** Wenpeng Yin, Katharina Kann, Mo Yu, Hinrich Schütze
+
+**Abstract:** Deep neural networks (DNN) have revolutionized the field of natural language processing (NLP). Convolutional neural network (CNN) and recurrent neural network (RNN), the two main types of DNN architectures, are widely explored to handle various NLP tasks. CNN is supposed to be good at extracting position-invariant features and RNN at modeling units in sequence. The state of the art on many NLP tasks often switches due to the battle between CNNs and RNNs. This work is the first systematic comparison of CNN and RNN on a wide range of representative NLP tasks, aiming to give basic guidance for DNN selection.
+
+**URL:** https://arxiv.org/abs/1702.01923
+
+**Notes:** comparison of RNN and CNN (LeCun vs Schmidthuber) for NLP, neat!
+
+### Neural Discourse Structure for Text Categorization
+
+**Authors:** Yangfeng Ji, Noah Smith
+
+**Abstract:** We show that discourse structure, as defined by Rhetorical Structure Theory and provided by an existing discourse parser, benefits text categorization. Our approach uses a recursive neural network and a newly proposed attention mechanism to compute a representation of the text that focuses on salient content, from the perspective of both RST and the task. Experiments consider variants of the approach and illustrate its strengths and weaknesses.
+
+**URL:** https://arxiv.org/abs/1702.01829
+
+**Notes:** neural discourse structure
+
+### Living a discrete life in a continuous world: Reference with distributed representations
+
+**Authors:** Gemma Boleda, Sebastian Padó, Nghia The Pham, Marco Baroni
+
+**Abstract:** Reference is the crucial property of language that allows us to connect linguistic expressions to the world. Modeling it requires handling both continuous and discrete aspects of meaning. Data-driven models excel at the former, but struggle with the latter, and the reverse is true for symbolic models. We propose a fully data-driven, end-to-end trainable model that, while operating on continuous multimodal representations, learns to organize them into a discrete-like entity library. We also introduce a referential task to test it, cross-modal tracking. Our model beats standard neural network architectures, but is outperformed by some parametrizations of Memory Networks, another model with external memory.
+
+**URL:** https://arxiv.org/abs/1702.01815
+
+**Notes:** continous representetaions with discrete meanings!
+
+### Beam Search Strategies for Neural Machine Translation
+
+**Authors:** Markus Freitag, Yaser Al-Onaizan
+
+**Abstract:** The basic concept in Neural Machine Translation (NMT) is to train a large Neural Network that maximizes the translation performance on a given parallel corpus. NMT is then using a simple left-to-right beam-search decoder to generate new translations that approximately maximize the trained conditional probability. The current beam search strategy generates the target sentence word by word from left-to- right while keeping a fixed amount of active candidates at each time step. First, this simple search is less adaptive as it also expands candidates whose scores are much worse than the current best. Secondly, it does not expand hypotheses if they are not within the best scoring candidates, even if their scores are close to the best one. The latter one can be avoided by increasing the beam size until no performance improvement can be observed. While you can reach better performance, this has the draw- back of a slower decoding speed. In this paper, we concentrate on speeding up the decoder by applying a more flexible beam search strategy whose candidate size may vary at each time step depending on the candidate scores. We speed up the original decoder by up to 43% for the two language pairs German-English and Chinese-English without losing any translation quality.
+
+**URL:** https://arxiv.org/abs/1702.01806
+
+**Notes:** beam search for NMT
+
+### Ensemble Distillation for Neural Machine Translation
+
+**Authors:** Markus Freitag, Yaser Al-Onaizan, Baskaran Sankaran
+
+**Abstract:** Knowledge distillation describes a method for training a student network to perform better by learning from a stronger teacher network. In this work, we run experiments with different kinds of teacher net- works to enhance the translation performance of a student Neural Machine Translation (NMT) network. We demonstrate techniques based on an ensemble and a best BLEU teacher network. We also show how to benefit from a teacher network that has the same architecture and dimensions of the student network. Further- more, we introduce a data filtering technique based on the dissimilarity between the forward translation (obtained during knowledge distillation) of a given source sentence and its target reference. We use TER to measure dissimilarity. Finally, we show that an ensemble teacher model can significantly reduce the student model size while still getting performance improvements compared to the baseline student network.
+
+**URL:** https://arxiv.org/abs/1702.01802
+
+**Notes:** knowledge distillation for NMT
+
+### Multi-task Coupled Attentions for Category-specific Aspect and Opinion Terms Co-extraction
+
+**Authors:** Wenya Wang, Sinno Jialin Pan, Daniel Dahlmeier
+
+**Abstract:** In aspect-based sentiment analysis, most existing methods either focus on aspect/opinion terms extraction or aspect terms categorization. However, each task by itself only provides partial information to end users. To generate more detailed and structured opinion analysis, we propose a finer-grained problem, which we call category-specific aspect and opinion terms extraction. This problem involves the identification of aspect and opinion terms within each sentence, as well as the categorization of the identified terms. To this end, we propose an end-to-end multi-task attention model, where each task corresponds to aspect/opinion terms extraction for a specific category. Our model benefits from exploring the commonalities and relationships among different tasks to address the data sparsity issue. We demonstrate its state-of-the-art performance on three benchmark datasets.
+
+**URL:** https://arxiv.org/abs/1702.01776
+
+**Notes:** multi-task for opinion extraction
+
+### Fast and Accurate Sequence Labeling with Iterated Dilated Convolutions
+
+**Authors:** Emma Strubell, Patrick Verga, David Belanger, Andrew McCallum
+
+**Abstract:** Bi-directional LSTMs have emerged as a standard method for obtaining per-token vector representations serving as input to various token labeling tasks (whether followed by Viterbi prediction or independent classification). This paper proposes an alternative to Bi-LSTMs for this purpose: iterated dilated convolutional neural networks (ID-CNNs), which have better capacity than traditional CNNs for large context and structured prediction. We describe a distinct combination of network structure, parameter sharing and training procedures that is not only more accurate than Bi-LSTM-CRFs, but also 8x faster at test time on long sequences. Moreover, ID-CNNs with independent classification enable a dramatic 14x test-time speedup, while still attaining accuracy comparable to the Bi-LSTM-CRF. We further demonstrate the ability of ID-CNNs to combine evidence over long sequences by demonstrating their improved accuracy on whole-document (rather than per-sentence) inference. Unlike LSTMs whose sequential processing on sentences of length N requires O(N) time even in the face of parallelism, IDCNNs permit fixed-depth convolutions to run in parallel across entire documents. Today when many companies run basic NLP on the entire web and large-volume traffic, faster methods are paramount to saving time and energy costs.
+
+**URL:** https://arxiv.org/abs/1702.02098
+
+**Notes:** seq labeling with dilated CNNs
+
+### Learning similarity preserving representations with neural similarity encoders
+
+**Authors:** Franziska Horn, Klaus-Robert Müller
+
+**Abstract:** Many dimensionality reduction or manifold learning algorithms optimize for retaining the pairwise similarities, distances, or local neighborhoods of data points. Spectral methods like Kernel PCA (kPCA) or isomap achieve this by computing the singular value decomposition (SVD) of some similarity matrix to obtain a low dimensional representation of the original data. However, this is computationally expensive if a lot of training examples are available and, additionally, representations for new (out-of-sample) data points can only be created when the similarities to the original training examples can be computed. We introduce similarity encoders (SimEc), which learn similarity preserving representations by using a feed-forward neural network to map data into an embedding space where the original similarities can be approximated linearly. The model optimizes the same objective as kPCA but in the process it learns a linear or non-linear embedding function (in the form of the tuned neural network), with which the representations of novel data points can be computed - even if the original pairwise similarities of the training set were generated by an unknown process such as human ratings. By creating embeddings for both image and text datasets, we demonstrate that SimEc can, on the one hand, reach the same solution as spectral methods, and, on the other hand, obtain meaningful embeddings from similarities based on human labels.
+
+**URL:** https://arxiv.org/abs/1702.01824
+
+**Notes:** neural PCA
 
