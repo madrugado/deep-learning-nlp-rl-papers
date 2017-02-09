@@ -63,6 +63,15 @@ Table of Contents
       * [Multi\-task Coupled Attentions for Category\-specific Aspect and Opinion Terms Co\-extraction](#multi-task-coupled-attentions-for-category-specific-aspect-and-opinion-terms-co-extraction)
       * [Fast and Accurate Sequence Labeling with Iterated Dilated Convolutions](#fast-and-accurate-sequence-labeling-with-iterated-dilated-convolutions)
       * [Learning similarity preserving representations with neural similarity encoders](#learning-similarity-preserving-representations-with-neural-similarity-encoders)
+      * [Semi\-Supervised QA with Generative Domain\-Adaptive Nets](#semi-supervised-qa-with-generative-domain-adaptive-nets)
+      * [Trainable Greedy Decoding for Neural Machine Translation](#trainable-greedy-decoding-for-neural-machine-translation)
+      * [Automatic Rule Extraction from Long Short Term Memory Networks](#automatic-rule-extraction-from-long-short-term-memory-networks)
+      * [A Hybrid Convolutional Variational Autoencoder for Text Generation](#a-hybrid-convolutional-variational-autoencoder-for-text-generation)
+      * [Iterative Multi\-document Neural Attention for Multiple Answer Prediction](#iterative-multi-document-neural-attention-for-multiple-answer-prediction)
+      * [Question Answering through Transfer Learning from Large Fine\-grained Supervision Data](#question-answering-through-transfer-learning-from-large-fine-grained-supervision-data)
+      * [Neural Machine Translation with Source\-Side Latent Graph Parsing](#neural-machine-translation-with-source-side-latent-graph-parsing)
+      * [Exploiting Domain Knowledge via Grouped Weight Sharing with Application to Text Categorization](#exploiting-domain-knowledge-via-grouped-weight-sharing-with-application-to-text-categorization)
+      * [How to evaluate word embeddings? On importance of data efficiency and simple supervised tasks](#how-to-evaluate-word-embeddings-on-importance-of-data-efficiency-and-simple-supervised-tasks)
 
 Articles
 ========
@@ -647,4 +656,94 @@ Articles
 **URL:** https://arxiv.org/abs/1702.01824
 
 **Notes:** neural PCA
+
+### Semi-Supervised QA with Generative Domain-Adaptive Nets
+
+**Authors:** Zhilin Yang, Junjie Hu, Ruslan Salakhutdinov, William W. Cohen
+
+**Abstract:** We study the problem of semi-supervised question answering----utilizing unlabeled text to boost the performance of question answering models. We propose a novel training framework, the Generative Domain-Adaptive Nets. In this framework, we train a generative model to generate questions based on the unlabeled text, and combine model-generated questions with human-generated questions for training question answering models. We develop novel domain adaptation algorithms, based on reinforcement learning, to alleviate the discrepancy between the model-generated data distribution and the human-generated data distribution. Experiments show that our proposed framework obtains substantial improvement from unlabeled text.
+
+**URL:** https://arxiv.org/abs/1702.02206
+
+**Notes:** Salakhutdinov's fresh article about QA, domain adaptation
+
+### Trainable Greedy Decoding for Neural Machine Translation
+
+**Authors:** Jiatao Gu, Kyunghyun Cho, Victor O.K. Li
+
+**Abstract:** Recent research in neural machine translation has largely focused on two aspects; neural network architectures and end-to-end learning algorithms. The problem of decoding, however, has received relatively little attention from the research community. In this paper, we solely focus on the problem of decoding given a trained neural machine translation model. Instead of trying to build a new decoding algorithm for any specific decoding objective, we propose the idea of trainable decoding algorithm in which we train a decoding algorithm to find a translation that maximizes an arbitrary decoding objective. More specifically, we design an actor that observes and manipulates the hidden state of the neural machine translation decoder and propose to train it using a variant of deterministic policy gradient. We extensively evaluate the proposed algorithm using four language pairs and two decoding objectives and show that we can indeed train a trainable greedy decoder that generates a better translation (in terms of a target decoding objective) with minimal computational overhead.
+
+**URL:** https://arxiv.org/abs/1702.02429
+
+**Notes:** Cho's fresh article, reconding is really the hurting thing
+
+### Automatic Rule Extraction from Long Short Term Memory Networks
+
+**Authors:** W. James Murdoch, Arthur Szlam
+
+**Abstract:** Although deep learning models have proven effective at solving problems in natural language processing, the mechanism by which they come to their conclusions is often unclear. As a result, these models are generally treated as black boxes, yielding no insight of the underlying learned patterns. In this paper we consider Long Short Term Memory networks (LSTMs) and demonstrate a new approach for tracking the importance of a given input to the LSTM for a given output. By identifying consistently important patterns of words, we are able to distill state of the art LSTMs on sentiment analysis and question answering into a set of representative phrases. This representation is then quantitatively validated by using the extracted phrases to construct a simple, rule-based classifier which approximates the output of the LSTM.
+
+**URL:** https://arxiv.org/abs/1702.02540
+
+**Notes:** rule extraction from RNN is really interesting - could cost a job for a few linguists
+
+### A Hybrid Convolutional Variational Autoencoder for Text Generation
+
+**Authors:** Stanislau Semeniuta, Aliaksei Severyn, Erhardt Barth
+
+**Abstract:** In this paper we explore the effect of architectural choices on learning a Variational Autoencoder (VAE) for text generation. In contrast to the previously introduced VAE model for text where both the encoder and decoder are RNNs, we propose a novel hybrid architecture that blends fully feed-forward convolutional and deconvolutional components with a recurrent language model. Our architecture exhibits several attractive properties such as faster run time and convergence, ability to better handle long sequences and, more importantly, it helps to avoid some of the major difficulties posed by training VAE models on textual data.
+
+**URL:** https://arxiv.org/abs/1702.02390
+
+**Notes:** VAE for texts! with recurrent flavour also
+
+### Iterative Multi-document Neural Attention for Multiple Answer Prediction
+
+**Authors:** Claudio Greco, Alessandro Suglia, Pierpaolo Basile, Gaetano Rossiello, Giovanni Semeraro
+
+**Abstract:** People have information needs of varying complexity, which can be solved by an intelligent agent able to answer questions formulated in a proper way, eventually considering user context and preferences. In a scenario in which the user profile can be considered as a question, intelligent agents able to answer questions can be used to find the most relevant answers for a given user. In this work we propose a novel model based on Artificial Neural Networks to answer questions with multiple answers by exploiting multiple facts retrieved from a knowledge base. The model is evaluated on the factoid Question Answering and top-n recommendation tasks of the bAbI Movie Dialog dataset. After assessing the performance of the model on both tasks, we try to define the long-term goal of a conversational recommender system able to interact using natural language and to support users in their information seeking processes in a personalized way.
+
+**URL:** https://arxiv.org/abs/1702.02367
+
+**Notes:** iterative attention could get more attention
+
+### Question Answering through Transfer Learning from Large Fine-grained Supervision Data
+
+**Authors:** Sewon Min, Minjoon Seo, Hannaneh Hajishirzi
+
+**Abstract:** We show that the task of question answering (QA) can significantly benefit from the transfer learning of models trained on a different large, fine-grained QA dataset. We achieve the state of the art in two well-studied QA datasets, WikiQA and SemEval-2016 (Task 3A), through a basic transfer learning technique from SQuAD. For WikiQA, our model outperforms the previous best model by more than 8%. We demonstrate that finer supervision provides better guidance for learning lexical and syntactic information than coarser supervision, through quantitative results and visual analysis. We also show that a similar transfer learning procedure achieves the state of the art on an entailment task.
+
+**URL:** https://arxiv.org/abs/1702.02171
+
+**Notes:** transfer learning for QA
+
+### Neural Machine Translation with Source-Side Latent Graph Parsing
+
+**Authors:** Kazuma Hashimoto, Yoshimasa Tsuruoka
+
+**Abstract:** This paper presents a novel neural machine translation model which jointly learns translation and source-side latent graph representations of sentences. Unlike existing pipelined approaches using syntactic parsers, our end-to-end model learns a latent graph parser as part of the encoder of an attention-based neural machine translation model, so the parser is optimized according to the translation objective. Experimental results show that our model significantly outperforms the previous best results on the standard English-to-Japanese translation dataset.
+
+**URL:** https://arxiv.org/abs/1702.02265
+
+**Notes:** NMT on graphs - long time dream, one step to it
+
+### Exploiting Domain Knowledge via Grouped Weight Sharing with Application to Text Categorization
+
+**Authors:** Ye Zhang, Matthew Lease, Byron C. Wallace
+
+**Abstract:** A fundamental advantage of neural models for NLP is their ability to learn representations from scratch. However, in practice this often means ignoring existing external linguistic resources, e.g., WordNet or domain specific ontologies such as the Unified Medical Language System (UMLS). We propose a general, novel method for exploiting such resources via weight sharing. Prior work on weight sharing in neural networks has considered it largely as a means of model compression. In contrast, we treat weight sharing as a flexible mechanism for incorporating prior knowledge into neural models. We show that this approach consistently yields improved performance on classification tasks compared to baseline strategies that do not exploit weight sharing.
+
+**URL:** https://arxiv.org/abs/1702.02535
+
+**Notes:** weight sharing for categorization could be interesting
+
+### How to evaluate word embeddings? On importance of data efficiency and simple supervised tasks
+
+**Authors:** Stanisław Jastrzebski, Damian Leśniak, Wojciech Marian Czarnecki
+
+**Abstract:** Maybe the single most important goal of representation learning is making subsequent learning faster. Surprisingly, this fact is not well reflected in the way embeddings are evaluated. In addition, recent practice in word embeddings points towards importance of learning specialized representations. We argue that focus of word representation evaluation should reflect those trends and shift towards evaluating what useful information is easily accessible. Specifically, we propose that evaluation should focus on data efficiency and simple supervised tasks, where the amount of available data is varied and scores of a supervised model are reported for each subset (as commonly done in transfer learning). In order to illustrate significance of such analysis, a comprehensive evaluation of selected word embeddings is presented. Proposed approach yields a more complete picture and brings new insight into performance characteristics, for instance information about word similarity or analogy tends to be non--linearly encoded in the embedding space, which questions the cosine-based, unsupervised, evaluation methods. All results and analysis scripts are available online.
+
+**URL:** https://arxiv.org/abs/1702.02170
+
+**Notes:** evaluation of word emdebbings is really should be grounded, for now it is still open, although virtually everyone is using it
 
