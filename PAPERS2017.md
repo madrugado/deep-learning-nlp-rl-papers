@@ -72,6 +72,8 @@ Table of Contents
       * [Neural Machine Translation with Source\-Side Latent Graph Parsing](#neural-machine-translation-with-source-side-latent-graph-parsing)
       * [Exploiting Domain Knowledge via Grouped Weight Sharing with Application to Text Categorization](#exploiting-domain-knowledge-via-grouped-weight-sharing-with-application-to-text-categorization)
       * [How to evaluate word embeddings? On importance of data efficiency and simple supervised tasks](#how-to-evaluate-word-embeddings-on-importance-of-data-efficiency-and-simple-supervised-tasks)
+      * [Character\-level Deep Conflation for Business Data Analytics](#character-level-deep-conflation-for-business-data-analytics)
+      * [Convolutional Neural Network for Humor Recognition](#convolutional-neural-network-for-humor-recognition)
 
 Articles
 ========
@@ -746,4 +748,24 @@ Articles
 **URL:** https://arxiv.org/abs/1702.02170
 
 **Notes:** evaluation of word emdebbings is really should be grounded, for now it is still open, although virtually everyone is using it
+
+### Character-level Deep Conflation for Business Data Analytics
+
+**Authors:** Zhe Gan, P. D. Singh, Ameet Joshi, Xiaodong He, Jianshu Chen, Jianfeng Gao, Li Deng
+
+**Abstract:** Connecting different text attributes associated with the same entity (conflation) is important in business data analytics since it could help merge two different tables in a database to provide a more comprehensive profile of an entity. However, the conflation task is challenging because two text strings that describe the same entity could be quite different from each other for reasons such as misspelling. It is therefore critical to develop a conflation model that is able to truly understand the semantic meaning of the strings and match them at the semantic level. To this end, we develop a character-level deep conflation model that encodes the input text strings from character level into finite dimension feature vectors, which are then used to compute the cosine similarity between the text strings. The model is trained in an end-to-end manner using back propagation and stochastic gradient descent to maximize the likelihood of the correct association. Specifically, we propose two variants of the deep conflation model, based on long-short-term memory (LSTM) recurrent neural network (RNN) and convolutional neural network (CNN), respectively. Both models perform well on a real-world business analytics dataset and significantly outperform the baseline bag-of-character (BoC) model.
+
+**URL:** https://arxiv.org/abs/1702.02640
+
+**Notes:** character-level semantics, another try
+
+### Convolutional Neural Network for Humor Recognition
+
+**Authors:** Lei Chen, Chong MIn Lee
+
+**Abstract:** For the purpose of automatically evaluating speakers' humor usage, we build a presentation corpus containing humorous utterances based on TED talks. Compared to previous data resources supporting humor recognition research, ours has several advantages, including (a) both positive and negative instances coming from a homogeneous data set, (b) containing a large number of speakers, and (c) being open. Focusing on using lexical cues for humor recognition, we systematically compare a newly emerging text classification method based on Convolutional Neural Networks (CNNs) with a well-established conventional method using linguistic knowledge. The CNN method shows its advantages on both higher recognition accuracies and being able to learn essential features automatically.
+
+**URL:** https://arxiv.org/abs/1702.02584
+
+**Notes:** humor recognition is one of research areas of e.g. OpenAI
 
