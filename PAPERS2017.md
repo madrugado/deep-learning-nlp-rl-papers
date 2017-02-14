@@ -74,6 +74,11 @@ Table of Contents
       * [How to evaluate word embeddings? On importance of data efficiency and simple supervised tasks](#how-to-evaluate-word-embeddings-on-importance-of-data-efficiency-and-simple-supervised-tasks)
       * [Character\-level Deep Conflation for Business Data Analytics](#character-level-deep-conflation-for-business-data-analytics)
       * [Convolutional Neural Network for Humor Recognition](#convolutional-neural-network-for-humor-recognition)
+      * [Parallel Long Short\-Term Memory for Multi\-stream Classification](#parallel-long-short-term-memory-for-multi-stream-classification)
+      * [Batch Policy Gradient Methods for Improving Neural Conversation Models](#batch-policy-gradient-methods-for-improving-neural-conversation-models)
+      * [Offline bilingual word vectors, orthogonal transformations and the inverted softmax](#offline-bilingual-word-vectors-orthogonal-transformations-and-the-inverted-softmax)
+      * [A Morphology\-aware Network for Morphological Disambiguation](#a-morphology-aware-network-for-morphological-disambiguation)
+      * [Learning to Parse and Translate Improves Neural Machine Translation](#learning-to-parse-and-translate-improves-neural-machine-translation)
 
 Articles
 ========
@@ -768,4 +773,54 @@ Articles
 **URL:** https://arxiv.org/abs/1702.02584
 
 **Notes:** humor recognition is one of research areas of e.g. OpenAI
+
+### Parallel Long Short-Term Memory for Multi-stream Classification
+
+**Authors:** Mohamed Bouaziz, Mohamed Morchid, Richard Dufour, Georges Linarès, Renato De Mori
+
+**Abstract:** Recently, machine learning methods have provided a broad spectrum of original and efficient algorithms based on Deep Neural Networks (DNN) to automatically predict an outcome with respect to a sequence of inputs. Recurrent hidden cells allow these DNN-based models to manage long-term dependencies such as Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM). Nevertheless, these RNNs process a single input stream in one (LSTM) or two (Bidirectional LSTM) directions. But most of the information available nowadays is from multistreams or multimedia documents, and require RNNs to process these information synchronously during the training. This paper presents an original LSTM-based architecture, named Parallel LSTM (PLSTM), that carries out multiple parallel synchronized input sequences in order to predict a common output. The proposed PLSTM method could be used for parallel sequence classification purposes. The PLSTM approach is evaluated on an automatic telecast genre sequences classification task and compared with different state-of-the-art architectures. Results show that the proposed PLSTM method outperforms the baseline n-gram models as well as the state-of-the-art LSTM approach.
+
+**URL:** https://arxiv.org/abs/1702.03402
+
+**Notes:** parallel rnns could be very useful
+
+### Batch Policy Gradient Methods for Improving Neural Conversation Models
+
+**Authors:** Kirthevasan Kandasamy, Yoram Bachrach, Ryota Tomioka, Daniel Tarlow, David Carter
+
+**Abstract:** We study reinforcement learning of chatbots with recurrent neural network architectures when the rewards are noisy and expensive to obtain. For instance, a chatbot used in automated customer service support can be scored by quality assurance agents, but this process can be expensive, time consuming and noisy. Previous reinforcement learning work for natural language processing uses on-policy updates and/or is designed for on-line learning settings. We demonstrate empirically that such strategies are not appropriate for this setting and develop an off-policy batch policy gradient method (BPG). We demonstrate the efficacy of our method via a series of synthetic experiments and an Amazon Mechanical Turk experiment on a restaurant recommendations dataset.
+
+**URL:** https://arxiv.org/abs/1702.03334
+
+**Notes:** HOT! offline RL training for chatbots
+
+### Offline bilingual word vectors, orthogonal transformations and the inverted softmax
+
+**Authors:** Samuel L. Smith, David H. P. Turban, Steven Hamblin, Nils Y. Hammerla
+
+**Abstract:** Usually bilingual word vectors are trained "online". Mikolov et al. showed they can also be found "offline", whereby two pre-trained embeddings are aligned with a linear transformation, using dictionaries compiled from expert knowledge. In this work, we prove that the linear transformation between two spaces should be orthogonal. This transformation can be obtained using the singular value decomposition. We introduce a novel "inverted softmax" for identifying translation pairs, with which we improve the precision @1 of Mikolov's original mapping from 34% to 43%, when translating a test set composed of both common and rare English words into Italian. Orthogonal transformations are more robust to noise, enabling us to learn the transformation without expert bilingual signal by constructing a "pseudo-dictionary" from the identical character strings which appear in both languages, achieving 40% precision on the same test set. Finally, we extend our method to retrieve the true translations of English sentences from a corpus of 200k Italian sentences with a precision @1 of 68%.
+
+**URL:** https://arxiv.org/abs/1702.03859
+
+**Notes:** in my experience, we've also encountered the ortho transformations for word vectors
+
+### A Morphology-aware Network for Morphological Disambiguation
+
+**Authors:** Eray Yildiz, Caglar Tirkaz, H. Bahadir Sahin, Mustafa Tolga Eren, Ozan Sonmez
+
+**Abstract:** Agglutinative languages such as Turkish, Finnish and Hungarian require morphological disambiguation before further processing due to the complex morphology of words. A morphological disambiguator is used to select the correct morphological analysis of a word. Morphological disambiguation is important because it generally is one of the first steps of natural language processing and its performance affects subsequent analyses. In this paper, we propose a system that uses deep learning techniques for morphological disambiguation. Many of the state-of-the-art results in computer vision, speech recognition and natural language processing have been obtained through deep learning models. However, applying deep learning techniques to morphologically rich languages is not well studied. In this work, while we focus on Turkish morphological disambiguation we also present results for French and German in order to show that the proposed architecture achieves high accuracy with no language-specific feature engineering or additional resource. In the experiments, we achieve 84.12, 88.35 and 93.78 morphological disambiguation accuracy among the ambiguous words for Turkish, German and French respectively.
+
+**URL:** https://arxiv.org/abs/1702.03654
+
+**Notes:** should have a look for the corpora they used, I have my work on that
+
+### Learning to Parse and Translate Improves Neural Machine Translation
+
+**Authors:** Akiko Eriguchi, Yoshimasa Tsuruoka, Kyunghyun Cho
+
+**Abstract:** There has been relatively little attention to incorporating linguistic prior to neural machine translation. Much of the previous work was further constrained to considering linguistic prior on the source side. In this paper, we propose a hybrid model, called NMT+RG, that learns to parse and translate by combining the recurrent neural network grammar into the attention-based neural machine translation. Our approach encourages the neural machine translation model to incorporate linguistic prior during training, and lets it translate on its own afterward. Extensive experiments with four language pairs show the effectiveness of the proposed NMT+RG.
+
+**URL:** https://arxiv.org/abs/1702.03525
+
+**Notes:** Cho's fresh article about NMT, grammar here is additional net
 
