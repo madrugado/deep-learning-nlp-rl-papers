@@ -294,7 +294,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1603.06127
 
-**Notes:** **Notes:
+ **Notes:**
 
 ### End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF
 
@@ -304,7 +304,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1603.01354
 
-**Notes:** **Notes:
+**Notes:**
 
 ## 2016-07
 ### Representation learning for very short texts using weighted word embedding aggregation
@@ -315,7 +315,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1607.00570
 
-**Notes:** **Notes:
+**Notes:**
 
 ### Recurrent Neural Machine Translation
 
@@ -2390,7 +2390,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1612.08083
 
-**Notes:** the next step in architectures from RNN to CNN, after Socher's semi-RNNs
+**Notes:** the next step in architectures from RNN to CNN, after Socher's semi-RNNs; these guys performed testings on tanh & sigmoid over the convolution, the sigmoid is better; they used up to 13 such layers (conv and gate on top of)
 
 ### A Context-aware Attention Network for Interactive Question Answering
 
