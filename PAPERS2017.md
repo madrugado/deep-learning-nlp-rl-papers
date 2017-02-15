@@ -79,6 +79,7 @@ Table of Contents
       * [Offline bilingual word vectors, orthogonal transformations and the inverted softmax](#offline-bilingual-word-vectors-orthogonal-transformations-and-the-inverted-softmax)
       * [A Morphology\-aware Network for Morphological Disambiguation](#a-morphology-aware-network-for-morphological-disambiguation)
       * [Learning to Parse and Translate Improves Neural Machine Translation](#learning-to-parse-and-translate-improves-neural-machine-translation)
+      * [Exploring loss function topology with cyclical learning rates](#exploring-loss-function-topology-with-cyclical-learning-rates)
 
 Articles
 ========
@@ -823,4 +824,14 @@ Articles
 **URL:** https://arxiv.org/abs/1702.03525
 
 **Notes:** Cho's fresh article about NMT, grammar here is additional net
+
+### Exploring loss function topology with cyclical learning rates
+
+**Authors:** Leslie N. Smith, Nicholay Topin
+
+**Abstract:** We present observations and discussion of previously unreported phenomena discovered while training residual networks. The goal of this work is to better understand the nature of neural networks through the examination of these new empirical results. These behaviors were identified through the application of Cyclical Learning Rates (CLR) and linear network interpolation. Among these behaviors are counterintuitive increases and decreases in training loss and instances of rapid training. For example, we demonstrate how CLR can produce greater testing accuracy than traditional training despite using large learning rates. Files to replicate these results are available at this [URL](https://github.com/lnsmith54/exploring-loss)
+
+**URL:** https://arxiv.org/abs/1702.04283
+
+**Notes:** I've heard, that could allow us to improve results *after* the training is over, intriguing
 
