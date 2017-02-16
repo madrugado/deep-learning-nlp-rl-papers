@@ -80,6 +80,8 @@ Table of Contents
       * [A Morphology\-aware Network for Morphological Disambiguation](#a-morphology-aware-network-for-morphological-disambiguation)
       * [Learning to Parse and Translate Improves Neural Machine Translation](#learning-to-parse-and-translate-improves-neural-machine-translation)
       * [Exploring loss function topology with cyclical learning rates](#exploring-loss-function-topology-with-cyclical-learning-rates)
+      * [Frustratingly Short Attention Spans in Neural Language Modeling](#frustratingly-short-attention-spans-in-neural-language-modeling)
+      * [A Dependency\-Based Neural Reordering Model for Statistical Machine Translation](#a-dependency-based-neural-reordering-model-for-statistical-machine-translation)
 
 Articles
 ========
@@ -834,4 +836,24 @@ Articles
 **URL:** https://arxiv.org/abs/1702.04283
 
 **Notes:** I've heard, that could allow us to improve results *after* the training is over, intriguing
+
+### Frustratingly Short Attention Spans in Neural Language Modeling
+
+**Authors:** Michał Daniluk, Tim Rocktäschel, Johannes Welbl, Sebastian Riedel
+
+**Abstract:** Neural language models predict the next token using a latent representation of the immediate token history. Recently, various methods for augmenting neural language models with an attention mechanism over a differentiable memory have been proposed. For predicting the next token, these models query information from a memory of the recent history which can facilitate learning mid- and long-range dependencies. However, conventional attention mechanisms used in memory-augmented neural language models produce a single output vector per time step. This vector is used both for predicting the next token as well as for the key and value of a differentiable memory of a token history. In this paper, we propose a neural language model with a key-value attention mechanism that outputs separate representations for the key and value of a differentiable memory, as well as for encoding the next-word distribution. This model outperforms existing memory-augmented neural language models on two corpora. Yet, we found that our method mainly utilizes a memory of the five most recent output representations. This led to the unexpected main finding that a much simpler model based only on the concatenation of recent output representations from previous time steps is on par with more sophisticated memory-augmented neural language models.
+
+**URL:** https://arxiv.org/abs/1702.04521
+
+**Notes:** attention is said to be a sot of memory, and short memory is surprise for language modeling
+
+### A Dependency-Based Neural Reordering Model for Statistical Machine Translation
+
+**Authors:** Christian Hadiwinoto, Hwee Tou Ng
+
+**Abstract:** In machine translation (MT) that involves translating between two languages with significant differences in word order, determining the correct word order of translated words is a major challenge. The dependency parse tree of a source sentence can help to determine the correct word order of the translated words. In this paper, we present a novel reordering approach utilizing a neural network and dependency-based embeddings to predict whether the translations of two source words linked by a dependency relation should remain in the same order or should be swapped in the translated sentence. Experiments on Chinese-to-English translation show that our approach yields a statistically significant improvement of 0.57 BLEU point on benchmark NIST test sets, compared to our prior state-of-the-art statistical MT system that uses sparse dependency-based reordering features.
+
+**URL:** https://arxiv.org/abs/1702.04510
+
+**Notes:** dependency-based approach for NMT
 
