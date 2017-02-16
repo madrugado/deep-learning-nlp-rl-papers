@@ -13,6 +13,8 @@ Table of Contents
     * [2016\-05](#2016-05)
       * [Sentence Pair Scoring: Towards Unified Framework for Text Comprehension](#sentence-pair-scoring-towards-unified-framework-for-text-comprehension)
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
+    * [2016\-06](#2016-06)
+      * [End\-to\-end LSTM\-based dialog control optimized with supervised and reinforcement learning](#end-to-end-lstm-based-dialog-control-optimized-with-supervised-and-reinforcement-learning)
     * [2016\-07](#2016-07)
       * [Representation learning for very short texts using weighted word embedding aggregation](#representation-learning-for-very-short-texts-using-weighted-word-embedding-aggregation)
       * [Recurrent Neural Machine Translation](#recurrent-neural-machine-translation)
@@ -294,7 +296,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1603.06127
 
- **Notes:**
+**Notes:**
 
 ### End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF
 
@@ -305,6 +307,17 @@ Articles
 **URL:** https://arxiv.org/abs/1603.01354
 
 **Notes:**
+
+## 2016-06
+### End-to-end LSTM-based dialog control optimized with supervised and reinforcement learning
+
+**Authors:** Jason D. Williams, Geoffrey Zweig
+
+**Abstract:** This paper presents a model for end-to-end learning of task-oriented dialog systems. The main component of the model is a recurrent neural network (an LSTM), which maps from raw dialog history directly to a distribution over system actions. The LSTM automatically infers a representation of dialog history, which relieves the system developer of much of the manual feature engineering of dialog state. In addition, the developer can provide software that expresses business rules and provides access to programmatic APIs, enabling the LSTM to take actions in the real world on behalf of the user. The LSTM can be optimized using supervised learning (SL), where a domain expert provides example dialogs which the LSTM should imitate; or using reinforcement learning (RL), where the system improves by interacting directly with end users. Experiments show that SL and RL are complementary: SL alone can derive a reasonable initial policy from a small number of training dialogs; and starting RL optimization with a policy trained with SL substantially accelerates the learning rate of RL.
+
+**URL:** https://arxiv.org/abs/1606.01269
+
+**Notes:** SL/RL joint approach to make a dialog system, state is stored in LSTM, and actions (like in slot-systems) are chosen by RL-agent; active learning
 
 ## 2016-07
 ### Representation learning for very short texts using weighted word embedding aggregation
