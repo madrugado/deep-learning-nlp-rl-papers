@@ -82,6 +82,7 @@ Table of Contents
       * [Exploring loss function topology with cyclical learning rates](#exploring-loss-function-topology-with-cyclical-learning-rates)
       * [Frustratingly Short Attention Spans in Neural Language Modeling](#frustratingly-short-attention-spans-in-neural-language-modeling)
       * [A Dependency\-Based Neural Reordering Model for Statistical Machine Translation](#a-dependency-based-neural-reordering-model-for-statistical-machine-translation)
+      * [Training Language Models Using Target\-Propagation](#training-language-models-using-target-propagation)
 
 Articles
 ========
@@ -856,4 +857,14 @@ Articles
 **URL:** https://arxiv.org/abs/1702.04510
 
 **Notes:** dependency-based approach for NMT
+
+### Training Language Models Using Target-Propagation
+
+**Authors:** Sam Wiseman, Sumit Chopra, Marc'Aurelio Ranzato, Arthur Szlam, Ruoyu Sun, Soumith Chintala, Nicolas Vasilache
+
+**Abstract:** While Truncated Back-Propagation through Time (BPTT) is the most popular approach to training Recurrent Neural Networks (RNNs), it suffers from being inherently sequential (making parallelization difficult) and from truncating gradient flow between distant time-steps. We investigate whether Target Propagation (TPROP) style approaches can address these shortcomings. Unfortunately, extensive experiments suggest that TPROP generally underperforms BPTT, and we end with an analysis of this phenomenon, and suggestions for future work.
+
+**URL:** https://arxiv.org/abs/1702.04770
+
+**Notes:** the people tried to reinvent backprop for the RNNs and failed; praise them for sharing this experience
 
