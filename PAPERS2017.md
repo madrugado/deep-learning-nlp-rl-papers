@@ -83,6 +83,18 @@ Table of Contents
       * [Frustratingly Short Attention Spans in Neural Language Modeling](#frustratingly-short-attention-spans-in-neural-language-modeling)
       * [A Dependency\-Based Neural Reordering Model for Statistical Machine Translation](#a-dependency-based-neural-reordering-model-for-statistical-machine-translation)
       * [Training Language Models Using Target\-Propagation](#training-language-models-using-target-propagation)
+      * [Latent Variable Dialogue Models and their Diversity](#latent-variable-dialogue-models-and-their-diversity)
+      * [Reproducing and learning new algebraic operations on word embeddings using genetic programming](#reproducing-and-learning-new-algebraic-operations-on-word-embeddings-using-genetic-programming)
+      * [soc2seq: Social Embedding meets Conversation Model](#soc2seq-social-embedding-meets-conversation-model)
+      * [An Attention\-Based Deep Net for Learning to Rank](#an-attention-based-deep-net-for-learning-to-rank)
+      * [Collaborative Deep Reinforcement Learning](#collaborative-deep-reinforcement-learning)
+      * [Learning to Repeat: Fine Grained Action Repetition for Deep Reinforcement Learning](#learning-to-repeat-fine-grained-action-repetition-for-deep-reinforcement-learning)
+      * [Collaborative Deep Reinforcement Learning for Joint Object Search](#collaborative-deep-reinforcement-learning-for-joint-object-search)
+      * [Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks](#cosine-normalization-using-cosine-similarity-instead-of-dot-product-in-neural-networks)
+      * [On Loss Functions for Deep Neural Networks in Classification](#on-loss-functions-for-deep-neural-networks-in-classification)
+      * [Dataset Augmentation in Feature Space](#dataset-augmentation-in-feature-space)
+      * [An Extended Framework for Marginalized Domain Adaptation](#an-extended-framework-for-marginalized-domain-adaptation)
+      * [Revisiting Perceptron: Efficient and Label\-Optimal Active Learning of Halfspaces](#revisiting-perceptron-efficient-and-label-optimal-active-learning-of-halfspaces)
 
 Articles
 ========
@@ -867,4 +879,124 @@ Articles
 **URL:** https://arxiv.org/abs/1702.04770
 
 **Notes:** the people tried to reinvent backprop for the RNNs and failed; praise them for sharing this experience
+
+### Latent Variable Dialogue Models and their Diversity
+
+**Authors:** Kris Cao, Stephen Clark
+
+**Abstract:** We present a dialogue generation model that directly captures the variability in possible responses to a given input, which reduces the `boring output' issue of deterministic dialogue models. Experiments show that our model generates more diverse outputs than baseline models, and also generates more consistently acceptable output than sampling from a deterministic encoder-decoder model.
+
+**URL:** https://arxiv.org/abs/1702.05962
+
+**Notes:** hidden variable adaptation to dialog generation
+
+### Reproducing and learning new algebraic operations on word embeddings using genetic programming
+
+**Authors:** Roberto Santana
+
+**Abstract:** Word-vector representations associate a high dimensional real-vector to every word from a corpus. Recently, neural-network based methods have been proposed for learning this representation from large corpora. This type of word-to-vector embedding is able to keep, in the learned vector space, some of the syntactic and semantic relationships present in the original word corpus. This, in turn, serves to address different types of language classification tasks by doing algebraic operations defined on the vectors. The general practice is to assume that the semantic relationships between the words can be inferred by the application of a-priori specified algebraic operations. Our general goal in this paper is to show that it is possible to learn methods for word composition in semantic spaces. Instead of expressing the compositional method as an algebraic operation, we will encode it as a program, which can be linear, nonlinear, or involve more intricate expressions. More remarkably, this program will be evolved from a set of initial random programs by means of genetic programming (GP). We show that our method is able to reproduce the same behavior as human-designed algebraic operators. Using a word analogy task as benchmark, we also show that GP-generated programs are able to obtain accuracy values above those produced by the commonly used human-designed rule for algebraic manipulation of word vectors. Finally, we show the robustness of our approach by executing the evolved programs on the word2vec GoogleNews vectors, learned over 3 billion running words, and assessing their accuracy in the same word analogy task.
+
+**URL:** https://arxiv.org/abs/1702.05624
+
+**Notes:** the genetic algorithms for word embeddings inquiry that's a fresh view: the author creates the algorithm with basic operations on word embeddings
+
+### soc2seq: Social Embedding meets Conversation Model
+
+**Authors:** Parminder Bhatia, Marsal Gavalda, Arash Einolghozati
+
+**Abstract:** While liking or upvoting a post on a mobile app is easy to do, replying with a written note is much more difficult, due to both the cognitive load of coming up with a meaningful response as well as the mechanics of entering the text. Here we present a novel textual reply generation model that goes beyond the current auto-reply and predictive text entry models by taking into account the content preferences of the user, the idiosyncrasies of their conversational style, and even the structure of their social graph. Specifically, we have developed two types of models for personalized user interactions: a content-based conversation model, which makes use of location together with user information, and a social-graph-based conversation model, which combines content-based conversation models with social graphs.
+
+**URL:** https://arxiv.org/abs/1702.05512
+
+**Notes:** promo-article of Yak-Yak guys, pretty interesting: they combined persona-based style, location, social graph embeddings to produce possible answers for social networks
+
+### An Attention-Based Deep Net for Learning to Rank
+
+**Authors:** Baiyang Wang, Diego Klabjan
+
+**Abstract:** In information retrieval, learning to rank constructs a machine-based ranking model which given a query, sorts the search results by their degree of relevance or importance to the query. Neural networks have been successfully applied to this problem, and in this paper, we propose an attention-based deep neural network which better incorporates different embeddings of the queries and search results with an attention-based mechanism. This model also applies a decoder mechanism to learn the ranks of the search results in a listwise fashion. The embeddings are trained with convolutional neural networks or the word2vec model. We demonstrate the performance of this model with image retrieval and text querying data sets.
+
+**URL:** https://arxiv.org/abs/1702.06106
+
+**Notes:** attention applied to LtR NNs
+
+### Collaborative Deep Reinforcement Learning
+
+**Authors:** Kaixiang Lin, Shu Wang, Jiayu Zhou
+
+**Abstract:** Besides independent learning, human learning process is highly improved by summarizing what has been learned, communicating it with peers, and subsequently fusing knowledge from different sources to assist the current learning goal. This collaborative learning procedure ensures that the knowledge is shared, continuously refined, and concluded from different perspectives to construct a more profound understanding. The idea of knowledge transfer has led to many advances in machine learning and data mining, but significant challenges remain, especially when it comes to reinforcement learning, heterogeneous model structures, and different learning tasks. Motivated by human collaborative learning, in this paper we propose a collaborative deep reinforcement learning (CDRL) framework that performs adaptive knowledge transfer among heterogeneous learning agents. Specifically, the proposed CDRL conducts a novel deep knowledge distillation method to address the heterogeneity among different learning tasks with a deep alignment network. Furthermore, we present an efficient collaborative Asynchronous Advantage Actor-Critic (cA3C) algorithm to incorporate deep knowledge distillation into the online training of agents, and demonstrate the effectiveness of the CDRL framework using extensive empirical evaluation on OpenAI gym.
+
+**URL:** https://arxiv.org/abs/1702.05796
+
+**Notes:** guys're using knowledge distillation for collaboration; also really strange: it seems that this paper is in proceedings of ACL Woodstock 1997 conference, which is very unlikely to me
+
+### Learning to Repeat: Fine Grained Action Repetition for Deep Reinforcement Learning
+
+**Authors:** Sahil Sharma, Aravind S. Lakshminarayanan, Balaraman Ravindran
+
+**Abstract:** Reinforcement Learning algorithms can learn complex behavioral patterns for sequential decision making tasks wherein an agent interacts with an environment and acquires feedback in the form of rewards sampled from it. Traditionally, such algorithms make decisions, i.e., select actions to execute, at every single time step of the agent-environment interactions. In this paper, we propose a novel framework, Fine Grained Action Repetition (FiGAR), which enables the agent to decide the action as well as the time scale of repeating it. FiGAR can be used for improving any Deep Reinforcement Learning algorithm which maintains an explicit policy estimate by enabling temporal abstractions in the action space. We empirically demonstrate the efficacy of our framework by showing performance improvements on top of three policy search algorithms in different domains: Asynchronous Advantage Actor Critic in the Atari 2600 domain, Trust Region Policy Optimization in Mujoco domain and Deep Deterministic Policy Gradients in the TORCS car racing domain.
+
+**URL:** https://arxiv.org/abs/1702.06054
+
+**Notes:** action repetition on almost every SotA algo in RL
+
+### Collaborative Deep Reinforcement Learning for Joint Object Search
+
+**Authors:** Xiangyu Kong, Bo Xin, Yizhou Wang, Gang Hua
+
+**Abstract:** We examine the problem of joint top-down active search of multiple objects under interaction, e.g., person riding a bicycle, cups held by the table, etc.. Such objects under interaction often can provide contextual cues to each other to facilitate more efficient search. By treating each detector as an agent, we present the first collaborative multi-agent deep reinforcement learning algorithm to learn the optimal policy for joint active object localization, which effectively exploits such beneficial contextual information. We learn inter-agent communication through cross connections with gates between the Q-networks, which is facilitated by a novel multi-agent deep Q-learning algorithm with joint exploitation sampling. We verify our proposed method on multiple object detection benchmarks. Not only does our model help to improve the performance of state-of-the-art active localization models, it also reveals interesting co-detection patterns that are intuitively interpretable.
+
+**URL:** https://arxiv.org/abs/1702.05573
+
+**Notes:** gated cross-connections between networks with different experience, some kind of knowledge distillation in my opinion
+
+### Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks
+
+**Authors:** Luo Chunjie, Zhan jianfeng, Wang lei, Yang Qiang
+
+**Abstract:** Traditionally, multi-layer neural networks use dot product between the output vector of previous layer and the incoming weight vector as the input to activation function. The result of dot product is unbounded, thus causes large variance. Large variance makes the model sensitive to the change of input distribution, thus results in bad generalization and aggravates the internal covariate shift. To bound dot product, we propose to use cosine similarity instead of dot product in neural network, which we call cosine normalization. Experiments show that cosine normalization in fully connected neural networks can reduce the test err with lower divergence compared with other normalization techniques. Applied to convolutional networks, cosine normalization also significantly enhances the accuracy of classification.
+
+**URL:** https://arxiv.org/abs/1702.05870
+
+**Notes:** these guys are saying that cosine normalization is better (in a way) than batch-norm - on MNIST, but that could be useful knowledge
+
+### On Loss Functions for Deep Neural Networks in Classification
+
+**Authors:** Katarzyna Janocha, Wojciech Marian Czarnecki
+
+**Abstract:** Deep neural networks are currently among the most commonly used classifiers. Despite easily achieving very good performance, one of the best selling points of these models is their modular design - one can conveniently adapt their architecture to specific needs, change connectivity patterns, attach specialised layers, experiment with a large amount of activation functions, normalisation schemes and many others. While one can find impressively wide spread of various configurations of almost every aspect of the deep nets, one element is, in authors' opinion, underrepresented - while solving classification problems, vast majority of papers and applications simply use log loss. In this paper we try to investigate how particular choices of loss functions affect deep models and their learning dynamics, as well as resulting classifiers robustness to various effects. We perform experiments on classical datasets, as well as provide some additional, theoretical insights into the problem. In particular we show that L1 and L2 losses are, quite surprisingly, justified classification objectives for deep nets, by providing probabilistic interpretation in terms of expected misclassification. We also introduce two losses which are not typically used as deep nets objectives and show that they are viable alternatives to the existing ones.
+
+**URL:** https://arxiv.org/abs/1702.05659
+
+**Notes:** most widely-used losses comparison, very nice
+
+### Dataset Augmentation in Feature Space
+
+**Authors:** Terrance DeVries, Graham W. Taylor
+
+**Abstract:** Dataset augmentation, the practice of applying a wide array of domain-specific transformations to synthetically expand a training set, is a standard tool in supervised learning. While effective in tasks such as visual recognition, the set of transformations must be carefully designed, implemented, and tested for every new domain, limiting its re-use and generality. In this paper, we adopt a simpler, domain-agnostic approach to dataset augmentation. We start with existing data points and apply simple transformations such as adding noise, interpolating, or extrapolating between them. Our main insight is to perform the transformation not in input space, but in a learned feature space. A re-kindling of interest in unsupervised representation learning makes this technique timely and more effective. It is a simple proposal, but to-date one that has not been tested empirically. Working in the space of context vectors generated by sequence-to-sequence models, we demonstrate a technique that is effective for both static and sequential data.
+
+**URL:** https://arxiv.org/abs/1702.05538
+
+**Notes:** augmentation in feature space - interesting, could be used when we have already trained net (say, AlexNet) and relatively few data
+
+### An Extended Framework for Marginalized Domain Adaptation
+
+**Authors:** Gabriela Csurka, Boris Chidlovski, Stephane Clinchant, Sophia Michel
+
+**Abstract:** We propose an extended framework for marginalized domain adaptation, aimed at addressing unsupervised, supervised and semi-supervised scenarios. We argue that the denoising principle should be extended to explicitly promote domain-invariant features as well as help the classification task. Therefore we propose to jointly learn the data auto-encoders and the target classifiers. First, in order to make the denoised features domain-invariant, we propose a domain regularization that may be either a domain prediction loss or a maximum mean discrepancy between the source and target data. The noise marginalization in this case is reduced to solving the linear matrix system AX=B which has a closed-form solution. Second, in order to help the classification, we include a class regularization term. Adding this component reduces the learning problem to solving a Sylvester linear matrix equation AX+BX=C, for which an efficient iterative procedure exists as well. We did an extensive study to assess how these regularization terms improve the baseline performance in the three domain adaptation scenarios and present experimental results on two image and one text benchmark datasets, conventionally used for validating domain adaptation methods. We report our findings and comparison with state-of-the-art methods.
+
+**URL:** https://arxiv.org/abs/1702.05993
+
+**Notes:** additional loss for transfer learning, some improvement are actually shown
+
+### Revisiting Perceptron: Efficient and Label-Optimal Active Learning of Halfspaces
+
+**Authors:** Songbai Yan, Chicheng Zhang
+
+**Abstract:** It has been a long-standing problem to efficiently learn a linear separator using as few labels as possible. In this work, we propose an efficient perceptron-based algorithm for actively learning homogeneous linear separators under uniform distribution. Under bounded noise, where each label is flipped with probability at most η, our algorithm achieves near-optimal $O~(frac{d}{(1−2η)^2}log(frac{1}{ϵ}))$ label complexity in time $O~(frac{d^2}{ϵ(1−2η)^2})$, and significantly improves over the best known result (Awasthi et al., 2016). Under adversarial noise, where at most ν fraction of labels can be flipped, our algorithm achieves near-optimal $O~(log(frac{1}{ϵ}))$ label complexity in time $O~(frac{d^2}{ϵ})$, which is better than the best known label complexity and time complexity in Awasthi et al. (2014).
+
+**URL:** https://arxiv.org/abs/1702.05581
+
+**Notes:** active learning of perceptron, so 50-s and so 2000-s at the same time
 
