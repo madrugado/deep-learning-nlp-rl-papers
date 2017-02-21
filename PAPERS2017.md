@@ -808,7 +808,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1702.03334
 
-**Notes:** HOT! offline RL training for chatbots
+**Notes:** offline RL training for chatbots; these guys have invented batch RL approach, very helpful in NLP, also they used importance sampling for more graduate parameter update
 
 ### Offline bilingual word vectors, orthogonal transformations and the inverted softmax
 
