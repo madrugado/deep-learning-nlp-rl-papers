@@ -95,6 +95,7 @@ Table of Contents
       * [Dataset Augmentation in Feature Space](#dataset-augmentation-in-feature-space)
       * [An Extended Framework for Marginalized Domain Adaptation](#an-extended-framework-for-marginalized-domain-adaptation)
       * [Revisiting Perceptron: Efficient and Label\-Optimal Active Learning of Halfspaces](#revisiting-perceptron-efficient-and-label-optimal-active-learning-of-halfspaces)
+      * [Distributed Second\-Order Optimization Using Kronecker\-Factored Approximations](#distributed-second-order-optimization-using-kronecker-factored-approximations)
 
 Articles
 ========
@@ -999,4 +1000,14 @@ Articles
 **URL:** https://arxiv.org/abs/1702.05581
 
 **Notes:** active learning of perceptron, so 50-s and so 2000-s at the same time
+
+### Distributed Second-Order Optimization Using Kronecker-Factored Approximations
+
+**Authors:** Jimmy Ba, Roger Grosse, James Martens
+
+**Abstract:** As more computational resources become available, machine learning researchers train ever larger neural networks on millions of data points using stochastic gradient descent (SGD). Although SGD scales well in terms of both the size of dataset and the number of parameters of the model, it has rapidly diminishing returns as parallel computing resources increase. Second-order optimization methods have an affinity for well-estimated gradients and large mini-batches, and can therefore benefit much more from parallel computation in principle. Unfortunately, they often employ severe approximations to the curvature matrix in order to scale to large models with millions of parameters, limiting their effectiveness in practice versus well-tuned SGD with momentum. The recently proposed K-FAC method (Martens and Grosse, 2015) uses a stronger and more sophisticated curvature approximation, and has been shown to make much more per-iteration progress than SGD, while only introducing a modest overhead. In this paper, we develop a version of K-FAC that distributes the computation of gradients and additional quantities required by K-FAC across multiple machines, thereby taking advantage of the method’s superior scaling to large mini-batches and mitigating its additional overheads. We provide a Tensorflow implementation of our approach which is easy to use and can be applied to many existing codebases without modification. Additionally, we develop several algorithmic enhancements to K-FAC which can improve its computational performance for very large models. Finally, we show that our distributed K-FAC method speeds up training of various state-of-the-art ImageNet classification models by a factor of two compared to an improved form of Batch Normalization (Ioffe and Szegedy, 2015).
+
+**URL:** https://jimmylba.github.io/papers/nsync.pdf
+
+**Notes:** Optimisation which makes nets 50% faster, wow. The second-orders pastly haven't been used due to complexity and seeming slowness.
 
