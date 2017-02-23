@@ -96,6 +96,7 @@ Table of Contents
       * [An Extended Framework for Marginalized Domain Adaptation](#an-extended-framework-for-marginalized-domain-adaptation)
       * [Revisiting Perceptron: Efficient and Label\-Optimal Active Learning of Halfspaces](#revisiting-perceptron-efficient-and-label-optimal-active-learning-of-halfspaces)
       * [Distributed Second\-Order Optimization Using Kronecker\-Factored Approximations](#distributed-second-order-optimization-using-kronecker-factored-approximations)
+      * [Mimicking Ensemble Learning with Deep Branched Networks](#mimicking-ensemble-learning-with-deep-branched-networks)
 
 Articles
 ========
@@ -1010,4 +1011,14 @@ Articles
 **URL:** https://jimmylba.github.io/papers/nsync.pdf
 
 **Notes:** Optimisation which makes nets 50% faster, wow. The second-orders pastly haven't been used due to complexity and seeming slowness.
+
+### Mimicking Ensemble Learning with Deep Branched Networks
+
+**Authors:** Byungju Kim, Youngsoo Kim, Yeakang Lee, Junmo Kim
+
+**Abstract:** This paper proposes a branched residual network for image classification. It is known that high-level features of deep neural network are more representative than lower-level features. By sharing the low-level features, the network can allocate more memory to high-level features. The upper layers of our proposed network are branched, so that it mimics the ensemble learning. By mimicking ensemble learning with single network, we have achieved better performance on ImageNet classification task.
+
+**URL:** https://arxiv.org/abs/1702.06376
+
+**Notes:** really short paper from KAIST, about branching in resnets
 
