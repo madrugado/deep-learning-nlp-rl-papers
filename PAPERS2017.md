@@ -38,6 +38,7 @@ Table of Contents
       * [Wasserstein GAN](#wasserstein-gan)
       * [Reinforced backpropagation improves test performance of deep networks: a toy\-model study](#reinforced-backpropagation-improves-test-performance-of-deep-networks-a-toy-model-study)
       * [CommAI: Evaluating the first steps towards a useful general AI](#commai-evaluating-the-first-steps-towards-a-useful-general-ai)
+      * [Deep Reinforcement Learning: An Overview](#deep-reinforcement-learning-an-overview)
     * [2017\-02](#2017-02)
       * [Low\-Dose CT with a Residual Encoder\-Decoder Convolutional Neural Network (RED\-CNN)](#low-dose-ct-with-a-residual-encoder-decoder-convolutional-neural-network-red-cnn)
       * [On orthogonality and learning recurrent networks with long term dependencies](#on-orthogonality-and-learning-recurrent-networks-with-long-term-dependencies)
@@ -103,6 +104,7 @@ Table of Contents
       * [Context\-Aware Prediction of Derivational Word\-forms](#context-aware-prediction-of-derivational-word-forms)
       * [Tackling Error Propagation through Reinforcement Learning: A Case of Greedy Dependency Parsing](#tackling-error-propagation-through-reinforcement-learning-a-case-of-greedy-dependency-parsing)
       * [Active One\-shot Learning](#active-one-shot-learning)
+    * [2017\-03](#2017-03)
 
 Articles
 ========
@@ -446,6 +448,16 @@ Articles
 **URL:** https://arxiv.org/abs/1701.08954
 
 **Notes:** Fresh article from Mikolov about actual path to general AI.
+
+### Deep Reinforcement Learning: An Overview
+
+**Authors:** Yuxi Li
+
+**Abstract:** We give an overview of recent exciting achievements of deep reinforcement learning (RL). We start with background of deep learning and reinforcement learning, as well as introduction of testbeds. Next we discuss Deep Q-Network (DQN) and its extensions, asynchronous methods, policy optimization, reward, and planning. After that, we talk about attention and memory, unsupervised learning, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, spoken dialogue systems (a.k.a. chatbot), machine translation, text sequence prediction, neural architecture design, personalized web services, healthcare, finance, and music generation. We mention topics/papers not reviewed yet. After listing a collection of RL resources, we close with discussions.
+
+**URL:** https://arxiv.org/abs/1701.07274
+
+**Notes:** RL overview, including dialog systems
 
 ## 2017-02
 ### Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)
@@ -1088,3 +1100,4 @@ Articles
 
 **Notes:** RL approach (action-value) applied to active learning
 
+## 2017-03
