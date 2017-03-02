@@ -3,6 +3,8 @@ Table of Contents
 =================
 
   * [Articles](#articles)
+    * [2013](#2013)
+      * [Concurrent Reinforcement Learning from Customer Interactions\.](#concurrent-reinforcement-learning-from-customer-interactions)
     * [2014\-02](#2014-02)
       * [A Clockwork RNN](#a-clockwork-rnn)
     * [2015\-11](#2015-11)
@@ -244,6 +246,17 @@ Table of Contents
 
 Articles
 ========
+## 2013
+### Concurrent Reinforcement Learning from Customer Interactions.
+
+**Authors:** D Silver, L Newnham, D Barker, S Weller, J McFall
+
+**Abstract:** Abstract In this paper, we explore applications in which a company interacts concurrently with many customers. The company has an objective function, such as maximising revenue, customer satisfaction, or customer loyalty, which depends primarily on the sequence of interactions between company and customer. A key aspect of this setting is that interactions with different customers occur in parallel. As a result, it is imperative to learn online from partial interaction sequences, so that information acquired from one customer is efficiently assimilated and applied in subsequent interactions with other customers. We present the first framework for concurrent reinforcement learning, using a variant of temporal-difference learning to learn efficiently from partial interaction sequences. We evaluate our algorithms in two largescale test-beds for online and email interaction respectively, generated from a database of 300,000 customer records.
+
+**URL:** http://www.jmlr.org/proceedings/papers/v28/silver13.pdf
+
+**Notes:** Old paper from Silver about RL in practice.
+
 ## 2014-02
 ### A Clockwork RNN
 
