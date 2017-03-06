@@ -104,7 +104,11 @@ Table of Contents
       * [Context\-Aware Prediction of Derivational Word\-forms](#context-aware-prediction-of-derivational-word-forms)
       * [Tackling Error Propagation through Reinforcement Learning: A Case of Greedy Dependency Parsing](#tackling-error-propagation-through-reinforcement-learning-a-case-of-greedy-dependency-parsing)
       * [Active One\-shot Learning](#active-one-shot-learning)
+      * [The Shattered Gradients Problem: If resnets are the answer, then what is the question?](#the-shattered-gradients-problem-if-resnets-are-the-answer-then-what-is-the-question)
+      * [Deep Clustering using Auto\-Clustering Output Layer](#deep-clustering-using-auto-clustering-output-layer)
     * [2017\-03](#2017-03)
+      * [End\-to\-End Task\-Completion Neural Dialogue Systems](#end-to-end-task-completion-neural-dialogue-systems)
+      * [Controllable Text Generation](#controllable-text-generation)
 
 Articles
 ========
@@ -1100,4 +1104,44 @@ Articles
 
 **Notes:** RL approach (action-value) applied to active learning
 
+### The Shattered Gradients Problem: If resnets are the answer, then what is the question?
+
+**Authors:** David Balduzzi, Marcus Frean, Lennox Leary, JP Lewis, Kurt Wan-Duo Ma, Brian McWilliams
+
+**Abstract:** A long-standing obstacle to progress in deep learning is the problem of vanishing and exploding gradients. The problem has largely been overcome through the introduction of carefully constructed initializations and batch normalization. Nevertheless, architectures incorporating skip-connections such as resnets perform much better than standard feedforward architectures despite well-chosen initialization and batch normalization. In this paper, we identify the shattered gradients problem. Specifically, we show that the correlation between gradients in standard feedforward networks decays exponentially with depth resulting in gradients that resemble white noise. In contrast, the gradients in architectures with skip-connections are far more resistant to shattering decaying sublinearly. Detailed empirical evidence is presented in support of the analysis, on both fully-connected networks and convnets. Finally, we present a new "looks linear" (LL) initialization that prevents shattering. Preliminary experiments show the new initialization allows to train very deep networks without the addition of skip-connections.
+
+**URL:** https://arxiv.org/abs/1702.08591
+
+**Notes:** report on resnets and vanishing gradients
+
+### Deep Clustering using Auto-Clustering Output Layer
+
+**Authors:** Ozsel Kilinc, Ismail Uysal
+
+**Abstract:** In this paper, we propose a novel method to enrich the representation provided to the output layer of feedforward neural networks in the form of an auto-clustering output layer (ACOL) which enables the network to naturally create sub-clusters under the provided main class la- bels. In addition, a novel regularization term is introduced which allows ACOL to encourage the neural network to reveal its own explicit clustering objective. While the underlying process of finding the subclasses is completely unsupervised, semi-supervised learning is also possible based on the provided classification objective. The results show that ACOL can achieve a 99.2% clustering accuracy for the semi-supervised case when partial class labels are presented and a 96% accuracy for the unsupervised clustering case. These findings represent a paradigm shift especially when it comes to harnessing the power of deep networks for primary and secondary clustering applications in large datasets.
+
+**URL:** https://arxiv.org/abs/1702.08648
+
+**Notes:** could be useful in clustering project
+
 ## 2017-03
+### End-to-End Task-Completion Neural Dialogue Systems
+
+**Authors:** Xuijun Li, Yun-Nung Chen, Lihong Li, Jianfeng Gao
+
+**Abstract:** This paper presents an end-to-end learning framework for task-completion neural dialogue systems, which leverages supervised and reinforcement learning with various deep-learning models. The system is able to interface with a structured database, and interact with users for assisting them to access information and complete tasks such as booking movie tickets. Our experiments in a movie-ticket booking domain show the proposed system outperforms a modular-based dialogue system and is more robust to noise produced by other components in the system.
+
+**URL:** https://arxiv.org/abs/1703.01008
+
+**Notes:** another RL-based dialog system without architecture or proofs on datasets
+
+### Controllable Text Generation
+
+**Authors:** Zhiting Hu, Zichao Yang, Xiaodan Liang, Ruslan Salakhutdinov, Eric P. Xing
+
+**Abstract:** Generic generation and manipulation of text is challenging and has limited success compared to recent deep generative modeling in visual domain. This paper aims at generating plausible natural language sentences, whose attributes are dynamically controlled by learning disentangled latent representations with designated semantics. We propose a new neural generative model which combines variational auto-encoders and holistic attribute discriminators for effective imposition of semantic structures. With differentiable approximation to discrete text samples, explicit constraints on independent attribute controls, and efficient collaborative learning of generator and discriminators, our model learns highly interpretable representations from even only word annotations, and produces realistic sentences with desired attributes. Quantitative evaluation validates the accuracy of sentence and attribute generation.
+
+**URL:** https://arxiv.org/abs/1703.00955
+
+**Notes:** really nice work from Ruslan Salakhutdinov, working sentence-GAN
+
