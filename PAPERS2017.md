@@ -107,11 +107,16 @@ Table of Contents
       * [The Shattered Gradients Problem: If resnets are the answer, then what is the question?](#the-shattered-gradients-problem-if-resnets-are-the-answer-then-what-is-the-question)
       * [Deep Clustering using Auto\-Clustering Output Layer](#deep-clustering-using-auto-clustering-output-layer)
       * [Coherent Dialogue with Attention\-Based Language Models](#coherent-dialogue-with-attention-based-language-models)
+      * [On the Origin of Deep Learning](#on-the-origin-of-deep-learning)
+      * [Bridging the Gap Between Value and Policy Based Reinforcement Learning](#bridging-the-gap-between-value-and-policy-based-reinforcement-learning)
     * [2017\-03](#2017-03)
       * [End\-to\-End Task\-Completion Neural Dialogue Systems](#end-to-end-task-completion-neural-dialogue-systems)
       * [Controllable Text Generation](#controllable-text-generation)
       * [FeUdal Networks for Hierarchical Reinforcement Learning](#feudal-networks-for-hierarchical-reinforcement-learning)
       * [Generative and Discriminative Text Classification with Recurrent Neural Networks](#generative-and-discriminative-text-classification-with-recurrent-neural-networks)
+      * [All You Need is Beyond a Good Init: Exploring Better Solution for Training Extremely Deep Convolutional Neural Networks with Orthonormality and Modulation](#all-you-need-is-beyond-a-good-init-exploring-better-solution-for-training-extremely-deep-convolutional-neural-networks-with-orthonormality-and-modulation)
+      * [Multi\-step Reinforcement Learning: A Unifying Algorithm](#multi-step-reinforcement-learning-a-unifying-algorithm)
+      * [Understanding Synthetic Gradients and Decoupled Neural Interfaces](#understanding-synthetic-gradients-and-decoupled-neural-interfaces)
 
 Articles
 ========
@@ -1137,6 +1142,26 @@ Articles
 
 **Notes:** attention in details in RNN
 
+### On the Origin of Deep Learning
+
+**Authors:** Haohan Wang, Bhiksha Raj
+
+**Abstract:** This paper is a review of the evolutionary history of deep learning models. It covers from the genesis of neural networks when associationism modeling of the brain is studied, to the models that dominate the last decade of research in deep learning like convolutional neural networks, deep belief networks, and recurrent neural networks. In addition to a review of these models, this paper primarily focuses on the precedents of the models above, examining how the initial ideas are assembled to construct the early models and how these preliminary models are developed into their current forms. Many of these evolutionary paths last more than half a century and have a diversity of directions. For example, CNN is built on prior knowledge of biological vision system; DBN is evolved from a trade-off of modeling power and computation complexity of graphical models and many nowadays models are neural counterparts of ancient linear models. This paper reviews these evolutionary paths and offers a concise thought flow of how these models are developed, and aims to provide a thorough background for deep learning. More importantly, along with the path, this paper summarizes the gist behind these milestones and proposes many directions to guide the future research of deep learning.
+
+**URL:** https://arxiv.org/abs/1702.07800
+
+**Notes:** long review of history of deep learning
+
+### Bridging the Gap Between Value and Policy Based Reinforcement Learning
+
+**Authors:** Ofir Nachum, Mohammad Norouzi, Kelvin Xu, Dale Schuurmans
+
+**Abstract:** We formulate a new notion of softmax temporal consistency that generalizes the standard hard-max Bellman consistency usually considered in value based reinforcement learning (RL). In particular, we show how softmax consistent action values correspond to optimal policies that maximize entropy regularized expected reward. More importantly, we establish that softmax consistent action values and the optimal policy must satisfy a mutual compatibility property that holds across any state-action subsequence. Based on this observation, we develop a new RL algorithm, Path Consistency Learning (PCL), that minimizes the total inconsistency measured along multi-step subsequences extracted from both both on and off policy traces. An experimental evaluation demonstrates that PCL significantly outperforms strong actor-critic and Q-learning baselines across several benchmark tasks.
+
+**URL:** https://arxiv.org/abs/1702.08892
+
+**Notes:** differentiable RL from Google Brain, at least it seems to be so, could be useful
+
 ## 2017-03
 ### End-to-End Task-Completion Neural Dialogue Systems
 
@@ -1177,4 +1202,34 @@ Articles
 **URL:** https://arxiv.org/abs/1703.01898
 
 **Notes:** DeepMind paper on RNN text classification; zero-shot learning as a bonus; unsupervised pre-train, after that freeze and fine-tune on labeled data
+
+### All You Need is Beyond a Good Init: Exploring Better Solution for Training Extremely Deep Convolutional Neural Networks with Orthonormality and Modulation
+
+**Authors:** Di Xie, Jiang Xiong, Shiliang Pu
+
+**Abstract:** Deep neural network is difficult to train and this predicament becomes worse as the depth increases. The essence of this problem exists in the magnitude of backpropagated errors that will result in gradient vanishing or exploding phenomenon. We show that a variant of regularizer which utilizes orthonormality among different filter banks can alleviate this problem. Moreover, we design a backward error modulation mechanism based on the quasi-isometry assumption between two consecutive parametric layers. Equipped with these two ingredients, we propose several novel optimization solutions that can be utilized for training a specific-structured (repetitively triple modules of Conv-BNReLU) extremely deep convolutional neural network (CNN) WITHOUT any shortcuts/ identity mappings from scratch. Experiments show that our proposed solutions can achieve 4% improvement for a 44-layer plain network and almost 50% improvement for a 110-layer plain network on the CIFAR-10 dataset. Moreover, we can successfully train plain CNNs to match the performance of the residual counterparts. Besides, we propose new principles for designing network structure from the insights evoked by orthonormality. Combined with residual structure, we achieve comparative performance on the ImageNet dataset.
+
+**URL:** https://arxiv.org/abs/1703.01827
+
+**Notes:** orthonormality is really important thing in training, as far as I see, the results are interesting and could be useful
+
+### Multi-step Reinforcement Learning: A Unifying Algorithm
+
+**Authors:** Kristopher De Asis, J. Fernando Hernandez-Garcia, G. Zacharias Holland, Richard S. Sutton
+
+**Abstract:** Unifying seemingly disparate algorithmic ideas to produce better performing algorithms has been a longstanding goal in reinforcement learning. As a primary example, TD(λ) elegantly unifies one-step TD prediction with Monte Carlo methods through the use of eligibility traces and the trace-decay parameter λ. Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation). Q(σ) is generally applicable to both on- and off-policy learning, but in this work we focus on experiments in the on-policy case. Our results show that an intermediate value of σ, which results in a mixture of the existing algorithms, performs better than either extreme. The mixture can also be varied dynamically which can result in even greater performance.
+
+**URL:** https://arxiv.org/abs/1703.01327
+
+**Notes:** new paper from Sutton about unified RL-algo
+
+### Understanding Synthetic Gradients and Decoupled Neural Interfaces
+
+**Authors:** Wojciech Marian Czarnecki, Grzegorz Świrszcz, Max Jaderberg, Simon Osindero, Oriol Vinyals, Koray Kavukcuoglu
+
+**Abstract:** When training neural networks, the use of Synthetic Gradients (SG) allows layers or modules to be trained without update locking - without waiting for a true error gradient to be backpropagated - resulting in Decoupled Neural Interfaces (DNIs). This unlocked ability of being able to update parts of a neural network asynchronously and with only local information was demonstrated to work empirically in Jaderberg et al (2016). However, there has been very little demonstration of what changes DNIs and SGs impose from a functional, representational, and learning dynamics point of view. In this paper, we study DNIs through the use of synthetic gradients on feed-forward networks to better understand their behaviour and elucidate their effect on optimisation. We show that the incorporation of SGs does not affect the representational strength of the learning system for a neural network, and prove the convergence of the learning system for linear and deep linear models. On practical problems we investigate the mechanism by which synthetic gradient estimators approximate the true loss, and, surprisingly, how that leads to drastically different layer-wise representations. Finally, we also expose the relationship of using synthetic gradients to other error approximation techniques and find a unifying language for discussion and comparison.
+
+**URL:** https://arxiv.org/abs/1703.00522
+
+**Notes:** another DeepMind paper, next step in their synthetic gradients research
 
