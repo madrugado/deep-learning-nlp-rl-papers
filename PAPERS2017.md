@@ -106,9 +106,12 @@ Table of Contents
       * [Active One\-shot Learning](#active-one-shot-learning)
       * [The Shattered Gradients Problem: If resnets are the answer, then what is the question?](#the-shattered-gradients-problem-if-resnets-are-the-answer-then-what-is-the-question)
       * [Deep Clustering using Auto\-Clustering Output Layer](#deep-clustering-using-auto-clustering-output-layer)
+      * [Coherent Dialogue with Attention\-Based Language Models](#coherent-dialogue-with-attention-based-language-models)
     * [2017\-03](#2017-03)
       * [End\-to\-End Task\-Completion Neural Dialogue Systems](#end-to-end-task-completion-neural-dialogue-systems)
+      * [Controllable Text Generation](#controllable-text-generation)
       * [FeUdal Networks for Hierarchical Reinforcement Learning](#feudal-networks-for-hierarchical-reinforcement-learning)
+      * [Generative and Discriminative Text Classification with Recurrent Neural Networks](#generative-and-discriminative-text-classification-with-recurrent-neural-networks)
 
 Articles
 ========
@@ -1124,12 +1127,16 @@ Articles
 
 **Notes:** could be useful in clustering project
 
-Coherent Dialogue with Attention-Based Language Models
-Hongyuan Mei, Mohit Bansal, Matthew R. Walter
+### Coherent Dialogue with Attention-Based Language Models
 
-We model coherent conversation continuation via RNN-based dialogue models equipped with a dynamic attention mechanism. Our attention-RNN language model dynamically increases the scope of attention on the history as the conversation continues, as opposed to standard attention (or alignment) models with a fixed input scope in a sequence-to-sequence model. This allows each generated word to be associated with the most relevant words in its corresponding conversation history. We evaluate the model on two popular dialogue datasets, the open-domain MovieTriples dataset and the closed-domain Ubuntu Troubleshoot dataset, and achieve significant improvements over the state-of-the-art and baselines on several metrics, including complementary diversity-based metrics, human evaluation, and qualitative visualizations. We also show that a vanilla RNN with dynamic attention outperforms more complex memory models (e.g., LSTM and GRU) by allowing for flexible, long-distance memory. We promote further coherence via topic modeling-based reranking.
-http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14164
-attention in details in RNN
+**Authors:** Hongyuan Mei, Mohit Bansal, Matthew R. Walter
+
+**Abstract:** We model coherent conversation continuation via RNN-based dialogue models equipped with a dynamic attention mechanism. Our attention-RNN language model dynamically increases the scope of attention on the history as the conversation continues, as opposed to standard attention (or alignment) models with a fixed input scope in a sequence-to-sequence model. This allows each generated word to be associated with the most relevant words in its corresponding conversation history. We evaluate the model on two popular dialogue datasets, the open-domain MovieTriples dataset and the closed-domain Ubuntu Troubleshoot dataset, and achieve significant improvements over the state-of-the-art and baselines on several metrics, including complementary diversity-based metrics, human evaluation, and qualitative visualizations. We also show that a vanilla RNN with dynamic attention outperforms more complex memory models (e.g., LSTM and GRU) by allowing for flexible, long-distance memory. We promote further coherence via topic modeling-based reranking.
+
+**URL:** http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14164
+
+**Notes:** attention in details in RNN
+
 ## 2017-03
 ### End-to-End Task-Completion Neural Dialogue Systems
 
@@ -1161,11 +1168,13 @@ attention in details in RNN
 
 **Notes:** DeepMind paper on hierarchical RL
 
-Generative and Discriminative Text Classification with Recurrent Neural Networks
+### Generative and Discriminative Text Classification with Recurrent Neural Networks
 
-Dani Yogatama, Chris Dyer, Wang Ling, Phil Blunsom
+**Authors:** Dani Yogatama, Chris Dyer, Wang Ling, Phil Blunsom
 
-We empirically characterize the performance of discriminative and generative LSTM models for text classification. We find that although RNN-based generative models are more powerful than their bag-of-words ancestors (e.g., they account for conditional dependencies across words in a document), they have higher asymptotic error rates than discriminatively trained RNN models. However we also find that generative models approach their asymptotic error rate more rapidly than their discriminative counterparts---the same pattern that Ng & Jordan (2001) proved holds for linear classification models that make more naive conditional independence assumptions. Building on this finding, we hypothesize that RNN-based generative classification models will be more robust to shifts in the data distribution. This hypothesis is confirmed in a series of experiments in zero-shot and continual learning settings that show that generative models substantially outperform discriminative models.
-https://arxiv.org/abs/1703.01898
-DeepMind paper on RNN text classification; zero-shot learning as a bonus; unsupervised pre-train, after that freeze and fine-tune on labeled data
+**Abstract:** We empirically characterize the performance of discriminative and generative LSTM models for text classification. We find that although RNN-based generative models are more powerful than their bag-of-words ancestors (e.g., they account for conditional dependencies across words in a document), they have higher asymptotic error rates than discriminatively trained RNN models. However we also find that generative models approach their asymptotic error rate more rapidly than their discriminative counterparts---the same pattern that Ng & Jordan (2001) proved holds for linear classification models that make more naive conditional independence assumptions. Building on this finding, we hypothesize that RNN-based generative classification models will be more robust to shifts in the data distribution. This hypothesis is confirmed in a series of experiments in zero-shot and continual learning settings that show that generative models substantially outperform discriminative models.
+
+**URL:** https://arxiv.org/abs/1703.01898
+
+**Notes:** DeepMind paper on RNN text classification; zero-shot learning as a bonus; unsupervised pre-train, after that freeze and fine-tune on labeled data
 
