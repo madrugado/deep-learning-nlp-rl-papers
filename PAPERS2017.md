@@ -118,6 +118,7 @@ Table of Contents
       * [Multi\-step Reinforcement Learning: A Unifying Algorithm](#multi-step-reinforcement-learning-a-unifying-algorithm)
       * [Understanding Synthetic Gradients and Decoupled Neural Interfaces](#understanding-synthetic-gradients-and-decoupled-neural-interfaces)
       * [Evolving Deep Neural Networks](#evolving-deep-neural-networks)
+      * [Emergence of Grounded Compositional Language in Multi\-Agent Populations](#emergence-of-grounded-compositional-language-in-multi-agent-populations)
 
 Articles
 ========
@@ -1243,4 +1244,14 @@ Articles
 **URL:** https://arxiv.org/abs/1703.00548
 
 **Notes:** evolutionally created NNs, pretty neat
+
+### Emergence of Grounded Compositional Language in Multi-Agent Populations
+
+**Authors:** Igor Mordatch, Pieter Abbeel
+
+**Abstract:** By capturing statistical patterns in large corpora, machine learning has enabled significant advances in natural language processing, including in machine translation, question answering, and sentiment analysis. However, for agents to intelligently interact with humans, simply capturing the statistical patterns is insufficient. In this paper we investigate if, and how, grounded compositional language can emerge as a means to achieve goals in multi-agent populations. Towards this end, we propose a multi-agent learning environment and learning methods that bring about emergence of a basic compositional language. This language is represented as streams of abstract discrete symbols uttered by agents over time, but nonetheless has a coherent structure that possesses a defined vocabulary and syntax. We also observe emergence of non-verbal communication such as pointing and guiding when language communication is unavailable.
+
+**URL:** https://arxiv.org/abs/1703.04908
+
+**Notes:** I'm impressed: OpenAI invented a Petri dish for language creation
 
