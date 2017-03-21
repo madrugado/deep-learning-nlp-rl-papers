@@ -119,6 +119,7 @@ Table of Contents
       * [Understanding Synthetic Gradients and Decoupled Neural Interfaces](#understanding-synthetic-gradients-and-decoupled-neural-interfaces)
       * [Evolving Deep Neural Networks](#evolving-deep-neural-networks)
       * [Emergence of Grounded Compositional Language in Multi\-Agent Populations](#emergence-of-grounded-compositional-language-in-multi-agent-populations)
+      * [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning)
 
 Articles
 ========
@@ -1254,4 +1255,14 @@ Articles
 **URL:** https://arxiv.org/abs/1703.04908
 
 **Notes:** I'm impressed: OpenAI invented a Petri dish for language creation
+
+### Evolution Strategies as a Scalable Alternative to Reinforcement Learning
+
+**Authors:** Tim Salimans, Jonathan Ho, Xi Chen, Ilya Sutskever
+
+**Abstract:** We explore the use of Evolution Strategies, a class of black box optimization algorithms, as an alternative to popular RL techniques such as Q-learning and Policy Gradients. Experiments on MuJoCo and Atari show that ES is a viable solution strategy that scales extremely well with the number of CPUs available: By using hundreds to thousands of parallel workers, ES can solve 3D humanoid walking in 10 minutes and obtain competitive results on most Atari games after one hour of training time. In addition, we highlight several advantages of ES as a black box optimization technique: it is invariant to action frequency and delayed rewards, tolerant of extremely long horizons, and does not need temporal discounting or value function approximation.
+
+**URL:** https://arxiv.org/abs/1703.03864
+
+**Notes:** Fresh paper from Ilya Sytskever / OpenAI, as almost all of OpenAI's papers it's fascinating: evolution algorithms is long-lsting dream of all machine-learners, and here they showed that in long (in the means of timesteps) episodes they are actually better than slassic RL, like Q-learning
 
