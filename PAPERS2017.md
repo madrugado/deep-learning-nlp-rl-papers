@@ -120,6 +120,7 @@ Table of Contents
       * [Evolving Deep Neural Networks](#evolving-deep-neural-networks)
       * [Emergence of Grounded Compositional Language in Multi\-Agent Populations](#emergence-of-grounded-compositional-language-in-multi-agent-populations)
       * [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning)
+      * [Measuring, Predicting and Visualizing Short\-Term Change in Word Representation and Usage in VKontakte Social Network](#measuring-predicting-and-visualizing-short-term-change-in-word-representation-and-usage-in-vkontakte-social-network)
 
 Articles
 ========
@@ -1265,4 +1266,14 @@ Articles
 **URL:** https://arxiv.org/abs/1703.03864
 
 **Notes:** Fresh paper from Ilya Sytskever / OpenAI, as almost all of OpenAI's papers it's fascinating: evolution algorithms is long-lsting dream of all machine-learners, and here they showed that in long (in the means of timesteps) episodes they are actually better than slassic RL, like Q-learning
+
+### Measuring, Predicting and Visualizing Short-Term Change in Word Representation and Usage in VKontakte Social Network
+
+**Authors:** Ian Stewart, Dustin Arendt, Eric Bell, Svitlana Volkova
+
+**Abstract:** Language in social media is extremely dynamic: new words emerge, trend and disappear, while the meaning of existing words can fluctuate over time. Such dynamics are especially notable during a period of crisis. This work addresses several important tasks of measuring, visualizing and predicting short term text representation shift, i.e. the change in a word's contextual semantics, and contrasting such shift with surface level word dynamics, or concept drift, observed in social media streams. Unlike previous approaches on learning word representations from text, we study the relationship between short-term concept drift and representation shift on a large social media corpus - VKontakte posts in Russian collected during the Russia-Ukraine crisis in 2014-2015. Our novel contributions include quantitative and qualitative approaches to (1) measure short-term representation shift and contrast it with surface level concept drift; (2) build predictive models to forecast short-term shifts in meaning from previous meaning as well as from concept drift; and (3) visualize short-term representation shift for example keywords to demonstrate the practical use of our approach to discover and track meaning of newly emerging terms in social media. We show that short-term representation shift can be accurately predicted up to several weeks in advance. Our unique approach to modeling and visualizing word representation shifts in social media can be used to explore and characterize specific aspects of the streaming corpus during crisis events and potentially improve other downstream classification tasks including real-time event detection.
+
+**URL:** https://arxiv.org/abs/1703.07012
+
+**Notes:** a paper from (mostly) Russian guys, who described term drift during the Ukranian civil war; unfortunately (despite the war itself, which is of cause a disaster), this research project has its weakness: since the beginning of Ukranian tumult, many Ukranian citizens have changed their preference in the social networks and moved to Facebook from VKontakte, so authors analized biased sample, but the results are still interesting
 
