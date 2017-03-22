@@ -121,6 +121,7 @@ Table of Contents
       * [Emergence of Grounded Compositional Language in Multi\-Agent Populations](#emergence-of-grounded-compositional-language-in-multi-agent-populations)
       * [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning)
       * [Measuring, Predicting and Visualizing Short\-Term Change in Word Representation and Usage in VKontakte Social Network](#measuring-predicting-and-visualizing-short-term-change-in-word-representation-and-usage-in-vkontakte-social-network)
+      * [Towards Diverse and Natural Image Descriptions via a Conditional GAN](#towards-diverse-and-natural-image-descriptions-via-a-conditional-gan)
 
 Articles
 ========
@@ -1277,9 +1278,13 @@ Articles
 
 **Notes:** a paper from (mostly) Russian guys, who described term drift during the Ukranian civil war; unfortunately (despite the war itself, which is of cause a disaster), this research project has its weakness: since the beginning of Ukranian tumult, many Ukranian citizens have changed their preference in the social networks and moved to Facebook from VKontakte, so authors analized biased sample, but the results are still interesting
 
-Towards Diverse and Natural Image Descriptions via a Conditional GAN
+### Towards Diverse and Natural Image Descriptions via a Conditional GAN
 
-Bo Dai, Dahua Lin, Raquel Urtasun, Sanja Fidler
-Despite the substantial progress in recent years, the image captioning techniques are still far from being perfect.Sentences produced by existing methods, e.g. those based on RNNs, are often overly rigid and lacking in variability. This issue is related to a learning principle widely used in practice, that is, to maximize the likelihood of training samples. This principle encourages high resemblance to the "ground-truth" captions while suppressing other reasonable descriptions. Conventional evaluation metrics, e.g. BLEU and METEOR, also favor such restrictive methods. In this paper, we explore an alternative approach, with the aim to improve the naturalness and diversity -- two essential properties of human expression. Specifically, we propose a new framework based on Conditional Generative Adversarial Networks (CGAN), which jointly learns a generator to produce descriptions conditioned on images and an evaluator to assess how well a description fits the visual content. It is noteworthy that training a sequence generator is nontrivial. We overcome the difficulty by Policy Gradient, a strategy stemming from Reinforcement Learning, which allows the generator to receive early feedback along the way. We tested our method on two large datasets, where it performed competitively against real people in our user study and outperformed other methods on various tasks.
-https://arxiv.org/abs/1703.06029
-interesting work on GAN for image desrptions: here the most close RL&GAN setup AFAIK, also they flourish diversity and naturalness, not the exact alignment of generated texts with natural ones
+**Authors:** Bo Dai, Dahua Lin, Raquel Urtasun, Sanja Fidler
+
+**Abstract:** Despite the substantial progress in recent years, the image captioning techniques are still far from being perfect.Sentences produced by existing methods, e.g. those based on RNNs, are often overly rigid and lacking in variability. This issue is related to a learning principle widely used in practice, that is, to maximize the likelihood of training samples. This principle encourages high resemblance to the "ground-truth" captions while suppressing other reasonable descriptions. Conventional evaluation metrics, e.g. BLEU and METEOR, also favor such restrictive methods. In this paper, we explore an alternative approach, with the aim to improve the naturalness and diversity -- two essential properties of human expression. Specifically, we propose a new framework based on Conditional Generative Adversarial Networks (CGAN), which jointly learns a generator to produce descriptions conditioned on images and an evaluator to assess how well a description fits the visual content. It is noteworthy that training a sequence generator is nontrivial. We overcome the difficulty by Policy Gradient, a strategy stemming from Reinforcement Learning, which allows the generator to receive early feedback along the way. We tested our method on two large datasets, where it performed competitively against real people in our user study and outperformed other methods on various tasks.
+
+**URL:** https://arxiv.org/abs/1703.06029
+
+**Notes:** interesting work on GAN for image desrptions: here the most close RL&GAN setup AFAIK, also they flourish diversity and naturalness, not the exact alignment of generated texts with natural ones
+
