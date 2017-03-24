@@ -122,6 +122,7 @@ Table of Contents
       * [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning)
       * [Measuring, Predicting and Visualizing Short\-Term Change in Word Representation and Usage in VKontakte Social Network](#measuring-predicting-and-visualizing-short-term-change-in-word-representation-and-usage-in-vkontakte-social-network)
       * [Towards Diverse and Natural Image Descriptions via a Conditional GAN](#towards-diverse-and-natural-image-descriptions-via-a-conditional-gan)
+      * [Massive Exploration of Neural Machine Translation Architectures](#massive-exploration-of-neural-machine-translation-architectures)
 
 Articles
 ========
@@ -1287,4 +1288,14 @@ Articles
 **URL:** https://arxiv.org/abs/1703.06029
 
 **Notes:** interesting work on GAN for image desrptions: here the most close RL&GAN setup AFAIK, also they flourish diversity and naturalness, not the exact alignment of generated texts with natural ones
+
+### Massive Exploration of Neural Machine Translation Architectures
+
+**Authors:** Denny Britz, Anna Goldie, Minh-Thang Luong, Quoc Le
+
+**Abstract:** Neural Machine Translation (NMT) has shown remarkable progress over the past few years with production systems now being deployed to end-users. One major drawback of current architectures is that they are expensive to train, typically requiring days to weeks of GPU time to converge. This makes exhaustive hyperparameter search, as is commonly done with other neural network architectures, prohibitively expensive. In this work, we present the first large-scale analysis of NMT architecture hyperparameters. We report empirical results and variance numbers for several hundred experimental runs, corresponding to over 250,000 GPU hours on the standard WMT English to German translation task. Our experiments lead to novel insights and practical advice for building and extending NMT architectures. As part of this contribution, we release an open-source NMT framework that enables researchers to easily experiment with novel techniques and reproduce state of the art results.
+
+**URL:** https://arxiv.org/abs/1703.03906
+
+**Notes:** full of insights paper about Google NMT
 
