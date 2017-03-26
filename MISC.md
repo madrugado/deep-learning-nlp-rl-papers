@@ -2,8 +2,10 @@
 Table of Contents
 =================
 
+  * [Lecture notes](#lecture-notes)
       * [Monte Carlo Methods and Importance Sampling](#monte-carlo-methods-and-importance-sampling)
 
+## Lecture notes
 ### Monte Carlo Methods and Importance Sampling
 
 **Authors:** Eric C. Anderson, E. A. Thompson
