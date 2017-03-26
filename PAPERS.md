@@ -296,7 +296,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1402.3511
 
-**Notes:**
+**Notes:** base paper for intermediate steps in RNNs
 
 ## 2015-11
 ### Unitary Evolution Recurrent Neural Networks
