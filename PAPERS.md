@@ -16,6 +16,8 @@ Table of Contents
       * [Adversarial Autoencoders](#adversarial-autoencoders)
     * [2015\-12](#2015-12)
       * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
+    * [2016\-02](#2016-02)
+      * [Exploring the Limits of Language Modeling](#exploring-the-limits-of-language-modeling)
     * [2016\-03](#2016-03)
       * [A Persona\-Based Neural Conversation Model](#a-persona-based-neural-conversation-model)
     * [2016\-05](#2016-05)
@@ -331,12 +333,15 @@ Articles
 **Notes:** Bayesianly grounded dropout for RNNs.
 
 ## 2016-02
-Exploring the Limits of Language Modeling
+### Exploring the Limits of Language Modeling
 
-Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, Yonghui Wu
-In this work we explore recent advances in Recurrent Neural Networks for large scale Language Modeling, a task central to language understanding. We extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language. We perform an exhaustive study on techniques such as character Convolutional Neural Networks or Long-Short Term Memory, on the One Billion Word Benchmark. Our best single model significantly improves state-of-the-art perplexity from 51.3 down to 30.0 (whilst reducing the number of parameters by a factor of 20), while an ensemble of models sets a new record by improving perplexity from 41.0 down to 23.7. We also release these models for the NLP and ML community to study and improve upon.
-https://arxiv.org/abs/1602.02410
-introduction of importance sampling for softmax, aside of exostive study of LM
+**Authors:** Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, Yonghui Wu
+
+**Abstract:** In this work we explore recent advances in Recurrent Neural Networks for large scale Language Modeling, a task central to language understanding. We extend current models to deal with two key challenges present in this task: corpora and vocabulary sizes, and complex, long term structure of language. We perform an exhaustive study on techniques such as character Convolutional Neural Networks or Long-Short Term Memory, on the One Billion Word Benchmark. Our best single model significantly improves state-of-the-art perplexity from 51.3 down to 30.0 (whilst reducing the number of parameters by a factor of 20), while an ensemble of models sets a new record by improving perplexity from 41.0 down to 23.7. We also release these models for the NLP and ML community to study and improve upon.
+
+**URL:** https://arxiv.org/abs/1602.02410
+
+**Notes:** introduction of importance sampling for softmax, aside of exostive study of LM
 
 ## 2016-03
 ### A Persona-Based Neural Conversation Model
