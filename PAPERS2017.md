@@ -123,6 +123,9 @@ Table of Contents
       * [Measuring, Predicting and Visualizing Short\-Term Change in Word Representation and Usage in VKontakte Social Network](#measuring-predicting-and-visualizing-short-term-change-in-word-representation-and-usage-in-vkontakte-social-network)
       * [Towards Diverse and Natural Image Descriptions via a Conditional GAN](#towards-diverse-and-natural-image-descriptions-via-a-conditional-gan)
       * [Massive Exploration of Neural Machine Translation Architectures](#massive-exploration-of-neural-machine-translation-architectures)
+      * [Optimisation of a Model for Few\-Shot Learning](#optimisation-of-a-model-for-few-shot-learning)
+      * [Opening the Black Box of Deep Neural Networks via Information](#opening-the-black-box-of-deep-neural-networks-via-information)
+      * [Learning to Discover Cross\-Domain Relations with Generative Adversarial Networks](#learning-to-discover-cross-domain-relations-with-generative-adversarial-networks)
 
 Articles
 ========
@@ -1298,4 +1301,34 @@ Articles
 **URL:** https://arxiv.org/abs/1703.03906
 
 **Notes:** full of insights paper about Google NMT
+
+### Optimisation of a Model for Few-Shot Learning
+
+**Authors:** Sachin Ravi and Hugo Larochelle
+
+**Abstract:** Though deep neural networks have shown great success in the large data domain, they generally perform poorly on few-shot learning tasks, where a classifier has to quickly generalize after seeing very few examples from each class. The general belief is that gradient-based optimization in high capacity classifiers requires many iterative steps over many examples to perform well. Here, we propose an LSTM-based meta-learner model to learn the exact optimization algorithm used to train another learner neural network classifier in the few-shot regime. The parametrization of our model allows it to learn appropriate parameter updates specifically for the scenario where a set amount of updates will be made, while also learning a general initialization of the learner (classifier) network that allows for quick convergenceof training. We demonstrate that this meta-learning model is competitive with deep metric-learning techniques for few-shot learning.
+
+**URL:** https://openreview.net/pdf?id=rJY0-Kcll
+
+**Notes:** meta-learning approach applied to zero-shot learning, complex paper, not so simple to understand
+
+### Opening the Black Box of Deep Neural Networks via Information
+
+**Authors:** Ravid Shwartz-Ziv, Naftali Tishby
+
+**Abstract:** Despite their great success, there is still no comprehensive theoretical understanding of learning with Deep Neural Networks (DNNs) or their inner organization. Previous work [Tishby & Zaslavsky (2015)] proposed to analyze DNNs in the Information Plane; i.e., the plane of the Mutual Information values that each layer preserves on the input and output variables. They suggested that the goal of the network is to optimize the Information Bottleneck (IB) tradeoff between compression and prediction, successively, for each layer. In this work we follow up on this idea and demonstrate the effectiveness of the Information-Plane visualization of DNNs. We first show that the stochastic gradient descent (SGD) epochs have two distinct phases: fast empirical error minimization followed by slow representation compression, for each layer. We then argue that the DNN layers end up very close to the IB theoretical bound, and present a new theoretical argument for the computational benefit of the hidden layers.
+
+**URL:** https://arxiv.org/abs/1703.00810
+
+**Notes:** the paper sheddding the poor light on DNN internal behaviour in training process, but still it is interesting
+
+### Learning to Discover Cross-Domain Relations with Generative Adversarial Networks
+
+**Authors:** Taeksoo Kim, Moonsu Cha, Hyunsoo Kim, Jungkwon Lee, Jiwon Kim
+
+**Abstract:** While humans easily recognize relations between data from different domains without any supervision, learning to automatically discover them is in general very challenging and needs many ground-truth pairs that illustrate the relations. To avoid costly pairing, we address the task of discovering cross-domain relations given unpaired data. We propose a method based on generative adversarial networks that learns to discover relations between different domains (DiscoGAN). Using the discovered relations, our proposed network successfully transfers style from one domain to another while preserving key attributes such as orientation and face identity.
+
+**URL:** https://arxiv.org/abs/1703.05192
+
+**Notes:** Another step in Style Transfer
 
