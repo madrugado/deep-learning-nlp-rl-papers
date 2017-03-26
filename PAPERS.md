@@ -3,6 +3,10 @@ Table of Contents
 =================
 
   * [Articles](#articles)
+    * [2009](#2009)
+      * [A Scalable Hierarchical Distributed Language Model](#a-scalable-hierarchical-distributed-language-model)
+    * [2012\-06](#2012-06)
+      * [A Fast and Simple Algorithm for Training Neural Probabilistic Language Models](#a-fast-and-simple-algorithm-for-training-neural-probabilistic-language-models)
     * [2013](#2013)
       * [Concurrent Reinforcement Learning from Customer Interactions\.](#concurrent-reinforcement-learning-from-customer-interactions)
     * [2014\-02](#2014-02)
@@ -10,6 +14,8 @@ Table of Contents
     * [2015\-11](#2015-11)
       * [Unitary Evolution Recurrent Neural Networks](#unitary-evolution-recurrent-neural-networks)
       * [Adversarial Autoencoders](#adversarial-autoencoders)
+    * [2015\-12](#2015-12)
+      * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
     * [2016\-03](#2016-03)
       * [A Persona\-Based Neural Conversation Model](#a-persona-based-neural-conversation-model)
     * [2016\-05](#2016-05)
@@ -17,6 +23,7 @@ Table of Contents
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
     * [2016\-06](#2016-06)
       * [End\-to\-end LSTM\-based dialog control optimized with supervised and reinforcement learning](#end-to-end-lstm-based-dialog-control-optimized-with-supervised-and-reinforcement-learning)
+      * [Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations](#zoneout-regularizing-rnns-by-randomly-preserving-hidden-activations)
     * [2016\-07](#2016-07)
       * [Representation learning for very short texts using weighted word embedding aggregation](#representation-learning-for-very-short-texts-using-weighted-word-embedding-aggregation)
       * [Recurrent Neural Machine Translation](#recurrent-neural-machine-translation)
@@ -136,6 +143,7 @@ Table of Contents
       * [HyperNetworks](#hypernetworks)
       * [Semantic Parsing with Semi\-Supervised Sequential Autoencoders](#semantic-parsing-with-semi-supervised-sequential-autoencoders)
       * [Inducing Multilingual Text Analysis Tools Using Bidirectional Recurrent Neural Networks](#inducing-multilingual-text-analysis-tools-using-bidirectional-recurrent-neural-networks)
+      * [Efficient softmax approximation for GPUs](#efficient-softmax-approximation-for-gpus)
     * [2016\-10](#2016-10)
       * [Empirical Evaluation of RNN Architectures on Sentence Classification Task](#empirical-evaluation-of-rnn-architectures-on-sentence-classification-task)
       * [Learning to Translate in Real\-time with Neural Machine Translation](#learning-to-translate-in-real-time-with-neural-machine-translation)
@@ -246,6 +254,28 @@ Table of Contents
 
 Articles
 ========
+## 2009
+### A Scalable Hierarchical Distributed Language Model
+
+**Authors:** Andriy Mnih, Geoffrey Hinton
+
+**Abstract:** Neural probabilistic language models (NPLMs) have been shown to be competitive with and occasionally superior to the widely-used n-gram language models. The main drawback of NPLMs is their extremely long training and testing times. Morin and Bengio have proposed a hierarchical language model built around a binary tree of words, which was two orders of magnitude faster than the nonhierarchical model it was based on. However, it performed considerably worse than its non-hierarchical counterpart in spite of using a word tree created using expert knowledge. We introduce a fast hierarchical language model along with a simple feature-based algorithm for automatic construction of word trees from the data. We then show that the resulting models can outperform non-hierarchical neural models as well as the best n-gram models.
+
+**URL:** http://papers.nips.cc/paper/3583-a-scalable-hierarchical-distributed-language-model.pdf
+
+**Notes:** one of the first tries to optimize softmax, they build a tree for vocab with EM algorithm
+
+## 2012-06
+### A Fast and Simple Algorithm for Training Neural Probabilistic Language Models
+
+**Authors:** Andriy Mnih, Yee Whye Teh
+
+**Abstract:** In spite of their superior performance, neural probabilistic language models (NPLMs) remain far less widely used than n-gram models due to their notoriously long training times, which are measured in weeks even for moderately-sized datasets. Training NPLMs is computationally expensive because they are explicitly normalized, which leads to having to consider all words in the vocabulary when computing the log-likelihood gradients. We propose a fast and simple algorithm for training NPLMs based on noise-contrastive estimation, a newly introduced procedure for estimating unnormalized continuous distributions. We investigate the behaviour of the algorithm on the Penn Treebank corpus and show that it reduces the training times by more than an order of magnitude without affecting the quality of the resulting models. The algorithm is also more efficient and much more stable than importance sampling because it requires far fewer noise samples to perform well. We demonstrate the scalability of the proposed approach by training several neural language models on a 47M-word corpus with a 80K-word vocabulary, obtaining state-of-the-art results on the Microsoft Research Sentence Completion Challenge dataset.
+
+**URL:** https://arxiv.org/abs/1206.6426
+
+**Notes:** basic paper for Noise Contrastive Estimation
+
 ## 2013
 ### Concurrent Reinforcement Learning from Customer Interactions.
 
@@ -289,6 +319,17 @@ Articles
 
 **Notes:** Basic paper for adversarial autoencoders.
 
+## 2015-12
+### A Theoretically Grounded Application of Dropout in Recurrent Neural Networks
+
+**Authors:** Yarin Gal, Zoubin Ghahramani
+
+**Abstract:** Recurrent neural networks (RNNs) stand at the forefront of many recent developments in deep learning. Yet a major difficulty with these models is their tendency to overfit, with dropout shown to fail when applied to recurrent layers. Recent results at the intersection of Bayesian modelling and deep learning offer a Bayesian interpretation of common deep learning techniques such as dropout. This grounding of dropout in approximate Bayesian inference suggests an extension of the theoretical results, offering insights into the use of dropout with RNN models. We apply this new variational inference based dropout technique in LSTM and GRU models, assessing it on language modelling and sentiment analysis tasks. The new approach outperforms existing techniques, and to the best of our knowledge improves on the single model state-of-the-art in language modelling with the Penn Treebank (73.4 test perplexity). This extends our arsenal of variational tools in deep learning.
+
+**URL:** https://arxiv.org/abs/1512.05287
+
+**Notes:** Bayesianly grounded dropout for RNNs.
+
 ## 2016-03
 ### A Persona-Based Neural Conversation Model
 
@@ -331,6 +372,16 @@ Articles
 **URL:** https://arxiv.org/abs/1606.01269
 
 **Notes:** SL/RL joint approach to make a dialog system, state is stored in LSTM, and actions (like in slot-systems) are chosen by RL-agent; active learning
+
+### Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations
+
+**Authors:** David Krueger, Tegan Maharaj, János Kramár, Mohammad Pezeshki, Nicolas Ballas, Nan Rosemary Ke, Anirudh Goyal, Yoshua Bengio, Aaron Courville, Chris Pal
+
+**Abstract:** We propose zoneout, a novel method for regularizing RNNs. At each timestep, zoneout stochastically forces some hidden units to maintain their previous values. Like dropout, zoneout uses random noise to train a pseudo-ensemble, improving generalization. But by preserving instead of dropping hidden units, gradient information and state information are more readily propagated through time, as in feedforward stochastic depth networks. We perform an empirical investigation of various RNN regularizers, and find that zoneout gives significant performance improvements across tasks. We achieve competitive results with relatively simple models in character- and word-level language modelling on the Penn Treebank and Text8 datasets, and combining with recurrent batch normalization yields state-of-the-art results on permuted sequential MNIST.
+
+**URL:** https://arxiv.org/abs/1606.01305
+
+**Notes:** recently updated paper about zoneout, a dropout for RNNs
 
 ## 2016-07
 ### Representation learning for very short texts using weighted word embedding aggregation
@@ -1494,6 +1545,16 @@ Articles
 **URL:** https://arxiv.org/abs/1609.09382
 
 **Notes:**
+
+### Efficient softmax approximation for GPUs
+
+**Authors:** Edouard Grave, Armand Joulin, Moustapha Cissé, David Grangier, Hervé Jégou
+
+**Abstract:** We propose an approximate strategy to efficiently train neural network based language models over very large vocabularies. Our approach, called adaptive softmax, circumvents the linear dependency on the vocabulary size by exploiting the unbalanced word distribution to form clusters that explicitly minimize the expectation of computational complexity. Our approach further reduces the computational cost by exploiting the specificities of modern architectures and matrix-matrix vector operations, making it particularly suited for graphical processing units. Our experiments carried out on standard benchmarks, such as EuroParl and One Billion Word, show that our approach brings a large gain in efficiency over standard approximations while achieving an accuracy close to that of the full softmax.
+
+**URL:** https://arxiv.org/abs/1609.04309
+
+**Notes:** splitting all the words by clusters of frequencies gives the performance boost
 
 ## 2016-10
 ### Empirical Evaluation of RNN Architectures on Sentence Classification Task
