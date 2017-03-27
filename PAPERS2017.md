@@ -126,6 +126,8 @@ Table of Contents
       * [Optimisation of a Model for Few\-Shot Learning](#optimisation-of-a-model-for-few-shot-learning)
       * [Opening the Black Box of Deep Neural Networks via Information](#opening-the-black-box-of-deep-neural-networks-via-information)
       * [Learning to Discover Cross\-Domain Relations with Generative Adversarial Networks](#learning-to-discover-cross-domain-relations-with-generative-adversarial-networks)
+      * [Failures of Deep Learning](#failures-of-deep-learning)
+      * [Mask R\-CNN](#mask-r-cnn)
 
 Articles
 ========
@@ -1331,4 +1333,24 @@ Articles
 **URL:** https://arxiv.org/abs/1703.05192
 
 **Notes:** Another step in Style Transfer
+
+### Failures of Deep Learning
+
+**Authors:** Shai Shalev-Shwartz, Ohad Shamir, Shaked Shammah
+
+**Abstract:** In recent years, Deep Learning has become the go-to solution for a broad range of applications, often outperforming state-of-the-art. However, it is important, for both theoreticians and practitioners, to gain a deeper understanding of the difficulties and limitations associated with common approaches and algorithms. We describe four families of problems for which some of the commonly used existing algorithms fail or suffer significant difficulty. We illustrate the failures through practical experiments, and provide theoretical insights explaining their source, and how they might be remedied.
+
+**URL:** https://arxiv.org/abs/1703.07950
+
+**Notes:** like the title said - the failures of deep learning, I like the part about End2End vs. Decomposition (the latter is better), but there are more
+
+### Mask R-CNN
+
+**Authors:** Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick
+
+**Abstract:** We present a conceptually simple, flexible, and general framework for object instance segmentation. Our approach efficiently detects objects in an image while simultaneously generating a high-quality segmentation mask for each instance. The method, called Mask R-CNN, extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. Mask R-CNN is simple to train and adds only a small overhead to Faster R-CNN, running at 5 fps. Moreover, Mask R-CNN is easy to generalize to other tasks, e.g., allowing us to estimate human poses in the same framework. We show top results in all three tracks of the COCO suite of challenges, including instance segmentation, bounding-box object detection, and person keypoint detection. Without tricks, Mask R-CNN outperforms all existing, single-model entries on every task, including the COCO 2016 challenge winners. We hope our simple and effective approach will serve as a solid baseline and help ease future research in instance-level recognition. Code will be made available.
+
+**URL:** https://arxiv.org/abs/1703.06870
+
+**Notes:** FAIR's paper on faster image segmentation, the idea is they predict class & box offset and in parallel independently binary RoI mask, the architecture is shown to have better results on COCO, interesting what about MS COCO.
 
