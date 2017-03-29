@@ -128,6 +128,18 @@ Table of Contents
       * [Learning to Discover Cross\-Domain Relations with Generative Adversarial Networks](#learning-to-discover-cross-domain-relations-with-generative-adversarial-networks)
       * [Failures of Deep Learning](#failures-of-deep-learning)
       * [Mask R\-CNN](#mask-r-cnn)
+      * [Dance Dance Convolution](#dance-dance-convolution)
+      * [Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery](#unsupervised-anomaly-detection-with-generative-adversarial-networks-to-guide-marker-discovery)
+      * [Sequence\-to\-Sequence Models Can Directly Transcribe Foreign Speech](#sequence-to-sequence-models-can-directly-transcribe-foreign-speech)
+      * [A Structured Self\-attentive Sentence Embedding](#a-structured-self-attentive-sentence-embedding)
+      * [Deep Learning applied to NLP](#deep-learning-applied-to-nlp)
+      * [Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets](#improving-neural-machine-translation-with-conditional-sequence-generative-adversarial-nets)
+      * [Learning Simpler Language Models with the Delta Recurrent Neural Network Framework](#learning-simpler-language-models-with-the-delta-recurrent-neural-network-framework)
+      * [Exploring Question Understanding and Adaptation in Neural\-Network\-Based Question Answering](#exploring-question-understanding-and-adaptation-in-neural-network-based-question-answering)
+      * [Question Answering from Unstructured Text by Retrieval and Comprehension](#question-answering-from-unstructured-text-by-retrieval-and-comprehension)
+      * [FastQA: A Simple and Efficient Neural Architecture for Question Answering](#fastqa-a-simple-and-efficient-neural-architecture-for-question-answering)
+      * [End\-to\-end optimization of goal\-driven and visually grounded dialogue systems](#end-to-end-optimization-of-goal-driven-and-visually-grounded-dialogue-systems)
+      * [Learning to Remember Rare Events](#learning-to-remember-rare-events)
 
 Articles
 ========
@@ -1353,4 +1365,124 @@ Articles
 **URL:** https://arxiv.org/abs/1703.06870
 
 **Notes:** FAIR's paper on faster image segmentation, the idea is they predict class & box offset and in parallel independently binary RoI mask, the architecture is shown to have better results on COCO, interesting what about MS COCO.
+
+### Dance Dance Convolution
+
+**Authors:** Chris Donahue, Zachary C. Lipton, Julian McAuley
+
+**Abstract:** Dance Dance Revolution (DDR) is a popular rhythm-based video game. Players perform steps on a dance platform in synchronization with music as directed by on-screen step charts. While many step charts are available in standardized packs, users may grow tired of existing charts, or wish to dance to a song for which no chart exists. We introduce the task of learning to choreograph. Given a raw audio track, the goal is to produce a new step chart. This task decomposes naturally into two subtasks: deciding when to place steps and deciding which steps to select. For the step placement task, we combine recurrent and convolutional neural networks to ingest spectrograms of low-level audio features to predict steps, conditioned on chart difficulty. For step selection, we present a conditional LSTM generative model that substantially outperforms n-gram and fixed-window approaches.
+
+**URL:** https://arxiv.org/abs/1703.06891
+
+**Notes:** as one wise man once sad: before the actual progress in AI the Ai will be applied to a lot of funny but unnessesery things
+
+### Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery
+
+**Authors:** Thomas Schlegl, Philipp Seeböck, Sebastian M. Waldstein, Ursula Schmidt-Erfurth, Georg Langs
+
+**Abstract:** Obtaining models that capture imaging markers relevant for disease progression and treatment monitoring is challenging. Models are typically based on large amounts of data with annotated examples of known markers aiming at automating detection. High annotation effort and the limitation to a vocabulary of known markers limit the power of such approaches. Here, we perform unsupervised learning to identify anomalies in imaging data as candidates for markers. We propose AnoGAN, a deep convolutional generative adversarial network to learn a manifold of normal anatomical variability, accompanying a novel anomaly scoring scheme based on the mapping from image space to a latent space. Applied to new data, the model labels anomalies, and scores image patches indicating their fit into the learned distribution. Results on optical coherence tomography images of the retina demonstrate that the approach correctly identifies anomalous images, such as images containing retinal fluid or hyperreflective foci.
+
+**URL:** https://arxiv.org/abs/1703.05921
+
+**Notes:** could be helpful in detection of unusual behaviour on video stream
+
+### Sequence-to-Sequence Models Can Directly Transcribe Foreign Speech
+
+**Authors:** Ron J. Weiss, Jan Chorowski, Navdeep Jaitly, Yonghui Wu, Zhifeng Chen
+
+**Abstract:** We present a recurrent encoder-decoder deep neural network architecture that directly translates speech in one language into text in another. The model does not explicitly transcribe the speech into text in the source language, nor does it require supervision from the ground truth source language transcription during training. We apply a slightly modified sequence-to-sequence with attention architecture that has previously been used for speech recognition and show that it can be repurposed for this more complex task, illustrating the power of attention-based models. A single model trained end-to-end obtains state-of-the-art performance on the Fisher Callhome Spanish-English speech translation task, outperforming a cascade of independently trained sequence-to-sequence speech recognition and machine translation models by 1.8 BLEU points on the Fisher test set. In addition, we find that making use of the training data in both languages by multi-task training sequence-to-sequence speech translation and recognition models with a shared encoder network can improve performance by a further 1.4 BLEU points.
+
+**URL:** https://arxiv.org/abs/1703.08581
+
+**Notes:** Google guys created an architecture to translate on-the-fly - without transcribing into the text, fascinating. Its main feature - the CNN in the bottom onverting the sound into a vector, after that two bi-LSTMs to create embedding - that's for encoder, the decoder is simplier - just 4 LTSM layers with attention to Softmax.
+
+### A Structured Self-attentive Sentence Embedding
+
+**Authors:** Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, Yoshua Bengio
+
+**Abstract:** This paper proposes a new model for extracting an interpretable sentence embedding by introducing self-attention. Instead of using a vector, we use a 2-D matrix to represent the embedding, with each row of the matrix attending on a different part of the sentence. We also propose a self-attention mechanism and a special regularization term for the model. As a side effect, the embedding comes with an easy way of visualizing what specific parts of the sentence are encoded into the embedding. We evaluate our model on 3 different tasks: author profiling, sentiment classification, and textual entailment. Results show that our model yields a significant performance gain compared to other sentence embedding methods in all of the 3 tasks.
+
+**URL:** https://arxiv.org/abs/1703.03130
+
+**Notes:** nice work from IBM Watson and Bengio, matrix embedding for attention with Frobenius norm as regularization on it
+
+### Deep Learning applied to NLP
+
+**Authors:** Marc Moreno Lopez, Jugal Kalita
+
+**Abstract:** Convolutional Neural Network (CNNs) are typically associated with Computer Vision. CNNs are responsible for major breakthroughs in Image Classification and are the core of most Computer Vision systems today. More recently CNNs have been applied to problems in Natural Language Processing and gotten some interesting results. In this paper, we will try to explain the basics of CNNs, its different variations and how they have been applied to NLP.
+
+**URL:** https://arxiv.org/abs/1703.03091
+
+**Notes:** basic CNNs for NLP, could be useful
+
+### Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets
+
+**Authors:** Zhen Yang, Wei Chen, Feng Wang, Bo Xu
+
+**Abstract:** This paper proposes a new route for applying the generative adversarial nets (GANs) to NLP tasks (taking the neural machine translation as an instance) and the widespread perspective that GANs can't work well in the NLP area turns out to be unreasonable. In this work, we build a conditional sequence generative adversarial net which comprises of two adversarial sub models, a generative model (generator) which translates the source sentence into the target sentence as the traditional NMT models do and a discriminative model (discriminator) which discriminates the machine-translated target sentence from the human-translated sentence. From the perspective of Turing test, the proposed model is to generate the translation which is indistinguishable from the human-translated one. Experiments show that the proposed model achieves significant improvements than the traditional NMT model. In Chinese-English translation tasks, we obtain up to +2.0 BLEU points improvement. To the best of our knowledge, this is the first time that the quantitative results about the application of GANs in the traditional NLP task is reported. Meanwhile, we present detailed strategies for GAN training. In addition, We find that the discriminator of the proposed model shows great capability in data cleaning.
+
+**URL:** https://arxiv.org/abs/1703.04887
+
+**Notes:** Chinese guys have given nice description on GAN training process for NLP, namely NMT here
+
+### Learning Simpler Language Models with the Delta Recurrent Neural Network Framework
+
+**Authors:** Alexander G. Ororbia II, Tomas Mikolov, David Reitter
+
+**Abstract:** Learning useful information across long time lags is a critical and difficult problem for temporal neural models in tasks like language modeling. Existing architectures that address the issue are often complex and costly to train. The Delta Recurrent Neural Network (Delta-RNN) framework is a simple and high-performing design that unifies previously proposed gated neural models. The Delta-RNN models maintain longer-term memory by learning to interpolate between a fast-changing data-driven representation and a slowly changing, implicitly stable state. This requires hardly any more parameters than a classical simple recurrent network. The models outperform popular complex architectures, such as the Long Short Term Memory (LSTM) and the Gated Recurrent Unit (GRU) and achieve state-of-the art performance in language modeling at character and word levels and yield comparable performance at the subword level.
+
+**URL:** https://arxiv.org/abs/1703.08864
+
+**Notes:** Delta-RNN one more type of RNNs, seems to be simplier
+
+### Exploring Question Understanding and Adaptation in Neural-Network-Based Question Answering
+
+**Authors:** Junbei Zhang, Xiaodan Zhu, Qian Chen, Lirong Dai, Hui Jiang
+
+**Abstract:** The last several years have seen intensive interest in exploring neural-network-based models for machine comprehension (MC) and question answering (QA). In this paper, we approach the problems by closely modelling questions in a neural network framework. We first introduce syntactic information to help encode questions. We then view and model different types of questions and the information shared among them as an adaptation task and proposed adaptation models for them. On the Stanford Question Answering Dataset (SQuAD), we show that these approaches can help attain better results over a competitive baseline.
+
+**URL:** https://arxiv.org/abs/1703.04617
+
+**Notes:** QA with discrimination and embeddings in the bottom
+
+### Question Answering from Unstructured Text by Retrieval and Comprehension
+
+**Authors:** Yusuke Watanabe, Bhuwan Dhingra, Ruslan Salakhutdinov
+
+**Abstract:** Open domain Question Answering (QA) systems must interact with external knowledge sources, such as web pages, to find relevant information. Information sources like Wikipedia, however, are not well structured and difficult to utilize in comparison with Knowledge Bases (KBs). In this work we present a two-step approach to question answering from unstructured text, consisting of a retrieval step and a comprehension step. For comprehension, we present an RNN based attention model with a novel mixture mechanism for selecting answers from either retrieved articles or a fixed vocabulary. For retrieval we introduce a hand-crafted model and a neural model for ranking relevant articles. We achieve state-of-the-art performance on WIKI MOVIES dataset, reducing the error by 40%. Our experimental results further demonstrate the importance of each of the introduced components.
+
+**URL:** https://arxiv.org/abs/1703.08885
+
+**Notes:** comprehension of wikipedia articles to answer the questions
+
+### FastQA: A Simple and Efficient Neural Architecture for Question Answering
+
+**Authors:** Dirk Weissenborn, Georg Wiese, Laura Seiffe
+
+**Abstract:** Recent development of large-scale question answering (QA) datasets triggered a substantial amount of research into end-to-end neural architectures for QA. Increasingly complex systems have been conceived without comparison to a simpler neural baseline system that would justify their complexity. In this work, we propose a simple heuristic that guided the development of FastQA, an efficient end-to-end neural model for question answering that is very competitive with existing models. We further demonstrate, that an extended version (FastQAExt) achieves state-of-the-art results on recent benchmark datasets, namely SQuAD, NewsQA and MsMARCO, outperforming most existing models. However, we show that increasing the complexity of FastQA to FastQAExt does not yield any systematic improvements. We argue that the same holds true for most existing systems that are similar to FastQAExt. A manual analysis reveals that our proposed heuristic explains most predictions of our model, which indicates that modeling a simple heuristic is enough to achieve strong performance on extractive QA datasets. The overall strong performance of FastQA puts results of existing, more complex models into perspective.
+
+**URL:** https://arxiv.org/abs/1703.04816
+
+**Notes:** non recurrecnt QA architecture!
+
+### End-to-end optimization of goal-driven and visually grounded dialogue systems
+
+**Authors:** Florian Strub, Harm de Vries, Jeremie Mary, Bilal Piot, Aaron Courville, Olivier Pietquin
+
+**Abstract:** End-to-end design of dialogue systems has recently become a popular research topic thanks to powerful tools such as encoder-decoder architectures for sequence-to-sequence learning. Yet, most current approaches cast human-machine dialogue management as a supervised learning problem, aiming at predicting the next utterance of a participant given the full history of the dialogue. This vision is too simplistic to render the intrinsic planning problem inherent to dialogue as well as its grounded nature, making the context of a dialogue larger than the sole history. This is why only chit-chat and question answering tasks have been addressed so far using end-to-end architectures. In this paper, we introduce a Deep Reinforcement Learning method to optimize visually grounded task-oriented dialogues, based on the policy gradient algorithm. This approach is tested on a dataset of 120k dialogues collected through Mechanical Turk and provides encouraging results at solving both the problem of generating natural dialogues and the task of discovering a specific object in a complex picture.
+
+**URL:** https://arxiv.org/abs/1703.05423
+
+**Notes:** DeepMind paper on training dialog systems, RL & RNNs
+
+### Learning to Remember Rare Events
+
+**Authors:** Łukasz Kaiser, Ofir Nachum, Aurko Roy, Samy Bengio
+
+**Abstract:** Despite recent advances, memory-augmented deep neural networks are still limited when it comes to life-long and one-shot learning, especially in remembering rare events. We present a large-scale life-long memory module for use in deep learning. The module exploits fast nearest-neighbor algorithms for efficiency and thus scales to large memory sizes. Except for the nearest-neighbor query, the module is fully differentiable and trained end-to-end with no extra supervision. It operates in a life-long manner, i.e., without the need to reset it during training. Our memory module can be easily added to any part of a supervised neural network. To show its versatility we add it to a number of networks, from simple convolutional ones tested on image classification to deep sequence-to-sequence and recurrent-convolutional models. In all cases, the enhanced network gains the ability to remember and do life-long one-shot learning. Our module remembers training examples shown many thousands of steps in the past and it can successfully generalize from them. We set new state-of-the-art for one-shot learning on the Omniglot dataset and demonstrate, for the first time, life-long one-shot learning in recurrent neural networks on a large-scale machine translation task.
+
+**URL:** https://arxiv.org/abs/1703.03129
+
+**Notes:** memory module architecture from Bengio
 
