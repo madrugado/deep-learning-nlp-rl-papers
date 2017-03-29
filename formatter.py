@@ -58,6 +58,7 @@ class ArticleFormatter:
     def _print(self):
         self.buf = list(filter(lambda x: x, self.buf))
         if len(self.buf) != 5:
+            print("\n".join(self.buf) + "\n")
             raise ValueError("Wrong article description format!")
         printed = ""
         if self.buf[0][:3] != "###":
