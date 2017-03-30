@@ -11,6 +11,8 @@ Table of Contents
       * [Concurrent Reinforcement Learning from Customer Interactions\.](#concurrent-reinforcement-learning-from-customer-interactions)
     * [2014\-02](#2014-02)
       * [A Clockwork RNN](#a-clockwork-rnn)
+    * [2015\-06](#2015-06)
+      * [Cyclical Learning Rates for Training Neural Networks](#cyclical-learning-rates-for-training-neural-networks)
     * [2015\-11](#2015-11)
       * [Unitary Evolution Recurrent Neural Networks](#unitary-evolution-recurrent-neural-networks)
       * [Adversarial Autoencoders](#adversarial-autoencoders)
@@ -299,6 +301,17 @@ Articles
 **URL:** http://arxiv.org/abs/1402.3511
 
 **Notes:** base paper for intermediate steps in RNNs
+
+## 2015-06
+### Cyclical Learning Rates for Training Neural Networks
+
+**Authors:** Leslie N. Smith
+
+**Abstract:** It is known that the learning rate is the most important hyper-parameter to tune for training deep neural networks. This paper describes a new method for setting the learning rate, named cyclical learning rates, which practically eliminates the need to experimentally find the best values and schedule for the global learning rates. Instead of monotonically decreasing the learning rate, this method lets the learning rate cyclically vary between reasonable boundary values. Training with cyclical learning rates instead of fixed values achieves improved classification accuracy without a need to tune and often in fewer iterations. This paper also describes a simple way to estimate "reasonable bounds" -- linearly increasing the learning rate of the network for a few epochs. In addition, cyclical learning rates are demonstrated on the CIFAR-10 and CIFAR-100 datasets with ResNets, Stochastic Depth networks, and DenseNets, and the ImageNet dataset with the AlexNet and GoogLeNet architectures. These are practical tools for everyone who trains neural networks.
+
+**URL:** https://arxiv.org/abs/1506.01186
+
+**Notes:** self-describing title, seems to really have some potential - with CLR the learning curve is steeper, could be useful, when we need fast training
 
 ## 2015-11
 ### Unitary Evolution Recurrent Neural Networks
