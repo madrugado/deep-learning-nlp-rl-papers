@@ -1480,7 +1480,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1609.07843
 
-**Notes:**
+**Notes:** the idea is to add pointer loss, i.e. when a word is repeated we could know that, pointing to the previous occurence of it, and base of softmax brings the universality to the mixture model
 
 ### Creating Causal Embeddings for Question Answering with Minimal Supervision
 
