@@ -140,6 +140,7 @@ Table of Contents
       * [FastQA: A Simple and Efficient Neural Architecture for Question Answering](#fastqa-a-simple-and-efficient-neural-architecture-for-question-answering)
       * [End\-to\-end optimization of goal\-driven and visually grounded dialogue systems](#end-to-end-optimization-of-goal-driven-and-visually-grounded-dialogue-systems)
       * [Learning to Remember Rare Events](#learning-to-remember-rare-events)
+      * [Generalization and Equilibrium in Generative Adversarial Nets (GANs)](#generalization-and-equilibrium-in-generative-adversarial-nets-gans)
 
 Articles
 ========
@@ -1485,4 +1486,14 @@ Articles
 **URL:** https://arxiv.org/abs/1703.03129
 
 **Notes:** memory module architecture from Bengio
+
+### Generalization and Equilibrium in Generative Adversarial Nets (GANs)
+
+**Authors:** Sanjeev Arora, Rong Ge, Yingyu Liang, Tengyu Ma, Yi Zhang
+
+**Abstract:** This paper makes progress on several open theoretical issues related to Generative Adversarial Networks. A definition is provided for what it means for the training to generalize, and it is shown that generalization is not guaranteed for the popular distances between distributions such as Jensen-Shannon or Wasserstein. We introduce a new metric called neural net distance for which generalization does occur. We also show that an approximate pure equilibrium in the 2-player game exists for a natural training objective (Wasserstein). Showing such a result has been an open problem (for any training objective). Finally, the above theoretical ideas lead us to propose a new training protocol, MIX+GAN, which can be combined with any existing method. We present experiments showing that it stabilizes and improves some existing methods.
+
+**URL:** https://arxiv.org/abs/1703.00573
+
+**Notes:** theory behind GANs, finite mixture of random variables could be enough to approximate inifinite mixture with Wasserstein loss
 
