@@ -141,6 +141,7 @@ Table of Contents
       * [End\-to\-end optimization of goal\-driven and visually grounded dialogue systems](#end-to-end-optimization-of-goal-driven-and-visually-grounded-dialogue-systems)
       * [Learning to Remember Rare Events](#learning-to-remember-rare-events)
       * [Generalization and Equilibrium in Generative Adversarial Nets (GANs)](#generalization-and-equilibrium-in-generative-adversarial-nets-gans)
+      * [The cognitive roots of regularization in language](#the-cognitive-roots-of-regularization-in-language)
     * [2017\-04](#2017-04)
       * [It Takes Two to Tango: Towards Theory of AI's Mind](#it-takes-two-to-tango-towards-theory-of-ais-mind)
 
@@ -1498,6 +1499,16 @@ Articles
 **URL:** https://arxiv.org/abs/1703.00573
 
 **Notes:** theory behind GANs, finite mixture of random variables could be enough to approximate inifinite mixture with Wasserstein loss
+
+### The cognitive roots of regularization in language
+
+**Authors:** Vanessa Ferdinand, Simon Kirby, Kenny Smith
+
+**Abstract:** Regularization occurs when the output a learner produces is less variable than the linguistic data they observed. In an artificial language learning experiment, we show that there exist at least two independent sources of regularization bias in cognition: a domain-general source based on cognitive load and a domain-specific source triggered by linguistic stimuli. Both of these factors modulate how frequency information is encoded and produced, but only the production-side modulations result in regularization (i.e. cause learners to eliminate variation from the observed input). We formalize the definition of regularization as the reduction of entropy and find that entropy measures are better at identifying regularization behavior than frequency-based analyses. We also use a model of cultural transmission to extrapolate from our experimental data in order to predict the amount of regularization which would develop in each experimental condition if the artificial language was transmitted over several generations of learners. Here we find an interaction between cognitive load and linguistic domain, suggesting that the effect of cognitive constraints can become more complex when put into the context of cultural evolution: although learning biases certainly carry information about the course of language evolution, we should not expect a one-to-one correspondence between the micro-level processes that regularize linguistic datasets and the macro-level evolution of linguistic regularity.
+
+**URL:** https://arxiv.org/abs/1703.03442
+
+**Notes:** a paper about human cognition: people know the words and could do so called regularization - overproduce say most frequent word in a row of seen words when they are asked to reproduce the row; for the random words the regularization is smaller - people need to make more effort to remember them (in the example); also there are other thing in the article, but that seems to me the most important
 
 ## 2017-04
 ### It Takes Two to Tango: Towards Theory of AI's Mind
