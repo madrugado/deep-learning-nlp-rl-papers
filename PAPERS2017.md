@@ -145,6 +145,7 @@ Table of Contents
       * [Multiagent Bidirectionally\-Coordinated Nets for Learning to Play StarCraft Combat Games](#multiagent-bidirectionally-coordinated-nets-for-learning-to-play-starcraft-combat-games)
     * [2017\-04](#2017-04)
       * [It Takes Two to Tango: Towards Theory of AI's Mind](#it-takes-two-to-tango-towards-theory-of-ais-mind)
+      * [Frames: A Corpus For Adding Memory To Goal\-Oriented Dialogue Systems](#frames-a-corpus-for-adding-memory-to-goal-oriented-dialogue-systems)
 
 Articles
 ========
@@ -1531,4 +1532,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.00717
 
 **Notes:** people are trying to represent visual question answering as AI, little bit pretentious as for me, but the approach is interesting
+
+### Frames: A Corpus For Adding Memory To Goal-Oriented Dialogue Systems
+
+**Authors:** Layla El Asri, Hannes Schulz, Shikhar Sharma, Jeremie Zumer, Justin Harris, Emery Fine, Rahul Mehrotra, Kaheer Suleman
+
+**Abstract:** This  paper  presents  the Frames dataset,  a  corpus  of  1369  human-human  dia-logues with an average of 15 turns per dialogue.   We developed this dataset tostudy the role of memory in goal-oriented dialogue systems.  Based on Frames,we introduce a task calledframe tracking, which extends state tracking to a set-ting where several states are tracked simultaneously. We propose a baseline modelfor this task. We show that Frames can also be used to study memory in dialoguemanagement and information presentation through natural language generation.
+
+**URL:** https://arxiv.org/abs/1704.00057
+
+**Notes:** new paper presenting dataset with human2human conversations
 
