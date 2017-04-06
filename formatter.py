@@ -116,12 +116,12 @@ with open(filepath) as f:
         l = line.strip()
         if l == "Table of Contents":
             pass_lines = True
-        elif l == "Articles":
+        elif l in ["Articles", "Miscellaneous"]:
             pass_lines = False
             formatted += l + "\n"
-        elif l == "========":
+        elif l in ["========", "============="]:
             formatted += l + "\n"
-        elif l[:5] == "## 20":
+        elif l[:3] == "## ":
             formatted += l + "\n"
         elif not pass_lines:
             formatted += formatter(l)
