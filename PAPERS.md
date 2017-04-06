@@ -218,7 +218,8 @@ Table of Contents
       * [Intelligible Language Modeling with Input Switched Affine Networks](#intelligible-language-modeling-with-input-switched-affine-networks)
       * [NewsQA: A Machine Comprehension Dataset](#newsqa-a-machine-comprehension-dataset)
       * [Identity\-sensitive Word Embedding through Heterogeneous Networks](#identity-sensitive-word-embedding-through-heterogeneous-networks)
-      * [GANS for Sequences of Discrete Elements with the Gumbel\-softmax Distribution](#gans-for-sequences-of-discrete-elements-with-the-gumbel-softmax-distribution)
+      * [GANs for Sequences of Discrete Elements with the Gumbel\-softmax Distribution](#gans-for-sequences-of-discrete-elements-with-the-gumbel-softmax-distribution)
+      * [PGQ: Combining policy gradient and Q\-learning](#pgq-combining-policy-gradient-and-q-learning)
     * [2016\-12](#2016-12)
       * [Overcoming catastrophic forgetting in neural networks](#overcoming-catastrophic-forgetting-in-neural-networks)
       * [Bootstrapping incremental dialogue systems: using linguistic knowledge to learn from minimal data](#bootstrapping-incremental-dialogue-systems-using-linguistic-knowledge-to-learn-from-minimal-data)
@@ -2264,7 +2265,7 @@ Articles
 
 **Notes:** Статья о том, как учить разные эмбеддинги для слов значащих разное в разных контекстах.
 
-### GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution
+### GANs for Sequences of Discrete Elements with the Gumbel-softmax Distribution
 
 **Authors:** Matt J. Kusner, José Miguel Hernández-Lobato
 
@@ -2272,7 +2273,17 @@ Articles
 
 **URL:** https://arxiv.org/abs/1611.04051
 
-**Notes:** a paper from NIPS, thnx to Alex
+**Notes:** a paper from NIPS, thnx to Alex; Gumbel intro for me
+
+### PGQ: Combining policy gradient and Q-learning
+
+**Authors:** Brendan O'Donoghue, Remi Munos, Koray Kavukcuoglu, Volodymyr Mnih
+
+**Abstract:** Policy gradient is an efficient technique for improving a policy in a reinforcement learning setting. However, vanilla online variants are on-policy only and not able to take advantage of off-policy data. In this paper we describe a new technique that combines policy gradient with off-policy Q-learning, drawing experience from a replay buffer. This is motivated by making a connection between the fixed points of the regularized policy gradient algorithm and the Q-values. This connection allows us to estimate the Q-values from the action preferences of the policy, to which we apply Q-learning updates. We refer to the new technique as 'PGQ', for policy gradient and Q-learning. We also establish an equivalency between action-value fitting techniques and actor-critic algorithms, showing that regularized policy gradient techniques can be interpreted as advantage function learning algorithms. We conclude with some numerical examples that demonstrate improved data efficiency and stability of PGQ. In particular, we tested PGQ on the full suite of Atari games and achieved performance exceeding that of both asynchronous advantage actor-critic (A3C) and Q-learning.
+
+**URL:** https://arxiv.org/abs/1611.01626
+
+**Notes:** updated version of this paper has been released; PGQ is one of today's SOTA in RL
 
 ## 2016-12
 ### Overcoming catastrophic forgetting in neural networks
@@ -2303,7 +2314,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1612.00385
 
-**Notes:** принятие решения по последовательности c участивем внимания, обещают какую-то разумную интерпретацию
+**Notes:** attention, which is devived in temporal manner from the inputs along with actual recurrent NN 
 
 ### End-to-End Joint Learning of Natural Language Understanding and Dialogue Manager
 
