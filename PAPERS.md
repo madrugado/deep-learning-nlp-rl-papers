@@ -11,6 +11,8 @@ Table of Contents
       * [Concurrent Reinforcement Learning from Customer Interactions\.](#concurrent-reinforcement-learning-from-customer-interactions)
     * [2014\-02](#2014-02)
       * [A Clockwork RNN](#a-clockwork-rnn)
+    * [2014\-04](#2014-04)
+      * [A Convolutional Neural Network for Modelling Sentences](#a-convolutional-neural-network-for-modelling-sentences)
     * [2015\-06](#2015-06)
       * [Cyclical Learning Rates for Training Neural Networks](#cyclical-learning-rates-for-training-neural-networks)
     * [2015\-11](#2015-11)
@@ -302,6 +304,17 @@ Articles
 **URL:** http://arxiv.org/abs/1402.3511
 
 **Notes:** base paper for intermediate steps in RNNs
+
+## 2014-04
+### A Convolutional Neural Network for Modelling Sentences
+
+**Authors:** Nal Kalchbrenner, Edward Grefenstette, Phil Blunsom
+
+**Abstract:** The ability to accurately represent sentences is central to language understanding. We describe a convolutional architecture dubbed the Dynamic Convolutional Neural Network (DCNN) that we adopt for the semantic modelling of sentences. The network uses Dynamic k-Max Pooling, a global pooling operation over linear sequences. The network handles input sentences of varying length and induces a feature graph over the sentence that is capable of explicitly capturing short and long-range relations. The network does not rely on a parse tree and is easily applicable to any language. We test the DCNN in four experiments: small scale binary and multi-class sentiment prediction, six-way question classification and Twitter sentiment prediction by distant supervision. The network achieves excellent performance in the first three tasks and a greater than 25% error reduction in the last task with respect to the strongest baseline.
+
+**URL:** https://arxiv.org/abs/1404.2188
+
+**Notes:** very nice idea of dynamic k-max pooling, so we could produce trees (effectively) with convolutions
 
 ## 2015-06
 ### Cyclical Learning Rates for Training Neural Networks
@@ -2314,7 +2327,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1612.00385
 
-**Notes:** attention, which is devived in temporal manner from the inputs along with actual recurrent NN 
+**Notes:** attention, which is devived in temporal manner from the inputs along with actual recurrent NN
 
 ### End-to-End Joint Learning of Natural Language Understanding and Dialogue Manager
 
