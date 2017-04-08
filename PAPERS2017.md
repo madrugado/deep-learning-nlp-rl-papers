@@ -146,6 +146,7 @@ Table of Contents
     * [2017\-04](#2017-04)
       * [It Takes Two to Tango: Towards Theory of AI's Mind](#it-takes-two-to-tango-towards-theory-of-ais-mind)
       * [Frames: A Corpus For Adding Memory To Goal\-Oriented Dialogue Systems](#frames-a-corpus-for-adding-memory-to-goal-oriented-dialogue-systems)
+      * [Learning to Generate Reviews and Discovering Sentiment](#learning-to-generate-reviews-and-discovering-sentiment)
 
 Articles
 ========
@@ -1542,4 +1543,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.00057
 
 **Notes:** new paper presenting dataset with human2human conversations
+
+### Learning to Generate Reviews and Discovering Sentiment
+
+**Authors:** Alec Radford, Rafal Jozefowicz, Ilya Sutskever
+
+**Abstract:** We explore the properties of byte-level recurrent language models. When given sufficient amounts of capacity, training data, and compute time, the representations learned by these models include disentangled features corresponding to high-level concepts. Specifically, we find a single unit which performs sentiment analysis. These representations, learned in an unsupervised manner, achieve state of the art on the binary subset of the Stanford Sentiment Treebank. They are also very data efficient. When using only a handful of labeled examples, our approach matches the performance of strong baselines trained on full datasets. We also demonstrate the sentiment unit has a direct influence on the generative process of the model. Simply fixing its value to be positive or negative generates samples with the corresponding positive or negative sentiment.
+
+**URL:** https://arxiv.org/abs/1704.01444
+
+**Notes:** a lot of hype around this OpenAI paper; it is nice, that there is a dimension responsible for sentiment, but I don't see any magic here: it is game of chance, as for me
 

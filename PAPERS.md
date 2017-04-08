@@ -150,6 +150,7 @@ Table of Contents
       * [Semantic Parsing with Semi\-Supervised Sequential Autoencoders](#semantic-parsing-with-semi-supervised-sequential-autoencoders)
       * [Inducing Multilingual Text Analysis Tools Using Bidirectional Recurrent Neural Networks](#inducing-multilingual-text-analysis-tools-using-bidirectional-recurrent-neural-networks)
       * [Efficient softmax approximation for GPUs](#efficient-softmax-approximation-for-gpus)
+      * [Multiplicative LSTM for sequence modelling](#multiplicative-lstm-for-sequence-modelling)
     * [2016\-10](#2016-10)
       * [Empirical Evaluation of RNN Architectures on Sentence Classification Task](#empirical-evaluation-of-rnn-architectures-on-sentence-classification-task)
       * [Learning to Translate in Real\-time with Neural Machine Translation](#learning-to-translate-in-real-time-with-neural-machine-translation)
@@ -1595,6 +1596,16 @@ Articles
 **URL:** https://arxiv.org/abs/1609.04309
 
 **Notes:** splitting all the words by clusters of frequencies gives the performance boost
+
+### Multiplicative LSTM for sequence modelling
+
+**Authors:** Ben Krause, Liang Lu, Iain Murray, Steve Renals
+
+**Abstract:** This paper introduces multiplicative LSTM, a novel hybrid recurrent neural network architecture for sequence modelling that combines the long short-term memory (LSTM) and multiplicative recurrent neural network architectures. Multiplicative LSTM is motivated by its flexibility to have very different recurrent transition functions for each possible input, which we argue helps make it more expressive in autoregressive density estimation. We show empirically that multiplicative LSTM outperforms standard LSTM and its deep variants for a range of character level modelling tasks. We also found that this improvement increases as the complexity of the task scales up. This model achieves a test error of 1.19 bits/character on the last 4 million characters of the Hutter prize dataset when combined with dynamic evaluation.
+
+**URL:** https://arxiv.org/abs/1609.07959
+
+**Notes:** I've missed this paper last year, but now it is mentioned in Sutskever's new paper about sentiment; the main idea on mRNN (and subsequently mLSTM) - the decomposition of weight matrix to two matrices: one FC on hidden2hidden and one diag input-dependent
 
 ## 2016-10
 ### Empirical Evaluation of RNN Architectures on Sentence Classification Task
