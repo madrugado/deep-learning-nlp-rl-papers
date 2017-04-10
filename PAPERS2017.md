@@ -109,6 +109,7 @@ Table of Contents
       * [Coherent Dialogue with Attention\-Based Language Models](#coherent-dialogue-with-attention-based-language-models)
       * [On the Origin of Deep Learning](#on-the-origin-of-deep-learning)
       * [Bridging the Gap Between Value and Policy Based Reinforcement Learning](#bridging-the-gap-between-value-and-policy-based-reinforcement-learning)
+      * [Rationalization: A Neural Machine Translation Approach to Generating Natural Language Explanations](#rationalization-a-neural-machine-translation-approach-to-generating-natural-language-explanations)
     * [2017\-03](#2017-03)
       * [End\-to\-End Task\-Completion Neural Dialogue Systems](#end-to-end-task-completion-neural-dialogue-systems)
       * [Controllable Text Generation](#controllable-text-generation)
@@ -147,6 +148,7 @@ Table of Contents
       * [It Takes Two to Tango: Towards Theory of AI's Mind](#it-takes-two-to-tango-towards-theory-of-ais-mind)
       * [Frames: A Corpus For Adding Memory To Goal\-Oriented Dialogue Systems](#frames-a-corpus-for-adding-memory-to-goal-oriented-dialogue-systems)
       * [Learning to Generate Reviews and Discovering Sentiment](#learning-to-generate-reviews-and-discovering-sentiment)
+      * [Beating Atari with Natural Language Guided Reinforcement Learning](#beating-atari-with-natural-language-guided-reinforcement-learning)
 
 Articles
 ========
@@ -1192,6 +1194,16 @@ Articles
 
 **Notes:** differentiable RL from Google Brain, at least it seems to be so, could be useful
 
+### Rationalization: A Neural Machine Translation Approach to Generating Natural Language Explanations
+
+**Authors:** Brent Harrison, Upol Ehsan, Mark O. Riedl
+
+**Abstract:** We introduce AI rationalization, an approach for generating explanations of autonomous system behavior as if a human had done the behavior. We describe a rationalization technique that uses neural machine translation to translate internal state-action representations of the autonomous agent into natural language. We evaluate our technique in the Frogger game environment. The natural language is collected from human players thinking out loud as they play the game. We motivate the use of rationalization as an approach to explanation generation, show the results of experiments on the accuracy of our rationalization technique, and describe future research agenda.
+
+**URL:** https://arxiv.org/abs/1702.07826
+
+**Notes:** using people's thoughts while gameplay as dataset to create a model to transcribe desitions into natural language
+
 ## 2017-03
 ### End-to-End Task-Completion Neural Dialogue Systems
 
@@ -1553,4 +1565,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.01444
 
 **Notes:** a lot of hype around this OpenAI paper; it is nice, that there is a dimension responsible for sentiment, but I don't see any magic here: it is game of chance, as for me
+
+### Beating Atari with Natural Language Guided Reinforcement Learning
+
+**Authors:** Russell Kaplan, Christopher Sauer, Alexander Sosa
+
+**Abstract:** We introduce the first deep reinforcement learning agent that learns to beat Atari games with the aid of natural language instructions. The agent uses a multimodal embedding between environment observations and natural language to self-monitor progress through a list of English instructions, granting itself additional reward for completing instructions in addition to increasing the game score. Our agent significantly outperforms Deep-Q Networks, Asynchronous Advantage Actor-Critic (A3C) agents, and the best agents posted to OpenAI Gym [4] on what is often considered the hardest Atari 2600 environment [2]: Montezuma's Revenge.
+
+**URL:** http://web.stanford.edu/class/cs224n/reports/2762090.pdf
+
+**Notes:** Socher's students paper; they guide the angent, so teach it natural language, nice
 
