@@ -1,5 +1,4 @@
-# deep-learning-nlp-rl-papers
-Recent Deep Learning papers in NLU and RL
+# Recent Deep Learning papers in NLU and RL
 
 I think that other people notes are rarely useful, so I'm listing the interesting for me papers with a few words about the main idea for me to make references in memory.
 
