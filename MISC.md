@@ -7,6 +7,8 @@ Table of Contents
       * [Monte Carlo Methods and Importance Sampling](#monte-carlo-methods-and-importance-sampling)
     * [Blueprints](#blueprints)
       * [In\-Datacenter Performance Analysis of a Tensor Processing Unit​](#in-datacenter-performance-analysis-of-a-tensor-processing-unit)
+    * [Reports](#reports)
+      * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
 
 Miscellaneous
 =============
@@ -31,4 +33,15 @@ Miscellaneous
 **URL:** https://drive.google.com/file/d/0Bx4hafXDDq2EMzRNcy1vSUxtcEk/view
 
 **Notes:** a blueprint about new Google TPUs; fascinating future of Deep Learning
+
+## Reports
+### Best Practices for Applying Deep Learning to Novel Applications
+
+**Authors:** Leslie N. Smith
+
+**Abstract:** This report is targeted to groups who are subject matter experts in their application but deep learning novices. It contains practical advice for those interested in testing the use of deep neural networks on applications that are novel for deep learning. We suggest making your project more manageable by dividing it into phases. For each phase this report contains numerous recommendations and insights to assist novice practitioners.
+
+**URL:** https://arxiv.org/abs/1704.01568
+
+**Notes:** some notes on applying DL to new areas
 
