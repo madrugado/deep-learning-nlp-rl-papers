@@ -13,3 +13,6 @@ Also I've found that, there are some additional materials which are helpful for 
 
 ## Table of Contents
 I'm using [toc maker](https://github.com/ekalinin/github-markdown-toc.go) from Eugeny Kalinin, it is very useful, thank to him for this tool.
+
+## Twitter integration
+For twitting I'm using the perfect ["t"](https://github.com/sferik/t). It is really elegant and simple to use.
