@@ -110,6 +110,7 @@ Table of Contents
       * [On the Origin of Deep Learning](#on-the-origin-of-deep-learning)
       * [Bridging the Gap Between Value and Policy Based Reinforcement Learning](#bridging-the-gap-between-value-and-policy-based-reinforcement-learning)
       * [Rationalization: A Neural Machine Translation Approach to Generating Natural Language Explanations](#rationalization-a-neural-machine-translation-approach-to-generating-natural-language-explanations)
+      * [Hybrid Code Networks: practical and efficient end\-to\-end dialog control with supervised and reinforcement learning](#hybrid-code-networks-practical-and-efficient-end-to-end-dialog-control-with-supervised-and-reinforcement-learning)
     * [2017\-03](#2017-03)
       * [End\-to\-End Task\-Completion Neural Dialogue Systems](#end-to-end-task-completion-neural-dialogue-systems)
       * [Controllable Text Generation](#controllable-text-generation)
@@ -1203,6 +1204,16 @@ Articles
 **URL:** https://arxiv.org/abs/1702.07826
 
 **Notes:** using people's thoughts while gameplay as dataset to create a model to transcribe desitions into natural language
+
+### Hybrid Code Networks: practical and efficient end-to-end dialog control with supervised and reinforcement learning
+
+**Authors:** Jason D. Williams, Kavosh Asadi, Geoffrey Zweig
+
+**Abstract:** End-to-end learning of recurrent neural networks (RNNs) is an attractive solution for dialog systems; however, current techniques are data-intensive and require thousands of dialogs to learn simple behaviors. We introduce Hybrid Code Networks (HCNs), which combine an RNN with domain-specific knowledge encoded as software and system action templates. Compared to existing end-to-end approaches, HCNs considerably reduce the amount of training data required, while retaining the key benefit of inferring a latent representation of dialog state. In addition, HCNs can be optimized with supervised learning, reinforcement learning, or a mixture of both. HCNs attain state-of-the-art performance on the bAbI dialog dataset, and outperform two commercially deployed customer-facing dialog systems.
+
+**URL:** https://arxiv.org/abs/1702.03274
+
+**Notes:** very similar to the germans' paper; architecture is really close
 
 ## 2017-03
 ### End-to-End Task-Completion Neural Dialogue Systems
