@@ -13,7 +13,8 @@ else:  # assuming that it is python 3
 
 
 class ArticleFormatter:
-    def __init__(self):
+    def __init__(self, twitter_command=""):
+        self.twitter_command = twitter_command
         self._init()
 
     def _init(self):
@@ -28,11 +29,18 @@ class ArticleFormatter:
         self.has_URL = False
         self.has_notes = False
 
+        self.new_article = False
+
     def __call__(self, s):
         self.buf.append(s)
         self._analyze()
         if self.has_title and self.has_authors and self.has_abstract and self.has_URL and self.has_notes:
             printed = self._print()
+            if self.new_article and self.twitter_command:
+                twit = "\"" + (self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]) \
+                       + " " + (self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[4][9:]) + "\""
+                print("twitting: " + twit)
+                cmd.getstatusoutput(self.twitter_command + " " + twit)
             self._init()
             return printed
         else:
@@ -73,8 +81,10 @@ class ArticleFormatter:
         if self.buf[3][:8] != "**URL:**":
             printed += "**URL:** "
         printed += self.buf[3] + "\n\n"
+
         if self.buf[4][:10] != "**Notes:**":
             printed += "**Notes:** "
+            self.new_article = True
         printed += self.buf[4] + "\n\n"
 
         return printed
@@ -82,6 +92,8 @@ class ArticleFormatter:
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--toc-maker", help="path to ToC making tool")
+parser.add_argument("--twitter-poster", default="t update", help="twitter poster command")
+parser.add_argument("-t", "--use-twitter", action="store_true")
 
 known_args, unknown_args = parser.parse_known_args()
 
@@ -111,7 +123,11 @@ formatted = ""
 
 with open(filepath) as f:
     pass_lines = False
-    formatter = ArticleFormatter()
+    if known_args.use_twitter:
+        formatter = ArticleFormatter(known_args.twitter_poster)
+    else:
+        formatter = ArticleFormatter()
+
     for line in f:
         l = line.strip()
         if l == "Table of Contents":
