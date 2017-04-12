@@ -150,6 +150,8 @@ Table of Contents
       * [Frames: A Corpus For Adding Memory To Goal\-Oriented Dialogue Systems](#frames-a-corpus-for-adding-memory-to-goal-oriented-dialogue-systems)
       * [Learning to Generate Reviews and Discovering Sentiment](#learning-to-generate-reviews-and-discovering-sentiment)
       * [Beating Atari with Natural Language Guided Reinforcement Learning](#beating-atari-with-natural-language-guided-reinforcement-learning)
+      * [Improved Training of Wasserstein GANs](#improved-training-of-wasserstein-gans)
+      * [Bayesian Recurrent Neural Networks](#bayesian-recurrent-neural-networks)
 
 Articles
 ========
@@ -1586,4 +1588,24 @@ Articles
 **URL:** http://web.stanford.edu/class/cs224n/reports/2762090.pdf
 
 **Notes:** Socher's students paper; they guide the angent, so teach it natural language, nice
+
+### Improved Training of Wasserstein GANs
+
+**Authors:** Ishaan Gulrajani, Faruk Ahmed, Martin Arjovsky, Vincent Dumoulin, Aaron Courville
+
+**Abstract:** Generative Adversarial Networks (GANs) are powerful generative models, but suffer from training instability. The recently proposed Wasserstein GAN (WGAN) makes significant progress toward stable training of GANs, but can still generate low-quality samples or fail to converge in some settings. We find that these training failures are often due to the use of weight clipping in WGAN to enforce a Lipschitz constraint on the critic, which can lead to pathological behavior. We propose an alternative method for enforcing the Lipschitz constraint: instead of clipping weights, penalize the norm of the gradient of the critic with respect to its input. Our proposed method converges faster and generates higher-quality samples than WGAN with weight clipping. Finally, our method enables very stable GAN training: for the first time, we can train a wide variety of GAN architectures with almost no hyperparameter tuning, including 101-layer ResNets and language models over discrete data.
+
+**URL:** https://arxiv.org/abs/1704.00028
+
+**Notes:** imporved training of WGANs from Aaron Courville; with code!
+
+### Bayesian Recurrent Neural Networks
+
+**Authors:** Meire Fortunato, Charles Blundell, Oriol Vinyals
+
+**Abstract:** In this work we explore a straightforward variational Bayes scheme for Recurrent Neural Networks. Firstly, we show that a simple adaptation of truncated backpropagation through time can yield good quality uncertainty estimates and superior regularisation at only a small extra computational cost during training. Secondly, we demonstrate how a novel kind of posterior approximation yields further improvements to the performance of Bayesian RNNs. We incorporate local gradient information into the approximate posterior to sharpen it around the current batch statistics. This technique is not exclusive to recurrent neural networks and can be applied more widely to train Bayesian neural networks. We also empirically demonstrate how Bayesian RNNs are superior to traditional RNNs on a language modelling benchmark and an image captioning task, as well as showing how each of these methods improve our model over a variety of other schemes for training them. We also introduce a new benchmark for studying uncertainty for language models so future methods can be easily compared.
+
+**URL:** https://arxiv.org/abs/1704.02798
+
+**Notes:** an enhancement for RNNs - the additional shapening of distributions of parameters; DeepMind kindly provided the comunity with a code, we're lucky!
 
