@@ -1607,5 +1607,5 @@ Articles
 
 **URL:** https://arxiv.org/abs/1704.02798
 
-**Notes:** an enhancement for RNNs - the additional shapening of distributions of parameters; DeepMind kindly provided the comunity with a code, we're lucky!
+**Notes:** an enhancement for RNNs - the additional shapening of distributions of parameters; DeepMind kindly provided the community with a code, we're lucky!
 
