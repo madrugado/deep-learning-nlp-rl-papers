@@ -6,10 +6,24 @@ import tempfile
 import os
 import sys
 
+import json
+
 if sys.version_info[0] == 2: 
     import commands as cmd
+    from urllib import quote, urlopen
+    from urllib2 import Request, urlopen
 else:  # assuming that it is python 3
     import subprocess as cmd
+    from urllib.request import Request, urlopen
+    from urllib.parse import quote
+
+
+def shorten_URL(url):
+    gurl = 'http://goo.gl/api/url?url=%s' % quote(url)
+    req = Request(gurl, data='')
+    req.add_header('User-Agent', 'toolbar')
+    results = json.load(urlopen(req))
+    return results['short_url']
 
 
 class ArticleFormatter:
@@ -37,14 +51,23 @@ class ArticleFormatter:
         if self.has_title and self.has_authors and self.has_abstract and self.has_URL and self.has_notes:
             printed = self._print()
             if self.new_article and self.twitter_command:
-                twit = "\"" + (self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]) \
-                       + " " + (self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[4][9:]) + "\""
+                twit = self._twitting()
                 print("twitting: " + twit)
-                cmd.getstatusoutput(self.twitter_command + " " + twit)
             self._init()
             return printed
         else:
             return ""
+
+    def _twitting(self):
+        url = shorten_URL(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[4][9:])
+        text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
+        while len(text) > 136 - len(url):  # we need three symbols for "..." and one for space
+            text = " ".join(text.split()[:-1])
+
+        twit = "\"" + text + "... " + url + "\""
+
+        cmd.getstatusoutput(self.twitter_command + " " + twit)
+        return twit
 
     def _analyze(self):
         if not self.has_title:
