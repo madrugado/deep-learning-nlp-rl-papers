@@ -6,24 +6,21 @@ import tempfile
 import os
 import sys
 
-import json
+import contextlib
 
 if sys.version_info[0] == 2: 
     import commands as cmd
-    from urllib import quote, urlopen
-    from urllib2 import Request, urlopen
+    from urllib import urlencode, urlopen
 else:  # assuming that it is python 3
     import subprocess as cmd
-    from urllib.request import Request, urlopen
-    from urllib.parse import quote
+    from urllib.request import urlopen
+    from urllib.parse import urlencode
 
 
 def shorten_URL(url):
-    gurl = 'http://goo.gl/api/url?url=%s' % quote(url)
-    req = Request(gurl, data='')
-    req.add_header('User-Agent', 'toolbar')
-    results = json.load(urlopen(req))
-    return results['short_url']
+    request_url = ('http://tinyurl.com/api-create.php?' + urlencode({'url': url}))
+    with contextlib.closing(urlopen(request_url)) as response:
+            return str(response.read())
 
 
 class ArticleFormatter:
@@ -61,10 +58,11 @@ class ArticleFormatter:
     def _twitting(self):
         url = shorten_URL(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[4][9:])
         text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
-        while len(text) > 136 - len(url):  # we need three symbols for "..." and one for space
-            text = " ".join(text.split()[:-1])
+        premature_ending = "... "
+        while len(text) > 140 - len(premature_ending) - len(url):
+            text = str.rsplit(text, " ", 1)[0]
 
-        twit = "\"" + text + "... " + url + "\""
+        twit = "\"" + text + premature_ending + url + "\""
 
         cmd.getstatusoutput(self.twitter_command + " " + twit)
         return twit
