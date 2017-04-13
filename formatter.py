@@ -58,11 +58,14 @@ class ArticleFormatter:
     def _twitting(self):
         url = shorten_URL(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[4][9:])
         text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
-        premature_ending = "... "
-        while len(text) > 140 - len(premature_ending) - len(url):
-            text = str.rsplit(text, " ", 1)[0]
+        if len(text) > 140 - len(url) - 1:  # one symbol for space
+            premature_ending = "... "
+            while len(text) > 140 - len(premature_ending) - len(url):
+                text = str.rsplit(text, " ", 1)[0]
 
-        twit = "\"" + text + premature_ending + url + "\""
+            twit = "\"" + text + premature_ending + url + "\""
+        else:
+            twit = "\"" + text + " " + url + "\""
 
         cmd.getstatusoutput(self.twitter_command + " " + twit)
         return twit
