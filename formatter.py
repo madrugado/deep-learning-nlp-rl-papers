@@ -20,7 +20,7 @@ else:  # assuming that it is python 3
 def shorten_URL(url):
     request_url = ('http://tinyurl.com/api-create.php?' + urlencode({'url': url}))
     with contextlib.closing(urlopen(request_url)) as response:
-            return str(response.read())
+        return str(response.read().decode(encoding='utf-8'))
 
 
 class ArticleFormatter:
