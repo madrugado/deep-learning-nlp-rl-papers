@@ -231,6 +231,7 @@ Table of Contents
       * [GANs for Sequences of Discrete Elements with the Gumbel\-softmax Distribution](#gans-for-sequences-of-discrete-elements-with-the-gumbel-softmax-distribution)
       * [PGQ: Combining policy gradient and Q\-learning](#pgq-combining-policy-gradient-and-q-learning)
       * [A Convolutional Encoder Model for Neural Machine Translation](#a-convolutional-encoder-model-for-neural-machine-translation)
+      * [Reparameterization trick for discrete variables](#reparameterization-trick-for-discrete-variables)
     * [2016\-12](#2016-12)
       * [Overcoming catastrophic forgetting in neural networks](#overcoming-catastrophic-forgetting-in-neural-networks)
       * [Bootstrapping incremental dialogue systems: using linguistic knowledge to learn from minimal data](#bootstrapping-incremental-dialogue-systems-using-linguistic-knowledge-to-learn-from-minimal-data)
@@ -2370,6 +2371,16 @@ Articles
 **URL:** https://arxiv.org/abs/1611.02344
 
 **Notes:** great in its simplicity idea to use convolutional encoder improved SOTA on NMT
+
+### Reparameterization trick for discrete variables
+
+**Authors:** Seiya Tokui, Issei Sato
+
+**Abstract:** Low-variance gradient estimation is crucial for learning directed graphical models parameterized by neural networks, where the reparameterization trick is widely used for those with continuous variables. While this technique gives low-variance gradient estimates, it has not been directly applicable to discrete variables, the sampling of which inherently requires discontinuous operations. We argue that the discontinuity can be bypassed by marginalizing out the variable of interest, which results in a new reparameterization trick for discrete variables. This reparameterization greatly reduces the variance, which is understood by regarding the method as an application of common random numbers to the estimation. The resulting estimator is theoretically guaranteed to have a variance not larger than that of the likelihood-ratio method with the optimal input-dependent baseline. We give empirical results for variational learning of sigmoid belief networks.
+
+**URL:** https://arxiv.org/abs/1611.01239
+
+**Notes:** good explanation of reparam trick, here it is obvious to be close to REINFORCE algo
 
 ## 2016-12
 ### Overcoming catastrophic forgetting in neural networks
