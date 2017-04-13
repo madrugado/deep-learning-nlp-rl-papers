@@ -152,6 +152,7 @@ Table of Contents
       * [Beating Atari with Natural Language Guided Reinforcement Learning](#beating-atari-with-natural-language-guided-reinforcement-learning)
       * [Improved Training of Wasserstein GANs](#improved-training-of-wasserstein-gans)
       * [Bayesian Recurrent Neural Networks](#bayesian-recurrent-neural-networks)
+      * [Unfolding and Shrinking Neural Machine Translation Ensembles](#unfolding-and-shrinking-neural-machine-translation-ensembles)
 
 Articles
 ========
@@ -1608,4 +1609,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.02798
 
 **Notes:** an enhancement for RNNs - the additional shapening of distributions of parameters; DeepMind kindly provided the community with a code, we're lucky!
+
+### Unfolding and Shrinking Neural Machine Translation Ensembles
+
+**Authors:** Felix Stahlberg, Bill Byrne
+
+**Abstract:** Ensembling is a well-known technique in neural machine translation (NMT). Instead of a single neural net, multiple neural nets with the same topology are trained separately, and the decoder generates predictions by averaging over the individual models. Ensembling often improves the quality of the generated translations drastically. However, it is not suitable for production systems because it is cumbersome and slow. This work aims to reduce the runtime to be on par with a single system without compromising the translation quality. First, we show that the ensemble can be unfolded into a single large neural network which imitates the output of the ensemble system. We show that unfolding can already improve the runtime in practice since more work can be done on the GPU. We proceed by describing a set of techniques to shrink the unfolded network by reducing the dimensionality of layers. On Japanese-English we report that the resulting network has the size and decoding speed of a single NMT network but performs on the level of a 3-ensemble system.
+
+**URL:** https://arxiv.org/abs/1704.03279
+
+**Notes:** interesting practical paper: people create one big network from ensemble and shrinking it by SVD and tricky linear combination of activations of neurons whic are left after thinning
 
