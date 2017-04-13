@@ -3,6 +3,8 @@ Table of Contents
 =================
 
   * [Articles](#articles)
+    * [1992](#1992)
+      * [Simple Statistical Gradient\-Following for Connectionist Reinforcement Learning](#simple-statistical-gradient-following-for-connectionist-reinforcement-learning)
     * [2009](#2009)
       * [A Scalable Hierarchical Distributed Language Model](#a-scalable-hierarchical-distributed-language-model)
     * [2012\-06](#2012-06)
@@ -13,6 +15,8 @@ Table of Contents
       * [A Clockwork RNN](#a-clockwork-rnn)
     * [2014\-04](#2014-04)
       * [A Convolutional Neural Network for Modelling Sentences](#a-convolutional-neural-network-for-modelling-sentences)
+    * [2015\-02](#2015-02)
+      * [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](#show-attend-and-tell-neural-image-caption-generation-with-visual-attention)
     * [2015\-06](#2015-06)
       * [Cyclical Learning Rates for Training Neural Networks](#cyclical-learning-rates-for-training-neural-networks)
     * [2015\-11](#2015-11)
@@ -266,6 +270,17 @@ Table of Contents
 
 Articles
 ========
+## 1992
+### Simple Statistical Gradient-Following for Connectionist Reinforcement Learning
+
+**Authors:** Ronald J. Williams
+
+**Abstract:** This article presents a general class of associative reinforcement learning algorithms for connectionist networks containing stochastic units. These algorithms, called REINFORCE algorithms, are shown to make weight adjustments in a direction that lies along the gradient of expected reinforcement in both immediate-reinforcement tasks and certain limited forms of delayed-reinforcement tasks, and they do this without explicitly computing gradient estimates or even storing information from which such estimates could be computed. Specific examples of such algorithms are presented, some of which bear a close relationship to certain existing algorithms while others are novel but potentially interesting in their own right. Also given are results that show how such algorithms can be naturally integrated with backpropagation. We close with a brief discussion of a number of additional issues surrounding the use of such algorithms, including what is known about their limiting behaviors as well as further considerations that might be used to help develop similar but potentially more powerful reinforcement learning algorithms.
+
+**URL:** http://www-anw.cs.umass.edu/~barto/courses/cs687/williams92simple.pdf
+
+**Notes:** The famous REINFORCE algorithm is presented here.
+
 ## 2009
 ### A Scalable Hierarchical Distributed Language Model
 
@@ -320,6 +335,17 @@ Articles
 **URL:** https://arxiv.org/abs/1404.2188
 
 **Notes:** very nice idea of dynamic k-max pooling, so we could produce trees (effectively) with convolutions
+
+## 2015-02
+### Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
+
+**Authors:** Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio
+
+**Abstract:** Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of-the-art performance on three benchmark datasets: Flickr8k, Flickr30k and MS COCO.
+
+**URL:** https://arxiv.org/abs/1502.03044
+
+**Notes:** baseline paper in image captioning, but more important: good explanation of stochastic "hard" attention
 
 ## 2015-06
 ### Cyclical Learning Rates for Training Neural Networks
