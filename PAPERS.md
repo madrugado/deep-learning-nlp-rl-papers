@@ -20,6 +20,8 @@ Table of Contents
       * [Adversarial Autoencoders](#adversarial-autoencoders)
     * [2015\-12](#2015-12)
       * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
+    * [2016\-01](#2016-01)
+      * [Incorporating Structural Alignment Biases into an Attentional Neural Translation Model](#incorporating-structural-alignment-biases-into-an-attentional-neural-translation-model)
     * [2016\-02](#2016-02)
       * [Exploring the Limits of Language Modeling](#exploring-the-limits-of-language-modeling)
     * [2016\-03](#2016-03)
@@ -361,6 +363,17 @@ Articles
 **URL:** https://arxiv.org/abs/1512.05287
 
 **Notes:** Bayesianly grounded dropout for RNNs.
+
+## 2016-01
+### Incorporating Structural Alignment Biases into an Attentional Neural Translation Model
+
+**Authors:** Trevor Cohn, Cong Duy Vu Hoang, Ekaterina Vymolova, Kaisheng Yao, Chris Dyer, Gholamreza Haffari
+
+**Abstract:** Neural encoder-decoder models of machine translation have achieved impressive results, rivalling traditional translation models. However their modelling formulation is overly simplistic, and omits several key inductive biases built into traditional models. In this paper we extend the attentional neural translation model to include structural biases from word based alignment models, including positional bias, Markov conditioning, fertility and agreement over translation directions. We show improvements over a baseline attentional model and standard phrase-based model over several language pairs, evaluating on difficult languages in a low resource setting.
+
+**URL:** https://arxiv.org/abs/1601.01085
+
+**Notes:** interesting paper on attention in NMT: adding positional bias and fertility penalty for alignment improving results of the model
 
 ## 2016-02
 ### Exploring the Limits of Language Modeling
