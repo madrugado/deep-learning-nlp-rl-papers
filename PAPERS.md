@@ -224,6 +224,7 @@ Table of Contents
       * [Identity\-sensitive Word Embedding through Heterogeneous Networks](#identity-sensitive-word-embedding-through-heterogeneous-networks)
       * [GANs for Sequences of Discrete Elements with the Gumbel\-softmax Distribution](#gans-for-sequences-of-discrete-elements-with-the-gumbel-softmax-distribution)
       * [PGQ: Combining policy gradient and Q\-learning](#pgq-combining-policy-gradient-and-q-learning)
+      * [A Convolutional Encoder Model for Neural Machine Translation](#a-convolutional-encoder-model-for-neural-machine-translation)
     * [2016\-12](#2016-12)
       * [Overcoming catastrophic forgetting in neural networks](#overcoming-catastrophic-forgetting-in-neural-networks)
       * [Bootstrapping incremental dialogue systems: using linguistic knowledge to learn from minimal data](#bootstrapping-incremental-dialogue-systems-using-linguistic-knowledge-to-learn-from-minimal-data)
@@ -1307,7 +1308,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1609.01840
 
-**Notes:** Можно попробовать применитьк нашим задачам.
+**Notes:**
 
 ### Polysemous codes
 
@@ -1317,7 +1318,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1609.01882
 
-**Notes:** Кажется, можно рассмотреть, как замену KDTree для чатбота.
+**Notes:** could be helpful as replacement for KDTree in search for appropriate line
 
 ### WaveNet: A Generative Model For Raw Audio
 
@@ -2320,6 +2321,16 @@ Articles
 **URL:** https://arxiv.org/abs/1611.01626
 
 **Notes:** updated version of this paper has been released; PGQ is one of today's SOTA in RL
+
+### A Convolutional Encoder Model for Neural Machine Translation
+
+**Authors:** Jonas Gehring, Michael Auli, David Grangier, Yann N. Dauphin
+
+**Abstract:** The prevalent approach to neural machine translation relies on bi-directional LSTMs to encode the source sentence. In this paper we present a faster and simpler architecture based on a succession of convolutional layers. This allows to encode the entire source sentence simultaneously compared to recurrent networks for which computation is constrained by temporal dependencies. On WMT'16 English-Romanian translation we achieve competitive accuracy to the state-of-the-art and we outperform several recently published results on the WMT'15 English-German task. Our models obtain almost the same accuracy as a very deep LSTM setup on WMT'14 English-French translation. Our convolutional encoder speeds up CPU decoding by more than two times at the same or higher accuracy as a strong bi-directional LSTM baseline.
+
+**URL:** https://arxiv.org/abs/1611.02344
+
+**Notes:** great in its simplicity idea to use convolutional encoder improved SOTA on NMT
 
 ## 2016-12
 ### Overcoming catastrophic forgetting in neural networks
