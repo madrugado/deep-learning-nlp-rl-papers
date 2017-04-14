@@ -7,8 +7,9 @@ Table of Contents
       * [Monte Carlo Methods and Importance Sampling](#monte-carlo-methods-and-importance-sampling)
     * [Blueprints](#blueprints)
       * [In\-Datacenter Performance Analysis of a Tensor Processing Unit​](#in-datacenter-performance-analysis-of-a-tensor-processing-unit)
-    * [Reports](#reports)
+    * [Reports/Surveys](#reportssurveys)
       * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
+      * [Automatic Keyword Extraction for Text Summarization: A Survey](#automatic-keyword-extraction-for-text-summarization-a-survey)
 
 Miscellaneous
 =============
@@ -34,7 +35,7 @@ Miscellaneous
 
 **Notes:** a blueprint about new Google TPUs; fascinating future of Deep Learning
 
-## Reports
+## Reports/Surveys
 ### Best Practices for Applying Deep Learning to Novel Applications
 
 **Authors:** Leslie N. Smith
@@ -44,4 +45,14 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1704.01568
 
 **Notes:** some notes on applying DL to new areas
+
+### Automatic Keyword Extraction for Text Summarization: A Survey
+
+**Authors:** Santosh Kumar Bharti, Korra Sathya Babu
+
+**Abstract:** In recent times, data is growing rapidly in every domain such as news, social media, banking, education, etc. Due to the excessiveness of data, there is a need of automatic summarizer which will be capable to summarize the data especially textual data in original document without losing any critical purposes. Text summarization is emerged as an important research area in recent past. In this regard, review of existing work on text summarization process is useful for carrying out further research. In this paper, recent literature on automatic keyword extraction and text summarization are presented since text summarization process is highly depend on keyword extraction. This literature includes the discussion about different methodology used for keyword extraction and text summarization. It also discusses about different databases used for text summarization in several domains along with evaluation matrices. Finally, it discusses briefly about issues and research challenges faced by researchers along with future direction.
+
+**URL:** https://arxiv.org/abs/1704.03242
+
+**Notes:** useful list of works in keyword extraction
 
