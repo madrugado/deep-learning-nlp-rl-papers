@@ -153,6 +153,7 @@ Table of Contents
       * [Improved Training of Wasserstein GANs](#improved-training-of-wasserstein-gans)
       * [Bayesian Recurrent Neural Networks](#bayesian-recurrent-neural-networks)
       * [Unfolding and Shrinking Neural Machine Translation Ensembles](#unfolding-and-shrinking-neural-machine-translation-ensembles)
+      * [The reinterpretation of standard deviation concept](#the-reinterpretation-of-standard-deviation-concept)
 
 Articles
 ========
@@ -1619,4 +1620,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.03279
 
 **Notes:** interesting practical paper: people create one big network from ensemble and shrinking it by SVD and tricky linear combination of activations of neurons whic are left after thinning
+
+### The reinterpretation of standard deviation concept
+
+**Authors:** Xiaoming Ye
+
+**Abstract:** Existing mathematical theory interprets the concept of standard deviation as the dispersion degree. Therefore, in measurement theory, both uncertainty concept and precision concept, which are expressed with standard deviation or times standard deviation, are also defined as the dispersion of measurement result, so that the concept logic is tangled. Through comparative analysis of the standard deviation concept and re-interpreting the measurement error evaluation principle, this paper points out that the concept of standard deviation is actually single error's probability interval value instead of dispersion degree, and that the error with any regularity can be evaluated by standard deviation, corrected this mathematical concept, and gave the correction direction of measurement concept logic. These will bring a global change to measurement theory system.
+
+**URL:** https://arxiv.org/abs/1704.03812
+
+**Notes:** fundamental paper on statistic grounded in practical work of geodesy; the key idea is that std dev is only probability of error in measurement
 
