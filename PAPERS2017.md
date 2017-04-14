@@ -155,6 +155,7 @@ Table of Contents
       * [Unfolding and Shrinking Neural Machine Translation Ensembles](#unfolding-and-shrinking-neural-machine-translation-ensembles)
       * [The reinterpretation of standard deviation concept](#the-reinterpretation-of-standard-deviation-concept)
       * [Mobile Keyboard Input Decoding with Finite\-State Transducers](#mobile-keyboard-input-decoding-with-finite-state-transducers)
+      * [Incremental Skip\-gram Model with Negative Sampling](#incremental-skip-gram-model-with-negative-sampling)
 
 Articles
 ========
@@ -1641,4 +1642,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.03987
 
 **Notes:** my favorite automata on mobile keyboards input prediction
+
+### Incremental Skip-gram Model with Negative Sampling
+
+**Authors:** Nobuhiro Kaji, Hayato Kobayashi
+
+**Abstract:** This paper explores an incremental training strategy for the skip-gram model with negative sampling (SGNS) from both empirical and theoretical perspectives. Existing methods of neural word embeddings, including SNGS, are multi-pass algorithms and thus cannot perform incremental model update. To address this problem, we present a simple incremental extension of SNGS and provide a thorough theoretical analysis to demonstrate its validity. Empirical experiments demonstrated the correctness of the theoretical analysis as well as the practical usefulness of the incremental algorithm.
+
+**URL:** https://arxiv.org/abs/1704.03956
+
+**Notes:** practical paper on online training of word embeddings, seems to be useful, say, in social network analysis
 
