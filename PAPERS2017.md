@@ -154,6 +154,7 @@ Table of Contents
       * [Bayesian Recurrent Neural Networks](#bayesian-recurrent-neural-networks)
       * [Unfolding and Shrinking Neural Machine Translation Ensembles](#unfolding-and-shrinking-neural-machine-translation-ensembles)
       * [The reinterpretation of standard deviation concept](#the-reinterpretation-of-standard-deviation-concept)
+      * [Mobile Keyboard Input Decoding with Finite\-State Transducers](#mobile-keyboard-input-decoding-with-finite-state-transducers)
 
 Articles
 ========
@@ -1630,4 +1631,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.03812
 
 **Notes:** fundamental paper on statistic grounded in practical work of geodesy; the key idea is that std dev is only probability of error in measurement
+
+### Mobile Keyboard Input Decoding with Finite-State Transducers
+
+**Authors:** Tom Ouyang, David Rybach, Françoise Beaufays, Michael Riley
+
+**Abstract:** We propose a finite-state transducer (FST) representation for the models used to decode keyboard inputs on mobile devices. Drawing from learnings from the field of speech recognition, we describe a decoding framework that can satisfy the strict memory and latency constraints of keyboard input. We extend this framework to support functionalities typically not present in speech recognition, such as literal decoding, autocorrections, word completions, and next word predictions. We describe the general framework of what we call for short the keyboard "FST decoder" as well as the implementation details that are new compared to a speech FST decoder. We demonstrate that the FST decoder enables new UX features such as post-corrections. Finally, we sketch how this decoder can support advanced features such as personalization and contextualization.
+
+**URL:** https://arxiv.org/abs/1704.03987
+
+**Notes:** my favorite automata on mobile keyboards input prediction
 
