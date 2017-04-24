@@ -30,6 +30,7 @@ Table of Contents
       * [Exploring the Limits of Language Modeling](#exploring-the-limits-of-language-modeling)
     * [2016\-03](#2016-03)
       * [A Persona\-Based Neural Conversation Model](#a-persona-based-neural-conversation-model)
+      * [Bayesian Neural Word Embedding](#bayesian-neural-word-embedding)
     * [2016\-05](#2016-05)
       * [Sentence Pair Scoring: Towards Unified Framework for Text Comprehension](#sentence-pair-scoring-towards-unified-framework-for-text-comprehension)
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
@@ -423,6 +424,16 @@ Articles
 **URL:** http://nlp.stanford.edu/pubs/jiwei2016Persona.pdf
 
 **Notes:** people do the additional embedding for speaking person, works really nice on dialog bots
+
+### Bayesian Neural Word Embedding
+
+**Authors:** Oren Barkan
+
+**Abstract:** Recently, several works in the domain of natural language processing presented successful methods for word embedding. Among them, the Skip-Gram with negative sampling, known also as word2vec, advanced the state-of-the-art of various linguistics tasks. In this paper, we propose a scalable Bayesian neural word embedding algorithm. The algorithm relies on a Variational Bayes solution for the Skip-Gram objective and a detailed step by step description is provided. We present experimental results that demonstrate the performance of the proposed algorithm for word analogy and similarity tasks on six different datasets and show it is competitive with the original Skip-Gram method.
+
+**URL:** https://arxiv.org/abs/1603.06571
+
+**Notes:** first usage of reparamentization trick on word embeddings (word2vec in particular) which I'm aware of; the idea is to produce mu and sigma for embeddings instead of actual embeddings in skip-gram optimization procedure
 
 ## 2016-05
 ### Sentence Pair Scoring: Towards Unified Framework for Text Comprehension
