@@ -422,7 +422,7 @@ Articles
 
 **URL:** http://nlp.stanford.edu/pubs/jiwei2016Persona.pdf
 
-**Notes:**
+**Notes:** people do the additional embedding for speaking person, works really nice on dialog bots
 
 ## 2016-05
 ### Sentence Pair Scoring: Towards Unified Framework for Text Comprehension
