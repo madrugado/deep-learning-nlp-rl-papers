@@ -156,6 +156,7 @@ Table of Contents
       * [The reinterpretation of standard deviation concept](#the-reinterpretation-of-standard-deviation-concept)
       * [Mobile Keyboard Input Decoding with Finite\-State Transducers](#mobile-keyboard-input-decoding-with-finite-state-transducers)
       * [Incremental Skip\-gram Model with Negative Sampling](#incremental-skip-gram-model-with-negative-sampling)
+      * [Equivalence Between Policy Gradients and Soft Q\-Learning](#equivalence-between-policy-gradients-and-soft-q-learning)
 
 Articles
 ========
@@ -1652,4 +1653,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.03956
 
 **Notes:** practical paper on online training of word embeddings, seems to be useful, say, in social network analysis
+
+### Equivalence Between Policy Gradients and Soft Q-Learning
+
+**Authors:** John Schulman, Pieter Abbeel, Xi Chen
+
+**Abstract:** Two of the leading approaches for model-free reinforcement learning are policy gradient methods and Q-learning methods. Q-learning methods can be effective and sample-efficient when they work, however, it is not well-understood why they work, since empirically, the Q-values they estimate are very inaccurate. A partial explanation may be that Q-learning methods are secretly implementing policy gradient updates: we show that there is a precise equivalence between Q-learning and policy gradient methods in the setting of entropy-regularized reinforcement learning, that "soft" (entropy-regularized) Q-learning is exactly equivalent to a policy gradient method. We also point out a connection between Q-learning methods and natural policy gradient methods. Experimentally, we explore the entropy-regularized versions of Q-learning and policy gradients, and we find them to perform as well as (or slightly better than) the standard variants on the Atari benchmark. We also show that the equivalence holds in practical settings by constructing a Q-learning method that closely matches the learning dynamics of A3C without using a target network or \epsilon-greedy exploration schedule.
+
+**URL:** https://arxiv.org/abs/1704.06440
+
+**Notes:** fresh from ICLR: policy gradient and q-learning are mathematically equivalent, the experiments show that the converge to the same solutions (unsurprisingly)
 
