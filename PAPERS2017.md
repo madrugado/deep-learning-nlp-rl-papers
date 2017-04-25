@@ -157,6 +157,7 @@ Table of Contents
       * [Mobile Keyboard Input Decoding with Finite\-State Transducers](#mobile-keyboard-input-decoding-with-finite-state-transducers)
       * [Incremental Skip\-gram Model with Negative Sampling](#incremental-skip-gram-model-with-negative-sampling)
       * [Equivalence Between Policy Gradients and Soft Q\-Learning](#equivalence-between-policy-gradients-and-soft-q-learning)
+      * [Adversarial Training Methods for Semi\-Supervised Text Classification](#adversarial-training-methods-for-semi-supervised-text-classification)
 
 Articles
 ========
@@ -1663,4 +1664,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.06440
 
 **Notes:** fresh from ICLR: policy gradient and q-learning are mathematically equivalent, the experiments show that the converge to the same solutions (unsurprisingly)
+
+### Adversarial Training Methods for Semi-Supervised Text Classification
+
+**Authors:** Takeru Miyato, Andrew M. Dai, Ian Goodfellow
+
+**Abstract:** Adversarial training provides a means of regularizing supervised learning algorithms while virtual adversarial training is able to extend supervised learning algorithms to the semi-supervised setting. However, both methods require making small perturbations to numerous entries of the input vector, which is inappropriate for sparse high-dimensional inputs such as one-hot word representations. We extend adversarial and virtual adversarial training to the text domain by applying perturbations to the word embeddings in a recurrent neural network rather than to the original input itself. The proposed method achieves state of the art results on multiple benchmark semi-supervised and purely supervised tasks. We provide visualizations and analysis showing that the learned word embeddings have improved in quality and that while training, the model is less prone to overfitting.
+
+**URL:** https://openreview.net/forum?id=r1X3g2_xl&noteId=r1X3g2_xl
+
+**Notes:** really nice work from Google on (virtual) adversarial training for classification; the main idea is to add noise to classifier which maximises the KL-divergence (or NLL)
 
