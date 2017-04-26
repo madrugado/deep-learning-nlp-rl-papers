@@ -158,6 +158,7 @@ Table of Contents
       * [Incremental Skip\-gram Model with Negative Sampling](#incremental-skip-gram-model-with-negative-sampling)
       * [Equivalence Between Policy Gradients and Soft Q\-Learning](#equivalence-between-policy-gradients-and-soft-q-learning)
       * [Adversarial Training Methods for Semi\-Supervised Text Classification](#adversarial-training-methods-for-semi-supervised-text-classification)
+      * [On the universal structure of human lexical semantics](#on-the-universal-structure-of-human-lexical-semantics)
 
 Articles
 ========
@@ -1674,4 +1675,14 @@ Articles
 **URL:** https://openreview.net/forum?id=r1X3g2_xl&noteId=r1X3g2_xl
 
 **Notes:** really nice work from Google on (virtual) adversarial training for classification; the main idea is to add noise to classifier which maximises the KL-divergence (or NLL)
+
+### On the universal structure of human lexical semantics
+
+**Authors:** Hyejin Youn, Logan Sutton, Eric Smith, Cristopher Moore, Jon F. Wilkins, Ian Maddieson, William Croft, and Tanmoy Bhattacharya
+
+**Abstract:** How universal is human conceptual structure? The way concepts are organized in the human brain may reflect distinct features of cultural, historical, and environmental background in addition to properties universal to human cognition. Semantics, or meaning expressed through language, provides indirect access to the underlying conceptual structure, but meaning is notoriously difficult to measure, let alone parameterize. Here, we provide an empirical measure of semantic proximity between concepts using cross-linguistic dictionaries to translate words to and from languages carefully selected to be representative of worldwide diversity. These translations reveal cases where a particular language uses a single “polysemous” word to express multiple concepts that another language represents using distinct words. We use the frequency of such polysemies linking two concepts as a measure of their semantic proximity and represent the pattern of these linkages by a weighted network. This network is highly structured: Certain concepts are far more prone to polysemy than others, and naturally interpretable clusters of closely related concepts emerge. Statistical analysis of the polysemies observed in a subset of the basic vocabulary shows that these structural properties are consistent across different language groups, and largely independent of geography, environment, and the presence or absence of a literary tradition. The methods developed here can be applied to any semantic domain to reveal the extent to which its conceptual structure is, similarly, a universal attribute of human cognition and language use.
+
+**URL:** http://www.pnas.org/content/113/7/1766.abstract
+
+**Notes:** very important paper as for me: it could be possible that de Saussure is wrong and the sound is bound to the meaning, it is the revolution in the linguistics, semiotics, psychology and so forth
 
