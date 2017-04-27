@@ -159,6 +159,7 @@ Table of Contents
       * [Equivalence Between Policy Gradients and Soft Q\-Learning](#equivalence-between-policy-gradients-and-soft-q-learning)
       * [Adversarial Training Methods for Semi\-Supervised Text Classification](#adversarial-training-methods-for-semi-supervised-text-classification)
       * [On the universal structure of human lexical semantics](#on-the-universal-structure-of-human-lexical-semantics)
+      * [Improving Neural Language Models with a Continuous Cache](#improving-neural-language-models-with-a-continuous-cache)
 
 Articles
 ========
@@ -1685,4 +1686,14 @@ Articles
 **URL:** http://www.pnas.org/content/113/7/1766.abstract
 
 **Notes:** very important paper as for me: it could be possible that de Saussure is wrong and the sound is bound to the meaning, it is the revolution in the linguistics, semiotics, psychology and so forth
+
+### Improving Neural Language Models with a Continuous Cache
+
+**Authors:** Edouard Grave, Armand Joulin, Nicolas Usunier
+
+**Abstract:** We propose an extension to neural network language models to adapt their prediction to the recent history. Our model is a simplified version of memory augmented networks, which stores past hidden activations as memory and accesses them through a dot product with the current hidden activation. This mechanism is very efficient and scales to very large memory sizes. We also draw a link between the use of external memory in neural network and cache models used with count based language models. We demonstrate on several language model datasets that our approach performs significantly better than recent memory augmented networks.
+
+**URL:** https://research.fb.com/publications/improving-neural-language-models-with-a-continuous-cache/
+
+**Notes:** new paper from FAIR on ICLR; the main idea is to fuse into softmax distribution the distribution on recently used words
 
