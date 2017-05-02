@@ -162,6 +162,7 @@ Table of Contents
       * [Improving Neural Language Models with a Continuous Cache](#improving-neural-language-models-with-a-continuous-cache)
       * [Unsupervised Learning by Predicting Noise](#unsupervised-learning-by-predicting-noise)
       * [Adversarial Generator\-Encoder Networks](#adversarial-generator-encoder-networks)
+      * [Translating Neuralese](#translating-neuralese)
 
 Articles
 ========
@@ -1718,4 +1719,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.02304
 
 **Notes:** paper form Russian guys, who work on style transfer for a while, new step in their architecture, could be useful for us
+
+### Translating Neuralese
+
+**Authors:** Jacob Andreas, Anca Dragan, Dan Klein
+
+**Abstract:** Several approaches have recently been proposed for learning decentralized deep multiagent policies that coordinate via a differentiable communication channel. While these policies are effective for many tasks, interpretation of their induced communication strategies has remained a challenge. Here we propose to interpret agents' messages by translating them. Unlike in typical machine translation problems, we have no parallel data to learn from. Instead we develop a translation model based on the insight that agent messages and natural language strings mean the same thing if they induce the same belief about the world in a listener. We present theoretical guarantees and empirical evidence that our approach preserves both the semantics and pragmatics of messages by ensuring that players communicating through a translation layer do not suffer a substantial loss in reward relative to players with a common language.
+
+**URL:** https://arxiv.org/abs/1704.06960
+
+**Notes:** translating neuralese is actually finding a mapping in LDA-like topic space, expluding actual words, since in neuralese could not be such a concept, only a message itself; the authors working with messages and contexts (situalitions in the world)
 
