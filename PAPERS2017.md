@@ -161,6 +161,7 @@ Table of Contents
       * [On the universal structure of human lexical semantics](#on-the-universal-structure-of-human-lexical-semantics)
       * [Improving Neural Language Models with a Continuous Cache](#improving-neural-language-models-with-a-continuous-cache)
       * [Unsupervised Learning by Predicting Noise](#unsupervised-learning-by-predicting-noise)
+      * [Adversarial Generator\-Encoder Networks](#adversarial-generator-encoder-networks)
 
 Articles
 ========
@@ -1707,4 +1708,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.05310
 
 **Notes:** the title is not very descriptive, actually the authors are predicting different random vectors for different images, so learning features to represent images
+
+### Adversarial Generator-Encoder Networks
+
+**Authors:** Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky
+
+**Abstract:** We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and unconditional samples boosted by adversarial learning. Unlike previous hybrids of autoencoders and adversarial networks, the adversarial game in our approach is set up directly between the encoder and the generator, and no external mappings are trained in the process of learning. The game objective compares the divergences of each of the real and the generated data distributions with the canonical distribution in the latent space. We show that direct generator-vs-encoder game leads to a tight coupling of the two components, resulting in samples and reconstructions of a comparable quality to some recently-proposed more complex architectures.
+
+**URL:** https://arxiv.org/abs/1704.02304
+
+**Notes:** paper form Russian guys, who work on style transfer for a while, new step in their architecture, could be useful for us
 
