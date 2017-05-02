@@ -160,6 +160,7 @@ Table of Contents
       * [Adversarial Training Methods for Semi\-Supervised Text Classification](#adversarial-training-methods-for-semi-supervised-text-classification)
       * [On the universal structure of human lexical semantics](#on-the-universal-structure-of-human-lexical-semantics)
       * [Improving Neural Language Models with a Continuous Cache](#improving-neural-language-models-with-a-continuous-cache)
+      * [Unsupervised Learning by Predicting Noise](#unsupervised-learning-by-predicting-noise)
 
 Articles
 ========
@@ -1696,4 +1697,14 @@ Articles
 **URL:** https://research.fb.com/publications/improving-neural-language-models-with-a-continuous-cache/
 
 **Notes:** new paper from FAIR on ICLR; the main idea is to fuse into softmax distribution the distribution on recently used words
+
+### Unsupervised Learning by Predicting Noise
+
+**Authors:** Piotr Bojanowski, Armand Joulin
+
+**Abstract:** Convolutional neural networks provide visual features that perform remarkably well in many computer vision applications. However, training these networks requires significant amounts of supervision. This paper introduces a generic framework to train deep networks, end-to-end, with no supervision. We propose to fix a set of target representations, called Noise As Targets (NAT), and to constrain the deep features to align to them. This domain agnostic approach avoids the standard unsupervised learning issues of trivial solutions and collapsing of features. Thanks to a stochastic batch reassignment strategy and a separable square loss function, it scales to millions of images. The proposed approach produces representations that perform on par with state-of-the-art unsupervised methods on ImageNet and Pascal VOC.
+
+**URL:** https://arxiv.org/abs/1704.05310
+
+**Notes:** the title is not very descriptive, actually the authors are predicting different random vectors for different images, so learning features to represent images
 
