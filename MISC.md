@@ -10,6 +10,7 @@ Table of Contents
     * [Reports/Surveys](#reportssurveys)
       * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
       * [Automatic Keyword Extraction for Text Summarization: A Survey](#automatic-keyword-extraction-for-text-summarization-a-survey)
+      * [Factorization tricks for LSTM networks](#factorization-tricks-for-lstm-networks)
 
 Miscellaneous
 =============
@@ -55,4 +56,14 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1704.03242
 
 **Notes:** useful list of works in keyword extraction
+
+### Factorization tricks for LSTM networks
+
+**Authors:** Oleksii Kuchaiev, Boris Ginsburg
+
+**Abstract:** We present two simple ways of reducing the number of parameters and accelerating the training of large Long Short-Term Memory (LSTM) networks: the first one is "matrix factorization by design" of LSTM matrix into the product of two smaller matrices, and the second one is partitioning of LSTM matrix, its inputs and states into the independent groups. Both approaches allow us to train large LSTM networks significantly faster to the state-of the art perplexity. On the One Billion Word Benchmark we improve single model perplexity down to 23.36.
+
+**URL:** https://arxiv.org/abs/1703.10722
+
+**Notes:** could be useful bunch of tricks for LSTM from NVIDIA engineers
 
