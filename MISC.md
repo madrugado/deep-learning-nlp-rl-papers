@@ -7,6 +7,7 @@ Table of Contents
       * [Monte Carlo Methods and Importance Sampling](#monte-carlo-methods-and-importance-sampling)
     * [Blueprints](#blueprints)
       * [In\-Datacenter Performance Analysis of a Tensor Processing Unit​](#in-datacenter-performance-analysis-of-a-tensor-processing-unit)
+      * [TensorFlow: Large\-Scale Machine Learning on Heterogeneous Distributed Systems](#tensorflow-large-scale-machine-learning-on-heterogeneous-distributed-systems)
     * [Reports/Surveys](#reportssurveys)
       * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
       * [Automatic Keyword Extraction for Text Summarization: A Survey](#automatic-keyword-extraction-for-text-summarization-a-survey)
@@ -35,6 +36,16 @@ Miscellaneous
 **URL:** https://drive.google.com/file/d/0Bx4hafXDDq2EMzRNcy1vSUxtcEk/view
 
 **Notes:** a blueprint about new Google TPUs; fascinating future of Deep Learning
+
+### TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems
+
+**Authors:** Martín Abadi et al.
+
+**Abstract:** TensorFlow is an interface for expressing machine learning algorithms, and an implementation for executing such algorithms. A computation expressed using TensorFlow can be executed with little or no change on a wide variety of heterogeneous systems, ranging from mobile devices such as phones and tablets up to large-scale distributed systems of hundreds of machines and thousands of computational devices such as GPU cards. The system is flexible and can be used to express a wide variety of algorithms, including training and inference algorithms for deep neural network models, and it has been used for conducting research and for deploying machine learning systems into production across more than a dozen areas of computer science and other fields, including speech recognition, computer vision, robotics, information retrieval, natural language processing, geographic information extraction, and computational drug discovery. This paper describes the TensorFlow interface and an implementation of that interface that we have built at Google. The TensorFlow API and a reference implementation were released as an open-source package under the Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.
+
+**URL:** http://download.tensorflow.org/paper/whitepaper2015.pdf
+
+**Notes:** long time missed here blueprint on Tensorflow
 
 ## Reports/Surveys
 ### Best Practices for Applying Deep Learning to Novel Applications
