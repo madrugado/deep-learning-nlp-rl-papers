@@ -164,6 +164,8 @@ Table of Contents
       * [Adversarial Generator\-Encoder Networks](#adversarial-generator-encoder-networks)
       * [Translating Neuralese](#translating-neuralese)
       * [Adversarial Neural Machine Translation](#adversarial-neural-machine-translation)
+    * [2017\-05](#2017-05)
+      * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
 
 Articles
 ========
@@ -1740,4 +1742,15 @@ Articles
 **URL:** https://arxiv.org/abs/1704.06933
 
 **Notes:** this paper has done a lot of noise: adversarial objective for NMT, long-time waited, but the authors are first who succeed
+
+## 2017-05
+### Machine Comprehension by Text-to-Text Neural Question Generation
+
+**Authors:** Xingdi Yuan, Tong Wang, Caglar Gulcehre, Alessandro Sordoni, Philip Bachman, Sandeep Subramanian, Saizheng Zhang, Adam Trischler
+
+**Abstract:** We propose a recurrent neural model that generates natural-language questions from documents, conditioned on answers. We show how to train the model using a combination of supervised and reinforcement learning. After teacher forcing for standard maximum likelihood training, we fine-tune the model using policy gradient techniques to maximize several rewards that measure question quality. Most notably, one of these rewards is the performance of a question-answering system. We motivate question generation as a means to improve the performance of question answering systems. Our model is trained and evaluated on the recent question-answering dataset SQuAD.
+
+**URL:** https://arxiv.org/abs/1705.02012
+
+**Notes:** nice work from people of Maluuba, generate question by text, trained on SQuAD with RL losses - F1 & perplexy
 
