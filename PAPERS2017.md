@@ -167,6 +167,7 @@ Table of Contents
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
+      * [Key\-Value Retrieval Networks for Task\-Oriented Dialogue](#key-value-retrieval-networks-for-task-oriented-dialogue)
 
 Articles
 ========
@@ -1764,4 +1765,14 @@ Articles
 **URL:** https://arxiv.org/abs/1705.05502
 
 **Notes:** ''obvious'' statement is proved in this paper on wider range of functions #theoreticaljustification
+
+### Key-Value Retrieval Networks for Task-Oriented Dialogue
+
+**Authors:** Mihail Eric, Christopher D. Manning
+
+**Abstract:** Neural task-oriented dialogue systems often struggle to smoothly interface with a knowledge base. In this work, we seek to address this problem by proposing a new neural dialogue agent that is able to effectively sustain grounded, multi-domain discourse through a novel key-value retrieval mechanism. The model is end-to-end differentiable and does not need to explicitly model dialogue state or belief trackers. We also release a new dataset of 3,031 dialogues that are grounded through underlying knowledge bases and span three distinct tasks in the in-car personal assistant space: calendar scheduling, weather information retrieval, and point-of-interest navigation. Our architecture is simultaneously trained on data from all domains and significantly outperforms a competitive rule-based system and other existing neural dialogue architectures on the provided domains according to both automatic and human evaluation metrics.
+
+**URL:** https://arxiv.org/abs/1705.05414
+
+**Notes:** fresh paper from Manning's group: key-value memory as attention for task-oriented dialog system
 
