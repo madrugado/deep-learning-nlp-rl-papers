@@ -166,6 +166,7 @@ Table of Contents
       * [Adversarial Neural Machine Translation](#adversarial-neural-machine-translation)
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
+      * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
 
 Articles
 ========
@@ -1753,4 +1754,14 @@ Articles
 **URL:** https://arxiv.org/abs/1705.02012
 
 **Notes:** nice work from people of Maluuba, generate question by text, trained on SQuAD with RL losses - F1 & perplexy
+
+### The power of deeper networks for expressing natural functions
+
+**Authors:** David Rolnick, Max Tegmark
+
+**Abstract:** It is well-known that neural networks are universal approximators, but that deeper networks tend to be much more efficient than shallow ones. We shed light on this by proving that the total number of neurons m required to approximate natural classes of multivariate polynomials of n variables grows only linearly with n for deep neural networks, but grows exponentially when merely a single hidden layer is allowed. We also provide evidence that when the number of hidden layers is increased from 1 to k, the neuron requirement grows exponentially not with n but with n1/k, suggesting that the minimum number of layers required for computational tractability grows only logarithmically with n.
+
+**URL:** https://arxiv.org/abs/1705.05502
+
+**Notes:** ''obvious'' statement is proved in this paper on wider range of functions #theoreticaljustification
 
