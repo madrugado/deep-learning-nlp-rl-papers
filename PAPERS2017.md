@@ -168,6 +168,7 @@ Table of Contents
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
       * [Key\-Value Retrieval Networks for Task\-Oriented Dialogue](#key-value-retrieval-networks-for-task-oriented-dialogue)
+      * [Convolutional Sequence to Sequence Learning](#convolutional-sequence-to-sequence-learning)
 
 Articles
 ========
@@ -1775,4 +1776,14 @@ Articles
 **URL:** https://arxiv.org/abs/1705.05414
 
 **Notes:** fresh paper from Manning's group: key-value memory as attention for task-oriented dialog system
+
+### Convolutional Sequence to Sequence Learning
+
+**Authors:** Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, Yann N. Dauphin
+
+**Abstract:** The prevalent approach to sequence to sequence learning maps an input sequence to a variable length output sequence via recurrent neural networks. We introduce an architecture based entirely on convolutional neural networks. Compared to recurrent models, computations over all elements can be fully parallelized during training and optimization is easier since the number of non-linearities is fixed and independent of the input length. Our use of gated linear units eases gradient propagation and we equip each decoder layer with a separate attention module. We outperform the accuracy of the deep LSTM setup of Wu et al. (2016) on both WMT'14 English-German and WMT'14 English-French translation at an order of magnitude faster speed, both on GPU and CPU.
+
+**URL:** https://arxiv.org/abs/1705.03122
+
+**Notes:** FAIR's paper on NMT, fully convolutional NMT (and summrization), with multi-layer attention for decoder; it's better read by yourself
 
