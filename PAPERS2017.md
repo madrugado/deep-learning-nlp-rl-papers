@@ -170,6 +170,7 @@ Table of Contents
       * [Key\-Value Retrieval Networks for Task\-Oriented Dialogue](#key-value-retrieval-networks-for-task-oriented-dialogue)
       * [Convolutional Sequence to Sequence Learning](#convolutional-sequence-to-sequence-learning)
       * [Multimodal Word Distributions](#multimodal-word-distributions)
+      * [A Deep Reinforced Model for Abstractive Summarization](#a-deep-reinforced-model-for-abstractive-summarization)
 
 Articles
 ========
@@ -1797,4 +1798,14 @@ Articles
 **URL:** https://arxiv.org/abs/1704.08424
 
 **Notes:** m-dimensional Gaussian mixtures as word embeddings, almost word2vec, but with probability flavour
+
+### A Deep Reinforced Model for Abstractive Summarization
+
+**Authors:** Romain Paulus, Caiming Xiong, Richard Socher
+
+**Abstract:** Attentional, RNN-based encoder-decoder models for abstractive summarization have achieved good performance on short input and output sequences. However, for longer documents and summaries, these models often include repetitive and incoherent phrases. We introduce a neural network model with intra-attention and a new training method. This method combines standard supervised word prediction and reinforcement learning (RL). Models trained only with the former often exhibit "exposure bias" -- they assume ground truth is provided at each step during training. However, when standard word prediction is combined with the global sequence prediction training of RL the resulting summaries become more readable. We evaluate this model on the CNN/Daily Mail and New York Times datasets. Our model obtains a 41.16 ROUGE-1 score on the CNN/Daily Mail dataset, a 5.7 absolute points improvement over previous state-of-the-art models. It also performs well as the first abstractive model on the New York Times corpus. Human evaluation also shows that our model produces higher quality summaries.
+
+**URL:** https://arxiv.org/abs/1705.04304
+
+**Notes:** Socher's fresh paper about summarization; intra-sequence attention for decoder
 
