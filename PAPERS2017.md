@@ -169,6 +169,7 @@ Table of Contents
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
       * [Key\-Value Retrieval Networks for Task\-Oriented Dialogue](#key-value-retrieval-networks-for-task-oriented-dialogue)
       * [Convolutional Sequence to Sequence Learning](#convolutional-sequence-to-sequence-learning)
+      * [Multimodal Word Distributions](#multimodal-word-distributions)
 
 Articles
 ========
@@ -1786,4 +1787,14 @@ Articles
 **URL:** https://arxiv.org/abs/1705.03122
 
 **Notes:** FAIR's paper on NMT, fully convolutional NMT (and summrization), with multi-layer attention for decoder; it's better read by yourself
+
+### Multimodal Word Distributions
+
+**Authors:** Ben Athiwaratkun, Andrew Gordon Wilson
+
+**Abstract:** Word embeddings provide point representations of words containing useful semantic information. We introduce multimodal word distributions formed from Gaussian mixtures, for multiple word meanings, entailment, and rich uncertainty information. To learn these distributions, we propose an energy-based max-margin objective. We show that the resulting approach captures uniquely expressive semantic information, and outperforms alternatives, such as word2vec skip-grams, and Gaussian embeddings, on benchmark datasets such as word similarity and entailment.
+
+**URL:** https://arxiv.org/abs/1704.08424
+
+**Notes:** m-dimensional Gaussian mixtures as word embeddings, almost word2vec, but with probability flavour
 
