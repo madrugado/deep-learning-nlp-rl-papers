@@ -171,6 +171,7 @@ Table of Contents
       * [Convolutional Sequence to Sequence Learning](#convolutional-sequence-to-sequence-learning)
       * [Multimodal Word Distributions](#multimodal-word-distributions)
       * [A Deep Reinforced Model for Abstractive Summarization](#a-deep-reinforced-model-for-abstractive-summarization)
+      * [Recurrent Additive Networks](#recurrent-additive-networks)
 
 Articles
 ========
@@ -1808,4 +1809,14 @@ Articles
 **URL:** https://arxiv.org/abs/1705.04304
 
 **Notes:** Socher's fresh paper about summarization; intra-sequence attention for decoder
+
+### Recurrent Additive Networks
+
+**Authors:** Kenton Lee, Omer Levy, Luke Zettlemoyer
+
+**Abstract:** We introduce recurrent additive networks (RANs), a new gated RNN which is distinguished by the use of purely additive latent state updates. At every time step, the new state is computed as a gated component-wise sum of the input and the previous state, without any of the non-linearities commonly used in RNN transition dynamics. We formally show that RAN states are weighted sums of the input vectors, and that the gates only contribute to computing the weights of these sums. Despite this relatively simple functional form, experiments demonstrate that RANs outperform both LSTMs and GRUs on benchmark language modeling problems. This result shows that many of the non-linear computations in LSTMs and related networks are not essential, at least for the problems we consider, and suggests that the gates are doing more of the computational work than previously understood.
+
+**URL:** http://www.kentonl.com/pub/llz.2017.pdf
+
+**Notes:** RAN is simplified LSTM, only summation of two gates
 
