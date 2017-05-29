@@ -12,6 +12,8 @@ Table of Contents
       * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
       * [Automatic Keyword Extraction for Text Summarization: A Survey](#automatic-keyword-extraction-for-text-summarization-a-survey)
       * [Factorization tricks for LSTM networks](#factorization-tricks-for-lstm-networks)
+    * [Other](#other)
+      * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
 
 Miscellaneous
 =============
@@ -77,4 +79,15 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1703.10722
 
 **Notes:** could be useful bunch of tricks for LSTM from NVIDIA engineers
+
+## Other
+### Living Together: Mind and Machine Intelligence
+
+**Authors:** Neil D. Lawrence
+
+**Abstract:** In this paper we consider the nature of the machine intelligences we have created in the context of our human intelligence. We suggest that the fundamental difference between human and machine intelligence comes down to \emph{embodiment factors}. We define embodiment factors as the ratio between an entity's ability to communicate information vs compute information. We speculate on the role of embodiment factors in driving our own intelligence and consciousness. We briefly review dual process models of cognition and cast machine intelligence within that framework, characterising it as a dominant System Zero, which can drive behaviour through interfacing with us subconsciously. Driven by concerns about the consequence of such a system we suggest prophylactic courses of action that could be considered. Our main conclusion is that it is \emph{not} sentient intelligence we should fear but \emph{non-sentient} intelligence.
+
+**URL:** https://arxiv.org/abs/1705.07996
+
+**Notes:** Jack Clark recommends this philosophical paper; human brain still better than computer in compression of input data by a several orders of magnitude; it is nice since we (the computer scientists to whom I have the courage to attribute myself) have a lot of stuff to do before the singularity
 
