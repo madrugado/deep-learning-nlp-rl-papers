@@ -34,6 +34,7 @@ Table of Contents
     * [2016\-05](#2016-05)
       * [Sentence Pair Scoring: Towards Unified Framework for Text Comprehension](#sentence-pair-scoring-towards-unified-framework-for-text-comprehension)
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
+      * [How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](#how-not-to-evaluate-your-dialogue-system-an-empirical-study-of-unsupervised-evaluation-metrics-for-dialogue-response-generation)
     * [2016\-05](#2016-05-1)
       * [Learning End\-to\-End Goal\-Oriented Dialog](#learning-end-to-end-goal-oriented-dialog)
     * [2016\-06](#2016-06)
@@ -455,6 +456,16 @@ Articles
 **URL:** https://arxiv.org/abs/1603.01354
 
 **Notes:**
+
+### How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation
+
+**Authors:** Chia-Wei Liu, Ryan Lowe, Iulian V. Serban, Michael Noseworthy, Laurent Charlin, Joelle Pineau
+
+**Abstract:** We investigate evaluation metrics for dialogue response generation systems where supervised labels, such as task completion, are not available. Recent works in response generation have adopted metrics from machine translation to compare a model's generated response to a single target response. We show that these metrics correlate very weakly with human judgements in the non-technical Twitter domain, and not at all in the technical Ubuntu domain. We provide quantitative and qualitative results highlighting specific weaknesses in existing metrics, and provide recommendations for future development of better automatic evaluation metrics for dialogue systems.
+
+**URL:** https://arxiv.org/abs/1603.08023
+
+**Notes:** nice paper showing no statistical correlation between famous ROUGE, BLEU & METEOR with human judgment in dialog system scoring
 
 ## 2016-05
 ### Learning End-to-End Goal-Oriented Dialog
