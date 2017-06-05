@@ -172,6 +172,8 @@ Table of Contents
       * [Multimodal Word Distributions](#multimodal-word-distributions)
       * [A Deep Reinforced Model for Abstractive Summarization](#a-deep-reinforced-model-for-abstractive-summarization)
       * [Recurrent Additive Networks](#recurrent-additive-networks)
+    * [2017\-06](#2017-06)
+      * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
 
 Articles
 ========
@@ -1819,4 +1821,15 @@ Articles
 **URL:** http://www.kentonl.com/pub/llz.2017.pdf
 
 **Notes:** RAN is simplified LSTM, only summation of two gates
+
+## 2017-06
+### On Unifying Deep Generative Models
+
+**Authors:** Zhiting Hu, Zichao Yang, Ruslan Salakhutdinov, Eric P. Xing
+
+**Abstract:** Deep generative models have achieved impressive success in recent years. Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), as powerful frameworks for deep generative model learning, have largely been considered as two distinct paradigms and received extensive independent study respectively. This paper establishes formal connections between deep generative modeling approaches through a new formulation of GANs and VAEs. We show that GANs and VAEs are essentially minimizing KL divergences with opposite directions and reversed latent/visible treatments, extending the two learning phases of classic wake-sleep algorithm, respectively. The unified view provides a powerful tool to analyze a diverse set of existing model variants, and enables to exchange ideas across research lines in a principled way. For example, we transfer the importance weighting method in VAE literatures for improved GAN learning, and enhance VAEs with an adversarial mechanism. Quantitative experiments show generality and effectiveness of the imported extensions.
+
+**URL:** https://arxiv.org/abs/1706.00550
+
+**Notes:** fresh paper from Russ Salakhutdinov: GAN & VAE are just different names of one approach, also fruitful in combination, they're both optimizing KL-divergence
 
