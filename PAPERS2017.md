@@ -174,6 +174,7 @@ Table of Contents
       * [Recurrent Additive Networks](#recurrent-additive-networks)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
+      * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
 
 Articles
 ========
@@ -1832,4 +1833,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.00550
 
 **Notes:** fresh paper from Russ Salakhutdinov: GAN & VAE are just different names of one approach, also fruitful in combination, they're both optimizing KL-divergence
+
+### A simple neural network module for relational reasoning
+
+**Authors:** Adam Santoro, David Raposo, David G.T. Barrett, Mateusz Malinowski, Razvan Pascanu, Peter Battaglia, Timothy Lillicrap
+
+**Abstract:** Relational reasoning is a central component of generally intelligent behavior, but has proven difficult for neural networks to learn. In this paper we describe how to use Relation Networks (RNs) as a simple plug-and-play module to solve problems that fundamentally hinge on relational reasoning. We tested RN-augmented networks on three tasks: visual question answering using a challenging dataset called CLEVR, on which we achieve state-of-the-art, super-human performance; text-based question answering using the bAbI suite of tasks; and complex reasoning about dynamic physical systems. Then, using a curated dataset called Sort-of-CLEVR we show that powerful convolutional networks do not have a general capacity to solve relational questions, but can gain this capacity when augmented with RNs. Our work shows how a deep learning architecture equipped with an RN module can implicitly discover and learn to reason about entities and their relations.
+
+**URL:** https://arxiv.org/abs/1706.01427
+
+**Notes:** revolutionary in a way work: just MLP over pair of 'objects' improves VQA по super-human performance
 
