@@ -39,6 +39,7 @@ Table of Contents
       * [Reinforced backpropagation improves test performance of deep networks: a toy\-model study](#reinforced-backpropagation-improves-test-performance-of-deep-networks-a-toy-model-study)
       * [CommAI: Evaluating the first steps towards a useful general AI](#commai-evaluating-the-first-steps-towards-a-useful-general-ai)
       * [Deep Reinforcement Learning: An Overview](#deep-reinforcement-learning-an-overview)
+      * [Adversarial Learning for Neural Dialogue Generation](#adversarial-learning-for-neural-dialogue-generation-1)
     * [2017\-02](#2017-02)
       * [Low\-Dose CT with a Residual Encoder\-Decoder Convolutional Neural Network (RED\-CNN)](#low-dose-ct-with-a-residual-encoder-decoder-convolutional-neural-network-red-cnn)
       * [On orthogonality and learning recurrent networks with long term dependencies](#on-orthogonality-and-learning-recurrent-networks-with-long-term-dependencies)
@@ -528,6 +529,16 @@ Articles
 **URL:** https://arxiv.org/abs/1701.07274
 
 **Notes:** RL overview, including dialog systems
+
+### Adversarial Learning for Neural Dialogue Generation
+
+**Authors:** Jiwei Li, Will Monroe, Tianlin Shi, Sébastien Jean, Alan Ritter, Dan Jurafsky
+
+**Abstract:** In this paper, drawing intuition from the Turing test, we propose using adversarial training for open-domain dialogue generation: the system is trained to produce sequences that are indistinguishable from human-generated dialogue utterances. We cast the task as a reinforcement learning (RL) problem where we jointly train two systems, a generative model to produce response sequences, and a discriminator---analagous to the human evaluator in the Turing test--- to distinguish between the human-generated dialogues and the machine-generated ones. The outputs from the discriminator are then used as rewards for the generative model, pushing the system to generate dialogues that mostly resemble human dialogues. In addition to adversarial training we describe a model for adversarial {\em evaluation} that uses success in fooling an adversary as a dialogue evaluation metric, while avoiding a number of potential pitfalls. Experimental results on several metrics, including adversarial evaluation, demonstrate that the adversarially-trained system generates higher-quality responses than previous baselines.
+
+**URL:** https://arxiv.org/abs/1701.06547
+
+**Notes:** GAN for dialog generation by seq2seq, with few tricks to make it work
 
 ## 2017-02
 ### Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)
