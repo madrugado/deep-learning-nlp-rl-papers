@@ -270,6 +270,7 @@ Table of Contents
       * [Deep Learning and Hierarchal Generative Models](#deep-learning-and-hierarchal-generative-models)
       * [A Basic Recurrent Neural Network Model](#a-basic-recurrent-neural-network-model)
       * [A Joint Speaker\-Listener\-Reinforcer Model for Referring Expressions](#a-joint-speaker-listener-reinforcer-model-for-referring-expressions)
+      * [Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](#towards-an-automatic-turing-test-learning-to-evaluate-dialogue-responses)
 
 Articles
 ========
@@ -2754,4 +2755,14 @@ Articles
 **URL:** https://arxiv.org/abs/1612.09542
 
 **Notes:** RL framework for teaching natural language
+
+### Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses
+
+**Authors:** Ryan Lowe, Michael Noseworthy, Iulian V. Serban, Nicolas Angelard-Gontier, Yoshua Bengio, Joelle Pineau
+
+**Abstract:** Automatically evaluating the quality of dialogue responses for unstructured domains is a challenging problem. Unfortunately, existing automatic evaluation metrics are biased and correlate very poorly with human judgements of response quality (Liu et al., 2016). Yet having an accurate automatic evaluation procedure is crucial for dialogue research, as it allows rapid prototyping and testing of new models with fewer expensive human evaluations. In response to this challenge, we formulate automatic dialogue evaluation as a learning problem. We present an evaluation model (ADEM) that learns to predict human-like scores to input responses, using a new dataset of human response scores. We show that the ADEM model’s predictions correlate significantly, and at level much higher than word-overlap metrics such as BLEU, with human judgements at both the utterance and system-level. We also show that ADEM can generalize to evaluating dialogue models unseen during training, an important step for automatic dialogue evaluation.
+
+**URL:** https://openreview.net/pdf?id=HJ5PIaseg
+
+**Notes:** new dialog quality metric, little bit poor as for me: RNN trained to embed resporses, and its output vectors are compared, but after all it is correlated a little with human judgement
 
