@@ -173,6 +173,7 @@ Table of Contents
       * [Multimodal Word Distributions](#multimodal-word-distributions)
       * [A Deep Reinforced Model for Abstractive Summarization](#a-deep-reinforced-model-for-abstractive-summarization)
       * [Recurrent Additive Networks](#recurrent-additive-networks)
+      * [Adversarial Generation of Natural Language](#adversarial-generation-of-natural-language)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -1833,6 +1834,16 @@ Articles
 **URL:** http://www.kentonl.com/pub/llz.2017.pdf
 
 **Notes:** RAN is simplified LSTM, only summation of two gates
+
+### Adversarial Generation of Natural Language
+
+**Authors:** Sai Rajeswar, Sandeep Subramanian, Francis Dutil, Christopher Pal, Aaron Courville
+
+**Abstract:** Generative Adversarial Networks (GANs) have gathered a lot of attention from the computer vision community, yielding impressive results for image generation. Advances in the adversarial generation of natural language from noise however are not commensurate with the progress made in generating images, and still lag far behind likelihood based methods. In this paper, we take a step towards generating natural language with a GAN objective alone. We introduce a simple baseline that addresses the discrete output space problem without relying on gradient estimators and show that it is able to achieve state-of-the-art results on a Chinese poem generation dataset. We present quantitative results on generating sentences from context-free and probabilistic context-free grammars, and qualitative language modeling results. A conditional version is also described that can generate sequences conditioned on sentence characteristics.
+
+**URL:** https://arxiv.org/abs/1705.10929
+
+**Notes:** synthetic baseline for GANs in text to start with
 
 ## 2017-06
 ### On Unifying Deep Generative Models
