@@ -174,6 +174,7 @@ Table of Contents
       * [A Deep Reinforced Model for Abstractive Summarization](#a-deep-reinforced-model-for-abstractive-summarization)
       * [Recurrent Additive Networks](#recurrent-additive-networks)
       * [Adversarial Generation of Natural Language](#adversarial-generation-of-natural-language)
+      * [The Cramer Distance as a Solution to Biased Wasserstein Gradients](#the-cramer-distance-as-a-solution-to-biased-wasserstein-gradients)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -1844,6 +1845,16 @@ Articles
 **URL:** https://arxiv.org/abs/1705.10929
 
 **Notes:** synthetic baseline for GANs in text to start with
+
+### The Cramer Distance as a Solution to Biased Wasserstein Gradients
+
+**Authors:** Marc G. Bellemare, Ivo Danihelka, Will Dabney, Shakir Mohamed, Balaji Lakshminarayanan, Stephan Hoyer, Rémi Munos
+
+**Abstract:** The Wasserstein probability metric has received much attention from the machine learning community. Unlike the Kullback-Leibler divergence, which strictly measures change in probability, the Wasserstein metric reflects the underlying geometry between outcomes. The value of being sensitive to this geometry has been demonstrated, among others, in ordinal regression and generative modelling. In this paper we describe three natural properties of probability divergences that reflect requirements from machine learning: sum invariance, scale sensitivity, and unbiased sample gradients. The Wasserstein metric possesses the first two properties but, unlike the Kullback-Leibler divergence, does not possess the third. We provide empirical evidence suggesting that this is a serious issue in practice. Leveraging insights from probabilistic forecasting we propose an alternative to the Wasserstein metric, the Cram\'er distance. We show that the Cram\'er distance possesses all three desired properties, combining the best of the Wasserstein and Kullback-Leibler divergences. To illustrate the relevance of the Cram\'er distance in practice we design a new algorithm, the Cram\'er Generative Adversarial Network (GAN), and show that it performs significantly better than the related Wasserstein GAN.
+
+**URL:** https://arxiv.org/abs/1705.10743
+
+**Notes:** Cramer distance seems to be reasonable alternative to Wasserstein: it has missing unbiasedness property
 
 ## 2017-06
 ### On Unifying Deep Generative Models
