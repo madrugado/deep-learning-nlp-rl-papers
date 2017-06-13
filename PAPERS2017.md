@@ -180,6 +180,7 @@ Table of Contents
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
       * [Parameter Space Noise for Exploration](#parameter-space-noise-for-exploration)
       * [UCB and InfoGain Exploration via Q\-Ensembles](#ucb-and-infogain-exploration-via-q-ensembles)
+      * [Deep reinforcement learning from human preferences](#deep-reinforcement-learning-from-human-preferences)
 
 Articles
 ========
@@ -1898,4 +1899,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.01502
 
 **Notes:** SGD analogue for Q-function learning: create bunch and use majority vote
+
+### Deep reinforcement learning from human preferences
+
+**Authors:** Paul Christiano, Jan Leike, Tom B. Brown, Miljan Martic, Shane Legg, Dario Amodei
+
+**Abstract:** For sophisticated reinforcement learning (RL) systems to interact usefully with real-world environments, we need to communicate complex goals to these systems. In this work, we explore goals defined in terms of (non-expert) human preferences between pairs of trajectory segments. We show that this approach can effectively solve complex RL tasks without access to the reward function, including Atari games and simulated robot locomotion, while providing feedback on less than one percent of our agent's interactions with the environment. This reduces the cost of human oversight far enough that it can be practically applied to state-of-the-art RL systems. To demonstrate the flexibility of our approach, we show that we can successfully train complex novel behaviors with about an hour of human time. These behaviors and environments are considerably more complex than any that have been previously learned from human feedback.
+
+**URL:** https://arxiv.org/abs/1706.03741
+
+**Notes:** human-in-the-loop for RL tasks: human compares trajectories from time to time
 
