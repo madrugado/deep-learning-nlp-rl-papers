@@ -178,6 +178,8 @@ Table of Contents
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
+      * [Parameter Space Noise for Exploration](#parameter-space-noise-for-exploration)
+      * [UCB and InfoGain Exploration via Q\-Ensembles](#ucb-and-infogain-exploration-via-q-ensembles)
 
 Articles
 ========
@@ -1876,4 +1878,24 @@ Articles
 **URL:** https://arxiv.org/abs/1706.01427
 
 **Notes:** revolutionary in a way work: just MLP over pair of 'objects' improves VQA по super-human performance
+
+### Parameter Space Noise for Exploration
+
+**Authors:** Matthias Plappert, Rein Houthooft, Prafulla Dhariwal, Szymon Sidor, Richard Y. Chen, Xi Chen, Tamim Asfour, Pieter Abbeel, Marcin Andrychowicz
+
+**Abstract:** Deep reinforcement learning (RL) methods generally engage in exploratory behavior through noise injection in the action space. An alternative is to add noise directly to the agent's parameters, which can lead to more consistent exploration and a richer set of behaviors. Methods such as evolutionary strategies use parameter perturbations, but discard all temporal structure in the process and require significantly more samples. Combining parameter noise with traditional RL methods allows to combine the best of both worlds. We demonstrate that both off- and on-policy methods benefit from this approach through experimental comparison of DQN, DDPG, and TRPO on high-dimensional discrete action environments as well as continuous control tasks. Our results show that RL with parameter noise learns more efficiently than traditional RL with action space noise and evolutionary strategies individually.
+
+**URL:** https://arxiv.org/abs/1706.01905
+
+**Notes:** Bayesian approach to enhance deep RL methods - adding noise to params
+
+### UCB and InfoGain Exploration via Q-Ensembles
+
+**Authors:** Richard Y. Chen, Szymon Sidor, Pieter Abbeel, John Schulman
+
+**Abstract:** We show how an ensemble of Q∗-functions can be leveraged for more effective exploration in deep reinforcement learning. We build on well established algorithms from the bandit setting, and adapt them to the Q-learning setting. First we propose an exploration strategy based on upper-confidence bounds (UCB). Next, we define an "InfoGain" exploration bonus, which depends on the disagreement of the Q-ensemble. Our experiments show significant gains on the Atari benchmark.
+
+**URL:** https://arxiv.org/abs/1706.01502
+
+**Notes:** SGD analogue for Q-function learning: create bunch and use majority vote
 
