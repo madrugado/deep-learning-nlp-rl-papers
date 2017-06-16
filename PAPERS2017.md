@@ -14,7 +14,6 @@ Table of Contents
       * [Self\-Taught Convolutional Neural Networks for Short Text Clustering](#self-taught-convolutional-neural-networks-for-short-text-clustering)
       * [Textual Entailment with Structured Attentions and Composition](#textual-entailment-with-structured-attentions-and-composition)
       * [Unsupervised neural and Bayesian models for zero\-resource speech processing](#unsupervised-neural-and-bayesian-models-for-zero-resource-speech-processing)
-      * [NIPS 2016 Tutorial: Generative Adversarial Networks](#nips-2016-tutorial-generative-adversarial-networks)
       * [Dense Associative Memory is Robust to Adversarial Inputs](#dense-associative-memory-is-robust-to-adversarial-inputs)
       * [A K\-fold Method for Baseline Estimation in Policy Gradient Algorithms](#a-k-fold-method-for-baseline-estimation-in-policy-gradient-algorithms)
       * [Generating Long and Diverse Responses with Neural Conversation Models](#generating-long-and-diverse-responses-with-neural-conversation-models)
@@ -266,7 +265,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1701.00185
 
-**Notes:** unsupervised clusteding by CNNs!
+**Notes:** unsupervised clustering by CNNs!
 
 ### Textual Entailment with Structured Attentions and Composition
 
@@ -287,16 +286,6 @@ Articles
 **URL:** https://arxiv.org/abs/1701.00851
 
 **Notes:** Unsurervised neural vs Bayesian approahces in speech processing
-
-### NIPS 2016 Tutorial: Generative Adversarial Networks
-
-**Authors:** Ian Goodfellow
-
-**Abstract:** This report summarizes the tutorial presented by the author at NIPS 2016 on generative adversarial networks (GANs). The tutorial describes: (1) Why generative modeling is a topic worth studying, (2) how generative models work, and how GANs compare to other generative models, (3) the details of how GANs work, (4) research frontiers in GANs, and (5) state-of-the-art image models that combine GANs with other methods. Finally, the tutorial contains three exercises for readers to complete, and the solutions to these exercises.
-
-**URL:** https://arxiv.org/abs/1701.00160
-
-**Notes:** Goodfellow's tutorial couldn't hurt
 
 ### Dense Associative Memory is Robust to Adversarial Inputs
 

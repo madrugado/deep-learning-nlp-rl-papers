@@ -14,6 +14,8 @@ Table of Contents
       * [Factorization tricks for LSTM networks](#factorization-tricks-for-lstm-networks)
     * [Other](#other)
       * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
+    * [Tutorial](#tutorial)
+      * [NIPS 2016 Tutorial: Generative Adversarial Networks](#nips-2016-tutorial-generative-adversarial-networks)
 
 Miscellaneous
 =============
@@ -90,4 +92,15 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1705.07996
 
 **Notes:** Jack Clark recommends this philosophical paper; human brain still better than computer in compression of input data by a several orders of magnitude; it is nice since we (the computer scientists to whom I have the courage to attribute myself) have a lot of stuff to do before the singularity
+
+## Tutorial
+### NIPS 2016 Tutorial: Generative Adversarial Networks
+
+**Authors:** Ian Goodfellow
+
+**Abstract:** This report summarizes the tutorial presented by the author at NIPS 2016 on generative adversarial networks (GANs). The tutorial describes: (1) Why generative modeling is a topic worth studying, (2) how generative models work, and how GANs compare to other generative models, (3) the details of how GANs work, (4) research frontiers in GANs, and (5) state-of-the-art image models that combine GANs with other methods. Finally, the tutorial contains three exercises for readers to complete, and the solutions to these exercises.
+
+**URL:** https://arxiv.org/abs/1701.00160
+
+**Notes:** Goodfellow's tutorial couldn't hurt
 
