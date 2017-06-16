@@ -175,6 +175,7 @@ Table of Contents
       * [Recurrent Additive Networks](#recurrent-additive-networks)
       * [Adversarial Generation of Natural Language](#adversarial-generation-of-natural-language)
       * [The Cramer Distance as a Solution to Biased Wasserstein Gradients](#the-cramer-distance-as-a-solution-to-biased-wasserstein-gradients)
+      * [Second\-Order Word Embeddings from Nearest Neighbor Topological Features](#second-order-word-embeddings-from-nearest-neighbor-topological-features)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -1861,6 +1862,16 @@ Articles
 
 **Notes:** Cramer distance seems to be reasonable alternative to Wasserstein: it has missing unbiasedness property
 
+### Second-Order Word Embeddings from Nearest Neighbor Topological Features
+
+**Authors:** Denis Newman-Griffis, Eric Fosler-Lussier
+
+**Abstract:** We introduce second-order vector representations of words, induced from nearest neighborhood topological features in pre-trained contextual word embeddings. We then analyze the effects of using second-order embeddings as input features in two deep natural language processing models, for named entity recognition and recognizing textual entailment, as well as a linear model for paraphrase recognition. Surprisingly, we find that nearest neighbor information alone is sufficient to capture most of the performance benefits derived from using pre-trained word embeddings. Furthermore, second-order embeddings are able to handle highly heterogeneous data better than first-order representations, though at the cost of some specificity. Additionally, augmenting contextual embeddings with second-order information further improves model performance in some cases. Due to variance in the random initializations of word embeddings, utilizing nearest neighbor features from multiple first-order embedding samples can also contribute to downstream performance gains. Finally, we identify intriguing characteristics of second-order embedding spaces for further research, including much higher density and different semantic interpretations of cosine similarity.
+
+**URL:** https://arxiv.org/abs/1705.08488
+
+**Notes:** simple paper about training word2vec and train new embedding basing on the produced neighbours
+
 ## 2017-06
 ### On Unifying Deep Generative Models
 
@@ -1930,5 +1941,5 @@ Articles
 
 **URL:** https://arxiv.org/abs/1706.02515
 
-**Notes:** new paper from author of LSTM: fully connected net with specific activation (like leaky ReLU, but better), seems to be reasonable alternative for SVM, RF, etc. in linear tasks, e.g. many Kaggle competition
+**Notes:** new paper from author of LSTM: fully connected net with specific activation (like leaky ReLU, but better), seems to be reasonable alternative for SVM, RF, etc. in linear tasks, e.g. many Kaggle competitions
 
