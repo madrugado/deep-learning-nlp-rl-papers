@@ -759,7 +759,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1607.04606
 
-**Notes:**
+**Notes:** Mikolov's paper on fasttext: word2vec + sum of vectors from ngram2vec
 
 ## 2016-08
 ### A Neural Knowledge Language Model
