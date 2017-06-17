@@ -40,6 +40,7 @@ Table of Contents
     * [2016\-06](#2016-06)
       * [End\-to\-end LSTM\-based dialog control optimized with supervised and reinforcement learning](#end-to-end-lstm-based-dialog-control-optimized-with-supervised-and-reinforcement-learning)
       * [Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations](#zoneout-regularizing-rnns-by-randomly-preserving-hidden-activations)
+      * [A Decomposable Attention Model for Natural Language Inference](#a-decomposable-attention-model-for-natural-language-inference)
     * [2016\-07](#2016-07)
       * [Representation learning for very short texts using weighted word embedding aggregation](#representation-learning-for-very-short-texts-using-weighted-word-embedding-aggregation)
       * [Recurrent Neural Machine Translation](#recurrent-neural-machine-translation)
@@ -499,6 +500,16 @@ Articles
 **URL:** https://arxiv.org/abs/1606.01305
 
 **Notes:** recently updated paper about zoneout, a dropout for RNNs
+
+### A Decomposable Attention Model for Natural Language Inference
+
+**Authors:** Ankur P. Parikh, Oscar Täckström, Dipanjan Das, Jakob Uszkoreit
+
+**Abstract:** We propose a simple neural architecture for natural language inference. Our approach uses attention to decompose the problem into subproblems that can be solved separately, thus making it trivially parallelizable. On the Stanford Natural Language Inference (SNLI) dataset, we obtain state-of-the-art results with almost an order of magnitude fewer parameters than previous work and without relying on any word-order information. Adding intra-sentence attention that takes a minimum amount of order into account yields further improvements.
+
+**URL:** https://arxiv.org/abs/1606.01933
+
+**Notes:** attention-based alignment matrix for texts comparison, SOTA past year
 
 ## 2016-07
 ### Representation learning for very short texts using weighted word embedding aggregation
