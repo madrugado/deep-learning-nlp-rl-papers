@@ -12,6 +12,8 @@ Table of Contents
       * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
       * [Automatic Keyword Extraction for Text Summarization: A Survey](#automatic-keyword-extraction-for-text-summarization-a-survey)
       * [Factorization tricks for LSTM networks](#factorization-tricks-for-lstm-networks)
+      * [Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey](#symbolic-distributed-and-distributional-representations-for-natural-language-processing-in-the-era-of-deep-learning-a-survey)
+      * [Deep Reinforcement Learning: An Overview](#deep-reinforcement-learning-an-overview)
     * [Other](#other)
       * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
     * [Tutorial](#tutorial)
@@ -81,6 +83,26 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1703.10722
 
 **Notes:** could be useful bunch of tricks for LSTM from NVIDIA engineers
+
+### Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey
+
+**Authors:** Lorenzo Ferrone, Fabio Massimo Zanzotto
+
+**Abstract:** Natural language and symbols are intimately correlated. Recent advances in machine learning (ML) and in natural language processing (NLP) seem to contradict the above intuition: symbols are fading away, erased by vectors or tensors called distributed and distributional representations. However, there is a strict link between distributed/distributional representations and symbols, being the first an approximation of the second. A clearer understanding of the strict link between distributed/distributional representations and symbols will certainly lead to radically new deep learning networks. In this paper we make a survey that aims to draw the link between symbolic representations and distributed/distributional representations. This is the right time to revitalize the area of interpreting how symbols are represented inside neural networks.
+
+**URL:** https://arxiv.org/abs/1702.00764
+
+**Notes:** review of nlp representations
+
+### Deep Reinforcement Learning: An Overview
+
+**Authors:** Yuxi Li
+
+**Abstract:** We give an overview of recent exciting achievements of deep reinforcement learning (RL). We start with background of deep learning and reinforcement learning, as well as introduction of testbeds. Next we discuss Deep Q-Network (DQN) and its extensions, asynchronous methods, policy optimization, reward, and planning. After that, we talk about attention and memory, unsupervised learning, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, spoken dialogue systems (a.k.a. chatbot), machine translation, text sequence prediction, neural architecture design, personalized web services, healthcare, finance, and music generation. We mention topics/papers not reviewed yet. After listing a collection of RL resources, we close with discussions.
+
+**URL:** https://arxiv.org/abs/1701.07274
+
+**Notes:** RL overview, including dialog systems
 
 ## Other
 ### Living Together: Mind and Machine Intelligence
