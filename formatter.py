@@ -56,7 +56,7 @@ class ArticleFormatter:
             return ""
 
     def _twitting(self):
-        url = shorten_URL(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[4][9:])
+        url = shorten_URL(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[3][9:])
         text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
         if len(text) > 140 - len(url) - 1:  # one symbol for space
             premature_ending = "... "
