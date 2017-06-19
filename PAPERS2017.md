@@ -181,6 +181,7 @@ Table of Contents
       * [Deep reinforcement learning from human preferences](#deep-reinforcement-learning-from-human-preferences)
       * [Attention Is All You Need](#attention-is-all-you-need)
       * [Self\-Normalizing Neural Networks](#self-normalizing-neural-networks)
+      * [A Mixture Model for Learning Multi\-Sense Word Embeddings](#a-mixture-model-for-learning-multi-sense-word-embeddings)
 
 Articles
 ========
@@ -1909,4 +1910,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.02515
 
 **Notes:** new paper from author of LSTM: fully connected net with specific activation (like leaky ReLU, but better), seems to be reasonable alternative for SVM, RF, etc. in linear tasks, e.g. many Kaggle competitions
+
+### A Mixture Model for Learning Multi-Sense Word Embeddings
+
+**Authors:** Dai Quoc Nguyen, Dat Quoc Nguyen, Ashutosh Modi, Stefan Thater, Manfred Pinkal
+
+**Abstract:** Word embeddings are now a standard technique for inducing meaning representations for words. For getting good representations, it is important to take into account different senses of a word. In this paper, we propose a mixture model for learning multi-sense word embeddings. Our model generalizes the previous works in that it allows to induce different weights of different senses of a word. The experimental results show that our model outperforms previous models on standard evaluation tasks.
+
+**URL:** https://arxiv.org/abs/1706.05111
+
+**Notes:** multi-sense word embeddings based on topic modeling, short and clear
 
