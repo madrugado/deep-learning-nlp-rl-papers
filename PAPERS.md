@@ -272,6 +272,7 @@ Table of Contents
       * [A Basic Recurrent Neural Network Model](#a-basic-recurrent-neural-network-model)
       * [A Joint Speaker\-Listener\-Reinforcer Model for Referring Expressions](#a-joint-speaker-listener-reinforcer-model-for-referring-expressions)
       * [Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](#towards-an-automatic-turing-test-learning-to-evaluate-dialogue-responses)
+      * [Neural Networks for Joint Sentence Classification in Medical Paper Abstracts](#neural-networks-for-joint-sentence-classification-in-medical-paper-abstracts)
 
 Articles
 ========
@@ -2776,4 +2777,14 @@ Articles
 **URL:** https://openreview.net/pdf?id=HJ5PIaseg
 
 **Notes:** new dialog quality metric, little bit poor as for me: RNN trained to embed resporses, and its output vectors are compared, but after all it is correlated a little with human judgement
+
+### Neural Networks for Joint Sentence Classification in Medical Paper Abstracts
+
+**Authors:** Franck Dernoncourt, Ji Young Lee, Peter Szolovits
+
+**Abstract:** Existing models based on artificial neural networks (ANNs) for sentence classification often do not incorporate the context in which sentences appear, and classify sentences individually. However, traditional sentence classification approaches have been shown to greatly benefit from jointly classifying subsequent sentences, such as with conditional random fields. In this work, we present an ANN architecture that combines the effectiveness of typical ANN models to classify sentences in isolation, with the strength of structured prediction. Our model achieves state-of-the-art results on two different datasets for sequential sentence classification in medical abstracts.
+
+**URL:** https://arxiv.org/abs/1612.05251
+
+**Notes:** basic architecture to start with to work with texts today, as for me; some results in classification also
 
