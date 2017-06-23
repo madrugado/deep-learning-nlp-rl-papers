@@ -183,6 +183,7 @@ Table of Contents
       * [Self\-Normalizing Neural Networks](#self-normalizing-neural-networks)
       * [A Mixture Model for Learning Multi\-Sense Word Embeddings](#a-mixture-model-for-learning-multi-sense-word-embeddings)
       * [End\-to\-End Neural Ad\-hoc Ranking with Kernel Pooling](#end-to-end-neural-ad-hoc-ranking-with-kernel-pooling)
+      * [Learning to Compute Word Embeddings On the Fly](#learning-to-compute-word-embeddings-on-the-fly)
 
 Articles
 ========
@@ -1931,4 +1932,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.06613
 
 **Notes:** matrix of cosine similarities between words in doc and query and learnable kernels above it makes good ranking
+
+### Learning to Compute Word Embeddings On the Fly
+
+**Authors:** Dzmitry Bahdanau, Tom Bosc, Stanisław Jastrzębski, Edward Grefenstette, Pascal Vincent, Yoshua Bengio
+
+**Abstract:** Words in natural language follow a Zipfian distribution whereby some words are frequent but most are rare. Learning representations for words in the "long tail" of this distribution requires enormous amounts of data. Representations of rare words trained directly on end-tasks are usually poor, requiring us to pre-train embeddings on external data, or treat all rare words as out-of-vocabulary words with a unique representation. We provide a method for predicting embeddings of rare words on the fly from small amounts of auxiliary data with a network trained against the end task. We show that this improves results against baselines where embeddings are trained on the end task in a reading comprehension task, a recognizing textual entailment task, and in language modelling.
+
+**URL:** https://arxiv.org/abs/1706.00286
+
+**Notes:** create embeddings on the fly for rare words with reading by LSTM dictionary definition
 
