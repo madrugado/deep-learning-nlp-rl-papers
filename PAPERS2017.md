@@ -173,6 +173,7 @@ Table of Contents
       * [Adversarial Generation of Natural Language](#adversarial-generation-of-natural-language)
       * [The Cramer Distance as a Solution to Biased Wasserstein Gradients](#the-cramer-distance-as-a-solution-to-biased-wasserstein-gradients)
       * [Second\-Order Word Embeddings from Nearest Neighbor Topological Features](#second-order-word-embeddings-from-nearest-neighbor-topological-features)
+      * [Emergence of Language with Multi\-agent Games: Learning to Communicate with Sequences of Symbols](#emergence-of-language-with-multi-agent-games-learning-to-communicate-with-sequences-of-symbols)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -1841,6 +1842,16 @@ Articles
 **URL:** https://arxiv.org/abs/1705.08488
 
 **Notes:** simple paper about training word2vec and train new embedding basing on the produced neighbours
+
+### Emergence of Language with Multi-agent Games: Learning to Communicate with Sequences of Symbols
+
+**Authors:** Serhii Havrylov, Ivan Titov
+
+**Abstract:** Learning to communicate through interaction, rather than relying on explicit supervision, is often considered a prerequisite for developing a general AI. We study a setting where two agents engage in playing a referential game and, from scratch, develop a communication protocol necessary to succeed in this game. Unlike previous work, we require that messages they exchange, both at train and test time, are in the form of a language (i.e. sequences of discrete symbols). We compare a reinforcement learning approach and one using a differentiable relaxation (straight-through Gumbel-softmax estimator) and observe that the latter is much faster to converge and it results in more effective protocols. Interestingly, we also observe that the protocol we induce by optimizing the communication success exhibits a degree of compositionality and variability (i.e. the same information can be phrased in different ways), both properties characteristic of natural languages. As the ultimate goal is to ensure that communication is accomplished in natural language, we also perform experiments where we inject prior information about natural language into our model and study properties of the resulting protocol.
+
+**URL:** https://arxiv.org/abs/1705.11192
+
+**Notes:** Gumbel-softmax is better than RL for language invention task (yes, this task already exists!)
 
 ## 2017-06
 ### On Unifying Deep Generative Models
