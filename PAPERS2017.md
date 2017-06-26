@@ -185,6 +185,7 @@ Table of Contents
       * [A Mixture Model for Learning Multi\-Sense Word Embeddings](#a-mixture-model-for-learning-multi-sense-word-embeddings)
       * [End\-to\-End Neural Ad\-hoc Ranking with Kernel Pooling](#end-to-end-neural-ad-hoc-ranking-with-kernel-pooling)
       * [Learning to Compute Word Embeddings On the Fly](#learning-to-compute-word-embeddings-on-the-fly)
+      * [RelNet: End\-to\-end Modeling of Entities &amp; Relations](#relnet-end-to-end-modeling-of-entities--relations)
 
 Articles
 ========
@@ -1953,4 +1954,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.00286
 
 **Notes:** create embeddings on the fly for rare words with reading by LSTM dictionary definition
+
+### RelNet: End-to-end Modeling of Entities & Relations
+
+**Authors:** Trapit Bansal, Arvind Neelakantan, Andrew McCallum
+
+**Abstract:** We introduce RelNet: a new model for relational reasoning. RelNet is a memory augmented neural network which models entities as abstract memory slots and is equipped with an additional relational memory which models relations between all memory pairs. The model thus builds an abstract knowledge graph on the entities and relations present in a document which can then be used to answer questions about the document. It is trained end-to-end: only supervision to the model is in the form of correct answers to the questions. We test the model on the 20 bAbI question-answering tasks with 10k examples per task and find that it solves all the tasks with a mean error of 0.3%, achieving 0% error on 11 of the 20 tasks.
+
+**URL:** https://arxiv.org/abs/1706.07179
+
+**Notes:** new SOTA on bAbI, next step in EntNet arch, key-value memory and attention on the output
 
