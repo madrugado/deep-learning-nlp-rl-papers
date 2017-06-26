@@ -14,6 +14,7 @@ Table of Contents
       * [Factorization tricks for LSTM networks](#factorization-tricks-for-lstm-networks)
       * [Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey](#symbolic-distributed-and-distributional-representations-for-natural-language-processing-in-the-era-of-deep-learning-a-survey)
       * [Deep Reinforcement Learning: An Overview](#deep-reinforcement-learning-an-overview)
+      * [Algorithms for multi\-armed bandit problems](#algorithms-for-multi-armed-bandit-problems)
     * [Other](#other)
       * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
     * [Tutorial](#tutorial)
@@ -103,6 +104,16 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1701.07274
 
 **Notes:** RL overview, including dialog systems
+
+### Algorithms for multi-armed bandit problems
+
+**Authors:** Volodymyr Kuleshov, Doina Precup
+
+**Abstract:** Although many algorithms for the multi-armed bandit problem are well-understood theoretically, empirical confirmation of their effectiveness is generally scarce. This paper presents a thorough empirical study of the most popular multi-armed bandit algorithms. Three important observations can be made from our results. Firstly, simple heuristics such as epsilon-greedy and Boltzmann exploration outperform theoretically sound algorithms on most settings by a significant margin. Secondly, the performance of most algorithms varies dramatically with the parameters of the bandit problem. Our study identifies for each algorithm the settings where it performs well, and the settings where it performs poorly. Thirdly, the algorithms' performance relative each to other is affected only by the number of bandit arms and the variance of the rewards. This finding may guide the design of subsequent empirical evaluations. In the second part of the paper, we turn our attention to an important area of application of bandit algorithms: clinical trials. Although the design of clinical trials has been one of the principal practical problems motivating research on multi-armed bandits, bandit algorithms have never been evaluated as potential treatment allocation strategies. Using data from a real study, we simulate the outcome that a 2001-2002 clinical trial would have had if bandit algorithms had been used to allocate patients to treatments. We find that an adaptive trial would have successfully treated at least 50% more patients, while significantly reducing the number of adverse effects and increasing patient retention. At the end of the trial, the best treatment could have still been identified with a high level of statistical confidence. Our findings demonstrate that bandit algorithms are attractive alternatives to current adaptive treatment allocation strategies.
+
+**URL:** https://arxiv.org/abs/1402.6028
+
+**Notes:** an pretty old (2000) but seems to useful review of k-armed bandits algos
 
 ## Other
 ### Living Together: Mind and Machine Intelligence
