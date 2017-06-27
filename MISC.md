@@ -15,6 +15,7 @@ Table of Contents
       * [Symbolic, Distributed and Distributional Representations for Natural Language Processing in the Era of Deep Learning: a Survey](#symbolic-distributed-and-distributional-representations-for-natural-language-processing-in-the-era-of-deep-learning-a-survey)
       * [Deep Reinforcement Learning: An Overview](#deep-reinforcement-learning-an-overview)
       * [Algorithms for multi\-armed bandit problems](#algorithms-for-multi-armed-bandit-problems)
+      * [A comparison of Extrinsic Clustering Evaluation Metrics based on Formal Constraints](#a-comparison-of-extrinsic-clustering-evaluation-metrics-based-on-formal-constraints)
     * [Other](#other)
       * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
     * [Tutorial](#tutorial)
@@ -113,7 +114,17 @@ Miscellaneous
 
 **URL:** https://arxiv.org/abs/1402.6028
 
-**Notes:** an pretty old (2000) but seems to useful review of k-armed bandits algos
+**Notes:** an pretty old (2014) but seems to useful review of k-armed bandits algos
+
+### A comparison of Extrinsic Clustering Evaluation Metrics based on Formal Constraints
+
+**Authors:** Enrique Amigo, Julio Gonzalo, Javier Artiles, Felisa Verdejo
+
+**Abstract:** There is a wide set of evaluation metrics available to compare the quality of text clustering algorithms. In this article, we define a few intuitive formal constraints on such metrics which shed light on which aspects of the quality of a clustering are captured by different metric families. These formal constraints are validated in an experiment involving human assessments, and compared with other constraints proposed in the literature. Our analysis of a wide range of metrics shows that only BCubed satisfies all formal constraints. We also extend the analysis to the problem of overlapping clustering, where items can simultaneously belong to more than one cluster. As BCubed cannot be directly applied to this task, we propose a modifiedversion of Bcubed that avoids the problems found with other metrics.
+
+**URL:** http://nlp.uned.es/docs/amigo2007a.pdf
+
+**Notes:** comparison of clustering metrics for texts
 
 ## Other
 ### Living Together: Mind and Machine Intelligence
