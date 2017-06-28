@@ -236,6 +236,7 @@ Table of Contents
       * [PGQ: Combining policy gradient and Q\-learning](#pgq-combining-policy-gradient-and-q-learning)
       * [A Convolutional Encoder Model for Neural Machine Translation](#a-convolutional-encoder-model-for-neural-machine-translation)
       * [Reparameterization trick for discrete variables](#reparameterization-trick-for-discrete-variables)
+      * [Categorical Reparameterization with Gumbel\-Softmax](#categorical-reparameterization-with-gumbel-softmax)
     * [2016\-12](#2016-12)
       * [Overcoming catastrophic forgetting in neural networks](#overcoming-catastrophic-forgetting-in-neural-networks)
       * [Bootstrapping incremental dialogue systems: using linguistic knowledge to learn from minimal data](#bootstrapping-incremental-dialogue-systems-using-linguistic-knowledge-to-learn-from-minimal-data)
@@ -2417,6 +2418,16 @@ Articles
 **URL:** https://arxiv.org/abs/1611.01239
 
 **Notes:** good explanation of reparam trick, here it is obvious to be close to REINFORCE algo
+
+### Categorical Reparameterization with Gumbel-Softmax
+
+**Authors:** Eric Jang, Shixiang Gu, Ben Poole
+
+**Abstract:** Categorical variables are a natural choice for representing discrete structure in the world. However, stochastic neural networks rarely use categorical latent variables due to the inability to backpropagate through samples. In this work, we present an efficient gradient estimator that replaces the non-differentiable sample from a categorical distribution with a differentiable sample from a novel Gumbel-Softmax distribution. This distribution has the essential property that it can be smoothly annealed into a categorical distribution. We show that our Gumbel-Softmax estimator outperforms state-of-the-art gradient estimators on structured output prediction and unsupervised generative modeling tasks with categorical latent variables, and enables large speedups on semi-supervised classification.
+
+**URL:** https://arxiv.org/abs/1611.01144
+
+**Notes:** Gumbel-softmax is introduced here
 
 ## 2016-12
 ### Overcoming catastrophic forgetting in neural networks
