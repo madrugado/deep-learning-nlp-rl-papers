@@ -186,6 +186,7 @@ Table of Contents
       * [End\-to\-End Neural Ad\-hoc Ranking with Kernel Pooling](#end-to-end-neural-ad-hoc-ranking-with-kernel-pooling)
       * [Learning to Compute Word Embeddings On the Fly](#learning-to-compute-word-embeddings-on-the-fly)
       * [RelNet: End\-to\-end Modeling of Entities &amp; Relations](#relnet-end-to-end-modeling-of-entities--relations)
+      * [Plan, Attend, Generate: Character\-level Neural Machine Translation with Planning in the Decoder](#plan-attend-generate-character-level-neural-machine-translation-with-planning-in-the-decoder)
 
 Articles
 ========
@@ -1964,4 +1965,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.07179
 
 **Notes:** new SOTA on bAbI, next step in EntNet arch, key-value memory and attention on the output
+
+### Plan, Attend, Generate: Character-level Neural Machine Translation with Planning in the Decoder
+
+**Authors:** Caglar Gulcehre, Francis Dutil, Adam Trischler, Yoshua Bengio
+
+**Abstract:** We investigate the integration of a planning mechanism into an encoder-decoder architecture with an explicit alignment for character-level machine translation. We develop a model that plans ahead when it computes alignments between the source and target sequences, constructing a matrix of proposed future alignments and a commitment vector that governs whether to follow or recompute the plan. This mechanism is inspired by the strategic attentive reader and writer (STRAW) model. Our proposed model is end-to-end trainable with fully differentiable operations. We show that it outperforms a strong baseline on three character-level decoder neural machine translation on WMT'15 corpus. Our analysis demonstrates that our model can compute qualitatively intuitive alignments and achieves superior performance with fewer parameters.
+
+**URL:** https://arxiv.org/abs/1706.05087
+
+**Notes:** plan of alignment instead of direct attention; also gumbel-softmax ia again stated better than RL
 
