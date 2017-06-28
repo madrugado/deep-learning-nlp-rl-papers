@@ -38,6 +38,7 @@ Table of Contents
       * [Reinforced backpropagation improves test performance of deep networks: a toy\-model study](#reinforced-backpropagation-improves-test-performance-of-deep-networks-a-toy-model-study)
       * [CommAI: Evaluating the first steps towards a useful general AI](#commai-evaluating-the-first-steps-towards-a-useful-general-ai)
       * [Adversarial Learning for Neural Dialogue Generation](#adversarial-learning-for-neural-dialogue-generation-1)
+      * [Memory Augmented Neural Networks with Wormhole Connections](#memory-augmented-neural-networks-with-wormhole-connections)
     * [2017\-02](#2017-02)
       * [Low\-Dose CT with a Residual Encoder\-Decoder Convolutional Neural Network (RED\-CNN)](#low-dose-ct-with-a-residual-encoder-decoder-convolutional-neural-network-red-cnn)
       * [On orthogonality and learning recurrent networks with long term dependencies](#on-orthogonality-and-learning-recurrent-networks-with-long-term-dependencies)
@@ -530,6 +531,16 @@ Articles
 **URL:** https://arxiv.org/abs/1701.06547
 
 **Notes:** GAN for dialog generation by seq2seq, with few tricks to make it work
+
+### Memory Augmented Neural Networks with Wormhole Connections
+
+**Authors:** Caglar Gulcehre, Sarath Chandar, Yoshua Bengio
+
+**Abstract:** Recent empirical results on long-term dependency tasks have shown that neural networks augmented with an external memory can learn the long-term dependency tasks more easily and achieve better generalization than vanilla recurrent neural networks (RNN). We suggest that memory augmented neural networks can reduce the effects of vanishing gradients by creating shortcut (or wormhole) connections. Based on this observation, we propose a novel memory augmented neural network model called TARDIS (Temporal Automatic Relation Discovery in Sequences). The controller of TARDIS can store a selective set of embeddings of its own previous hidden states into an external memory and revisit them as and when needed. For TARDIS, memory acts as a storage for wormhole connections to the past to propagate the gradients more effectively and it helps to learn the temporal dependencies. The memory structure of TARDIS has similarities to both Neural Turing Machines (NTM) and Dynamic Neural Turing Machines (D-NTM), but both read and write operations of TARDIS are simpler and more efficient. We use discrete addressing for read/write operations which helps to substantially to reduce the vanishing gradient problem with very long sequences. Read and write operations in TARDIS are tied with a heuristic once the memory becomes full, and this makes the learning problem simpler when compared to NTM or D-NTM type of architectures. We provide a detailed analysis on the gradient propagation in general for MANNs. We evaluate our models on different long-term dependency tasks and report competitive results in all of them.
+
+**URL:** https://arxiv.org/abs/1701.08718
+
+**Notes:** NN with external network and additional path for gradient flowing
 
 ## 2017-02
 ### Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)
