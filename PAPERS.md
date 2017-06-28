@@ -213,6 +213,7 @@ Table of Contents
       * [Improving Twitter Sentiment Classification via Multi\-Level Sentiment\-Enriched Word Embeddings](#improving-twitter-sentiment-classification-via-multi-level-sentiment-enriched-word-embeddings)
       * [Deep Model Compression: Distilling Knowledge from Noisy Teachers](#deep-model-compression-distilling-knowledge-from-noisy-teachers)
       * [Neural Machine Translation in Linear Time](#neural-machine-translation-in-linear-time)
+      * [Sequence\-to\-sequence neural network models for transliteration](#sequence-to-sequence-neural-network-models-for-transliteration)
     * [2016\-11](#2016-11)
       * [Detecting Context Dependent Messages in a Conversational Environment](#detecting-context-dependent-messages-in-a-conversational-environment)
       * [Ordinal Common\-sense Inference](#ordinal-common-sense-inference)
@@ -571,7 +572,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1607.07262
 
-**Notes:** Кажется, близко к тому, что пытался рассказать студент Сергея в воскресенье, но при этом ближе к нам.
+**Notes:** Кажется, близко к тому, что пытался рассказать студент Сергея в воскресенье.
 
 ### Deep nets for local manifold learning
 
@@ -882,7 +883,7 @@ Articles
 
 **URL:** http://arxiv.org/abs/1608.01281
 
-**Notes:** Обсудили в воскресенье, важно отмтеить, что alignments могут быть нам полезны в тасках разметки входящего потока. Из интересных особенностей, используется стохастичность для того, чтобы создать дискретную разметку. Используются policy gradients для того, чтобы обойти дикретность и недифференцируемость. Отдельнно стоит отметить использование распределения Бернулли, оно бинарно и кажется для задач разметки подходит как нельзя лучше. Авторы обращают внимание, что энтропийная регуляризация помогла им решить проблему того, что сеть выдавала метки исключительно группами в начале или в конце.
+**Notes:**
 
 ### Morphological Priors for Probabilistic Neural Word Embeddings
 
@@ -2196,7 +2197,7 @@ Articles
 
 **Notes:** Ускорение засчет того, что оптимизируем до байтов. Последователи WaveNet.
 
-###Sequence-to-sequence neural network models for transliteration
+### Sequence-to-sequence neural network models for transliteration
 
 **Authors:**  Mihaela Rosca, Thomas Breuel
 
@@ -2235,7 +2236,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1611.07897
 
-**Notes:** Надо попробовать нам, возможно в виде вариации архитектуры Дениса
+**Notes:** Надо попробовать, возможно в виде вариации архитектуры Дениса
 
 ### Learning a Natural Language Interface with Neural Programmer
 
@@ -2546,7 +2547,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1612.03242
 
-**Notes:** GAN рядом c текстами, это нам сейчас интересно
+**Notes:** GAN рядом c текстами
 
 ### Large-Margin Softmax Loss for Convolutional Neural Networks
 
