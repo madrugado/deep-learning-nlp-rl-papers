@@ -188,6 +188,7 @@ Table of Contents
       * [Learning to Compute Word Embeddings On the Fly](#learning-to-compute-word-embeddings-on-the-fly)
       * [RelNet: End\-to\-end Modeling of Entities &amp; Relations](#relnet-end-to-end-modeling-of-entities--relations)
       * [Plan, Attend, Generate: Character\-level Neural Machine Translation with Planning in the Decoder](#plan-attend-generate-character-level-neural-machine-translation-with-planning-in-the-decoder)
+      * [Do GANs actually learn the distribution? An empirical study](#do-gans-actually-learn-the-distribution-an-empirical-study)
 
 Articles
 ========
@@ -1986,4 +1987,14 @@ Articles
 **URL:** https://arxiv.org/abs/1706.05087
 
 **Notes:** plan of alignment instead of direct attention; also gumbel-softmax ia again stated better than RL
+
+### Do GANs actually learn the distribution? An empirical study
+
+**Authors:** Sanjeev Arora, Yi Zhang
+
+**Abstract:** Do GANS (Generative Adversarial Nets) actually learn the target distribution? The foundational paper of (Goodfellow et al 2014) suggested they do, if they were given sufficiently large deep nets, sample size, and computation time. A recent theoretical analysis in Arora et al (to appear at ICML 2017) raised doubts whether the same holds when discriminator has finite size. It showed that the training objective can approach its optimum value even if the generated distribution has very low support ---in other words, the training objective is unable to prevent mode collapse. The current note reports experiments suggesting that such problems are not merely theoretical. It presents empirical evidence that well-known GANs approaches do learn distributions of fairly low support, and thus presumably are not learning the target distribution. The main technical contribution is a new proposed test, based upon the famous birthday paradox, for estimating the support size of the generated distribution.
+
+**URL:** https://arxiv.org/abs/1706.08224
+
+**Notes:** GANs are learning distribution with is much more lean than original one; B-day paradox exposes this
 
