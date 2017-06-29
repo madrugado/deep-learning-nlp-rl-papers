@@ -2739,7 +2739,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1612.09122
 
-**Notes:** LDA + GANs seems to be
+**Notes:** negative result in generating doc embeddings with GANs
 
 ### The Predictron: End-To-End Learning and Planning
 
