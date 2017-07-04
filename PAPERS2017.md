@@ -189,6 +189,8 @@ Table of Contents
       * [RelNet: End\-to\-end Modeling of Entities &amp; Relations](#relnet-end-to-end-modeling-of-entities--relations)
       * [Plan, Attend, Generate: Character\-level Neural Machine Translation with Planning in the Decoder](#plan-attend-generate-character-level-neural-machine-translation-with-planning-in-the-decoder)
       * [Do GANs actually learn the distribution? An empirical study](#do-gans-actually-learn-the-distribution-an-empirical-study)
+    * [2017\-07](#2017-07)
+      * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
 
 Articles
 ========
@@ -1986,7 +1988,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1706.05087
 
-**Notes:** plan of alignment instead of direct attention; also gumbel-softmax ia again stated better than RL
+**Notes:** plan of alignment instead of direct attention; also gumbel-softmax is again stated better than RL
 
 ### Do GANs actually learn the distribution? An empirical study
 
@@ -1997,4 +1999,15 @@ Articles
 **URL:** https://arxiv.org/abs/1706.08224
 
 **Notes:** GANs are learning distribution with is much more lean than original one; B-day paradox exposes this
+
+## 2017-07
+### Deep Semantic Role Labeling: What Works and What’s Next
+
+**Authors:** Luheng He, Kenton Lee, Mike Lewis, Luke Zettlemoyer
+
+**Abstract:** We introduce a new deep learning model for semantic role labeling (SRL) that significantly improves the state of the art, along with detailed analyses to reveal its strengths and limitations. We use a deep highway BiLSTM architecture with constrained decoding, while observing a number of recent best practices for initialization and regularization. Our 8-layer ensemble model achieves 83.2 F1 on the CoNLL 2005 test set and 83.4 F1 on CoNLL 2012, roughly a 10% relative error reduction over the previous state of the art. Extensive empirical analysis of these gains show that (1) deep models excel at recovering long-distance dependencies but can still make surprisingly obvious errors, and (2) that there is still room for syntactic parsers to improve these results.
+
+**URL:** https://homes.cs.washington.edu/~luheng/files/acl2017_hllz.pdf
+
+**Notes:** A* algo with constrains for beam search in semantic role labelling
 
