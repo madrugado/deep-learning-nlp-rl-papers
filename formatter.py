@@ -17,8 +17,8 @@ else:  # assuming that it is python 3
     from urllib.parse import urlencode
 
 
-def shorten_URL(url):
-    request_url = ('http://tinyurl.com/api-create.php?' + urlencode({'url': url}))
+def shorten_url(url):
+    request_url = ('https://is.gd/create.php?' + urlencode({'url': url, 'format': 'simple'}))
     with contextlib.closing(urlopen(request_url)) as response:
         return str(response.read().decode(encoding='utf-8'))
 
@@ -56,7 +56,7 @@ class ArticleFormatter:
             return ""
 
     def _twitting(self):
-        url = shorten_URL(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[3][9:])
+        url = shorten_url(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[3][9:])
         text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
         if len(text) > 140 - len(url) - 1:  # one symbol for space
             premature_ending = "... "
