@@ -108,9 +108,8 @@ class ArticleFormatter:
 
 
 def shorten_url(url):
-    request_url = ('https://is.gd/create.php?' + urlencode({'url': url, 'format': 'simple'}))
-    resp = requests.get(request_url)
-    return str(resp.text.decode(encoding='utf-8'))
+    resp = requests.get('https://is.gd/create.php?' + urlencode({'url': url, 'format': 'simple'}))
+    return resp.text
 
 
 def parse_args():
