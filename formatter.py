@@ -6,21 +6,14 @@ import tempfile
 import os
 import sys
 
-import contextlib
+import requests
 
 if sys.version_info[0] == 2: 
     import commands as cmd
-    from urllib import urlencode, urlopen
+    from urllib import urlencode
 else:  # assuming that it is python 3
     import subprocess as cmd
-    from urllib.request import urlopen
     from urllib.parse import urlencode
-
-
-def shorten_url(url):
-    request_url = ('https://is.gd/create.php?' + urlencode({'url': url, 'format': 'simple'}))
-    with contextlib.closing(urlopen(request_url)) as response:
-        return str(response.read().decode(encoding='utf-8'))
 
 
 class ArticleFormatter:
@@ -112,6 +105,12 @@ class ArticleFormatter:
         printed += self.buf[4] + "\n\n"
 
         return printed
+
+
+def shorten_url(url):
+    request_url = ('https://is.gd/create.php?' + urlencode({'url': url, 'format': 'simple'}))
+    resp = requests.get(request_url)
+    return str(resp.text.decode(encoding='utf-8'))
 
 
 def parse_args():
