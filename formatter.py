@@ -114,63 +114,73 @@ class ArticleFormatter:
         return printed
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--toc-maker", help="path to ToC making tool")
-parser.add_argument("--twitter-poster", default="t update", help="twitter poster command")
-parser.add_argument("-t", "--use-twitter", action="store_true")
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--toc-maker", help="path to ToC making tool")
+    parser.add_argument("--twitter-poster", default="t update", help="twitter poster command")
+    parser.add_argument("-t", "--use-twitter", action="store_true")
 
-known_args, unknown_args = parser.parse_known_args()
+    known_args, unknown_args = parser.parse_known_args()
 
-if not known_args.toc_maker:
-    known_args.toc_maker = "./gh-md-toc"
-    if not os.path.isfile(known_args.toc_maker):
-        s = cmd.getoutput("uname -s").lower()
-        f = "gh-md-toc.%s.amd64.tgz" % s
-        URL = "https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.6.0/%s" % f
-        if not os.path.isfile(f):
-            if cmd.getstatusoutput("wget %s" % URL)[0] != 0:
-                raise EnvironmentError("Cannot download toc maker from URL: %s" % URL)
-        if cmd.getstatusoutput("tar xzf %s" % f)[0] != 0:
-                raise EnvironmentError("Cannot untar toc maker from file %s" % f)
-        os.remove(f)
+    if not known_args.toc_maker:
+        known_args.toc_maker = "./gh-md-toc"
+        if not os.path.isfile(known_args.toc_maker):
+            s = cmd.getoutput("uname -s").lower()
+            f = "gh-md-toc.%s.amd64.tgz" % s
+            URL = "https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.6.0/%s" % f
+            if not os.path.isfile(f):
+                if cmd.getstatusoutput("wget %s" % URL)[0] != 0:
+                    raise EnvironmentError("Cannot download toc maker from URL: %s" % URL)
+            if cmd.getstatusoutput("tar xzf %s" % f)[0] != 0:
+                    raise EnvironmentError("Cannot untar toc maker from file %s" % f)
+            os.remove(f)
 
-        current_permissions = stat.S_IMODE(os.lstat(known_args.toc_maker).st_mode)
-        os.chmod(known_args.toc_maker, current_permissions & stat.S_IXUSR)
+            current_permissions = stat.S_IMODE(os.lstat(known_args.toc_maker).st_mode)
+            os.chmod(known_args.toc_maker, current_permissions & stat.S_IXUSR)
 
-if unknown_args:
-    filepath = unknown_args[0]
-else:
-    print("You should specify the path for file to work with!")
-    quit(1)
-
-formatted = ""
-
-with open(filepath) as f:
-    pass_lines = False
-    if known_args.use_twitter:
-        formatter = ArticleFormatter(known_args.twitter_poster)
+    if unknown_args:
+        filepath = unknown_args[0]
     else:
-        formatter = ArticleFormatter()
+        print("You should specify the path for file to work with!")
+        quit(1)
 
-    for line in f:
-        l = line.strip()
-        if l == "Table of Contents":
-            pass_lines = True
-        elif l in ["Articles", "Miscellaneous"]:
-            pass_lines = False
-            formatted += l + "\n"
-        elif l in ["========", "============="]:
-            formatted += l + "\n"
-        elif l[:3] == "## ":
-            formatted += l + "\n"
-        elif not pass_lines:
-            formatted += formatter(l)
+    return known_args, filepath
 
-temp = tempfile.NamedTemporaryFile(delete=False, mode='wt')
-temp.write(formatted)
-temp.close()
-toc = cmd.getoutput("%s %s" % (known_args.toc_maker, temp.name))
-os.remove(temp.name)
 
-with open(filepath, "wt") as f:
-    f.write(toc[:-74] + formatted)
+def main():
+    known_args, filepath = parse_args()
+    formatted = ""
+
+    with open(filepath) as f:
+        pass_lines = False
+        if known_args.use_twitter:
+            formatter = ArticleFormatter(known_args.twitter_poster)
+        else:
+            formatter = ArticleFormatter()
+
+        for line in f:
+            l = line.strip()
+            if l == "Table of Contents":
+                pass_lines = True
+            elif l in ["Articles", "Miscellaneous"]:
+                pass_lines = False
+                formatted += l + "\n"
+            elif l in ["========", "============="]:
+                formatted += l + "\n"
+            elif l[:3] == "## ":
+                formatted += l + "\n"
+            elif not pass_lines:
+                formatted += formatter(l)
+
+    temp = tempfile.NamedTemporaryFile(delete=False, mode='wt')
+    temp.write(formatted)
+    temp.close()
+    toc = cmd.getoutput("%s %s" % (known_args.toc_maker, temp.name))
+    os.remove(temp.name)
+
+    with open(filepath, "wt") as f:
+        f.write(toc[:-74] + formatted)
+
+
+if __name__ == "__main__":
+    main()
