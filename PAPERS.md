@@ -32,7 +32,8 @@ Table of Contents
       * [Sentence Pair Scoring: Towards Unified Framework for Text Comprehension](#sentence-pair-scoring-towards-unified-framework-for-text-comprehension)
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
       * [How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](#how-not-to-evaluate-your-dialogue-system-an-empirical-study-of-unsupervised-evaluation-metrics-for-dialogue-response-generation)
-      * [2016\-05](#2016-05)
+    * [2016\-05](#2016-05)
+      * [Learning End\-to\-End Goal\-Oriented Dialog](#learning-end-to-end-goal-oriented-dialog)
     * [2016\-06](#2016-06)
       * [End\-to\-end LSTM\-based dialog control optimized with supervised and reinforcement learning](#end-to-end-lstm-based-dialog-control-optimized-with-supervised-and-reinforcement-learning)
       * [Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations](#zoneout-regularizing-rnns-by-randomly-preserving-hidden-activations)
@@ -483,11 +484,12 @@ Articles
 
 **Notes:** nice paper showing no statistical correlation between famous ROUGE, BLEU & METEOR with human judgment in dialog system scoring
 
-### 2016-05
+## 2016-05
+### Learning End-to-End Goal-Oriented Dialog
 
-**Authors:** ### Learning End-to-End Goal-Oriented Dialog
+**Authors:** Antoine Bordes, Y-Lan Boureau, Jason Weston
 
-**Abstract:** **Authors:** Antoine Bordes, Y-Lan Boureau, Jason Weston **Abstract:** Traditional dialog systems used in goal-oriented applications require a lot of domain-specific handcrafting, which hinders scaling up to new domains. End-to-end dialog systems, in which all components are trained from the dialogs themselves, escape this limitation. But the encouraging success recently obtained in chit-chat dialog may not carry over to goal-oriented settings. This paper proposes a testbed to break down the strengths and shortcomings of end-to-end dialog systems in goal-oriented applications. Set in the context of restaurant reservation, our tasks require manipulating sentences and symbols, so as to properly conduct conversations, issue API calls and use the outputs of such calls. We show that an end-to-end dialog system based on Memory Networks can reach promising, yet imperfect, performance and learn to perform non-trivial operations. We confirm those results by comparing our system to a hand-crafted slot-filling baseline on data from the second Dialog State Tracking Challenge (Henderson et al., 2014a). We show similar result patterns on data extracted from an online concierge service.
+**Abstract:** Traditional dialog systems used in goal-oriented applications require a lot of domain-specific handcrafting, which hinders scaling up to new domains. End-to-end dialog systems, in which all components are trained from the dialogs themselves, escape this limitation. But the encouraging success recently obtained in chit-chat dialog may not carry over to goal-oriented settings. This paper proposes a testbed to break down the strengths and shortcomings of end-to-end dialog systems in goal-oriented applications. Set in the context of restaurant reservation, our tasks require manipulating sentences and symbols, so as to properly conduct conversations, issue API calls and use the outputs of such calls. We show that an end-to-end dialog system based on Memory Networks can reach promising, yet imperfect, performance and learn to perform non-trivial operations. We confirm those results by comparing our system to a hand-crafted slot-filling baseline on data from the second Dialog State Tracking Challenge (Henderson et al., 2014a). We show similar result patterns on data extracted from an online concierge service.
 
 **URL:** https://arxiv.org/abs/1605.07683
 
