@@ -192,6 +192,7 @@ Table of Contents
     * [2017\-07](#2017-07)
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
+      * [Deep Gaussian Embedding of Attributed Graphs: Unsupervised Inductive Learning via Ranking](#deep-gaussian-embedding-of-attributed-graphs-unsupervised-inductive-learning-via-ranking)
 
 Articles
 ========
@@ -2021,4 +2022,14 @@ Articles
 **URL:** https://arxiv.org/abs/1707.00768
 
 **Notes:** new step in GAN training: try to optimize input noise for generator
+
+### Deep Gaussian Embedding of Attributed Graphs: Unsupervised Inductive Learning via Ranking
+
+**Authors:** Aleksandar Bojchevski, Stephan Günnemann
+
+**Abstract:** Methods that learn representations of graph nodes play a critical role in network analysis since they enable many downstream learning tasks. We propose Graph2Gauss - an approach that can efficiently learn versatile node embeddings on large scale (attributed) graphs that show strong performance on tasks such as link prediction and node classification. Unlike most approaches that represent nodes as (point) vectors in a lower-dimensional continuous space, we embed each node as a Gaussian distribution, allowing us to capture uncertainty about the representation. Furthermore, in contrast to previous approaches we propose a completely unsupervised method that is also able to handle inductive learning scenarios and is applicable to different types of graphs (plain, attributed, directed, undirected). By leveraging both the topological network structure and the associated node attributes, we are able to generalize to unseen nodes without additional training. To learn the embeddings we adopt a personalized ranking formulation w.r.t. the node distances that exploits the natural ordering between the nodes imposed by the network structure. Experiments on real world networks demonstrate the high performance of our approach, outperforming state-of-the-art network embedding methods on several different tasks.
+
+**URL:** https://arxiv.org/abs/1707.03815
+
+**Notes:** soft hinge-loss for cmp of gaussian embeddings for first- and second-order proximity in graph
 
