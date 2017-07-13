@@ -297,7 +297,7 @@ Articles
 
 **Notes:** one of the first tries to optimize softmax, they build a tree for vocab with EM algorithm
 
-## 2012-06
+## 2012
 ### A Fast and Simple Algorithm for Training Neural Probabilistic Language Models
 
 **Authors:** Andriy Mnih, Yee Whye Teh
@@ -329,7 +329,7 @@ Articles
 
 **Notes:** Straight-Through estimator is just threshold activation, which is considered identity for backprop; it is biased, but still ok for one such layer
 
-## 2014-02
+## 2014
 ### A Clockwork RNN
 
 **Authors:** Jan Koutník, Klaus Greff, Faustino Gomez, Jürgen Schmidhuber
@@ -340,7 +340,6 @@ Articles
 
 **Notes:** base paper for intermediate steps in RNNs
 
-## 2014-04
 ### A Convolutional Neural Network for Modelling Sentences
 
 **Authors:** Nal Kalchbrenner, Edward Grefenstette, Phil Blunsom
