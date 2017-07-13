@@ -16,15 +16,13 @@ Table of Contents
       * [A Clockwork RNN](#a-clockwork-rnn)
     * [2014\-04](#2014-04)
       * [A Convolutional Neural Network for Modelling Sentences](#a-convolutional-neural-network-for-modelling-sentences)
-    * [2015\-02](#2015-02)
+    * [2015](#2015)
       * [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](#show-attend-and-tell-neural-image-caption-generation-with-visual-attention)
-    * [2015\-06](#2015-06)
       * [Cyclical Learning Rates for Training Neural Networks](#cyclical-learning-rates-for-training-neural-networks)
-    * [2015\-11](#2015-11)
       * [Unitary Evolution Recurrent Neural Networks](#unitary-evolution-recurrent-neural-networks)
       * [Adversarial Autoencoders](#adversarial-autoencoders)
-    * [2015\-12](#2015-12)
       * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
+      * [Network Representation Learning with Rich Text Information](#network-representation-learning-with-rich-text-information)
     * [2016\-01](#2016-01)
       * [Incorporating Structural Alignment Biases into an Attentional Neural Translation Model](#incorporating-structural-alignment-biases-into-an-attentional-neural-translation-model)
     * [2016\-02](#2016-02)
@@ -32,12 +30,10 @@ Table of Contents
     * [2016\-03](#2016-03)
       * [A Persona\-Based Neural Conversation Model](#a-persona-based-neural-conversation-model)
       * [Bayesian Neural Word Embedding](#bayesian-neural-word-embedding)
-    * [2016\-05](#2016-05)
       * [Sentence Pair Scoring: Towards Unified Framework for Text Comprehension](#sentence-pair-scoring-towards-unified-framework-for-text-comprehension)
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
       * [How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](#how-not-to-evaluate-your-dialogue-system-an-empirical-study-of-unsupervised-evaluation-metrics-for-dialogue-response-generation)
-    * [2016\-05](#2016-05-1)
-      * [Learning End\-to\-End Goal\-Oriented Dialog](#learning-end-to-end-goal-oriented-dialog)
+      * [2016\-05](#2016-05)
     * [2016\-06](#2016-06)
       * [End\-to\-end LSTM\-based dialog control optimized with supervised and reinforcement learning](#end-to-end-lstm-based-dialog-control-optimized-with-supervised-and-reinforcement-learning)
       * [Zoneout: Regularizing RNNs by Randomly Preserving Hidden Activations](#zoneout-regularizing-rnns-by-randomly-preserving-hidden-activations)
@@ -355,7 +351,7 @@ Articles
 
 **Notes:** very nice idea of dynamic k-max pooling, so we could produce trees (effectively) with convolutions
 
-## 2015-02
+## 2015
 ### Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
 
 **Authors:** Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio
@@ -366,7 +362,6 @@ Articles
 
 **Notes:** baseline paper in image captioning, but more important: good explanation of stochastic "hard" attention
 
-## 2015-06
 ### Cyclical Learning Rates for Training Neural Networks
 
 **Authors:** Leslie N. Smith
@@ -377,7 +372,6 @@ Articles
 
 **Notes:** self-describing title, seems to really have some potential - with CLR the learning curve is steeper, could be useful, when we need fast training
 
-## 2015-11
 ### Unitary Evolution Recurrent Neural Networks
 
 **Authors:** Martin Arjovsky, Amar Shah, Yoshua Bengio
@@ -398,7 +392,6 @@ Articles
 
 **Notes:** Basic paper for adversarial autoencoders.
 
-## 2015-12
 ### A Theoretically Grounded Application of Dropout in Recurrent Neural Networks
 
 **Authors:** Yarin Gal, Zoubin Ghahramani
@@ -408,6 +401,16 @@ Articles
 **URL:** https://arxiv.org/abs/1512.05287
 
 **Notes:** Bayesianly grounded dropout for RNNs.
+
+### Network Representation Learning with Rich Text Information
+
+**Authors:** Cheng Yang, Zhiyuan Liu, Deli Zhao, Maosong Sun, Edward Y. Chang
+
+**Abstract:** Representation learning has shown its effectiveness in many tasks such as image classification and text mining. Network representation learning aims at learning distributed vector representation for each vertex in a network, which is also increasingly recognized as an important aspect for network analysis. Most network representation learning methods investigate network structures for learning. In reality, network vertices contain rich information (such as text), which cannot be well applied with algorithmic frameworks of typical representation learning methods. By proving that DeepWalk, a state-of-the-art network representation method, is actually equivalent to matrix factorization (MF), we propose text-associated DeepWalk (TADW). TADW incorporates text features of vertices into network representation learning under the framework of matrix factorization. We evaluate our method and various baseline methods by applying them to the task of multi-class classification of vertices. The experimental results show that, our method outperforms other baselines on all three datasets, especially when networks are noisy and training ratio is small. The source code of this paper can be obtained from https://github.com/albertyang33/TADW .
+
+**URL:** https://www.ijcai.org/Proceedings/15/Papers/299.pdf
+
+**Notes:** DeepWalk (SkipGram on random walk sequences over a graph) with text features
 
 ## 2016-01
 ### Incorporating Structural Alignment Biases into an Attentional Neural Translation Model
@@ -452,7 +455,6 @@ Articles
 
 **Notes:** first usage of reparamentization trick on word embeddings (word2vec in particular) which I'm aware of; the idea is to produce mu and sigma for embeddings instead of actual embeddings in skip-gram optimization procedure
 
-## 2016-05
 ### Sentence Pair Scoring: Towards Unified Framework for Text Comprehension
 
 **Authors:** Petr Baudiš, Jan Pichl, Tomáš Vyskočil, Jan Šedivý
@@ -483,12 +485,11 @@ Articles
 
 **Notes:** nice paper showing no statistical correlation between famous ROUGE, BLEU & METEOR with human judgment in dialog system scoring
 
-## 2016-05
-### Learning End-to-End Goal-Oriented Dialog
+### 2016-05
 
-**Authors:** Antoine Bordes, Y-Lan Boureau, Jason Weston
+**Authors:** ### Learning End-to-End Goal-Oriented Dialog
 
-**Abstract:** Traditional dialog systems used in goal-oriented applications require a lot of domain-specific handcrafting, which hinders scaling up to new domains. End-to-end dialog systems, in which all components are trained from the dialogs themselves, escape this limitation. But the encouraging success recently obtained in chit-chat dialog may not carry over to goal-oriented settings. This paper proposes a testbed to break down the strengths and shortcomings of end-to-end dialog systems in goal-oriented applications. Set in the context of restaurant reservation, our tasks require manipulating sentences and symbols, so as to properly conduct conversations, issue API calls and use the outputs of such calls. We show that an end-to-end dialog system based on Memory Networks can reach promising, yet imperfect, performance and learn to perform non-trivial operations. We confirm those results by comparing our system to a hand-crafted slot-filling baseline on data from the second Dialog State Tracking Challenge (Henderson et al., 2014a). We show similar result patterns on data extracted from an online concierge service.
+**Abstract:** **Authors:** Antoine Bordes, Y-Lan Boureau, Jason Weston **Abstract:** Traditional dialog systems used in goal-oriented applications require a lot of domain-specific handcrafting, which hinders scaling up to new domains. End-to-end dialog systems, in which all components are trained from the dialogs themselves, escape this limitation. But the encouraging success recently obtained in chit-chat dialog may not carry over to goal-oriented settings. This paper proposes a testbed to break down the strengths and shortcomings of end-to-end dialog systems in goal-oriented applications. Set in the context of restaurant reservation, our tasks require manipulating sentences and symbols, so as to properly conduct conversations, issue API calls and use the outputs of such calls. We show that an end-to-end dialog system based on Memory Networks can reach promising, yet imperfect, performance and learn to perform non-trivial operations. We confirm those results by comparing our system to a hand-crafted slot-filling baseline on data from the second Dialog State Tracking Challenge (Henderson et al., 2014a). We show similar result patterns on data extracted from an online concierge service.
 
 **URL:** https://arxiv.org/abs/1605.07683
 
