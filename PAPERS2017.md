@@ -193,6 +193,7 @@ Table of Contents
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
       * [Deep Gaussian Embedding of Attributed Graphs: Unsupervised Inductive Learning via Ranking](#deep-gaussian-embedding-of-attributed-graphs-unsupervised-inductive-learning-via-ranking)
+      * [Autoencoder\-augmented Neuroevolution for Visual Doom Playing](#autoencoder-augmented-neuroevolution-for-visual-doom-playing)
 
 Articles
 ========
@@ -2032,4 +2033,14 @@ Articles
 **URL:** https://arxiv.org/abs/1707.03815
 
 **Notes:** soft hinge-loss for cmp of gaussian embeddings for first- and second-order proximity in graph
+
+### Autoencoder-augmented Neuroevolution for Visual Doom Playing
+
+**Authors:** Samuel Alvernaz, Julian Togelius
+
+**Abstract:** Neuroevolution has proven effective at many reinforcement learning tasks, but does not seem to scale well to high-dimensional controller representations, which are needed for tasks where the input is raw pixel data. We propose a novel method where we train an autoencoder to create a comparatively low-dimensional representation of the environment observation, and then use CMA-ES to train neural network controllers acting on this input data. As the behavior of the agent changes the nature of the input data, the autoencoder training progresses throughout evolution. We test this method in the VizDoom environment built on the classic FPS Doom, where it performs well on a health-pack gathering task.
+
+**URL:** https://arxiv.org/abs/1707.03902
+
+**Notes:** autoencoder to produce small representation of input and evolution technique to train on it
 
