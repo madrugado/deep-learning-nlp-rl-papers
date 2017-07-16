@@ -189,6 +189,7 @@ Table of Contents
       * [RelNet: End\-to\-end Modeling of Entities &amp; Relations](#relnet-end-to-end-modeling-of-entities--relations)
       * [Plan, Attend, Generate: Character\-level Neural Machine Translation with Planning in the Decoder](#plan-attend-generate-character-level-neural-machine-translation-with-planning-in-the-decoder)
       * [Do GANs actually learn the distribution? An empirical study](#do-gans-actually-learn-the-distribution-an-empirical-study)
+      * [Relevance of Unsupervised Metrics in Task\-Oriented Dialogue for Evaluating Natural Language Generation](#relevance-of-unsupervised-metrics-in-task-oriented-dialogue-for-evaluating-natural-language-generation)
     * [2017\-07](#2017-07)
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
@@ -2002,6 +2003,16 @@ Articles
 **URL:** https://arxiv.org/abs/1706.08224
 
 **Notes:** GANs are learning distribution with is much more lean than original one; B-day paradox exposes this
+
+### Relevance of Unsupervised Metrics in Task-Oriented Dialogue for Evaluating Natural Language Generation
+
+**Authors:** Shikhar Sharma, Layla El Asri, Hannes Schulz, Jeremie Zumer
+
+**Abstract:** Automated metrics such as BLEU are widely used in the machine translation literature. They have also been used recently in the dialogue community for evaluating dialogue response generation. However, previous work in dialogue response generation has shown that these metrics do not correlate strongly with human judgment in the non task-oriented dialogue setting. Task-oriented dialogue responses are expressed on narrower domains and exhibit lower diversity. It is thus reasonable to think that these automated metrics would correlate well with human judgment in the task-oriented setting where the generation task consists of translating dialogue acts into a sentence. We conduct an empirical study to confirm whether this is the case. Our findings indicate that these automated metrics have stronger correlation with human judgments in the task-oriented setting compared to what has been observed in the non task-oriented setting. We also observe that these metrics correlate even better for datasets which provide multiple ground truth reference sentences. In addition, we show that some of the currently available corpora for task-oriented language generation can be solved with simple models and advocate for more challenging datasets.
+
+**URL:** https://arxiv.org/abs/1706.09799
+
+**Notes:** Maluuba's paper on dialog quality measures; shows weak correlation with human judgement for METEOR; with code!
 
 ## 2017-07
 ### Deep Semantic Role Labeling: What Works and What’s Next
