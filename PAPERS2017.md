@@ -22,7 +22,6 @@ Table of Contents
       * [A Copy\-Augmented Sequence\-to\-Sequence Architecture Gives Good Performance on Task\-Oriented Dialogue](#a-copy-augmented-sequence-to-sequence-architecture-gives-good-performance-on-task-oriented-dialogue)
       * [Dialog Context Language Modeling with Recurrent Neural Networks](#dialog-context-language-modeling-with-recurrent-neural-networks)
       * [Neural Models for Sequence Chunking](#neural-models-for-sequence-chunking)
-      * [DyNet: The Dynamic Neural Network Toolkit](#dynet-the-dynamic-neural-network-toolkit)
       * [Understanding the Effective Receptive Field in Deep Convolutional Neural Networks](#understanding-the-effective-receptive-field-in-deep-convolutional-neural-networks)
       * [Agent\-Agnostic Human\-in\-the\-Loop Reinforcement Learning](#agent-agnostic-human-in-the-loop-reinforcement-learning)
       * [Minimally Naturalistic Artificial Intelligence](#minimally-naturalistic-artificial-intelligence)
@@ -379,16 +378,6 @@ Articles
 **URL:** https://arxiv.org/abs/1701.04027
 
 **Notes:** Sequence chunking is common task for asian languages in the first place, but since we are going to go chars, for european ones too
-
-### DyNet: The Dynamic Neural Network Toolkit
-
-**Authors:** Graham Neubig, Chris Dyer, Yoav Goldberg, Austin Matthews, Waleed Ammar, Antonios Anastasopoulos, Miguel Ballesteros, David Chiang, Daniel Clothiaux, Trevor Cohn, Kevin Duh, Manaal Faruqui, Cynthia Gan, Dan Garrette, Yangfeng Ji, Lingpeng Kong, Adhiguna Kuncoro, Gaurav Kumar, Chaitanya Malaviya, Paul Michel, Yusuke Oda, Matthew Richardson, Naomi Saphra, Swabha Swayamdipta, Pengcheng Yin
-
-**Abstract:** We describe DyNet, a toolkit for implementing neural network models based on dynamic declaration of network structure. In the static declaration strategy that is used in toolkits like Theano, CNTK, and TensorFlow, the user first defines a computation graph (a symbolic representation of the computation), and then examples are fed into an engine that executes this computation and computes its derivatives. In DyNet's dynamic declaration strategy, computation graph construction is mostly transparent, being implicitly constructed by executing procedural code that computes the network outputs, and the user is free to use different network structures for each input. Dynamic declaration thus facilitates the implementation of more complicated network architectures, and DyNet is specifically designed to allow users to implement their models in a way that is idiomatic in their preferred programming language (C++ or Python). One challenge with dynamic declaration is that because the symbolic computation graph is defined anew for every training example, its construction must have low overhead. To achieve this, DyNet has an optimized C++ backend and lightweight graph representation. Experiments show that DyNet's speeds are faster than or comparable with static declaration toolkits, and significantly faster than Chainer, another dynamic declaration toolkit. DyNet is released open-source under the Apache 2.0 license and available at this http URL
-
-**URL:** https://arxiv.org/abs/1701.03980
-
-**Notes:** The paper has remarkable list of authors - DeepMind, Google, IBM Watson, CMU, AI2 & MSR. And more! Very interesting initiative.
 
 ### Understanding the Effective Receptive Field in Deep Convolutional Neural Networks
 
