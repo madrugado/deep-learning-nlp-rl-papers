@@ -2098,7 +2098,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1610.08229
 
-**Notes:** Авторы показывают, что претренированные эмбеддинги лучше рандомно инициализированных. Это было и так очевидно, но люди c некоторым качеством это доказывают.
+**Notes:** if pretrained word vectores are better that random in sentence classification (spoiler: YES)
 
 ### A Deeper Look into Sarcastic Tweets Using Deep Convolutional Neural Networks
 
