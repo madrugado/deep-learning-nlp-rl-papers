@@ -195,6 +195,7 @@ Table of Contents
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
       * [Deep Gaussian Embedding of Attributed Graphs: Unsupervised Inductive Learning via Ranking](#deep-gaussian-embedding-of-attributed-graphs-unsupervised-inductive-learning-via-ranking)
       * [Autoencoder\-augmented Neuroevolution for Visual Doom Playing](#autoencoder-augmented-neuroevolution-for-visual-doom-playing)
+      * [Revisiting Unreasonable Effectiveness of Data in Deep Learning Era](#revisiting-unreasonable-effectiveness-of-data-in-deep-learning-era)
 
 Articles
 ========
@@ -2054,4 +2055,14 @@ Articles
 **URL:** https://arxiv.org/abs/1707.03902
 
 **Notes:** autoencoder to produce small representation of input and evolution technique to train on it
+
+### Revisiting Unreasonable Effectiveness of Data in Deep Learning Era
+
+**Authors:** Chen Sun, Abhinav Shrivastava, Saurabh Singh, Abhinav Gupta
+
+**Abstract:** The success of deep learning in vision can be attributed to: (a) models with high capacity; (b) increased computational power; and (c) availability of large-scale labeled data. Since 2012, there have been significant advances in representation capabilities of the models and computational capabilities of GPUs. But the size of the biggest dataset has surprisingly remained constant. What will happen if we increase the dataset size by 10x or 100x? This paper takes a step towards clearing the clouds of mystery surrounding the relationship between `enormous data' and deep learning. By exploiting the JFT-300M dataset which has more than 375M noisy labels for 300M images, we investigate how the performance of current vision tasks would change if this data was used for representation learning. Our paper delivers some surprising (and some expected) findings. First, we find that the performance on vision tasks still increases linearly with orders of magnitude of training data size. Second, we show that representation learning (or pre-training) still holds a lot of promise. One can improve performance on any vision tasks by just training a better base model. Finally, as expected, we present new state-of-the-art results for different vision tasks including image classification, object detection, semantic segmentation and human pose estimation. Our sincere hope is that this inspires vision community to not undervalue the data and develop collective efforts in building larger datasets.
+
+**URL:** https://arxiv.org/abs/1707.02968
+
+**Notes:** enormous datasets and computational power are the future, at least for CV
 
