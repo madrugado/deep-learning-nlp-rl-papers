@@ -195,6 +195,7 @@ Table of Contents
       * [Deep Gaussian Embedding of Attributed Graphs: Unsupervised Inductive Learning via Ranking](#deep-gaussian-embedding-of-attributed-graphs-unsupervised-inductive-learning-via-ranking)
       * [Autoencoder\-augmented Neuroevolution for Visual Doom Playing](#autoencoder-augmented-neuroevolution-for-visual-doom-playing)
       * [Revisiting Unreasonable Effectiveness of Data in Deep Learning Era](#revisiting-unreasonable-effectiveness-of-data-in-deep-learning-era)
+      * [The Reversible Residual Network: Backpropagation Without Storing Activations](#the-reversible-residual-network-backpropagation-without-storing-activations)
 
 Articles
 ========
@@ -2054,4 +2055,14 @@ Articles
 **URL:** https://arxiv.org/abs/1707.02968
 
 **Notes:** enormous datasets and computational power are the future, at least for CV
+
+### The Reversible Residual Network: Backpropagation Without Storing Activations
+
+**Authors:** Aidan N. Gomez, Mengye Ren, Raquel Urtasun, Roger B. Grosse
+
+**Abstract:** Deep residual networks (ResNets) have significantly pushed forward the state-of-the-art on image classification, increasing in performance as networks grow both deeper and wider. However, memory consumption becomes a bottleneck, as one needs to store the activations in order to calculate gradients using backpropagation. We present the Reversible Residual Network (RevNet), a variant of ResNets where each layer's activations can be reconstructed exactly from the next layer's. Therefore, the activations for most layers need not be stored in memory during backpropagation. We demonstrate the effectiveness of RevNets on CIFAR-10, CIFAR-100, and ImageNet, establishing nearly identical classification accuracy to equally-sized ResNets, even though the activation storage requirements are independent of depth.
+
+**URL:** https://arxiv.org/abs/1707.04585
+
+**Notes:** memory saving on not storing the activatons; authors say that could be extended to RNN; first paper from Uber for me
 
