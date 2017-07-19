@@ -196,6 +196,7 @@ Table of Contents
       * [Autoencoder\-augmented Neuroevolution for Visual Doom Playing](#autoencoder-augmented-neuroevolution-for-visual-doom-playing)
       * [Revisiting Unreasonable Effectiveness of Data in Deep Learning Era](#revisiting-unreasonable-effectiveness-of-data-in-deep-learning-era)
       * [The Reversible Residual Network: Backpropagation Without Storing Activations](#the-reversible-residual-network-backpropagation-without-storing-activations)
+      * [Variance Regularizing Adversarial Learning](#variance-regularizing-adversarial-learning)
 
 Articles
 ========
@@ -2065,4 +2066,14 @@ Articles
 **URL:** https://arxiv.org/abs/1707.04585
 
 **Notes:** memory saving on not storing the activatons; authors say that could be extended to RNN; first paper from Uber for me
+
+### Variance Regularizing Adversarial Learning
+
+**Authors:** Karan Grewal, R Devon Hjelm, Yoshua Bengio
+
+**Abstract:** We introduce a novel approach for training adversarial models by replacing the discriminator score with a bi-modal Gaussian distribution over the real/fake indicator variables. In order to do this, we train the Gaussian classifier to match the target bi-modal distribution implicitly through meta-adversarial training. We hypothesize that this approach ensures a non-zero gradient to the generator, even in the limit of a perfect classifier. We test our method against standard benchmark image datasets as well as show the classifier output distribution is smooth and has overlap between the real and fake modes.
+
+**URL:** https://arxiv.org/abs/1707.00309
+
+**Notes:** training two gaussians for true and false labels enables the generator to produce more similar to true distibution
 
