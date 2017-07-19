@@ -272,6 +272,7 @@ Table of Contents
       * [A Joint Speaker\-Listener\-Reinforcer Model for Referring Expressions](#a-joint-speaker-listener-reinforcer-model-for-referring-expressions)
       * [Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](#towards-an-automatic-turing-test-learning-to-evaluate-dialogue-responses)
       * [Neural Networks for Joint Sentence Classification in Medical Paper Abstracts](#neural-networks-for-joint-sentence-classification-in-medical-paper-abstracts)
+      * [Spatially Adaptive Computation Time for Residual Networks](#spatially-adaptive-computation-time-for-residual-networks)
 
 Articles
 ========
@@ -2811,4 +2812,14 @@ Articles
 **URL:** https://arxiv.org/abs/1612.05251
 
 **Notes:** basic architecture to start with to work with texts today, as for me; some results in classification also
+
+### Spatially Adaptive Computation Time for Residual Networks
+
+**Authors:** Michael Figurnov, Maxwell D. Collins, Yukun Zhu, Li Zhang, Jonathan Huang, Dmitry Vetrov, Ruslan Salakhutdinov
+
+**Abstract:** This paper proposes a deep learning architecture based on Residual Network that dynamically adjusts the number of executed layers for the regions of the image. This architecture is end-to-end trainable, deterministic and problem-agnostic. It is therefore applicable without any modifications to a wide range of computer vision problems such as image classification, object detection and image segmentation. We present experimental results showing that this model improves the computational efficiency of Residual Networks on the challenging ImageNet classification and COCO object detection datasets. Additionally, we evaluate the computation time maps on the visual saliency dataset cat2000 and find that they correlate surprisingly well with human eye fixation positions.
+
+**URL:** https://arxiv.org/abs/1612.02297
+
+**Notes:** adaptive computational time for resnet: we can exclude some blocks from computation for certain regions of an image
 
