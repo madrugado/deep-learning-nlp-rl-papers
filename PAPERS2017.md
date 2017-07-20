@@ -198,6 +198,7 @@ Table of Contents
       * [Revisiting Unreasonable Effectiveness of Data in Deep Learning Era](#revisiting-unreasonable-effectiveness-of-data-in-deep-learning-era)
       * [The Reversible Residual Network: Backpropagation Without Storing Activations](#the-reversible-residual-network-backpropagation-without-storing-activations)
       * [Variance Regularizing Adversarial Learning](#variance-regularizing-adversarial-learning)
+      * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
 
 Articles
 ========
@@ -2087,4 +2088,14 @@ Articles
 **URL:** https://arxiv.org/abs/1707.00309
 
 **Notes:** training two gaussians for true and false labels enables the generator to produce more similar to true distibution
+
+### Be Careful What You Backpropagate: A Case For Linear Output Activations & Gradient Boosting
+
+**Authors:** Anders Oland, Aayush Bansal, Roger B. Dannenberg, Bhiksha Raj
+
+**Abstract:** In this work, we show that saturating output activation functions, such as the softmax, impede learning on a number of standard classification tasks. Moreover, we present results showing that the utility of softmax does not stem from the normalization, as some have speculated. In fact, the normalization makes things worse. Rather, the advantage is in the exponentiation of error gradients. This exponential gradient boosting is shown to speed up convergence and improve generalization. To this end, we demonstrate faster convergence and better performance on diverse classification tasks: image classification using CIFAR-10 and ImageNet, and semantic segmentation using PASCAL VOC 2012. In the latter case, using the state-of-the-art neural network architecture, the model converged 33% faster with our method (roughly two days of training less) than with the standard softmax activation, and with a slightly better performance to boot.
+
+**URL:** https://arxiv.org/abs/1707.04199
+
+**Notes:** throw the softmax out and use linear activations with special (exp or pow3) boosting, it's enough
 
