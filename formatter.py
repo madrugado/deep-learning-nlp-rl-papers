@@ -149,6 +149,7 @@ def parse_arxiv(url):
         url_position_stop = abstract.find("\"", url_position_start + 9)
         link_stop = abstract.find("</a>", url_position_stop) + 4
         abstract_url = abstract[url_position_start + 9:url_position_stop]
+        # FIXME: use actual text in <a>
         abstract = abstract[:url_position_start] + "[URL](" + abstract_url + ")" + abstract[link_stop:]
     abstract = re.sub("<[^>]*>", "", abstract)
 
