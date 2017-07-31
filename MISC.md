@@ -149,9 +149,15 @@ Miscellaneous
 
 **Notes:** Jack Clark recommends this philosophical paper; human brain still better than computer in compression of input data by a several orders of magnitude; it is nice since we (the computer scientists to whom I have the courage to attribute myself) have a lot of stuff to do before the singularity
 
-https://arxiv.org/abs/1707.06742
+### Machine Teaching: A New Paradigm for Building Machine Learning Systems
 
-Microsoft proposes a way to handle Machine Learning as Software Development, for me it is not that obvious why do we need to state a new field of study, apart of Software Development, but the stated problem does exist in the my day-to-day live too
+**Authors:** Patrice Y. Simard, Saleema Amershi, David M. Chickering, Alicia Edelman Pelton, Soroush Ghorashi, Christopher Meek, Gonzalo Ramos, Jina Suh, Johan Verwey, Mo Wang, John Wernsing
+
+**Abstract:** The current processes for building machine learning systems require practitioners with deep knowledge of machine learning. This significantly limits the number of machine learning systems that can be created and has led to a mismatch between the demand for machine learning systems and the ability for organizations to build them. We believe that in order to meet this growing demand for machine learning systems we must significantly increase the number of individuals that can teach machines. We postulate that we can achieve this goal by making the process of teaching machines easy, fast and above all, universally accessible. While machine learning focuses on creating new algorithms and improving the accuracy of "learners", the machine teaching discipline focuses on the efficacy of the "teachers". Machine teaching as a discipline is a paradigm shift that follows and extends principles of software engineering and programming languages. We put a strong emphasis on the teacher and the teacher's interaction with data, as well as crucial components such as techniques and design principles of interaction and visualization. In this paper, we present our position regarding the discipline of machine teaching and articulate fundamental machine teaching principles. We also describe how, by decoupling knowledge about machine learning algorithms from the process of teaching, we can accelerate innovation and empower millions of new uses for machine learning models.
+
+**URL:** https://arxiv.org/abs/1707.06742
+
+**Notes:** Microsoft proposes a way to handle Machine Learning as Software Development, for me it is not that obvious why do we need to state a new field of study, apart of Software Development, but the stated problem does exist in the my day-to-day live too
 
 ## Tutorial
 ### NIPS 2016 Tutorial: Generative Adversarial Networks
