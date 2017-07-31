@@ -53,7 +53,8 @@ class ArticleFormatter:
         text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
         if len(text) > 140 - len(url) - 1:  # one symbol for space
             premature_ending = "... "
-            while len(text) > 140 - len(premature_ending) - len(url):
+            # FIXME: for some reason twitter counts for three symbols more, than len()
+            while len(text) > 140 - len(premature_ending) - len(url) - 3:
                 text = str.rsplit(text, " ", 1)[0]
 
             twit = "\"" + text + premature_ending + url + "\""
@@ -149,6 +150,7 @@ def parse_arxiv(url):
         link_stop = abstract.find("</a>", url_position_stop) + 4
         abstract_url = abstract[url_position_start + 9:url_position_stop]
         abstract = abstract[:url_position_start] + "[URL](" + abstract_url + ")" + abstract[link_stop:]
+    abstract = re.sub("<[^>]*>", "", abstract)
 
     return title, authors, abstract
 
