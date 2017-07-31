@@ -83,7 +83,7 @@ class ArticleFormatter:
                 self.has_authors = True
                 self.index = len(self.buf)
         elif not self.has_URL:
-            if self.buf[-1] and (self.buf[-1][:4] == "http" or self.buf[-1][:8] == "**URL:**"):
+            if self.buf[-1] and (self.buf[-1].startswith("http") or self.buf[-1].startswith("**URL:**")):
                 self.has_URL = True
                 self.buf = self.buf[:self.index] + [" ".join(filter(lambda x: x, self.buf[self.index:-1])),
                                                     self.buf[-1]]
@@ -97,20 +97,20 @@ class ArticleFormatter:
             print("\n".join(self.buf) + "\n")
             raise ValueError("Wrong article description format!")
         printed = ""
-        if self.buf[0][:3] != "###":
+        if not self.buf[0].startswith("###"):
             printed += "### "
         printed += self.buf[0] + "\n\n"
-        if self.buf[1][:12] != "**Authors:**":
+        if not self.buf[1].startswith("**Authors:**"):
             printed += "**Authors:** "
         printed += self.buf[1] + "\n\n"
-        if self.buf[2][:13] != "**Abstract:**":
+        if not self.buf[2].startswith("**Abstract:**"):
             printed += "**Abstract:** "
         printed += self.buf[2] + "\n\n"
-        if self.buf[3][:8] != "**URL:**":
+        if not self.buf[3].startswith("**URL:**"):
             printed += "**URL:** "
         printed += self.buf[3] + "\n\n"
 
-        if self.buf[4][:10] != "**Notes:**":
+        if not self.buf[4].startswith("**Notes:**"):
             printed += "**Notes:** "
             self.new_article = True
         printed += self.buf[4] + "\n\n"
