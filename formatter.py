@@ -5,7 +5,7 @@ import stat
 import tempfile
 import os
 import sys
-
+import re
 import requests
 
 if sys.version_info[0] == 2: 
@@ -64,6 +64,16 @@ class ArticleFormatter:
         return twit
 
     def _analyze(self):
+        # special case of arxiv link
+        if not self.has_title and not self.has_authors \
+                and self.buf[-1].startswith("http") and "arxiv.org" in self.buf[-1]:
+            self.buf = list(parse_arxiv(self.buf[-1])) + [self.buf[-1]]
+            self.has_title = True
+            self.has_authors = True
+            self.has_abstract = True
+            self.has_URL = True
+            return
+
         if not self.has_title:
             if 0 < len(self.buf[-1]) < 150:
                 self.has_title = True
@@ -110,6 +120,37 @@ class ArticleFormatter:
 def shorten_url(url):
     resp = requests.get('https://is.gd/create.php?' + urlencode({'url': url, 'format': 'simple'}))
     return resp.text
+
+
+def parse_arxiv(url):
+    resp = requests.get(url).text
+
+    # title
+    title_start = resp.find("Title:")
+    title_start = resp.find("\n", title_start) + 1
+    title = resp[title_start:resp.find("</h1>", title_start)].strip()
+
+    # authors
+    authors_start = resp.find("Authors:") + 8
+    authors = resp[authors_start:resp.find("</div>", authors_start)]
+    authors = re.sub("<[^>]*>", "", authors)
+    authors = re.sub("\n", "", authors).strip()
+
+    # abstract
+    abstract_start = resp.find("Abstract:")
+    abstract_start = resp.find("</span>", abstract_start) + 7
+    abstract = resp[abstract_start:resp.find("</blockquote>", abstract_start)]
+    abstract = " ".join(abstract.split("\n")).strip()
+
+    # URL in abstract
+    url_position_start = abstract.find("<a href=\"")
+    if url_position_start >= 0:
+        url_position_stop = abstract.find("\"", url_position_start + 9)
+        link_stop = abstract.find("</a>", url_position_stop) + 4
+        abstract_url = abstract[url_position_start + 9:url_position_stop]
+        abstract = abstract[:url_position_start] + "[URL](" + abstract_url + ")" + abstract[link_stop:]
+
+    return title, authors, abstract
 
 
 def parse_args():
