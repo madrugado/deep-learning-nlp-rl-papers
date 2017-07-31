@@ -19,6 +19,7 @@ Table of Contents
       * [A comparison of Extrinsic Clustering Evaluation Metrics based on Formal Constraints](#a-comparison-of-extrinsic-clustering-evaluation-metrics-based-on-formal-constraints)
     * [Other](#other)
       * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
+      * [Machine Teaching: A New Paradigm for Building Machine Learning Systems](#machine-teaching-a-new-paradigm-for-building-machine-learning-systems)
     * [Tutorial](#tutorial)
       * [NIPS 2016 Tutorial: Generative Adversarial Networks](#nips-2016-tutorial-generative-adversarial-networks)
 
@@ -149,6 +150,7 @@ Miscellaneous
 **Notes:** Jack Clark recommends this philosophical paper; human brain still better than computer in compression of input data by a several orders of magnitude; it is nice since we (the computer scientists to whom I have the courage to attribute myself) have a lot of stuff to do before the singularity
 
 https://arxiv.org/abs/1707.06742
+
 Microsoft proposes a way to handle Machine Learning as Software Development, for me it is not that obvious why do we need to state a new field of study, apart of Software Development, but the stated problem does exist in the my day-to-day live too
 
 ## Tutorial
