@@ -163,6 +163,7 @@ Table of Contents
       * [Translating Neuralese](#translating-neuralese)
       * [Adversarial Neural Machine Translation](#adversarial-neural-machine-translation)
       * [Deep Text Classification Can be Fooled](#deep-text-classification-can-be-fooled)
+      * [Reading Wikipedia to Answer Open\-Domain Questions](#reading-wikipedia-to-answer-open-domain-questions)
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
@@ -190,6 +191,7 @@ Table of Contents
       * [Plan, Attend, Generate: Character\-level Neural Machine Translation with Planning in the Decoder](#plan-attend-generate-character-level-neural-machine-translation-with-planning-in-the-decoder)
       * [Do GANs actually learn the distribution? An empirical study](#do-gans-actually-learn-the-distribution-an-empirical-study)
       * [Relevance of Unsupervised Metrics in Task\-Oriented Dialogue for Evaluating Natural Language Generation](#relevance-of-unsupervised-metrics-in-task-oriented-dialogue-for-evaluating-natural-language-generation)
+      * [Sub\-domain Modelling for Dialogue Management with Hierarchical  Reinforcement Learning](#sub-domain-modelling-for-dialogue-management-with-hierarchical--reinforcement-learning)
     * [2017\-07](#2017-07)
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
@@ -1766,6 +1768,16 @@ Articles
 
 **Notes:** guys trained the network to remove/add/shuffle chars and words to fool a recent CNN classification SOTA, nice
 
+### Reading Wikipedia to Answer Open-Domain Questions
+
+**Authors:** Danqi Chen, Adam Fisch, Jason Weston, Antoine Bordes
+
+**Abstract:** This paper proposes to tackle open- domain question answering using Wikipedia as the unique knowledge source: the answer to any factoid question is a text span in a Wikipedia article. This task of machine reading at scale combines the challenges of document retrieval (finding the relevant articles) with that of machine comprehension of text (identifying the answer spans from those articles). Our approach combines a search component based on bigram hashing and TF-IDF matching with a multi-layer recurrent neural network model trained to detect answers in Wikipedia paragraphs. Our experiments on multiple existing QA datasets indicate that (1) both modules are highly competitive with respect to existing counterparts and (2) multitask learning using distant supervision on their combination is an effective complete system on this challenging task.
+
+**URL:** https://arxiv.org/abs/1704.00051
+
+**Notes:** DrQA paper, improving AI2 approach: wiki-search + RNN reader, with code! https://github.com/facebookresearch/DrQA
+
 ## 2017-05
 ### Machine Comprehension by Text-to-Text Neural Question Generation
 
@@ -2017,6 +2029,16 @@ Articles
 **URL:** https://arxiv.org/abs/1706.09799
 
 **Notes:** Maluuba's paper on dialog quality measures; shows weak correlation with human judgement for METEOR; with code!
+
+### Sub-domain Modelling for Dialogue Management with Hierarchical  Reinforcement Learning
+
+**Authors:** Pawel Budzianowski, Stefan Ultes, Pei-Hao Su, Nikola Mrksic, Tsung-Hsien Wen, Inigo Casanueva, Lina Rojas-Barahona, Milica Gasic
+
+**Abstract:** Human conversation is inherently complex, often spanning many different topics/domains. This makes policy learning for dialogue systems very challenging. Standard flat reinforcement learning methods do not provide an efficient framework for modelling such dialogues. In this paper, we focus on the under-explored problem of multi-domain dialogue management. First, we propose a new method for hierarchical reinforcement learning using the option framework. Next, we show that the proposed architecture learns faster and arrives at a better policy than the existing flat ones do. Moreover, we show how pretrained policies can be adapted to more complex systems with an additional set of new actions. In doing that, we show that our approach has the potential to facilitate policy optimisation for more sophisticated multi-domain dialogue systems.
+
+**URL:** https://arxiv.org/abs/1706.06210
+
+**Notes:** hierarchical skills for dialog systems, next step for original Cambridge dialog system
 
 ## 2017-07
 ### Deep Semantic Role Labeling: What Works and What’s Next
