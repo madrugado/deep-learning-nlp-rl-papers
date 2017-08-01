@@ -8,12 +8,23 @@ import sys
 import re
 import requests
 
+# tricky imports for versions compatibility
 if sys.version_info[0] == 2: 
     import commands as cmd
     from urllib import urlencode
+    if sys.version_info[1] > 5:
+        from HTMLParser import HTMLParser
+        html = HTMLParser()
+    else:
+        raise ImportError("Cannot import HTMLParser")
 else:  # assuming that it is python 3
     import subprocess as cmd
     from urllib.parse import urlencode
+    if sys.version_info[1] > 3:
+        import html
+    else:
+        from html.parser import HTMLParser
+        html = HTMLParser()
 
 
 class ArticleFormatter:
@@ -124,7 +135,7 @@ def shorten_url(url):
 
 
 def parse_arxiv(url):
-    resp = requests.get(url).text
+    resp = html.unescape(requests.get(url).content.decode())
 
     # title
     title_start = resp.find("Title:")
