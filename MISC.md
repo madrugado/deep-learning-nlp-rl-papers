@@ -5,6 +5,7 @@ Table of Contents
   * [Miscellaneous](#miscellaneous)
     * [Lecture notes](#lecture-notes)
       * [Monte Carlo Methods and Importance Sampling](#monte-carlo-methods-and-importance-sampling)
+      * [Kernel Canonical Correlation Analysis](#kernel-canonical-correlation-analysis)
     * [Blueprints](#blueprints)
       * [In\-Datacenter Performance Analysis of a Tensor Processing Unit​](#in-datacenter-performance-analysis-of-a-tensor-processing-unit)
       * [TensorFlow: Large\-Scale Machine Learning on Heterogeneous Distributed Systems](#tensorflow-large-scale-machine-learning-on-heterogeneous-distributed-systems)
@@ -35,6 +36,16 @@ Miscellaneous
 **URL:** http://ib.berkeley.edu/labs/slatkin/eriq/classes/guest_lect/mc_lecture_notes.pdf
 
 **Notes:** simple explanation for importance sampling in stats, IS in softmax is coming from here
+
+### Kernel Canonical Correlation Analysis
+
+**Authors:** Max Welling
+
+**Abstract:** Kernel Canonical Correlation Analysis
+
+**URL:** http://www.ics.uci.edu/~welling/classnotes/papers_class/kCCA.pdf
+
+**Notes:** explanation of kernel Canonical Correlation Analysis from Max Welling
 
 ## Blueprints
 ### In-Datacenter Performance Analysis of a Tensor Processing Unit​
