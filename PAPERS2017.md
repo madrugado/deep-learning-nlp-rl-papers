@@ -176,6 +176,7 @@ Table of Contents
       * [The Cramer Distance as a Solution to Biased Wasserstein Gradients](#the-cramer-distance-as-a-solution-to-biased-wasserstein-gradients)
       * [Second\-Order Word Embeddings from Nearest Neighbor Topological Features](#second-order-word-embeddings-from-nearest-neighbor-topological-features)
       * [Emergence of Language with Multi\-agent Games: Learning to Communicate with Sequences of Symbols](#emergence-of-language-with-multi-agent-games-learning-to-communicate-with-sequences-of-symbols)
+      * [Discourse\-Based Objectives for Fast Unsupervised Sentence Representation  Learning](#discourse-based-objectives-for-fast-unsupervised-sentence-representation--learning)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -1888,6 +1889,16 @@ Articles
 **URL:** https://arxiv.org/abs/1705.11192
 
 **Notes:** Gumbel-softmax is better than RL for language invention task (yes, this task already exists!)
+
+### Discourse-Based Objectives for Fast Unsupervised Sentence Representation Learning
+
+**Authors:** Yacine Jernite, Samuel R. Bowman, David Sontag
+
+**Abstract:** This work presents a novel objective function for the unsupervised training of neural network sentence encoders. It exploits signals from paragraph-level discourse coherence to train these models to understand text. Our objective is purely discriminative, allowing us to train models many times faster than was possible under prior methods, and it yields models which perform well in extrinsic evaluations.
+
+**URL:** https://arxiv.org/abs/1705.00557
+
+**Notes:** siamese sentence embeddings trained in multi-task environment; claimed to be lightspeed fast
 
 ## 2017-06
 ### On Unifying Deep Generative Models
