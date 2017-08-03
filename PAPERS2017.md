@@ -176,7 +176,8 @@ Table of Contents
       * [The Cramer Distance as a Solution to Biased Wasserstein Gradients](#the-cramer-distance-as-a-solution-to-biased-wasserstein-gradients)
       * [Second\-Order Word Embeddings from Nearest Neighbor Topological Features](#second-order-word-embeddings-from-nearest-neighbor-topological-features)
       * [Emergence of Language with Multi\-agent Games: Learning to Communicate with Sequences of Symbols](#emergence-of-language-with-multi-agent-games-learning-to-communicate-with-sequences-of-symbols)
-      * [Discourse\-Based Objectives for Fast Unsupervised Sentence Representation  Learning](#discourse-based-objectives-for-fast-unsupervised-sentence-representation--learning)
+      * [Discourse\-Based Objectives for Fast Unsupervised Sentence Representation Learning](#discourse-based-objectives-for-fast-unsupervised-sentence-representation-learning)
+      * [Emergent Language in a Multi\-Modal, Multi\-Step Referential Game](#emergent-language-in-a-multi-modal-multi-step-referential-game)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -1899,6 +1900,16 @@ Articles
 **URL:** https://arxiv.org/abs/1705.00557
 
 **Notes:** siamese sentence embeddings trained in multi-task environment; claimed to be lightspeed fast
+
+### Emergent Language in a Multi-Modal, Multi-Step Referential Game
+
+**Authors:** Katrina Evtimova, Andrew Drozdov, Douwe Kiela, Kyunghyun Cho
+
+**Abstract:** Inspired by previous work on emergent language in referential games, we propose a novel multi-modal, multi-step referential game, where the sender and receiver have access to distinct modalities of an object, and their information exchange is bidirectional and of arbitrary duration. The multi-modal multi-step setting allows agents to develop an internal language significantly closer to natural language, in that they share a single set of messages, and that the length of the conversation may vary according to the difficulty of the task. We examine these properties empirically using a dataset consisting of images and textual descriptions of mammals, where the agents are tasked with identifying the correct object. Our experiments indicate that a robust and efficient communication protocol emerges, where gradual information exchange informs better predictions and higher communication bandwidth improves generalization.
+
+**URL:** https://arxiv.org/abs/1705.10369
+
+**Notes:** one agent describe the picture to another and the other should guess referred object on the picture
 
 ## 2017-06
 ### On Unifying Deep Generative Models
