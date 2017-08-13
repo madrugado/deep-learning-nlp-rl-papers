@@ -109,6 +109,7 @@ Table of Contents
       * [Bridging the Gap Between Value and Policy Based Reinforcement Learning](#bridging-the-gap-between-value-and-policy-based-reinforcement-learning)
       * [Rationalization: A Neural Machine Translation Approach to Generating Natural Language Explanations](#rationalization-a-neural-machine-translation-approach-to-generating-natural-language-explanations)
       * [Hybrid Code Networks: practical and efficient end\-to\-end dialog control with supervised and reinforcement learning](#hybrid-code-networks-practical-and-efficient-end-to-end-dialog-control-with-supervised-and-reinforcement-learning)
+      * [Sequence Modeling via Segmentations](#sequence-modeling-via-segmentations)
     * [2017\-03](#2017-03)
       * [End\-to\-End Task\-Completion Neural Dialogue Systems](#end-to-end-task-completion-neural-dialogue-systems)
       * [Controllable Text Generation](#controllable-text-generation)
@@ -194,6 +195,7 @@ Table of Contents
       * [Do GANs actually learn the distribution? An empirical study](#do-gans-actually-learn-the-distribution-an-empirical-study)
       * [Relevance of Unsupervised Metrics in Task\-Oriented Dialogue for Evaluating Natural Language Generation](#relevance-of-unsupervised-metrics-in-task-oriented-dialogue-for-evaluating-natural-language-generation)
       * [Sub\-domain Modelling for Dialogue Management with Hierarchical  Reinforcement Learning](#sub-domain-modelling-for-dialogue-management-with-hierarchical--reinforcement-learning)
+      * [Toward Neural Phrase\-based Machine Translation](#toward-neural-phrase-based-machine-translation)
     * [2017\-07](#2017-07)
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
@@ -203,6 +205,8 @@ Table of Contents
       * [The Reversible Residual Network: Backpropagation Without Storing Activations](#the-reversible-residual-network-backpropagation-without-storing-activations)
       * [Variance Regularizing Adversarial Learning](#variance-regularizing-adversarial-learning)
       * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
+    * [2017\-08](#2017-08)
+      * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
 
 Articles
 ========
@@ -1248,6 +1252,16 @@ Articles
 
 **Notes:** very similar to the germans' paper; architecture is really close
 
+### Sequence Modeling via Segmentations
+
+**Authors:** Chong Wang, Yining Wang, Po-Sen Huang, Abdelrahman Mohamed, Dengyong Zhou, Li Deng
+
+**Abstract:** Segmental structure is a common pattern in many types of sequences such as phrases in human languages. In this paper, we present a probabilistic model for sequences via their segmentations. The probability of a segmented sequence is calculated as the product of the probabilities of all its segments, where each segment is modeled using existing tools such as recurrent neural networks. Since the segmentation of a sequence is usually unknown in advance, we sum over all valid segmentations to obtain the final probability for the sequence. An efficient dynamic programming algorithm is developed for forward and backward computations without resorting to any approximation. We demonstrate our approach on text segmentation and speech recognition tasks. In addition to quantitative results, we also show that our approach can discover meaningful segments in their respective application contexts.
+
+**URL:** https://arxiv.org/abs/1702.07463
+
+**Notes:** tricky seq2seq learning by small subseqs, has its own algo to generate gradients for backprop
+
 ## 2017-03
 ### End-to-End Task-Completion Neural Dialogue Systems
 
@@ -2062,6 +2076,16 @@ Articles
 
 **Notes:** hierarchical skills for dialog systems, next step for original Cambridge dialog system
 
+### Toward Neural Phrase-based Machine Translation
+
+**Authors:** Po-Sen Huang, Chong Wang, Dengyong Zhou, Li Deng
+
+**Abstract:** In this paper, we propose Neural Phrase-based Machine Translation (NPMT). Our method explicitly models the phrase structures in output sequences through Sleep-WAke Networks (SWAN), a recently proposed segmentation-based sequence modeling method. To alleviate the monotonic alignment requirement of SWAN, we introduce a new layer to perform (soft) local reordering of input sequences. Our experiments show that NPMT achieves state-of-the-art results on IWSLT 2014 German-English translation task without using any attention mechanisms. We also observe that our method produces meaningful phrases in the output language.
+
+**URL:** https://arxiv.org/abs/1706.05565
+
+**Notes:** as in prev seq2seq segmentation authors' work with addition of soft attention over sliding window on input seq
+
 ## 2017-07
 ### Deep Semantic Role Labeling: What Works and What’s Next
 
@@ -2142,4 +2166,15 @@ Articles
 **URL:** https://arxiv.org/abs/1707.04199
 
 **Notes:** throw the softmax out and use linear activations with special (exp or pow3) boosting, it's enough
+
+## 2017-08
+### Referenceless Quality Estimation for Natural Language Generation
+
+**Authors:** Ondřej Dušek, Jekaterina Novikova, Verena Rieser
+
+**Abstract:** Traditional automatic evaluation measures for natural language generation (NLG) use costly human-authored references to estimate the quality of a system output. In this paper, we propose a referenceless quality estimation (QE) approach based on recurrent neural networks, which predicts a quality score for a NLG system output by comparing it to the source meaning representation only. Our method outperforms traditional metrics and a constant baseline in most respects; we also show that synthetic data helps to increase correlation results by 21% compared to the base system. Our results are comparable to results obtained in similar QE tasks despite the more challenging setting.
+
+**URL:** https://arxiv.org/abs/1708.01759
+
+**Notes:** neural net predicting Likert scale human scores, shows greater correlation than classic BLEU, etc.
 
