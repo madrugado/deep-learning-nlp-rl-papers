@@ -207,6 +207,7 @@ Table of Contents
       * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
     * [2017\-08](#2017-08)
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
+      * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
 
 Articles
 ========
@@ -2177,4 +2178,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.01759
 
 **Notes:** neural net predicting Likert scale human scores, shows greater correlation than classic BLEU, etc.
+
+### Toward Controlled Generation of Text
+
+**Authors:** Zhiting Hu, Zichao Yang, Xiaodan Liang, Ruslan Salakhutdinov, Eric P. Xing
+
+**Abstract:** Generic generation and manipulation of text is challenging and has limited success compared to recent deep generative modeling in visual domain. This paper aims at generating plausible text sentences, whose attributes are controlled by learning disentangled latent representations with designated semantics. We propose a new neural generative model which combines variational auto-encoders (VAEs) and holistic attribute discriminators for effective imposition of semantic structures. The model can alternatively be seen as enhancing VAEs with the wake-sleep algorithm for leveraging fake samples as extra training data. With differentiable approximation to discrete text samples, explicit constraints on independent attribute controls, and efficient collaborative learning of generator and discriminators, our model learns interpretable representations from even only word annotations, and produces short sentences with desired attributes of sentiment and tenses. Quantitative experiments using trained classifiers as evaluators validate the accuracy of sentence and attribute generation.
+
+**URL:** http://proceedings.mlr.press/v70/hu17e/hu17e.pdf
+
+**Notes:** the best ICML'17 paper as for me; sleep-wake VAE of Enc, Dec & Gen; decreasing temperature to smooth training
 
