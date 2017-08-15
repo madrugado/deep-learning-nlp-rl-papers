@@ -32,6 +32,7 @@ Table of Contents
       * [Sentence Pair Scoring: Towards Unified Framework for Text Comprehension](#sentence-pair-scoring-towards-unified-framework-for-text-comprehension)
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
       * [How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](#how-not-to-evaluate-your-dialogue-system-an-empirical-study-of-unsupervised-evaluation-metrics-for-dialogue-response-generation)
+      * [Incorporating Copying Mechanism in Sequence\-to\-Sequence Learning](#incorporating-copying-mechanism-in-sequence-to-sequence-learning)
     * [2016\-05](#2016-05)
       * [Learning End\-to\-End Goal\-Oriented Dialog](#learning-end-to-end-goal-oriented-dialog)
     * [2016\-06](#2016-06)
@@ -484,7 +485,17 @@ Articles
 
 **URL:** https://arxiv.org/abs/1603.08023
 
-**Notes:** nice paper showing no statistical correlation between famous ROUGE, BLEU & METEOR with human judgment in dialog system scoring
+**Notes:** nice paper showing no statistical correlation between famous ROUGE, BLEU & METEOR with human judgement in dialog system scoring
+
+### Incorporating Copying Mechanism in Sequence-to-Sequence Learning
+
+**Authors:** Jiatao Gu, Zhengdong Lu, Hang Li, Victor O.K. Li
+
+**Abstract:** We address an important problem in sequence-to-sequence (Seq2Seq) learning referred to as copying, in which certain segments in the input sequence are selectively replicated in the output sequence. A similar phenomenon is observable in human language communication. For example, humans tend to repeat entity names or even long phrases in conversation. The challenge with regard to copying in Seq2Seq is that new machinery is needed to decide when to perform the operation. In this paper, we incorporate copying into neural network-based Seq2Seq learning and propose a new model called CopyNet with encoder-decoder structure. CopyNet can nicely integrate the regular way of word generation in the decoder with the new copying mechanism which can choose sub-sequences in the input sequence and put them at proper places in the output sequence. Our empirical study on both synthetic data sets and real world data sets demonstrates the efficacy of CopyNet. For example, CopyNet can outperform regular RNN-based model with remarkable margins on text summarization tasks.
+
+**URL:** https://arxiv.org/abs/1603.06393
+
+**Notes:** first mention of copy from input for OOV word technique in seq2seq
 
 ## 2016-05
 ### Learning End-to-End Goal-Oriented Dialog
