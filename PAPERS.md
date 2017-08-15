@@ -273,6 +273,7 @@ Table of Contents
       * [Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](#towards-an-automatic-turing-test-learning-to-evaluate-dialogue-responses)
       * [Neural Networks for Joint Sentence Classification in Medical Paper Abstracts](#neural-networks-for-joint-sentence-classification-in-medical-paper-abstracts)
       * [Spatially Adaptive Computation Time for Residual Networks](#spatially-adaptive-computation-time-for-residual-networks)
+      * [Tunable Efficient Unitary Neural Networks (EUNN) and their application  to RNNs](#tunable-efficient-unitary-neural-networks-eunn-and-their-application--to-rnns)
 
 Articles
 ========
@@ -2822,4 +2823,14 @@ Articles
 **URL:** https://arxiv.org/abs/1612.02297
 
 **Notes:** adaptive computational time for resnet: we can exclude some blocks from computation for certain regions of an image
+
+### Tunable Efficient Unitary Neural Networks (EUNN) and their application  to RNNs
+
+**Authors:** Li Jing, Yichen Shen, Tena Dubček, John Peurifoy, Scott Skirlo, Yann LeCun, Max Tegmark, Marin Soljačić
+
+**Abstract:** Using unitary (instead of general) matrices in artificial neural networks (ANNs) is a promising way to solve the gradient explosion/vanishing problem, as well as to enable ANNs to learn long-term correlations in the data. This approach appears particularly promising for Recurrent Neural Networks (RNNs). In this work, we present a new architecture for implementing an Efficient Unitary Neural Network (EUNNs); its main advantages can be summarized as follows. Firstly, the representation capacity of the unitary space in an EUNN is fully tunable, ranging from a subspace of SU(N) to the entire unitary space. Secondly, the computational complexity for training an EUNN is merely $\mathcal{O}(1)$ per parameter. Finally, we test the performance of EUNNs on the standard copying task, the pixel-permuted MNIST digit recognition benchmark as well as the Speech Prediction Test (TIMIT). We find that our architecture significantly outperforms both other state-of-the-art unitary RNNs and the LSTM architecture, in terms of the final performance and/or the wall-clock training speed. EUNNs are thus promising alternatives to RNNs and LSTMs for a wide variety of applications.
+
+**URL:** https://arxiv.org/abs/1612.05231
+
+**Notes:** efficent unitary RNN from LeCun; physics-inspired complex matrix factorization bringing O(1) computation complexity
 
