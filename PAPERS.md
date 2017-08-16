@@ -18,6 +18,7 @@ Table of Contents
     * [2015](#2015)
       * [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](#show-attend-and-tell-neural-image-caption-generation-with-visual-attention)
       * [Cyclical Learning Rates for Training Neural Networks](#cyclical-learning-rates-for-training-neural-networks)
+      * [A Neural Attention Model for Abstractive Sentence Summarization](#a-neural-attention-model-for-abstractive-sentence-summarization)
       * [Unitary Evolution Recurrent Neural Networks](#unitary-evolution-recurrent-neural-networks)
       * [Adversarial Autoencoders](#adversarial-autoencoders)
       * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
@@ -373,6 +374,16 @@ Articles
 **URL:** https://arxiv.org/abs/1506.01186
 
 **Notes:** self-describing title, seems to really have some potential - with CLR the learning curve is steeper, could be useful, when we need fast training
+
+### A Neural Attention Model for Abstractive Sentence Summarization
+
+**Authors:** Alexander M. Rush, Sumit Chopra, Jason Weston
+
+**Abstract:** Summarization based on text extraction is inherently limited, but generation-style abstractive methods have proven challenging to build. In this work, we propose a fully data-driven approach to abstractive sentence summarization. Our method utilizes a local attention-based model that generates each word of the summary conditioned on the input sentence. While the model is structurally simple, it can easily be trained end-to-end and scales to a large amount of training data. The model shows significant performance gains on the DUC-2004 shared task compared with several strong baselines.
+
+**URL:** https://arxiv.org/abs/1509.00685
+
+**Notes:** simple paper for today: make summarization using Bahdanau attention, but back in a day it was hot
 
 ### Unitary Evolution Recurrent Neural Networks
 
