@@ -196,6 +196,7 @@ Table of Contents
       * [Relevance of Unsupervised Metrics in Task\-Oriented Dialogue for Evaluating Natural Language Generation](#relevance-of-unsupervised-metrics-in-task-oriented-dialogue-for-evaluating-natural-language-generation)
       * [Sub\-domain Modelling for Dialogue Management with Hierarchical  Reinforcement Learning](#sub-domain-modelling-for-dialogue-management-with-hierarchical--reinforcement-learning)
       * [Toward Neural Phrase\-based Machine Translation](#toward-neural-phrase-based-machine-translation)
+      * [Natural Language Does Not Emerge 'Naturally' in Multi\-Agent Dialog](#natural-language-does-not-emerge-naturally-in-multi-agent-dialog)
     * [2017\-07](#2017-07)
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
@@ -2086,6 +2087,16 @@ Articles
 **URL:** https://arxiv.org/abs/1706.05565
 
 **Notes:** as in prev seq2seq segmentation authors' work with addition of soft attention over sliding window on input seq
+
+### Natural Language Does Not Emerge 'Naturally' in Multi-Agent Dialog
+
+**Authors:** Satwik Kottur, José M.F. Moura, Stefan Lee, Dhruv Batra
+
+**Abstract:** A number of recent works have proposed techniques for end-to-end learning of communication protocols among cooperative multi-agent populations, and have simultaneously found the emergence of grounded human-interpretable language in the protocols developed by the agents, all learned without any human supervision! In this paper, using a Task and Tell reference game between two agents as a testbed, we present a sequence of 'negative' results culminating in a 'positive' one -- showing that while most agent-invented languages are effective (i.e. achieve near-perfect task rewards), they are decidedly not interpretable or compositional. In essence, we find that natural language does not emerge 'naturally', despite the semblance of ease of natural-language-emergence that one may gather from recent literature. We discuss how it is possible to coax the invented languages to become more and more human-like and compositional by increasing restrictions on how two agents may communicate.
+
+**URL:** https://arxiv.org/abs/1706.08502
+
+**Notes:** interesting paper on language creation: compositional language could emerge in some cases, but not for sure
 
 ## 2017-07
 ### Deep Semantic Role Labeling: What Works and What’s Next
