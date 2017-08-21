@@ -210,6 +210,7 @@ Table of Contents
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
       * [MISC: A data set of information\-seeking conversations](#misc-a-data-set-of-information-seeking-conversations)
+      * [Scalable trust\-region method for deep reinforcement learning using  Kronecker\-factored approximation](#scalable-trust-region-method-for-deep-reinforcement-learning-using--kronecker-factored-approximation)
 
 Articles
 ========
@@ -2210,4 +2211,14 @@ Articles
 **URL:** https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/Thomas-etal-CAIR17.pdf
 
 **Notes:** new Microsoft Information-Seeking Convervations dataset, follows WOz paradigm
+
+### Scalable trust-region method for deep reinforcement learning using  Kronecker-factored approximation
+
+**Authors:** Yuhuai Wu, Elman Mansimov, Shun Liao, Roger Grosse, Jimmy Ba
+
+**Abstract:** In this work, we propose to apply trust region optimization to deep reinforcement learning using a recently proposed Kronecker-factored approximation to the curvature. We extend the framework of natural policy gradient and propose to optimize both the actor and the critic using Kronecker-factored approximate curvature (K-FAC) with trust region; hence we call our method Actor Critic using Kronecker-Factored Trust Region (ACKTR). To the best of our knowledge, this is the first scalable trust region natural gradient method for actor-critic methods. It is also a method that learns non-trivial tasks in continuous control as well as discrete control policies directly from raw pixel inputs. We tested our approach across discrete domains in Atari games as well as continuous domains in the MuJoCo environment. With the proposed methods, we are able to achieve higher rewards and a 2- to 3-fold improvement in sample efficiency on average, compared to previous state-of-the-art on-policy actor-critic methods. Code is available at [URL](https://github.com/openai/baselines)
+
+**URL:** https://arxiv.org/abs/1708.05144
+
+**Notes:** ACKTR is a new method, sample-efficient and distributed, based on Kronecker-factored approximation of natural gradient
 
