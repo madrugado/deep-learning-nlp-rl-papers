@@ -209,6 +209,7 @@ Table of Contents
     * [2017\-08](#2017-08)
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
+      * [MISC: A data set of information\-seeking conversations](#misc-a-data-set-of-information-seeking-conversations)
 
 Articles
 ========
@@ -2199,4 +2200,14 @@ Articles
 **URL:** http://proceedings.mlr.press/v70/hu17e/hu17e.pdf
 
 **Notes:** the best ICML'17 paper as for me; sleep-wake VAE of Enc, Dec & Gen; decreasing temperature to smooth training
+
+### MISC: A data set of information-seeking conversations
+
+**Authors:** Paul Thomas, Daniel McDuff, Mary Czerwinski, Nick Craswell
+
+**Abstract:** Conversational interfaces to information retrieval systems, via software agents such as Siri or Cortana, are of commercial and research interest. To build or evaluate these soware interfaces it is natural to consider how people act in the same role, but there is little public, fine-grained, data on interactions with intermediaries for web tasks. We introduce the Microso Information-Seeking Conversation data (MISC), a set of recordings of information-seeking conversations between human “seekers” and “intermediaries”. MISC includes audio and video signals; transcripts of conversation; affectual and physiological signals; recordings of search and other computer use; and post-task surveys on emotion, success, and eort. We hope that these recordings will support conversational retrieval interfaces both in engineering (how can we make “natural” systems?) and evaluation (what does a “good” conversation look like?).
+
+**URL:** https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/Thomas-etal-CAIR17.pdf
+
+**Notes:** new Microsoft Information-Seeking Convervations dataset, follows WOz paradigm
 
