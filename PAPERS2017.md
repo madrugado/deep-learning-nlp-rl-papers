@@ -211,6 +211,7 @@ Table of Contents
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
       * [MISC: A data set of information\-seeking conversations](#misc-a-data-set-of-information-seeking-conversations)
       * [Scalable trust\-region method for deep reinforcement learning using  Kronecker\-factored approximation](#scalable-trust-region-method-for-deep-reinforcement-learning-using--kronecker-factored-approximation)
+      * [Measuring Catastrophic Forgetting in Neural Networks](#measuring-catastrophic-forgetting-in-neural-networks)
 
 Articles
 ========
@@ -2221,4 +2222,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.05144
 
 **Notes:** ACKTR is a new method, sample-efficient and distributed, based on Kronecker-factored approximation of natural gradient
+
+### Measuring Catastrophic Forgetting in Neural Networks
+
+**Authors:** Ronald Kemker, Angelina Abitino, Marc McClure, Christopher Kanan
+
+**Abstract:** Deep multi-layer perceptron neural networks are used in many state-of-the-art systems for machine perception (e.g., speech-to-text, image classification, and object detection). Once a network is trained to do a specific task, e.g., fine-grained bird classification, it cannot easily be trained to do new tasks, e.g., incrementally learning to recognize additional bird species or learning an entirely different task such as fine-grained flower recognition. When new tasks are added, deep neural networks are prone to catastrophically forgetting previously learned information. Catastrophic forgetting has hindered the use of neural networks in deployed applications that require lifelong learning. There have been multiple attempts to develop schemes that mitigate catastrophic forgetting, but these methods have yet to be compared and the kinds of tests used to evaluate individual methods vary greatly. In this paper, we compare multiple mechanisms designed to mitigate catastrophic forgetting in neural networks. Experiments showed that the mechanism(s) that are critical for optimal performance vary based on the incremental training paradigm and type of data being used.
+
+**URL:** https://arxiv.org/abs/1708.02072
+
+**Notes:** framework for measure forgetting in NN; permute data, learning additional classes one by one, additional modalities
 
