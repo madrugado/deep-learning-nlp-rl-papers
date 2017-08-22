@@ -206,12 +206,14 @@ Table of Contents
       * [The Reversible Residual Network: Backpropagation Without Storing Activations](#the-reversible-residual-network-backpropagation-without-storing-activations)
       * [Variance Regularizing Adversarial Learning](#variance-regularizing-adversarial-learning)
       * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
+      * [Effective Inference for Generative Neural Parsing](#effective-inference-for-generative-neural-parsing)
     * [2017\-08](#2017-08)
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
       * [MISC: A data set of information\-seeking conversations](#misc-a-data-set-of-information-seeking-conversations)
       * [Scalable trust\-region method for deep reinforcement learning using  Kronecker\-factored approximation](#scalable-trust-region-method-for-deep-reinforcement-learning-using--kronecker-factored-approximation)
       * [Measuring Catastrophic Forgetting in Neural Networks](#measuring-catastrophic-forgetting-in-neural-networks)
+      * [Regularizing and Optimizing LSTM Language Models](#regularizing-and-optimizing-lstm-language-models)
 
 Articles
 ========
@@ -2182,6 +2184,16 @@ Articles
 
 **Notes:** throw the softmax out and use linear activations with special (exp or pow3) boosting, it's enough
 
+### Effective Inference for Generative Neural Parsing
+
+**Authors:** Mitchell Stern, Daniel Fried, Dan Klein
+
+**Abstract:** Generative neural models have recently achieved state-of-the-art results for constituency parsing. However, without a feasible search procedure, their use has so far been limited to reranking the output of external parsers in which decoding is more tractable. We describe an alternative to the conventional action-level beam search used for discriminative neural models that enables us to decode directly in these generative models. We then show that by improving our basic candidate selection strategy and using a coarse pruning function, we can improve accuracy while exploring significantly less of the search space. Applied to the model of Choe and Charniak (2016), our inference procedure obtains 92.56 F1 on section 23 of the Penn Treebank, surpassing prior state-of-the-art results for single-model systems.
+
+**URL:** https://arxiv.org/abs/1707.08976
+
+**Notes:** effective pruning and fast-track for some branches gives SotA result in parsing
+
 ## 2017-08
 ### Referenceless Quality Estimation for Natural Language Generation
 
@@ -2232,4 +2244,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.02072
 
 **Notes:** framework for measure forgetting in NN; permute data, learning additional classes one by one, additional modalities
+
+### Regularizing and Optimizing LSTM Language Models
+
+**Authors:** Stephen Merity, Nitish Shirish Keskar, Richard Socher
+
+**Abstract:** Recurrent neural networks (RNNs), such as long short-term memory networks (LSTMs), serve as a fundamental building block for many sequence learning tasks, including machine translation, language modeling, and question answering. In this paper, we consider the specific problem of word-level language modeling and investigate strategies for regularizing and optimizing LSTM-based models. We propose the weight-dropped LSTM which uses DropConnect on hidden-to-hidden weights as a form of recurrent regularization. Further, we introduce NT-ASGD, a variant of the averaged stochastic gradient method, wherein the averaging trigger is determined using a non-monotonic condition as opposed to being tuned by the user. Using these and other regularization strategies, we achieve state-of-the-art word level perplexities on two data sets: 57.3 on Penn Treebank and 65.8 on WikiText-2. In exploring the effectiveness of a neural cache in conjunction with our proposed model, we achieve an even lower state-of-the-art perplexity of 52.8 on Penn Treebank and 52.0 on WikiText-2.
+
+**URL:** https://arxiv.org/abs/1708.02182
+
+**Notes:** at last! effective dropout for LSTMs from Socher's group; l2 regularization for activations of hidden state
 
