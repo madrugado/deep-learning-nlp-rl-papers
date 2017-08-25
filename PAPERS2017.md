@@ -214,6 +214,7 @@ Table of Contents
       * [Scalable trust\-region method for deep reinforcement learning using  Kronecker\-factored approximation](#scalable-trust-region-method-for-deep-reinforcement-learning-using--kronecker-factored-approximation)
       * [Measuring Catastrophic Forgetting in Neural Networks](#measuring-catastrophic-forgetting-in-neural-networks)
       * [Regularizing and Optimizing LSTM Language Models](#regularizing-and-optimizing-lstm-language-models)
+      * [Twin Networks: Using the Future as a Regularizer](#twin-networks-using-the-future-as-a-regularizer)
 
 Articles
 ========
@@ -2254,4 +2255,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.02182
 
 **Notes:** at last! effective dropout for LSTMs from Socher's group; l2 regularization for activations of hidden state
+
+### Twin Networks: Using the Future as a Regularizer
+
+**Authors:** Dmitriy Serdyuk, Rosemary Nan Ke, Alessandro Sordoni, Chris Pal, Yoshua Bengio
+
+**Abstract:** Being able to model long-term dependencies in sequential data, such as text, has been among the long-standing challenges of recurrent neural networks (RNNs). This issue is strictly related to the absence of explicit planning in current RNN architectures. More explicitly, the RNNs are trained to predict only the next token given previous ones. In this paper, we introduce a simple way of encouraging the RNNs to plan for the future. In order to accomplish this, we introduce an additional neural network which is trained to generate the sequence in reverse order, and we require closeness between the states of the forward RNN and backward RNN that predict the same token. At each step, the states of the forward RNN are required to match the future information contained in the backward states. We hypothesize that the approach eases modeling of long-term dependencies thus helping in generating more globally consistent samples. The model trained with conditional generation for a speech recognition task achieved 12\% relative improvement (CER of 6.7 compared to a baseline of 7.6).
+
+**URL:** https://arxiv.org/abs/1708.06742
+
+**Notes:** nice idea: the states of forward pass is bounded to backward i.e. future states (in terms of bidirectional RNN)
 
