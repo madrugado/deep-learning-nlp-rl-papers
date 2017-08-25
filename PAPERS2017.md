@@ -215,6 +215,7 @@ Table of Contents
       * [Measuring Catastrophic Forgetting in Neural Networks](#measuring-catastrophic-forgetting-in-neural-networks)
       * [Regularizing and Optimizing LSTM Language Models](#regularizing-and-optimizing-lstm-language-models)
       * [Twin Networks: Using the Future as a Regularizer](#twin-networks-using-the-future-as-a-regularizer)
+      * [A Neural Network Approach for Mixing Language Models](#a-neural-network-approach-for-mixing-language-models)
 
 Articles
 ========
@@ -2265,4 +2266,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.06742
 
 **Notes:** nice idea: the states of forward pass is bounded to backward i.e. future states (in terms of bidirectional RNN)
+
+### A Neural Network Approach for Mixing Language Models
+
+**Authors:** Youssef Oualil, Dietrich Klakow
+
+**Abstract:** The performance of Neural Network (NN)-based language models is steadily improving due to the emergence of new architectures, which are able to learn different natural language characteristics. This paper presents a novel framework, which shows that a significant improvement can be achieved by combining different existing heterogeneous models in a single architecture. This is done through 1) a feature layer, which separately learns different NN-based models and 2) a mixture layer, which merges the resulting model features. In doing so, this architecture benefits from the learning capabilities of each model with no noticeable increase in the number of model parameters or the training time. Extensive experiments conducted on the Penn Treebank (PTB) and the Large Text Compression Benchmark (LTCB) corpus showed a significant reduction of the perplexity when compared to state-of-the-art feedforward as well as recurrent neural network architectures.
+
+**URL:** https://arxiv.org/abs/1708.06989
+
+**Notes:** neural ensambling, pretty obvious, but I don't remember prev paper on this
 
