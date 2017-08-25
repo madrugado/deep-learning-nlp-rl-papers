@@ -216,6 +216,7 @@ Table of Contents
       * [Regularizing and Optimizing LSTM Language Models](#regularizing-and-optimizing-lstm-language-models)
       * [Twin Networks: Using the Future as a Regularizer](#twin-networks-using-the-future-as-a-regularizer)
       * [A Neural Network Approach for Mixing Language Models](#a-neural-network-approach-for-mixing-language-models)
+      * [Learned in Translation: Contextualized Word Vectors](#learned-in-translation-contextualized-word-vectors)
 
 Articles
 ========
@@ -2276,4 +2277,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.06989
 
 **Notes:** neural ensambling, pretty obvious, but I don't remember prev paper on this
+
+### Learned in Translation: Contextualized Word Vectors
+
+**Authors:** Bryan McCann, James Bradbury, Caiming Xiong, Richard Socher
+
+**Abstract:** Computer vision has benefited from initializing multiple deep layers with weights pretrained on large supervised training sets like ImageNet. Natural language processing (NLP) typically sees initialization of only the lowest layer of deep models with pretrained word vectors. In this paper, we use a deep LSTM encoder from an attentional sequence-to-sequence model trained for machine translation (MT) to contextualize word vectors. We show that adding these context vectors (CoVe) improves performance over using only unsupervised word and character vectors on a wide variety of common NLP tasks: sentiment analysis (SST, IMDb), question classification (TREC), entailment (SNLI), and question answering (SQuAD). For fine-grained sentiment analysis and entailment, CoVe improves performance of our baseline models to the state of the art.
+
+**URL:** https://arxiv.org/abs/1708.00107
+
+**Notes:** another brilliant idea: just use context vec from biLSTM added to original word emb and everything becomes better!
 
