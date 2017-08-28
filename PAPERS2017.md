@@ -217,6 +217,7 @@ Table of Contents
       * [Twin Networks: Using the Future as a Regularizer](#twin-networks-using-the-future-as-a-regularizer)
       * [A Neural Network Approach for Mixing Language Models](#a-neural-network-approach-for-mixing-language-models)
       * [Learned in Translation: Contextualized Word Vectors](#learned-in-translation-contextualized-word-vectors)
+      * [Natural Language Processing with Small Feed\-Forward Networks](#natural-language-processing-with-small-feed-forward-networks)
 
 Articles
 ========
@@ -2287,4 +2288,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.00107
 
 **Notes:** another brilliant idea: just use context vec from biLSTM added to original word emb and everything becomes better!
+
+### Natural Language Processing with Small Feed-Forward Networks
+
+**Authors:** Jan A. Botha, Emily Pitler, Ji Ma, Anton Bakalov, Alex Salcianu, David Weiss, Ryan McDonald, Slav Petrov
+
+**Abstract:** We show that small and shallow feed-forward neural networks can achieve near state-of-the-art results on a range of unstructured and structured language processing tasks while being considerably cheaper in memory and computational requirements than deep recurrent models. Motivated by resource-constrained environments like mobile phones, we showcase simple techniques for obtaining such small neural network models, and investigate different tradeoffs when deciding how to allocate a small memory budget.
+
+**URL:** https://arxiv.org/abs/1708.00214
+
+**Notes:** small footprint NNs from Google showing near SotA on NLP tasks
 
