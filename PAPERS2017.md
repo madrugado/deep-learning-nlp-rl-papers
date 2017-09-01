@@ -218,6 +218,7 @@ Table of Contents
       * [A Neural Network Approach for Mixing Language Models](#a-neural-network-approach-for-mixing-language-models)
       * [Learned in Translation: Contextualized Word Vectors](#learned-in-translation-contextualized-word-vectors)
       * [Natural Language Processing with Small Feed\-Forward Networks](#natural-language-processing-with-small-feed-forward-networks)
+      * [$k$\-Nearest Neighbor Augmented Neural Networks for Text Classification](#k-nearest-neighbor-augmented-neural-networks-for-text-classification)
 
 Articles
 ========
@@ -2298,4 +2299,14 @@ Articles
 **URL:** https://arxiv.org/abs/1708.00214
 
 **Notes:** small footprint NNs from Google showing near SotA on NLP tasks
+
+### $k$-Nearest Neighbor Augmented Neural Networks for Text Classification
+
+**Authors:** Zhiguo Wang, Wael Hamza, Linfeng Song
+
+**Abstract:** In recent years, many deep-learning based models are proposed for text classification. This kind of models well fits the training set from the statistical point of view. However, it lacks the capacity of utilizing instance-level information from individual instances in the training set. In this work, we propose to enhance neural network models by allowing them to leverage information from $k$-nearest neighbor (kNN) of the input text. Our model employs a neural network that encodes texts into text embeddings. Moreover, we also utilize $k$-nearest neighbor of the input text as an external memory, and utilize it to capture instance-level information from the training set. The final prediction is made based on features from both the neural network encoder and the kNN memory. Experimental results on several standard benchmark datasets show that our model outperforms the baseline model on all the datasets, and it even beats a very deep neural network model (with 29 layers) in several datasets. Our model also shows superior performance when training instances are scarce, and when the training set is severely unbalanced. Our model also leverages techniques such as semi-supervised training and transfer learning quite well.
+
+**URL:** https://arxiv.org/abs/1708.07863
+
+**Notes:** IBM's paper on text classification, they use kNN as external memory for additional attentive embedding of input
 
