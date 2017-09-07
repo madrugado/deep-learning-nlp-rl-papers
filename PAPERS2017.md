@@ -207,6 +207,7 @@ Table of Contents
       * [Variance Regularizing Adversarial Learning](#variance-regularizing-adversarial-learning)
       * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
       * [Effective Inference for Generative Neural Parsing](#effective-inference-for-generative-neural-parsing)
+      * [Adversarial Examples for Evaluating Reading Comprehension Systems](#adversarial-examples-for-evaluating-reading-comprehension-systems)
     * [2017\-08](#2017-08)
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
@@ -2198,6 +2199,16 @@ Articles
 **URL:** https://arxiv.org/abs/1707.08976
 
 **Notes:** effective pruning and fast-track for some branches gives SotA result in parsing
+
+### Adversarial Examples for Evaluating Reading Comprehension Systems
+
+**Authors:** Robin Jia, Percy Liang
+
+**Abstract:** Standard accuracy metrics indicate that reading comprehension systems are making rapid progress, but the extent to which these systems truly understand language remains unclear. To reward systems with real language understanding abilities, we propose an adversarial evaluation scheme for the Stanford Question Answering Dataset (SQuAD). Our method tests whether systems can answer questions about paragraphs that contain adversarially inserted sentences, which are automatically generated to distract computer systems without changing the correct answer or misleading humans. In this adversarial setting, the accuracy of sixteen published models drops from an average of $75\%$ F1 score to $36\%$; when the adversary is allowed to add ungrammatical sequences of words, average accuracy on four models decreases further to $7\%$. We hope our insights will motivate the development of new models that understand language more precisely.
+
+**URL:** https://arxiv.org/abs/1707.07328
+
+**Notes:** simple adversarial techniques are enough to fool the reading comprehension; handy for augmentation also
 
 ## 2017-08
 ### Referenceless Quality Estimation for Natural Language Generation
