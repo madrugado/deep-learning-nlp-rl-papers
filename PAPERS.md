@@ -7,6 +7,8 @@ Table of Contents
       * [Simple Statistical Gradient\-Following for Connectionist Reinforcement Learning](#simple-statistical-gradient-following-for-connectionist-reinforcement-learning)
     * [2009](#2009)
       * [A Scalable Hierarchical Distributed Language Model](#a-scalable-hierarchical-distributed-language-model)
+    * [2011](#2011)
+      * [On optimization methods for deep learning](#on-optimization-methods-for-deep-learning)
     * [2012](#2012)
       * [A Fast and Simple Algorithm for Training Neural Probabilistic Language Models](#a-fast-and-simple-algorithm-for-training-neural-probabilistic-language-models)
     * [2013](#2013)
@@ -300,6 +302,17 @@ Articles
 **URL:** http://papers.nips.cc/paper/3583-a-scalable-hierarchical-distributed-language-model.pdf
 
 **Notes:** one of the first tries to optimize softmax, they build a tree for vocab with EM algorithm
+
+## 2011
+### On optimization methods for deep learning
+
+**Authors:** Quoc V. Le, Jiquan Ngiam, Adam Coates, Abhik Lahiri, Bobby Prochnow, Andrew Y. Ng
+
+**Abstract:** The predominant methodology in training deep learning advocates the use of stochastic gradient descent methods (SGDs). Despite its ease of implementation, SGDs are difficult to tune and parallelize. These problems make it challenging to develop, debug and scale up deep learning algorithms with SGDs. In this paper, we show that more sophisticated off-the-shelf optimization methods such as Limited memory BFGS (L-BFGS) and Conjugate gradient (CG) with line search can significantly simplify and speed up the process of pretraining deep algorithms. In our experiments, the difference between LBFGS/CG and SGDs are more pronounced if we consider algorithmic extensions (e.g., sparsity regularization) and hardware extensions (e.g., GPUs or computer clusters). Our experiments with distributed optimization support the use of L-BFGS with locally connected networks and convolutional neural networks. Using L-BFGS, our convolutional network model achieves 0.69% on the standard MNIST dataset. This is a state-of-theart result on MNIST among algorithms that do not use distortions or pretraining.
+
+**URL:** https://cs.stanford.edu/~acoates/papers/LeNgiCoaLahProNg11.pdf
+
+**Notes:** old paper from Quoc Le & Andrew Ng on usage of conjugate grad & L-BFGS; they do give faster convergence
 
 ## 2012
 ### A Fast and Simple Algorithm for Training Neural Probabilistic Language Models
