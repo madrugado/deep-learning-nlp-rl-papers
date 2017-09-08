@@ -220,6 +220,8 @@ Table of Contents
       * [Learned in Translation: Contextualized Word Vectors](#learned-in-translation-contextualized-word-vectors)
       * [Natural Language Processing with Small Feed\-Forward Networks](#natural-language-processing-with-small-feed-forward-networks)
       * [$k$\-Nearest Neighbor Augmented Neural Networks for Text Classification](#k-nearest-neighbor-augmented-neural-networks-for-text-classification)
+    * [2017\-09](#2017-09)
+      * [A Deep Reinforcement Learning Chatbot](#a-deep-reinforcement-learning-chatbot)
 
 Articles
 ========
@@ -2320,4 +2322,15 @@ Articles
 **URL:** https://arxiv.org/abs/1708.07863
 
 **Notes:** IBM's paper on text classification, they use kNN as external memory for additional attentive embedding of input
+
+## 2017-09
+### A Deep Reinforcement Learning Chatbot
+
+**Authors:** Iulian V. Serban, Chinnadhurai Sankar, Mathieu Germain, Saizheng Zhang, Zhouhan Lin, Sandeep Subramanian, Taesup Kim, Michael Pieper, Sarath Chandar, Nan Rosemary Ke, Sai Mudumba, Alexandre de Brebisson, Jose M. R. Sotelo, Dendi Suhubdy, Vincent Michalski, Alexandre Nguyen, Joelle Pineau, Yoshua Bengio
+
+**Abstract:** We present MILABOT: a deep reinforcement learning chatbot developed by the Montreal Institute for Learning Algorithms (MILA) for the Amazon Alexa Prize competition. MILABOT is capable of conversing with humans on popular small talk topics through both speech and text. The system consists of an ensemble of natural language generation and retrieval models, including template-based models, bag-of-words models, sequence-to-sequence neural network and latent variable neural network models. By applying reinforcement learning to crowdsourced data and real-world user interactions, the system has been trained to select an appropriate response from the models in its ensemble. The system has been evaluated through A/B testing with real-world users, where it performed significantly better than competing systems. Due to its machine learning architecture, the system is likely to improve with additional data.
+
+**URL:** https://arxiv.org/abs/1709.02349
+
+**Notes:** architecture of Alexa Prize UMontreal bot, interesting part is parametrization for q-learning for choice of base bot
 
