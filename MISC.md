@@ -10,6 +10,7 @@ Table of Contents
       * [In\-Datacenter Performance Analysis of a Tensor Processing Unit​](#in-datacenter-performance-analysis-of-a-tensor-processing-unit)
       * [TensorFlow: Large\-Scale Machine Learning on Heterogeneous Distributed Systems](#tensorflow-large-scale-machine-learning-on-heterogeneous-distributed-systems)
       * [DyNet: The Dynamic Neural Network Toolkit](#dynet-the-dynamic-neural-network-toolkit)
+      * [AllenNLP: A Deep Semantic Natural Language Processing Platform](#allennlp-a-deep-semantic-natural-language-processing-platform)
     * [Reports/Surveys](#reportssurveys)
       * [Best Practices for Applying Deep Learning to Novel Applications](#best-practices-for-applying-deep-learning-to-novel-applications)
       * [Automatic Keyword Extraction for Text Summarization: A Survey](#automatic-keyword-extraction-for-text-summarization-a-survey)
@@ -77,6 +78,16 @@ Miscellaneous
 **URL:** https://arxiv.org/abs/1701.03980
 
 **Notes:** The paper has remarkable list of authors - DeepMind, Google, IBM Watson, CMU, AI2 & MSR... New DNN framework.
+
+### AllenNLP: A Deep Semantic Natural Language Processing Platform
+
+**Authors:** Matt Gardner, Joel Grus, Mark Neumann, Oyvind Tafjord, Pradeep Dasigi, Nelson Liu, Matthew Peters, Michael Schmitz, Luke Zettlemoyer
+
+**Abstract:** This paper describes AllenNLP, a platform for research on deep learning methods in natural language understanding. AllenNLP is designed to support researchers who want to build novel language understanding models quickly and easily. It is built on top of PyTorch, allowing for dynamic computation graphs, and provides (1) a flexible data API that handles intelligent batching and padding, (2) highlevel abstractions for common operations in working with text, and (3) a modular and extensible experiment framework that makes doing good science easy. It also includes reference implementations of high quality approaches for both core semantic problems (e.g. semantic role labeling (Palmer et al., 2005)) and language understanding applications (e.g. machine comprehension (Rajpurkar et al., 2016)). AllenNLP is an ongoing open-source effort maintained by engineers and researchers at the Allen Institute for Artificial Intelligence.
+
+**URL:** http://allennlp.org/papers/AllenNLP_white_paper.pdf
+
+**Notes:** white paper for freshly presented AllenNLP - DL platform for NLP tasks; made on PyTorch
 
 ## Reports/Surveys
 ### Best Practices for Applying Deep Learning to Novel Applications
