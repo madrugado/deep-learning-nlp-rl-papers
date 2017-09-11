@@ -222,6 +222,7 @@ Table of Contents
       * [$k$\-Nearest Neighbor Augmented Neural Networks for Text Classification](#k-nearest-neighbor-augmented-neural-networks-for-text-classification)
     * [2017\-09](#2017-09)
       * [A Deep Reinforcement Learning Chatbot](#a-deep-reinforcement-learning-chatbot)
+      * [Training RNNs as Fast as CNNs](#training-rnns-as-fast-as-cnns)
 
 Articles
 ========
@@ -2333,4 +2334,14 @@ Articles
 **URL:** https://arxiv.org/abs/1709.02349
 
 **Notes:** architecture of Alexa Prize UMontreal bot, interesting part is parametrization for q-learning for choice of base bot
+
+### Training RNNs as Fast as CNNs
+
+**Authors:** Tao Lei, Yu Zhang
+
+**Abstract:** Recurrent neural networks scale poorly due to the intrinsic difficulty in parallelizing their state computations. For instance, the forward pass computation of $h_t$ is blocked until the entire computation of $h_{t-1}$ finishes, which is a major bottleneck for parallel computing. In this work, we propose an alternative RNN implementation by deliberately simplifying the state computation and exposing more parallelism. The proposed recurrent unit operates as fast as a convolutional layer and 5-10x faster than cuDNN-optimized LSTM. We demonstrate the unit's effectiveness across a wide range of applications including classification, question answering, language modeling, translation and speech recognition. We open source our implementation in PyTorch and CNTK.
+
+**URL:** https://arxiv.org/abs/1709.02755
+
+**Notes:** new RNN type with dropped hidden-to-hidden dependency shows SotA on clf, ASR, and on par with CNN on comp speed
 
