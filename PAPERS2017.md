@@ -165,6 +165,7 @@ Table of Contents
       * [Adversarial Neural Machine Translation](#adversarial-neural-machine-translation)
       * [Deep Text Classification Can be Fooled](#deep-text-classification-can-be-fooled)
       * [Reading Wikipedia to Answer Open\-Domain Questions](#reading-wikipedia-to-answer-open-domain-questions)
+      * [Mapping Instructions and Visual Observations to Actions with  Reinforcement Learning](#mapping-instructions-and-visual-observations-to-actions-with--reinforcement-learning)
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
@@ -1809,6 +1810,16 @@ Articles
 **URL:** https://arxiv.org/abs/1704.00051
 
 **Notes:** DrQA paper, improving AI2 approach: wiki-search + RNN reader, with code! https://github.com/facebookresearch/DrQA
+
+### Mapping Instructions and Visual Observations to Actions with  Reinforcement Learning
+
+**Authors:** Dipendra Misra, John Langford, Yoav Artzi
+
+**Abstract:** We propose to directly map raw visual observations and text input to actions for instruction execution. While existing approaches assume access to structured environment representations or use a pipeline of separately trained models, we learn a single model to jointly reason about linguistic and visual input. We use reinforcement learning in a contextual bandit setting to train a neural network agent. To guide the agent's exploration, we use reward shaping with different forms of supervision. Our approach does not require intermediate representations, planning procedures, or training different models. We evaluate in a simulated environment, and show significant improvements over supervised learning and common reinforcement learning variants.
+
+**URL:** https://arxiv.org/abs/1704.08795
+
+**Notes:** nice work on multi-modal reasoning: CNN for vision, LSTM for text, RL for overall task
 
 ## 2017-05
 ### Machine Comprehension by Text-to-Text Neural Question Generation
