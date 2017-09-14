@@ -26,6 +26,7 @@ Table of Contents
       * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
       * [Network Representation Learning with Rich Text Information](#network-representation-learning-with-rich-text-information)
       * [Language Understanding for Text\-based Games Using Deep Reinforcement  Learning](#language-understanding-for-text-based-games-using-deep-reinforcement--learning)
+      * [Neural Machine Translation of Rare Words with Subword Units](#neural-machine-translation-of-rare-words-with-subword-units)
     * [2016\-01](#2016-01)
       * [Incorporating Structural Alignment Biases into an Attentional Neural Translation Model](#incorporating-structural-alignment-biases-into-an-attentional-neural-translation-model)
     * [2016\-02](#2016-02)
@@ -448,6 +449,16 @@ Articles
 **URL:** https://arxiv.org/abs/1506.08941
 
 **Notes:** text quest RL-solving (LSTM-DQN they call it) with code for generation environment
+
+### Neural Machine Translation of Rare Words with Subword Units
+
+**Authors:** Rico Sennrich, Barry Haddow, Alexandra Birch
+
+**Abstract:** Neural machine translation (NMT) models typically operate with a fixed vocabulary, but translation is an open-vocabulary problem. Previous work addresses the translation of out-of-vocabulary words by backing off to a dictionary. In this paper, we introduce a simpler and more effective approach, making the NMT model capable of open-vocabulary translation by encoding rare and unknown words as sequences of subword units. This is based on the intuition that various word classes are translatable via smaller units than words, for instance names (via character copying or transliteration), compounds (via compositional translation), and cognates and loanwords (via phonological and morphological transformations). We discuss the suitability of different word segmentation techniques, including simple character n-gram models and a segmentation based on the byte pair encoding compression algorithm, and empirically show that subword models improve over a back-off dictionary baseline for the WMT 15 translation tasks English-German and English-Russian by 1.1 and 1.3 BLEU, respectively.
+
+**URL:** https://arxiv.org/abs/1508.07909
+
+**Notes:** BPE for machine translation was proposed here, now it is widely used outside NMT also
 
 ## 2016-01
 ### Incorporating Structural Alignment Biases into an Attentional Neural Translation Model
