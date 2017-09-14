@@ -25,6 +25,7 @@ Table of Contents
       * [Adversarial Autoencoders](#adversarial-autoencoders)
       * [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](#a-theoretically-grounded-application-of-dropout-in-recurrent-neural-networks)
       * [Network Representation Learning with Rich Text Information](#network-representation-learning-with-rich-text-information)
+      * [Language Understanding for Text\-based Games Using Deep Reinforcement  Learning](#language-understanding-for-text-based-games-using-deep-reinforcement--learning)
     * [2016\-01](#2016-01)
       * [Incorporating Structural Alignment Biases into an Attentional Neural Translation Model](#incorporating-structural-alignment-biases-into-an-attentional-neural-translation-model)
     * [2016\-02](#2016-02)
@@ -437,6 +438,16 @@ Articles
 **URL:** https://www.ijcai.org/Proceedings/15/Papers/299.pdf
 
 **Notes:** DeepWalk (SkipGram on random walk sequences over a graph) with text features
+
+### Language Understanding for Text-based Games Using Deep Reinforcement  Learning
+
+**Authors:** Karthik Narasimhan, Tejas Kulkarni, Regina Barzilay
+
+**Abstract:** In this paper, we consider the task of learning control policies for text-based games. In these games, all interactions in the virtual world are through text and the underlying state is not observed. The resulting language barrier makes such environments challenging for automatic game players. We employ a deep reinforcement learning framework to jointly learn state representations and action policies using game rewards as feedback. This framework enables us to map text descriptions into vector representations that capture the semantics of the game states. We evaluate our approach on two game worlds, comparing against baselines using bag-of-words and bag-of-bigrams for state representations. Our algorithm outperforms the baselines on both worlds demonstrating the importance of learning expressive representations.
+
+**URL:** https://arxiv.org/abs/1506.08941
+
+**Notes:** text quest RL-solving (LSTM-DQN they call it) with code for generation environment
 
 ## 2016-01
 ### Incorporating Structural Alignment Biases into an Attentional Neural Translation Model
