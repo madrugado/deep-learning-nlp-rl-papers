@@ -224,6 +224,7 @@ Table of Contents
     * [2017\-09](#2017-09)
       * [A Deep Reinforcement Learning Chatbot](#a-deep-reinforcement-learning-chatbot)
       * [Training RNNs as Fast as CNNs](#training-rnns-as-fast-as-cnns)
+      * [StarSpace: Embed All The Things\!](#starspace-embed-all-the-things)
 
 Articles
 ========
@@ -2355,4 +2356,14 @@ Articles
 **URL:** https://arxiv.org/abs/1709.02755
 
 **Notes:** new RNN type with dropped hidden-to-hidden dependency shows SotA on clf, ASR, and on par with CNN on comp speed
+
+### StarSpace: Embed All The Things!
+
+**Authors:** Ledell Wu, Adam Fisch, Sumit Chopra, Keith Adams, Antoine Bordes, Jason Weston
+
+**Abstract:** We present StarSpace, a general-purpose neural embedding model that can solve a wide variety of problems: labeling tasks such as text classification, ranking tasks such as information retrieval/web search, collaborative filtering-based or content-based recommendation, embedding of multi-relational graphs, and learning word, sentence or document level embeddings. In each case the model works by embedding those entities comprised of discrete features and comparing them against each other -- learning similarities dependent on the task. Empirical results on a number of tasks show that StarSpace is highly competitive with existing methods, whilst also being generally applicable to new cases where those methods are not.
+
+**URL:** https://arxiv.org/abs/1709.03856
+
+**Notes:** One Embedding to Rule Them All! just triple loss for all different tasks and new opensource framework from FAIR
 
