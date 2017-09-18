@@ -166,6 +166,7 @@ Table of Contents
       * [Deep Text Classification Can be Fooled](#deep-text-classification-can-be-fooled)
       * [Reading Wikipedia to Answer Open\-Domain Questions](#reading-wikipedia-to-answer-open-domain-questions)
       * [Mapping Instructions and Visual Observations to Actions with  Reinforcement Learning](#mapping-instructions-and-visual-observations-to-actions-with--reinforcement-learning)
+      * [Composite Task\-Completion Dialogue Policy Learning via Hierarchical Deep  Reinforcement Learning](#composite-task-completion-dialogue-policy-learning-via-hierarchical-deep--reinforcement-learning)
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
@@ -1821,6 +1822,16 @@ Articles
 **URL:** https://arxiv.org/abs/1704.08795
 
 **Notes:** nice work on multi-modal reasoning: CNN for vision, LSTM for text, RL for overall task
+
+### Composite Task-Completion Dialogue Policy Learning via Hierarchical Deep  Reinforcement Learning
+
+**Authors:** Baolin Peng, Xiujun Li, Lihong Li, Jianfeng Gao, Asli Celikyilmaz, Sungjin Lee, Kam-Fai Wong
+
+**Abstract:** Building a dialogue agent to fulfill complex tasks, such as travel planning, is challenging because the agent has to learn to collectively complete multiple subtasks. For example, the agent needs to reserve a hotel and book a flight so that there leaves enough time for commute between arrival and hotel check-in. This paper addresses this challenge by formulating the task in the mathematical framework of options over Markov Decision Processes (MDPs), and proposing a hierarchical deep reinforcement learning approach to learning a dialogue manager that operates at different temporal scales. The dialogue manager consists of: (1) a top-level dialogue policy that selects among subtasks or options, (2) a low-level dialogue policy that selects primitive actions to complete the subtask given by the top-level policy, and (3) a global state tracker that helps ensure all cross-subtask constraints be satisfied. Experiments on a travel planning task with simulated and real users show that our approach leads to significant improvements over three baselines, two based on handcrafted rules and the other based on flat deep reinforcement learning.
+
+**URL:** https://arxiv.org/abs/1704.03084
+
+**Notes:** formalization of multi-goal dialog systems as hierarchical RL-task; have some results, not very convincing though
 
 ## 2017-05
 ### Machine Comprehension by Text-to-Text Neural Question Generation
