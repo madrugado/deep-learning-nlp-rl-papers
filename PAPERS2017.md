@@ -210,6 +210,7 @@ Table of Contents
       * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
       * [Effective Inference for Generative Neural Parsing](#effective-inference-for-generative-neural-parsing)
       * [Adversarial Examples for Evaluating Reading Comprehension Systems](#adversarial-examples-for-evaluating-reading-comprehension-systems)
+      * [Unsupervised, Knowledge\-Free, and Interpretable Word Sense  Disambiguation](#unsupervised-knowledge-free-and-interpretable-word-sense--disambiguation)
     * [2017\-08](#2017-08)
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
@@ -2235,6 +2236,16 @@ Articles
 **URL:** https://arxiv.org/abs/1707.07328
 
 **Notes:** simple adversarial techniques are enough to fool the reading comprehension; handy for augmentation also
+
+### Unsupervised, Knowledge-Free, and Interpretable Word Sense  Disambiguation
+
+**Authors:** Alexander Panchenko, Fide Marten, Eugen Ruppert, Stefano Faralli, Dmitry Ustalov, Simone Paolo Ponzetto, Chris Biemann
+
+**Abstract:** Interpretability of a predictive model is a powerful feature that gains the trust of users in the correctness of the predictions. In word sense disambiguation (WSD), knowledge-based systems tend to be much more interpretable than knowledge-free counterparts as they rely on the wealth of manually-encoded elements representing word senses, such as hypernyms, usage examples, and images. We present a WSD system that bridges the gap between these two so far disconnected groups of methods. Namely, our system, providing access to several state-of-the-art WSD models, aims to be interpretable as a knowledge-based system while it remains completely unsupervised and knowledge-free. The presented tool features a Web interface for all-word disambiguation of texts that makes the sense predictions human readable by providing interpretable word sense inventories, sense representations, and disambiguation results. We provide a public API, enabling seamless integration.
+
+**URL:** https://arxiv.org/abs/1707.06878
+
+**Notes:** open source system for word disambiguation based on large cropora processing (hey Dima!)
 
 ## 2017-08
 ### Referenceless Quality Estimation for Natural Language Generation
