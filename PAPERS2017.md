@@ -210,7 +210,7 @@ Table of Contents
       * [Be Careful What You Backpropagate: A Case For Linear Output Activations &amp; Gradient Boosting](#be-careful-what-you-backpropagate-a-case-for-linear-output-activations--gradient-boosting)
       * [Effective Inference for Generative Neural Parsing](#effective-inference-for-generative-neural-parsing)
       * [Adversarial Examples for Evaluating Reading Comprehension Systems](#adversarial-examples-for-evaluating-reading-comprehension-systems)
-      * [Unsupervised, Knowledge\-Free, and Interpretable Word Sense  Disambiguation](#unsupervised-knowledge-free-and-interpretable-word-sense--disambiguation)
+      * [Unsupervised, Knowledge\-Free, and Interpretable Word Sense Disambiguation](#unsupervised-knowledge-free-and-interpretable-word-sense-disambiguation)
     * [2017\-08](#2017-08)
       * [Referenceless Quality Estimation for Natural Language Generation](#referenceless-quality-estimation-for-natural-language-generation)
       * [Toward Controlled Generation of Text](#toward-controlled-generation-of-text)
@@ -227,6 +227,7 @@ Table of Contents
       * [A Deep Reinforcement Learning Chatbot](#a-deep-reinforcement-learning-chatbot)
       * [Training RNNs as Fast as CNNs](#training-rnns-as-fast-as-cnns)
       * [StarSpace: Embed All The Things\!](#starspace-embed-all-the-things)
+      * [Iterative Policy Learning in End\-to\-End Trainable Task\-Oriented Neural  Dialog Models](#iterative-policy-learning-in-end-to-end-trainable-task-oriented-neural--dialog-models)
 
 Articles
 ========
@@ -2237,7 +2238,7 @@ Articles
 
 **Notes:** simple adversarial techniques are enough to fool the reading comprehension; handy for augmentation also
 
-### Unsupervised, Knowledge-Free, and Interpretable Word Sense  Disambiguation
+### Unsupervised, Knowledge-Free, and Interpretable Word Sense Disambiguation
 
 **Authors:** Alexander Panchenko, Fide Marten, Eugen Ruppert, Stefano Faralli, Dmitry Ustalov, Simone Paolo Ponzetto, Chris Biemann
 
@@ -2388,4 +2389,14 @@ Articles
 **URL:** https://arxiv.org/abs/1709.03856
 
 **Notes:** One Embedding to Rule Them All! just triple loss for all different tasks and new opensource framework from FAIR
+
+### Iterative Policy Learning in End-to-End Trainable Task-Oriented Neural  Dialog Models
+
+**Authors:** Bing Liu, Ian Lane
+
+**Abstract:** In this paper, we present a deep reinforcement learning (RL) framework for iterative dialog policy optimization in end-to-end task-oriented dialog systems. Popular approaches in learning dialog policy with RL include letting a dialog agent to learn against a user simulator. Building a reliable user simulator, however, is not trivial, often as difficult as building a good dialog agent. We address this challenge by jointly optimizing the dialog agent and the user simulator with deep RL by simulating dialogs between the two agents. We first bootstrap a basic dialog agent and a basic user simulator by learning directly from dialog corpora with supervised training. We then improve them further by letting the two agents to conduct task-oriented dialogs and iteratively optimizing their policies with deep RL. Both the dialog agent and the user simulator are designed with neural network models that can be trained end-to-end. Our experiment results show that the proposed method leads to promising improvements on task success rate and total task reward comparing to supervised training and single-agent RL training baseline models.
+
+**URL:** https://arxiv.org/abs/1709.06136
+
+**Notes:** end-to-end learning for user simulator & dialog system at once; some results on DSTC2
 

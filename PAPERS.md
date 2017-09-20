@@ -2649,7 +2649,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1612.03969
 
-**Notes:** EntNet - развитие идеи Memory Networks
+**Notes:** EntNet - next step of Memory Networks architecture
 
 ### Online Sequence-to-Sequence Reinforcement Learning for Open-Domain Conversational Agents
 
