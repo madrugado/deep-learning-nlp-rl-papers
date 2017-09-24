@@ -228,6 +228,7 @@ Table of Contents
       * [Training RNNs as Fast as CNNs](#training-rnns-as-fast-as-cnns)
       * [StarSpace: Embed All The Things\!](#starspace-embed-all-the-things)
       * [Iterative Policy Learning in End\-to\-End Trainable Task\-Oriented Neural  Dialog Models](#iterative-policy-learning-in-end-to-end-trainable-task-oriented-neural--dialog-models)
+      * [Seq2SQL: Generating Structured Queries from Natural Language using  Reinforcement Learning](#seq2sql-generating-structured-queries-from-natural-language-using--reinforcement-learning)
 
 Articles
 ========
@@ -2399,4 +2400,14 @@ Articles
 **URL:** https://arxiv.org/abs/1709.06136
 
 **Notes:** end-to-end learning for user simulator & dialog system at once; some results on DSTC2
+
+### Seq2SQL: Generating Structured Queries from Natural Language using  Reinforcement Learning
+
+**Authors:** Victor Zhong, Caiming Xiong, Richard Socher
+
+**Abstract:** A significant amount of the world's knowledge is stored in relational databases. However, the ability for users to retrieve facts from a database is limited due to a lack of understanding of query languages such as SQL. We propose Seq2SQL, a deep neural network for translating natural language questions to corresponding SQL queries. Our model leverages the structure of SQL queries to significantly reduce the output space of generated queries. Moreover, we use rewards from in-the-loop query execution over the database to learn a policy to generate unordered parts of the query, which we show are less suitable for optimization via cross entropy loss. In addition, we will publish WikiSQL, a dataset of 87726 hand-annotated examples of questions and SQL queries distributed across 26375 tables from Wikipedia. This dataset is required to train our model and is an order of magnitude larger than comparable datasets. By applying policy-based reinforcement learning with a query execution environment to WikiSQL, our model Seq2SQL outperforms attentional sequence to sequence models, improving execution accuracy from 35.9% to 60.3% and logical form accuracy from 23.4% to 49.2%.
+
+**URL:** https://arxiv.org/abs/1709.00103
+
+**Notes:** generating SQL from natural language question (with RL for choosing operations) from Richard Socher
 
