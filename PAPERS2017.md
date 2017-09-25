@@ -229,6 +229,7 @@ Table of Contents
       * [StarSpace: Embed All The Things\!](#starspace-embed-all-the-things)
       * [Iterative Policy Learning in End\-to\-End Trainable Task\-Oriented Neural  Dialog Models](#iterative-policy-learning-in-end-to-end-trainable-task-oriented-neural--dialog-models)
       * [Seq2SQL: Generating Structured Queries from Natural Language using  Reinforcement Learning](#seq2sql-generating-structured-queries-from-natural-language-using--reinforcement-learning)
+      * [Attention\-based Mixture Density Recurrent Networks for History\-based  Recommendation](#attention-based-mixture-density-recurrent-networks-for-history-based--recommendation)
 
 Articles
 ========
@@ -2410,4 +2411,14 @@ Articles
 **URL:** https://arxiv.org/abs/1709.00103
 
 **Notes:** generating SQL from natural language question (with RL for choosing operations) from Richard Socher
+
+### Attention-based Mixture Density Recurrent Networks for History-based  Recommendation
+
+**Authors:** Tian Wang, Kyunghyun Cho
+
+**Abstract:** The goal of personalized history-based recommendation is to automatically output a distribution over all the items given a sequence of previous purchases of a user. In this work, we present a novel approach that uses a recurrent network for summarizing the history of purchases, continuous vectors representing items for scalability, and a novel attention-based recurrent mixture density network, which outputs each component in a mixture sequentially, for modelling a multi-modal conditional distribution. We evaluate the proposed approach on two publicly available datasets, MovieLens-20M and RecSys15. The experiments show that the proposed approach, which explicitly models the multi-modal nature of the predictive distribution, is able to improve the performance over various baselines in terms of precision, recall and nDCG.
+
+**URL:** https://arxiv.org/abs/1709.07545
+
+**Notes:** RecSys based on word2vec idea - items as tokens, also with fancy probability distribution prediction
 
