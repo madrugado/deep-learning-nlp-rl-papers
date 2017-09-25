@@ -223,6 +223,7 @@ Table of Contents
       * [Learned in Translation: Contextualized Word Vectors](#learned-in-translation-contextualized-word-vectors)
       * [Natural Language Processing with Small Feed\-Forward Networks](#natural-language-processing-with-small-feed-forward-networks)
       * [$k$\-Nearest Neighbor Augmented Neural Networks for Text Classification](#k-nearest-neighbor-augmented-neural-networks-for-text-classification)
+      * [A Continuous Relaxation of Beam Search for End\-to\-end Training of Neural  Sequence Models](#a-continuous-relaxation-of-beam-search-for-end-to-end-training-of-neural--sequence-models)
     * [2017\-09](#2017-09)
       * [A Deep Reinforcement Learning Chatbot](#a-deep-reinforcement-learning-chatbot)
       * [Training RNNs as Fast as CNNs](#training-rnns-as-fast-as-cnns)
@@ -2360,6 +2361,16 @@ Articles
 **URL:** https://arxiv.org/abs/1708.07863
 
 **Notes:** IBM's paper on text classification, they use kNN as external memory for additional attentive embedding of input
+
+### A Continuous Relaxation of Beam Search for End-to-end Training of Neural  Sequence Models
+
+**Authors:** Kartik Goyal, Graham Neubig, Chris Dyer, Taylor Berg-Kirkpatrick
+
+**Abstract:** Beam search is a desirable choice of test-time decoding algorithm for neural sequence models because it potentially avoids search errors made by simpler greedy methods. However, typical cross entropy training procedures for these models do not directly consider the behaviour of the final decoding method. As a result, for cross-entropy trained models, beam decoding can sometimes yield reduced test performance when compared with greedy decoding. In order to train models that can more effectively make use of beam search, we propose a new training procedure that focuses on the final loss metric (e.g. Hamming loss) evaluated on the output of beam search. While well-defined, this "direct loss" objective is itself discontinuous and thus difficult to optimize. Hence, in our approach, we form a sub-differentiable surrogate objective by introducing a novel continuous approximation of the beam search decoding procedure. In experiments, we show that optimizing this new training objective yields substantially better results on two sequence tasks (Named Entity Recognition and CCG Supertagging) when compared with both cross entropy trained greedy decoding and cross entropy trained beam decoding baselines.
+
+**URL:** https://arxiv.org/abs/1708.00111
+
+**Notes:** soft beamsearch is based on peaked-softmax (which is like k-maxpool)
 
 ## 2017-09
 ### A Deep Reinforcement Learning Chatbot
