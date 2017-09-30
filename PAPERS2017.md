@@ -167,6 +167,7 @@ Table of Contents
       * [Reading Wikipedia to Answer Open\-Domain Questions](#reading-wikipedia-to-answer-open-domain-questions)
       * [Mapping Instructions and Visual Observations to Actions with  Reinforcement Learning](#mapping-instructions-and-visual-observations-to-actions-with--reinforcement-learning)
       * [Composite Task\-Completion Dialogue Policy Learning via Hierarchical Deep  Reinforcement Learning](#composite-task-completion-dialogue-policy-learning-via-hierarchical-deep--reinforcement-learning)
+      * [The loss surface of deep and wide neural networks](#the-loss-surface-of-deep-and-wide-neural-networks)
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
@@ -228,9 +229,9 @@ Table of Contents
       * [A Deep Reinforcement Learning Chatbot](#a-deep-reinforcement-learning-chatbot)
       * [Training RNNs as Fast as CNNs](#training-rnns-as-fast-as-cnns)
       * [StarSpace: Embed All The Things\!](#starspace-embed-all-the-things)
-      * [Iterative Policy Learning in End\-to\-End Trainable Task\-Oriented Neural  Dialog Models](#iterative-policy-learning-in-end-to-end-trainable-task-oriented-neural--dialog-models)
+      * [Iterative Policy Learning in End\-to\-End Trainable Task\-Oriented Neural Dialog Models](#iterative-policy-learning-in-end-to-end-trainable-task-oriented-neural-dialog-models)
       * [Seq2SQL: Generating Structured Queries from Natural Language using  Reinforcement Learning](#seq2sql-generating-structured-queries-from-natural-language-using--reinforcement-learning)
-      * [Attention\-based Mixture Density Recurrent Networks for History\-based  Recommendation](#attention-based-mixture-density-recurrent-networks-for-history-based--recommendation)
+      * [Attention\-based Mixture Density Recurrent Networks for History\-based Recommendation](#attention-based-mixture-density-recurrent-networks-for-history-based-recommendation)
 
 Articles
 ========
@@ -654,7 +655,7 @@ Articles
 
 **URL:** https://arxiv.org/abs/1702.01517
 
-**Notes:** opinion recommendation - neмук seen such task before
+**Notes:** opinion recommendation - never seen such task before
 
 ### Search Intelligence: Deep Learning For Dominant Category Prediction
 
@@ -1838,6 +1839,16 @@ Articles
 
 **Notes:** formalization of multi-goal dialog systems as hierarchical RL-task; have some results, not very convincing though
 
+### The loss surface of deep and wide neural networks
+
+**Authors:** Quynh Nguyen, Matthias Hein
+
+**Abstract:** While the optimization problem behind deep neural networks is highly non-convex, it is frequently observed in practice that training deep networks seems possible without getting stuck in suboptimal points. It has been argued that this is the case as all local minima are close to being globally optimal. We show that this is (almost) true, in fact almost all local minima are globally optimal, for a fully connected network with squared loss and analytic activation function given that the number of hidden units of one layer of the network is larger than the number of training points and the network structure from this layer on is pyramidal.
+
+**URL:** https://arxiv.org/abs/1704.08045
+
+**Notes:** theoretical proof of reachability of global optima for certain FFN
+
 ## 2017-05
 ### Machine Comprehension by Text-to-Text Neural Question Generation
 
@@ -2403,7 +2414,7 @@ Articles
 
 **Notes:** One Embedding to Rule Them All! just triple loss for all different tasks and new opensource framework from FAIR
 
-### Iterative Policy Learning in End-to-End Trainable Task-Oriented Neural  Dialog Models
+### Iterative Policy Learning in End-to-End Trainable Task-Oriented Neural Dialog Models
 
 **Authors:** Bing Liu, Ian Lane
 
@@ -2423,7 +2434,7 @@ Articles
 
 **Notes:** generating SQL from natural language question (with RL for choosing operations) from Richard Socher
 
-### Attention-based Mixture Density Recurrent Networks for History-based  Recommendation
+### Attention-based Mixture Density Recurrent Networks for History-based Recommendation
 
 **Authors:** Tian Wang, Kyunghyun Cho
 
