@@ -232,6 +232,7 @@ Table of Contents
       * [Iterative Policy Learning in End\-to\-End Trainable Task\-Oriented Neural Dialog Models](#iterative-policy-learning-in-end-to-end-trainable-task-oriented-neural-dialog-models)
       * [Seq2SQL: Generating Structured Queries from Natural Language using  Reinforcement Learning](#seq2sql-generating-structured-queries-from-natural-language-using--reinforcement-learning)
       * [Attention\-based Mixture Density Recurrent Networks for History\-based Recommendation](#attention-based-mixture-density-recurrent-networks-for-history-based-recommendation)
+      * [Generating Sentences by Editing Prototypes](#generating-sentences-by-editing-prototypes)
 
 Articles
 ========
@@ -2443,4 +2444,14 @@ Articles
 **URL:** https://arxiv.org/abs/1709.07545
 
 **Notes:** RecSys based on word2vec idea - items as tokens, also with fancy probability distribution prediction
+
+### Generating Sentences by Editing Prototypes
+
+**Authors:** Kelvin Guu, Tatsunori B. Hashimoto, Yonatan Oren, Percy Liang
+
+**Abstract:** We propose a new generative model of sentences that first samples a prototype sentence from the training corpus and then edits it into a new sentence. Compared to traditional models that generate from scratch either left-to-right or by first sampling a latent sentence vector, our prototype-then-edit model improves perplexity on language modeling and generates higher quality outputs according to human evaluation. Furthermore, the model gives rise to a latent edit vector that captures interpretable semantics such as sentence similarity and sentence-level analogies.
+
+**URL:** https://arxiv.org/abs/1709.08878
+
+**Notes:** fresh paper on sentence rewrite from Stanford, ses2seq (w/ attn) with additional edit vector input
 
