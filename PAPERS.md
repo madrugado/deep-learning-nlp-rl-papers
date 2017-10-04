@@ -38,6 +38,7 @@ Table of Contents
       * [End\-to\-end Sequence Labeling via Bi\-directional LSTM\-CNNs\-CRF](#end-to-end-sequence-labeling-via-bi-directional-lstm-cnns-crf)
       * [How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](#how-not-to-evaluate-your-dialogue-system-an-empirical-study-of-unsupervised-evaluation-metrics-for-dialogue-response-generation)
       * [Incorporating Copying Mechanism in Sequence\-to\-Sequence Learning](#incorporating-copying-mechanism-in-sequence-to-sequence-learning)
+      * [Zero\-Shot Learning of Intent Embeddings for Expansion by Convolutional Deep Structured Semantic Models](#zero-shot-learning-of-intent-embeddings-for-expansion-by-convolutional-deep-structured-semantic-models)
     * [2016\-05](#2016-05)
       * [Learning End\-to\-End Goal\-Oriented Dialog](#learning-end-to-end-goal-oriented-dialog)
     * [2016\-06](#2016-06)
@@ -542,6 +543,16 @@ Articles
 **URL:** https://arxiv.org/abs/1603.06393
 
 **Notes:** first mention of copy from input for OOV word technique in seq2seq
+
+### Zero-Shot Learning of Intent Embeddings for Expansion by Convolutional Deep Structured Semantic Models
+
+**Authors:** Yun-Nung (Vivian) Chen, Dilek Hakkani-Tur, Xiaodong He
+
+**Abstract:** The recent surge of intelligent personal assistants motivates spoken language understanding of dialogue systems. However, the domain constraint along with the inflexible intent schema remains a big issue. This paper focuses on the task of intent expansion, which helps remove the domain limit and make an intent schema flexible. A con-volutional deep structured semantic model (CDSSM) is applied to jointly learn the representations for human intents and associated utterances. Then it can flexibly generate new intent embeddings without the need of training samples and model-retraining, which bridges the semantic relation between seen and unseen intents and further performs more robust results. Experiments show that CDSSM is capable of performing zero-shot learning effectively, e.g. generating embeddings of previously unseen intents, and therefore expand to new intents without retraining , and outperforms other semantic embeddings. The discussion and analysis of experiments provide a future direction for reducing human effort about annotating data and removing the domain constraint in spoken dialogue systems. Index Terms— zero-shot learning, spoken language understanding (SLU), spoken dialogue system (SDS), convolutional deep structured semantic model (CDSSM), embeddings, expansion.
+
+**URL:** https://www.researchgate.net/publication/292143255_Zero-Shot_Learning_of_Intent_Embeddings_for_Expansion_by_Convolutional_Deep_Structured_Semantic_Models
+
+**Notes:** conv DSSM with ability to generate embeddings for new intents in dialog
 
 ## 2016-05
 ### Learning End-to-End Goal-Oriented Dialog
