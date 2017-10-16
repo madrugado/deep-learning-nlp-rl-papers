@@ -168,6 +168,7 @@ Table of Contents
       * [Mapping Instructions and Visual Observations to Actions with  Reinforcement Learning](#mapping-instructions-and-visual-observations-to-actions-with--reinforcement-learning)
       * [Composite Task\-Completion Dialogue Policy Learning via Hierarchical Deep  Reinforcement Learning](#composite-task-completion-dialogue-policy-learning-via-hierarchical-deep--reinforcement-learning)
       * [The loss surface of deep and wide neural networks](#the-loss-surface-of-deep-and-wide-neural-networks)
+      * [Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge  Graph Embeddings](#learning-symmetric-collaborative-dialogue-agents-with-dynamic-knowledge--graph-embeddings)
     * [2017\-05](#2017-05)
       * [Machine Comprehension by Text\-to\-Text Neural Question Generation](#machine-comprehension-by-text-to-text-neural-question-generation)
       * [The power of deeper networks for expressing natural functions](#the-power-of-deeper-networks-for-expressing-natural-functions)
@@ -1852,6 +1853,16 @@ Articles
 
 **Notes:** theoretical proof of reachability of global optima for certain FFN
 
+### Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge  Graph Embeddings
+
+**Authors:** He He, Anusha Balakrishnan, Mihail Eric, Percy Liang
+
+**Abstract:** We study a symmetric collaborative dialogue setting in which two agents, each with private knowledge, must strategically communicate to achieve a common goal. The open-ended dialogue state in this setting poses new challenges for existing dialogue systems. We collected a dataset of 11K human-human dialogues, which exhibits interesting lexical, semantic, and strategic elements. To model both structured knowledge and unstructured language, we propose a neural model with dynamic knowledge graph embeddings that evolve as the dialogue progresses. Automatic and human evaluations show that our model is both more effective at achieving the goal and more human-like than baseline neural and rule-based models.
+
+**URL:** https://arxiv.org/abs/1704.07130
+
+**Notes:** collaborative conversational dataset on finding mutual friends; baseline solution on knowledge graph; all code in nb
+
 ## 2017-05
 ### Machine Comprehension by Text-to-Text Neural Question Generation
 
@@ -2466,5 +2477,5 @@ Articles
 
 **URL:** https://arxiv.org/abs/1710.04087
 
-**Notes:** npaper on unsupervised word embs mapping for different languages; trained with adversarial procedure; results in IR
+**Notes:** paper on unsupervised word embs mapping for different languages; trained with adversarial procedure; results in IR
 
