@@ -233,6 +233,8 @@ Table of Contents
       * [Seq2SQL: Generating Structured Queries from Natural Language using  Reinforcement Learning](#seq2sql-generating-structured-queries-from-natural-language-using--reinforcement-learning)
       * [Attention\-based Mixture Density Recurrent Networks for History\-based Recommendation](#attention-based-mixture-density-recurrent-networks-for-history-based-recommendation)
       * [Generating Sentences by Editing Prototypes](#generating-sentences-by-editing-prototypes)
+    * [2017\-10](#2017-10)
+      * [Word Translation Without Parallel Data](#word-translation-without-parallel-data)
 
 Articles
 ========
@@ -2454,4 +2456,15 @@ Articles
 **URL:** https://arxiv.org/abs/1709.08878
 
 **Notes:** fresh paper on sentence rewrite from Stanford, ses2seq (w/ attn) with additional edit vector input
+
+## 2017-10
+### Word Translation Without Parallel Data
+
+**Authors:** Alexis Conneau, Guillaume Lample, Marc'Aurelio Ranzato, Ludovic Denoyer, Hervé Jégou
+
+**Abstract:** State-of-the-art methods for learning cross-lingual word embeddings have relied on bilingual dictionaries or parallel corpora. Recent works showed that the need for parallel data supervision can be alleviated with character-level information. While these methods showed encouraging results, they are not on par with their supervised counterparts and are limited to pairs of languages sharing a common alphabet. In this work, we show that we can build a bilingual dictionary between two languages without using any parallel corpora, by aligning monolingual word embedding spaces in an unsupervised way. Without using any character information, our model even outperforms existing supervised methods on cross-lingual tasks for some language pairs. Our experiments demonstrate that our method works very well also for distant language pairs, like English-Russian or English-Chinese. We finally show that our method is a first step towards fully unsupervised machine translation and describe experiments on the English-Esperanto language pair, on which there only exists a limited amount of parallel data.
+
+**URL:** https://arxiv.org/abs/1710.04087
+
+**Notes:** npaper on unsupervised word embs mapping for different languages; trained with adversarial procedure; results in IR
 
