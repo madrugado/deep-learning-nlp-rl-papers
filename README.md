@@ -1,6 +1,6 @@
 # Recent Deep Learning papers in NLU and RL
 
-I think that other people notes are rarely useful, so I'm listing the interesting for me papers with a few words about the main idea for me to make references in memory.
+I think that other people's notes are rarely useful, so I'm listing the interesting for me papers with a few words about the main idea for me to make references in memory.
 
 If you're in such stuff, welcome: [papers' list](./PAPERS2017.md).
 
