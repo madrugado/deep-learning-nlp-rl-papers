@@ -236,6 +236,7 @@ Table of Contents
       * [Generating Sentences by Editing Prototypes](#generating-sentences-by-editing-prototypes)
     * [2017\-10](#2017-10)
       * [Word Translation Without Parallel Data](#word-translation-without-parallel-data)
+      * [Emergent Translation in Multi\-Agent Communication](#emergent-translation-in-multi-agent-communication)
 
 Articles
 ========
@@ -2478,4 +2479,14 @@ Articles
 **URL:** https://arxiv.org/abs/1710.04087
 
 **Notes:** paper on unsupervised word embs mapping for different languages; trained with adversarial procedure; results in IR
+
+### Emergent Translation in Multi-Agent Communication
+
+**Authors:** Jason Lee, Kyunghyun Cho, Jason Weston, Douwe Kiela
+
+**Abstract:** While most machine translation systems to date are trained on large parallel corpora, humans learn language in a different way: by being grounded in an environment and interacting with other humans. In this work, we propose a communication game where two agents, native speakers of their own respective languages, jointly learn to solve a visual referential task. We find that the ability to understand and translate a foreign language emerges as a means to achieve shared goals. The emergent translation is interactive and multimodal, and crucially does not require parallel corpora, but only monolingual, independent text and corresponding images. Our proposed translation model achieves this by grounding the source and target languages into a shared visual modality, and outperforms several baselines on both word-level and sentence-level translation tasks. Furthermore, we show that agents in a multilingual community learn to translate better and faster than in a bilingual communication setting.
+
+**URL:** https://arxiv.org/abs/1710.06922
+
+**Notes:** FAIR paper on training translation in dialog of two agents speaking different languages describing images
 
