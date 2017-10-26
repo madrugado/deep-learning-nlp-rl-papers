@@ -237,6 +237,7 @@ Table of Contents
     * [2017\-10](#2017-10)
       * [Word Translation Without Parallel Data](#word-translation-without-parallel-data)
       * [Emergent Translation in Multi\-Agent Communication](#emergent-translation-in-multi-agent-communication)
+      * [Convolutional Neural Knowledge Graph Learning](#convolutional-neural-knowledge-graph-learning)
 
 Articles
 ========
@@ -2489,4 +2490,14 @@ Articles
 **URL:** https://arxiv.org/abs/1710.06922
 
 **Notes:** FAIR paper on training translation in dialog of two agents speaking different languages describing images
+
+### Convolutional Neural Knowledge Graph Learning
+
+**Authors:** Feipeng Zhao, Martin Renqiang Min, Chen Shen, Amit Chakraborty
+
+**Abstract:** Previous models for learning entity and relationship embeddings of knowledge graphs such as TransE, TransH, and TransR aim to explore new links based on learned representations. However, these models interpret relationships as simple translations on entity embeddings. In this paper, we try to learn more complex connections between entities and relationships. In particular, we use a Convolutional Neural Network (CNN) to learn entity and relationship representations in knowledge graphs. In our model, we treat entities and relationships as one-dimensional numerical sequences with the same length. After that, we combine each triplet of head, relationship, and tail together as a matrix with height 3. CNN is applied to the triplets to get confidence scores. Positive and manually corrupted negative triplets are used to train the embeddings and the CNN model simultaneously. Experimental results on public benchmark datasets show that the proposed model outperforms state-of-the-art models on exploring unseen relationships, which proves that CNN is effective to learn complex interactive patterns between entities and relationships.
+
+**URL:** https://arxiv.org/abs/1710.08502
+
+**Notes:** conv over embeddings of entities & relationships, could be useful for long-awaited automatic ontology creation
 
