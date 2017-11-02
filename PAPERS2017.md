@@ -238,6 +238,9 @@ Table of Contents
       * [Word Translation Without Parallel Data](#word-translation-without-parallel-data)
       * [Emergent Translation in Multi\-Agent Communication](#emergent-translation-in-multi-agent-communication)
       * [Convolutional Neural Knowledge Graph Learning](#convolutional-neural-knowledge-graph-learning)
+      * [ALL\-IN\-1: Short Text Classification with One Model for All Languages](#all-in-1-short-text-classification-with-one-model-for-all-languages)
+    * [2017\-11](#2017-11)
+      * [Still not systematic after all these years: On the compositional skills  of sequence\-to\-sequence recurrent networks](#still-not-systematic-after-all-these-years-on-the-compositional-skills--of-sequence-to-sequence-recurrent-networks)
 
 Articles
 ========
@@ -486,7 +489,7 @@ Articles
 
 **Authors:** Jiwei Li, Will Monroe, Dan Jurafsky
 
-**Abstract:** We introduce a general strategy for improving neural sequence generation by incorporating knowledge about the future. Our decoder combines a standard sequence decoder with a `soothsayer' prediction function Q that estimates the outcome in the future of generating a word in the present. Our model draws on the same intuitions as reinforcement learning, but is both simpler and higher performing, avoiding known problems with the use of reinforcement learning in tasks with enormous search spaces like sequence generation. We demonstrate our model by incorporating Q functions that incrementally predict what the future BLEU or ROUGE score of the completed sequence will be, its future length, and the backwards probability of the source given the future target sequence. Experimental results show that future rediction yields improved performance in abstractive summarization and conversational response generation and the state-of-the-art in machine translation, while also enabling the decoder to generate outputs that have specific properties.
+**Abstract:** We introduce a general strategy for improving neural sequence generation by incorporating knowledge about the future. Our decoder combines a standard sequence decoder with a 'soothsayer' prediction function Q that estimates the outcome in the future of generating a word in the present. Our model draws on the same intuitions as reinforcement learning, but is both simpler and higher performing, avoiding known problems with the use of reinforcement learning in tasks with enormous search spaces like sequence generation. We demonstrate our model by incorporating Q functions that incrementally predict what the future BLEU or ROUGE score of the completed sequence will be, its future length, and the backwards probability of the source given the future target sequence. Experimental results show that future rediction yields improved performance in abstractive summarization and conversational response generation and the state-of-the-art in machine translation, while also enabling the decoder to generate outputs that have specific properties.
 
 **URL:** https://arxiv.org/abs/1701.06549
 
@@ -2212,7 +2215,7 @@ Articles
 
 **Authors:** Chen Sun, Abhinav Shrivastava, Saurabh Singh, Abhinav Gupta
 
-**Abstract:** The success of deep learning in vision can be attributed to: (a) models with high capacity; (b) increased computational power; and (c) availability of large-scale labeled data. Since 2012, there have been significant advances in representation capabilities of the models and computational capabilities of GPUs. But the size of the biggest dataset has surprisingly remained constant. What will happen if we increase the dataset size by 10x or 100x? This paper takes a step towards clearing the clouds of mystery surrounding the relationship between `enormous data' and deep learning. By exploiting the JFT-300M dataset which has more than 375M noisy labels for 300M images, we investigate how the performance of current vision tasks would change if this data was used for representation learning. Our paper delivers some surprising (and some expected) findings. First, we find that the performance on vision tasks still increases linearly with orders of magnitude of training data size. Second, we show that representation learning (or pre-training) still holds a lot of promise. One can improve performance on any vision tasks by just training a better base model. Finally, as expected, we present new state-of-the-art results for different vision tasks including image classification, object detection, semantic segmentation and human pose estimation. Our sincere hope is that this inspires vision community to not undervalue the data and develop collective efforts in building larger datasets.
+**Abstract:** The success of deep learning in vision can be attributed to: (a) models with high capacity; (b) increased computational power; and (c) availability of large-scale labeled data. Since 2012, there have been significant advances in representation capabilities of the models and computational capabilities of GPUs. But the size of the biggest dataset has surprisingly remained constant. What will happen if we increase the dataset size by 10x or 100x? This paper takes a step towards clearing the clouds of mystery surrounding the relationship between 'enormous data' and deep learning. By exploiting the JFT-300M dataset which has more than 375M noisy labels for 300M images, we investigate how the performance of current vision tasks would change if this data was used for representation learning. Our paper delivers some surprising (and some expected) findings. First, we find that the performance on vision tasks still increases linearly with orders of magnitude of training data size. Second, we show that representation learning (or pre-training) still holds a lot of promise. One can improve performance on any vision tasks by just training a better base model. Finally, as expected, we present new state-of-the-art results for different vision tasks including image classification, object detection, semantic segmentation and human pose estimation. Our sincere hope is that this inspires vision community to not undervalue the data and develop collective efforts in building larger datasets.
 
 **URL:** https://arxiv.org/abs/1707.02968
 
@@ -2500,4 +2503,25 @@ Articles
 **URL:** https://arxiv.org/abs/1710.08502
 
 **Notes:** conv over embeddings of entities & relationships, could be useful for long-awaited automatic ontology creation
+
+### ALL-IN-1: Short Text Classification with One Model for All Languages
+
+**Authors:** Barbara Plank
+
+**Abstract:** We present ALL-IN-1, a simple model for multilingual text classification that does not require any parallel data. It is based on a traditional Support Vector Machine classifier exploiting multilingual word embeddings and character n-grams. Our model is simple, easily extendable yet very effective, overall ranking 1st (out of 12 teams) in the IJCNLP 2017 shared task on customer feedback analysis in four languages: English, French, Japanese and Spanish.
+
+**URL:** https://arxiv.org/abs/1710.09589
+
+**Notes:** short text clf using multilingual embs; interesting that authors dismiss DL approach due to lack of data
+
+## 2017-11
+### Still not systematic after all these years: On the compositional skills  of sequence-to-sequence recurrent networks
+
+**Authors:** Brenden M. Lake, Marco Baroni
+
+**Abstract:** Humans can understand and produce new utterances effortlessly, thanks to their systematic compositional skills. Once a person learns the meaning of a new verb "dax," he or she can immediately understand the meaning of "dax twice" or "sing and dax." In this paper, we introduce the SCAN domain, consisting of a set of simple compositional navigation commands paired with the corresponding action sequences. We then test the zero-shot generalization capabilities of a variety of recurrent neural networks (RNNs) trained on SCAN with sequence-to-sequence methods. We find that RNNs can generalize well when the differences between training and test commands are small, so that they can apply "mix-and-match" strategies to solve the task. However, when generalization requires systematic compositional skills (as in the "dax" example above), RNNs fail spectacularly. We conclude with a proof-of-concept experiment in neural machine translation, supporting the conjecture that lack of systematicity is an important factor explaining why neural networks need very large training sets.
+
+**URL:** https://arxiv.org/abs/1711.00350
+
+**Notes:** FAIR shows the lack of compositionality ability in RNNs; langauge is entirely compositional, so we need new tool
 
