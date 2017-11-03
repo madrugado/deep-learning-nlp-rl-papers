@@ -242,6 +242,7 @@ Table of Contents
     * [2017\-11](#2017-11)
       * [Still not systematic after all these years: On the compositional skills  of sequence\-to\-sequence recurrent networks](#still-not-systematic-after-all-these-years-on-the-compositional-skills--of-sequence-to-sequence-recurrent-networks)
       * [Learning with Latent Language](#learning-with-latent-language)
+      * [Don't Decay the Learning Rate, Increase the Batch Size](#dont-decay-the-learning-rate-increase-the-batch-size)
 
 Articles
 ========
@@ -2535,4 +2536,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.00482
 
 **Notes:** Levine et al. show that once we learn language model it could be used as a prior for img clf & policy search, etc.
+
+### Don't Decay the Learning Rate, Increase the Batch Size
+
+**Authors:** Samuel L. Smith, Pieter-Jan Kindermans, Quoc V. Le
+
+**Abstract:** It is common practice to decay the learning rate. Here we show one can usually obtain the same learning curve on both training and test sets by instead increasing the batch size during training. This procedure is successful for stochastic gradient descent (SGD), SGD with momentum, Nesterov momentum, and Adam. It reaches equivalent test accuracies after the same number of training epochs, but with fewer parameter updates, leading to greater parallelism and shorter training times. We can further reduce the number of parameter updates by increasing the learning rate $\epsilon$ and scaling the batch size $B \propto \epsilon$. Finally, one can increase the momentum coefficient $m$ and scale $B \propto 1/(1-m)$, although this tends to slightly reduce the test accuracy. Crucially, our techniques allow us to repurpose existing training schedules for large batch training with no hyper-parameter tuning. We train Inception-ResNet-V2 on ImageNet to $77\%$ validation accuracy in under 2500 parameter updates, efficiently utilizing training batches of 65536 images.
+
+**URL:** https://arxiv.org/abs/1711.00489
+
+**Notes:** you could increase batch size instead of decreasing learning rate; the question is where you get the hardware?
 
