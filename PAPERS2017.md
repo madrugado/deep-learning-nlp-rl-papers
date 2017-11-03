@@ -241,6 +241,7 @@ Table of Contents
       * [ALL\-IN\-1: Short Text Classification with One Model for All Languages](#all-in-1-short-text-classification-with-one-model-for-all-languages)
     * [2017\-11](#2017-11)
       * [Still not systematic after all these years: On the compositional skills  of sequence\-to\-sequence recurrent networks](#still-not-systematic-after-all-these-years-on-the-compositional-skills--of-sequence-to-sequence-recurrent-networks)
+      * [Learning with Latent Language](#learning-with-latent-language)
 
 Articles
 ========
@@ -2524,4 +2525,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.00350
 
 **Notes:** FAIR shows the lack of compositionality ability in RNNs; langauge is entirely compositional, so we need new tool
+
+### Learning with Latent Language
+
+**Authors:** Jacob Andreas, Dan Klein, Sergey Levine
+
+**Abstract:** The named concepts and compositional operators present in natural language provide a rich source of information about the kinds of abstractions humans use to navigate the world. Can this linguistic background knowledge improve the generality and efficiency of learned classifiers and control policies? This paper aims to show that using the space of natural language strings as a parameter space is an effective way to capture natural task structure. In a pretraining phase, we learn a language interpretation model that transforms inputs (e.g. images) into outputs (e.g. labels) given natural language descriptions. To learn a new concept (e.g. a classifier), we search directly in the space of descriptions to minimize the interpreter's loss on training examples. Crucially, our models do not require language data to learn these concepts: language is used only in pretraining to impose structure on subsequent learning. Results on image classification, text editing, and reinforcement learning show that, in all settings, models with a linguistic parameterization outperform those without.
+
+**URL:** https://arxiv.org/abs/1711.00482
+
+**Notes:** Levine et al. show that once we learn language model it could be used as a prior for img clf & policy search, etc.
 
