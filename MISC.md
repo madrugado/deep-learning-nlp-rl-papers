@@ -19,6 +19,7 @@ Table of Contents
       * [Deep Reinforcement Learning: An Overview](#deep-reinforcement-learning-an-overview)
       * [Algorithms for multi\-armed bandit problems](#algorithms-for-multi-armed-bandit-problems)
       * [A comparison of Extrinsic Clustering Evaluation Metrics based on Formal Constraints](#a-comparison-of-extrinsic-clustering-evaluation-metrics-based-on-formal-constraints)
+      * [A Survey on Dialogue Systems: Recent Advances and New Frontiers](#a-survey-on-dialogue-systems-recent-advances-and-new-frontiers)
     * [Other](#other)
       * [Living Together: Mind and Machine Intelligence](#living-together-mind-and-machine-intelligence)
       * [Machine Teaching: A New Paradigm for Building Machine Learning Systems](#machine-teaching-a-new-paradigm-for-building-machine-learning-systems)
@@ -159,6 +160,16 @@ Miscellaneous
 **URL:** http://nlp.uned.es/docs/amigo2007a.pdf
 
 **Notes:** comparison of clustering metrics for texts
+
+### A Survey on Dialogue Systems: Recent Advances and New Frontiers
+
+**Authors:** Hongshen Chen, Xiaorui Liu, Dawei Yin, Jiliang Tang
+
+**Abstract:** Dialogue systems have attracted more and more attention. Recent advances on dialogue systems are overwhelmingly contributed by deep learning techniques, which have been employed to enhance a wide range of big data applications such as computer vision, natural language processing, and recommender systems. For dialogue systems, deep learning can leverage a massive amount of data to learn meaningful feature representations and response generation strategies, while requiring a minimum amount of hand-crafting. In this article, we give an overview to these recent advances on dialogue systems from various perspectives and discuss some possible research directions. In particular, we generally di- vide existing dialogue systems into task-oriented and non- task-oriented models, then detail how deep learning techniques help them with representative algorithms and finally discuss some appealing research directions that can bring the dialogue system research into a new frontier.
+
+**URL:** https://arxiv.org/abs/1711.01731
+
+**Notes:** fresh survey on dialog systems
 
 ## Other
 ### Living Together: Mind and Machine Intelligence
