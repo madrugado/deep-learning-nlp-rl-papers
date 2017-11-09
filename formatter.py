@@ -27,6 +27,9 @@ else:  # assuming that it is python 3
         html = HTMLParser()
 
 
+TWEET_LIMIT = 280
+
+
 class ArticleFormatter:
     def __init__(self, twitter_command=""):
         self.twitter_command = twitter_command
@@ -62,10 +65,10 @@ class ArticleFormatter:
     def _twitting(self):
         url = shorten_url(self.buf[3] if self.buf[3][:8] != "**URL:**" else self.buf[3][9:])
         text = self.buf[4] if self.buf[4][:10] != "**Notes:**" else self.buf[4][11:]
-        if len(text) > 140 - len(url) - 1 - 3:  # one symbol for space, three symbols more
+        if len(text) > TWEET_LIMIT - len(url) - 1 - 3:  # one symbol for space, three symbols more
             premature_ending = "... "
             # FIXME: for some reason twitter counts for three symbols more, than len()
-            while len(text) > 140 - len(premature_ending) - len(url) - 3:
+            while len(text) > TWEET_LIMIT - len(premature_ending) - len(url) - 3:
                 text = str.rsplit(text, " ", 1)[0]
 
             twit = "\"" + text + premature_ending + url + "\""
