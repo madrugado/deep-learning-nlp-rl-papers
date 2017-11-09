@@ -31,6 +31,7 @@ Table of Contents
       * [Incorporating Structural Alignment Biases into an Attentional Neural Translation Model](#incorporating-structural-alignment-biases-into-an-attentional-neural-translation-model)
     * [2016\-02](#2016-02)
       * [Exploring the Limits of Language Modeling](#exploring-the-limits-of-language-modeling)
+      * [Massively Multilingual Word Embeddings](#massively-multilingual-word-embeddings)
     * [2016\-03](#2016-03)
       * [A Persona\-Based Neural Conversation Model](#a-persona-based-neural-conversation-model)
       * [Bayesian Neural Word Embedding](#bayesian-neural-word-embedding)
@@ -482,6 +483,16 @@ Articles
 **URL:** https://arxiv.org/abs/1602.02410
 
 **Notes:** introduction of importance sampling for softmax, aside of exostive study of LM
+
+### Massively Multilingual Word Embeddings
+
+**Authors:** Waleed Ammar, George Mulcaire, Yulia Tsvetkov, Guillaume Lample, Chris Dyer, Noah A. Smith
+
+**Abstract:** We introduce new methods for estimating and evaluating embeddings of words in more than fifty languages in a single shared embedding space. Our estimation methods, multiCluster and multiCCA, use dictionaries and monolingual data; they do not require parallel data. Our new evaluation method, multiQVEC-CCA, is shown to correlate better than previous ones with two downstream tasks (text categorization and parsing). We also describe a web portal for evaluation that will facilitate further research in this area, along with open-source releases of all our methods.
+
+**URL:** https://arxiv.org/abs/1602.01925
+
+**Notes:** multilingual embeddings trained each on own dataset and mapped to one by dictionary of parallel words
 
 ## 2016-03
 ### A Persona-Based Neural Conversation Model
@@ -2054,7 +2065,7 @@ Articles
 
 **Authors:** Bo Yang, Xiao Fu, Nicholas D. Sidiropoulos, Mingyi Hong
 
-**Abstract:** Most learning approaches treat dimensionality reduction (DR) and clustering separately (i.e., sequentially), but recent research has shown that optimizing the two tasks jointly can substantially improve the performance of both. The premise behind the latter genre is that the data samples are obtained via linear transformation of latent representations that are easy to cluster; but in practice, the transformation from the latent space to the data can be more complicated. In this work, we assume that this transformation is an unknown and possibly nonlinear function. To recover the `clustering-friendly' latent representations and to better cluster the data, we propose a joint DR and K-means clustering approach in which DR is accomplished via learning a deep neural network (DNN). The motivation is to keep the advantages of jointly optimizing the two tasks, while exploiting the deep neural network's ability to approximate any nonlinear function. This way, the proposed approach can work well for a broad class of generative models. Towards this end, we carefully design the DNN structure and the associated joint optimization criterion, and propose an effective and scalable algorithm to handle the formulated optimization problem. Experiments using five different real datasets are employed to showcase the effectiveness of the proposed approach.
+**Abstract:** Most learning approaches treat dimensionality reduction (DR) and clustering separately (i.e., sequentially), but recent research has shown that optimizing the two tasks jointly can substantially improve the performance of both. The premise behind the latter genre is that the data samples are obtained via linear transformation of latent representations that are easy to cluster; but in practice, the transformation from the latent space to the data can be more complicated. In this work, we assume that this transformation is an unknown and possibly nonlinear function. To recover the 'clustering-friendly' latent representations and to better cluster the data, we propose a joint DR and K-means clustering approach in which DR is accomplished via learning a deep neural network (DNN). The motivation is to keep the advantages of jointly optimizing the two tasks, while exploiting the deep neural network's ability to approximate any nonlinear function. This way, the proposed approach can work well for a broad class of generative models. Towards this end, we carefully design the DNN structure and the associated joint optimization criterion, and propose an effective and scalable algorithm to handle the formulated optimization problem. Experiments using five different real datasets are employed to showcase the effectiveness of the proposed approach.
 
 **URL:** https://arxiv.org/abs/1610.04794
 
