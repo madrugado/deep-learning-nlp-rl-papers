@@ -244,6 +244,7 @@ Table of Contents
       * [Learning with Latent Language](#learning-with-latent-language)
       * [Don't Decay the Learning Rate, Increase the Batch Size](#dont-decay-the-learning-rate-increase-the-batch-size)
       * [Unsupervised Machine Translation Using Monolingual Corpora Only](#unsupervised-machine-translation-using-monolingual-corpora-only)
+      * [Non\-Autoregressive Neural Machine Translation](#non-autoregressive-neural-machine-translation)
 
 Articles
 ========
@@ -2557,4 +2558,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.00043
 
 **Notes:** machine translation without any parallel corpora; uses GAN approach to make encs project into the same space
+
+### Non-Autoregressive Neural Machine Translation
+
+**Authors:** Jiatao Gu, James Bradbury, Caiming Xiong, Victor O.K. Li, Richard Socher
+
+**Abstract:** Existing approaches to neural machine translation condition each output word on previously generated outputs. We introduce a model that avoids this autoregressive property and produces its outputs in parallel, allowing an order of magnitude lower latency during inference. Through knowledge distillation, the use of input token fertilities as a latent variable, and policy gradient fine-tuning, we achieve this at a cost of as little as 2.0 BLEU points relative to the autoregressive Transformer network used as a teacher. We demonstrate substantial cumulative improvements associated with each of the three aspects of our training strategy, and validate our approach on IWSLT 2016 English-German and two WMT language pairs. By sampling fertilities in parallel at inference time, our non-autoregressive model achieves near-state-of-the-art performance of 29.8 BLEU on WMT 2016 English-Romanian.
+
+**URL:** https://arxiv.org/abs/1711.02281
+
+**Notes:** parallel generation for NMT, next step in Transformer arch; to make it parallel they use discrete distribution to generate so called fertility for each word - the enc output will be copied so many times as prodused ferility; ablation study provided
 
