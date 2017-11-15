@@ -245,6 +245,7 @@ Table of Contents
       * [Don't Decay the Learning Rate, Increase the Batch Size](#dont-decay-the-learning-rate-increase-the-batch-size)
       * [Unsupervised Machine Translation Using Monolingual Corpora Only](#unsupervised-machine-translation-using-monolingual-corpora-only)
       * [Non\-Autoregressive Neural Machine Translation](#non-autoregressive-neural-machine-translation)
+      * [DLPaper2Code: Auto\-generation of Code from Deep Learning Research Papers](#dlpaper2code-auto-generation-of-code-from-deep-learning-research-papers)
 
 Articles
 ========
@@ -2568,4 +2569,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.02281
 
 **Notes:** parallel generation for NMT, next step in Transformer arch; to make it parallel they use discrete distribution to generate so called fertility for each word - the enc output will be copied so many times as prodused ferility; ablation study provided
+
+### DLPaper2Code: Auto-generation of Code from Deep Learning Research Papers
+
+**Authors:** Akshay Sethi, Anush Sankaran, Naveen Panwar, Shreya Khare, Senthil Mani
+
+**Abstract:** With an abundance of research papers in deep learning, reproducibility or adoption of the existing works becomes a challenge. This is due to the lack of open source implementations provided by the authors. Further, re-implementing research papers in a different library is a daunting task. To address these challenges, we propose a novel extensible approach, DLPaper2Code, to extract and understand deep learning design flow diagrams and tables available in a research paper and convert them to an abstract computational graph. The extracted computational graph is then converted into execution ready source code in both Keras and Caffe, in real-time. An arXiv-like website is created where the automatically generated designs is made publicly available for 5,000 research papers. The generated designs could be rated and edited using an intuitive drag-and-drop UI framework in a crowdsourced manner. To evaluate our approach, we create a simulated dataset with over 216,000 valid design visualizations using a manually defined grammar. Experiments on the simulated dataset show that the proposed framework provide more than $93\%$ accuracy in flow diagram content extraction.
+
+**URL:** https://arxiv.org/abs/1711.03543
+
+**Notes:** it's a magic on the first sight: guys generate Keras code from the PDF! in details, they use pattern matching, OCR to identify layers and links between them; small subset of possible layers, small subset of possible hyperparams
 
