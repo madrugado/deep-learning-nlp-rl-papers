@@ -246,6 +246,7 @@ Table of Contents
       * [Unsupervised Machine Translation Using Monolingual Corpora Only](#unsupervised-machine-translation-using-monolingual-corpora-only)
       * [Non\-Autoregressive Neural Machine Translation](#non-autoregressive-neural-machine-translation)
       * [DLPaper2Code: Auto\-generation of Code from Deep Learning Research Papers](#dlpaper2code-auto-generation-of-code-from-deep-learning-research-papers)
+      * [Supervised and Unsupervised Transfer Learning for Question Answering](#supervised-and-unsupervised-transfer-learning-for-question-answering)
 
 Articles
 ========
@@ -2579,4 +2580,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.03543
 
 **Notes:** it's a magic on the first sight: guys generate Keras code from the PDF! in details, they use pattern matching, OCR to identify layers and links between them; small subset of possible layers, small subset of possible hyperparams
+
+### Supervised and Unsupervised Transfer Learning for Question Answering
+
+**Authors:** Yu-An Chung, Hung-Yi Lee, James Glass
+
+**Abstract:** Although transfer learning has been shown to be successful for tasks like object and speech recognition, its applicability to question answering (QA) has yet to be well-studied. In this paper, we conduct extensive experiments to investigate the transferability of knowledge learned from a source QA dataset to a target dataset using two QA models. The performance of both models on a TOEFL listening comprehension test (Tseng et al., 2016) and MCTest (Richardson et al., 2013) is significantly improved via a simple transfer learning technique from MovieQA (Tapaswi et al., 2016). In particular, one of the models achieves the state-of-the-art on all target datasets; for the TOEFL listening comprehension test, it outperforms the previous best model by 7%. Finally, we show that transfer learning is helpful even in unsupervised scenarios when correct answers for target QA dataset examples are not available.
+
+**URL:** https://arxiv.org/abs/1711.05345
+
+**Notes:** transfer learning for question answering; unsupervised finetune: supervised pretrain on one dataset, predict answers for unknown dataset, use as right ones, train on that in superwise way; they use CNNs (better) & MemN2N; new SotA on few datasets in QA
 
