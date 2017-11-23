@@ -247,6 +247,7 @@ Table of Contents
       * [Non\-Autoregressive Neural Machine Translation](#non-autoregressive-neural-machine-translation)
       * [DLPaper2Code: Auto\-generation of Code from Deep Learning Research Papers](#dlpaper2code-auto-generation-of-code-from-deep-learning-research-papers)
       * [Supervised and Unsupervised Transfer Learning for Question Answering](#supervised-and-unsupervised-transfer-learning-for-question-answering)
+      * [Mastering the Dungeon: Grounded Language Learning by Mechanical Turker  Descent](#mastering-the-dungeon-grounded-language-learning-by-mechanical-turker--descent)
 
 Articles
 ========
@@ -2590,4 +2591,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.05345
 
 **Notes:** transfer learning for question answering; unsupervised finetune: supervised pretrain on one dataset, predict answers for unknown dataset, use as right ones, train on that in superwise way; they use CNNs (better) & MemN2N; new SotA on few datasets in QA
+
+### Mastering the Dungeon: Grounded Language Learning by Mechanical Turker  Descent
+
+**Authors:** Zhilin Yang, Saizheng Zhang, Jack Urbanek, Will Feng, Alexander H. Miller, Arthur Szlam, Douwe Kiela, Jason Weston
+
+**Abstract:** Contrary to most natural language processing research, which makes use of static datasets, humans learn language interactively, grounded in an environment. In this work we propose an interactive learning procedure called Mechanical Turker Descent (MTD) and use it to train agents to execute natural language commands grounded in a fantasy text adventure game. In MTD, Turkers compete to train better agents in the short term, and collaborate by sharing their agents' skills in the long term. This results in a gamified, engaging experience for the Turkers and a better quality teaching signal for the agents compared to static datasets, as the Turkers naturally adapt the training data to the agent's abilities.
+
+**URL:** https://arxiv.org/abs/1711.07950
+
+**Notes:** FAIR introduced environment for solving text quests; they use seq2seq as baseline; only predefined actions & knowledge graph representation for game; MTurkers generate training datasets for models competing with each other and sharing resulting datasets
 
