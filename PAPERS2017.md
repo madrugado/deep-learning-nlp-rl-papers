@@ -248,6 +248,7 @@ Table of Contents
       * [DLPaper2Code: Auto\-generation of Code from Deep Learning Research Papers](#dlpaper2code-auto-generation-of-code-from-deep-learning-research-papers)
       * [Supervised and Unsupervised Transfer Learning for Question Answering](#supervised-and-unsupervised-transfer-learning-for-question-answering)
       * [Mastering the Dungeon: Grounded Language Learning by Mechanical Turker  Descent](#mastering-the-dungeon-grounded-language-learning-by-mechanical-turker--descent)
+      * [Does Higher Order LSTM Have Better Accuracy in Chunking and Named Entity  Recognition?](#does-higher-order-lstm-have-better-accuracy-in-chunking-and-named-entity--recognition)
 
 Articles
 ========
@@ -2601,4 +2602,14 @@ Articles
 **URL:** https://arxiv.org/abs/1711.07950
 
 **Notes:** FAIR introduced environment for solving text quests; they use seq2seq as baseline; only predefined actions & knowledge graph representation for game; MTurkers generate training datasets for models competing with each other and sharing resulting datasets
+
+### Does Higher Order LSTM Have Better Accuracy in Chunking and Named Entity  Recognition?
+
+**Authors:** Yi Zhang, Xu Sun, Yang Yang
+
+**Abstract:** Current researches usually employ single order setting by default when dealing with sequence labeling tasks. In our work, "order" means the number of tags that a prediction involves at every time step. High order models tend to capture more dependency information among tags. We first propose a simple method that low order models can be easily extended to high order models. To our surprise, the high order models which are supposed to capture more dependency information behave worse when increasing the order. We suppose that forcing neural networks to learn complex structure may lead to overfitting. To deal with the problem, we propose a method which combines low order and high order information together to decode the tag sequence. The proposed method, multi-order decoding (MOD), keeps the scalability to high order models with a pruning technique. MOD achieves higher accuracies than existing methods of single order setting. It results in a 21% error reduction compared to baselines in chunking and an error reduction over 23% in two NER tasks. The code is available at [URL](https://github.com/lancopku/Multi-Order-Decoding.)
+
+**URL:** https://arxiv.org/abs/1711.08231
+
+**Notes:** new SotA on some NER datasets; the idea is simple and brilliant - lets use one token length tags to generate tags for two or more consequent tokens (with pruning for only top scored variants), after that apply Viterbi to produce final sequence; with code!
 
