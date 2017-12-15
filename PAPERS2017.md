@@ -249,6 +249,8 @@ Table of Contents
       * [Supervised and Unsupervised Transfer Learning for Question Answering](#supervised-and-unsupervised-transfer-learning-for-question-answering)
       * [Mastering the Dungeon: Grounded Language Learning by Mechanical Turker  Descent](#mastering-the-dungeon-grounded-language-learning-by-mechanical-turker--descent)
       * [Does Higher Order LSTM Have Better Accuracy in Chunking and Named Entity  Recognition?](#does-higher-order-lstm-have-better-accuracy-in-chunking-and-named-entity--recognition)
+    * [2017\-12](#2017-12)
+      * [Mastering Chess and Shogi by Self\-Play with a General Reinforcement  Learning Algorithm](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement--learning-algorithm)
 
 Articles
 ========
@@ -2612,4 +2614,15 @@ Articles
 **URL:** https://arxiv.org/abs/1711.08231
 
 **Notes:** new SotA on some NER datasets; the idea is simple and brilliant - lets use one token length tags to generate tags for two or more consequent tokens (with pruning for only top scored variants), after that apply Viterbi to produce final sequence; with code!
+
+## 2017-12
+### Mastering Chess and Shogi by Self-Play with a General Reinforcement  Learning Algorithm
+
+**Authors:** David Silver, Thomas Hubert, Julian Schrittwieser, Ioannis Antonoglou, Matthew Lai, Arthur Guez, Marc Lanctot, Laurent Sifre, Dharshan Kumaran, Thore Graepel, Timothy Lillicrap, Karen Simonyan, Demis Hassabis
+
+**Abstract:** The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case.
+
+**URL:** https://arxiv.org/abs/1712.01815
+
+**Notes:** short paper from DeepMind on AlphaZero - self-teaching algorithm to play chess/go or any formalized game; they use Monte-Carlo Tree Search, Bayesian optimization with noise; also they train it on 5000 TPU; waiting for full paper
 
