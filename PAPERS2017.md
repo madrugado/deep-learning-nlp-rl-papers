@@ -201,6 +201,7 @@ Table of Contents
       * [Sub\-domain Modelling for Dialogue Management with Hierarchical  Reinforcement Learning](#sub-domain-modelling-for-dialogue-management-with-hierarchical--reinforcement-learning)
       * [Toward Neural Phrase\-based Machine Translation](#toward-neural-phrase-based-machine-translation)
       * [Natural Language Does Not Emerge 'Naturally' in Multi\-Agent Dialog](#natural-language-does-not-emerge-naturally-in-multi-agent-dialog)
+      * [Personalization in Goal\-Oriented Dialog](#personalization-in-goal-oriented-dialog)
     * [2017\-07](#2017-07)
       * [Deep Semantic Role Labeling: What Works and What’s Next](#deep-semantic-role-labeling-what-works-and-whats-next)
       * [Learning to Avoid Errors in GANs by Manipulating Input Spaces](#learning-to-avoid-errors-in-gans-by-manipulating-input-spaces)
@@ -249,8 +250,10 @@ Table of Contents
       * [Supervised and Unsupervised Transfer Learning for Question Answering](#supervised-and-unsupervised-transfer-learning-for-question-answering)
       * [Mastering the Dungeon: Grounded Language Learning by Mechanical Turker  Descent](#mastering-the-dungeon-grounded-language-learning-by-mechanical-turker--descent)
       * [Does Higher Order LSTM Have Better Accuracy in Chunking and Named Entity  Recognition?](#does-higher-order-lstm-have-better-accuracy-in-chunking-and-named-entity--recognition)
+      * [Go for a Walk and Arrive at the Answer: Reasoning Over Paths in  Knowledge Bases using Reinforcement Learning](#go-for-a-walk-and-arrive-at-the-answer-reasoning-over-paths-in--knowledge-bases-using-reinforcement-learning)
     * [2017\-12](#2017-12)
       * [Mastering Chess and Shogi by Self\-Play with a General Reinforcement  Learning Algorithm](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement--learning-algorithm)
+      * [Natural Language Policy Search](#natural-language-policy-search)
 
 Articles
 ========
@@ -2180,6 +2183,16 @@ Articles
 
 **Notes:** interesting paper on language creation: compositional language could emerge in some cases, but not for sure
 
+### Personalization in Goal-Oriented Dialog
+
+**Authors:** Chaitanya K. Joshi, Fei Mi, Boi Faltings
+
+**Abstract:** The main goal of modeling human conversation is to create agents which can interact with people in both open-ended and goal-oriented scenarios. End-to-end trained neural dialog systems are an important line of research for such generalized dialog models as they do not resort to any situation-specific handcrafting of rules. However, incorporating personalization into such systems is a largely unexplored topic as there are no existing corpora to facilitate such work. In this paper, we present a new dataset of goal-oriented dialogs which are influenced by speaker profiles attached to them. We analyze the shortcomings of an existing end-to-end dialog system based on Memory Networks and propose modifications to the architecture which enable personalization. We also investigate personalization in dialog as a multi-task learning problem, and show that a single model which shares features among various profiles outperforms separate models for each profile.
+
+**URL:** https://arxiv.org/abs/1706.07503
+
+**Notes:** personalization in retrieval-based dialog systems; dataset is based on bAbI; they use memory networks to solve this task with additionally splitted memory - for dialog history & personal features to be separate; with code!
+
 ## 2017-07
 ### Deep Semantic Role Labeling: What Works and What’s Next
 
@@ -2615,6 +2628,16 @@ Articles
 
 **Notes:** new SotA on some NER datasets; the idea is simple and brilliant - lets use one token length tags to generate tags for two or more consequent tokens (with pruning for only top scored variants), after that apply Viterbi to produce final sequence; with code!
 
+### Go for a Walk and Arrive at the Answer: Reasoning Over Paths in  Knowledge Bases using Reinforcement Learning
+
+**Authors:** Rajarshi Das, Shehzaad Dhuliawala, Manzil Zaheer, Luke Vilnis, Ishan Durugkar, Akshay Krishnamurthy, Alex Smola, Andrew McCallum
+
+**Abstract:** Knowledge bases (KB), both automatically and manually constructed, are often incomplete --- many valid facts can be inferred from the KB by synthesizing existing information. A popular approach to KB completion is to infer new relations by combinatory reasoning over the information found along other paths connecting a pair of entities. Given the enormous size of KBs and the exponential number of paths, previous path-based models have considered only the problem of predicting a missing relation given two entities or evaluating the truth of a proposed triple. Additionally, these methods have traditionally used random paths between fixed entity pairs or more recently learned to pick paths between them. We propose a new algorithm MINERVA, which addresses the much more difficult and practical task of answering questions where the relation is known, but only one entity. Since random walks are impractical in a setting with combinatorially many destinations from a start node, we present a neural reinforcement learning approach which learns how to navigate the graph conditioned on the input query to find predictive paths. Empirically, this approach obtains state-of-the-art results on several datasets, significantly outperforming prior methods.
+
+**URL:** https://arxiv.org/abs/1711.05851
+
+**Notes:** question answering using knowledge graph, authors use RL to compute paths on graph; interesting that graph in this setup is only partially observable
+
 ## 2017-12
 ### Mastering Chess and Shogi by Self-Play with a General Reinforcement  Learning Algorithm
 
@@ -2625,4 +2648,14 @@ Articles
 **URL:** https://arxiv.org/abs/1712.01815
 
 **Notes:** short paper from DeepMind on AlphaZero - self-teaching algorithm to play chess/go or any formalized game; they use Monte-Carlo Tree Search, Bayesian optimization with noise; also they train it on 5000 TPU; waiting for full paper
+
+### Natural Language Policy Search
+
+**Authors:** Jacob Andreas, Dan Klein, Sergey Levine
+
+**Abstract:** The named concepts and compositional operators present in natural language provide a rich source of information about the kinds of abstractions humans use to navigate the world. Can this linguistic background knowledge improve the generality and efficiency of learned control policies? This paper aims to show that using the space of natural language strings as a parameter space is an effective way to capture natural task structure. In a pretraining phase, we learn an instruction-following model that transforms natural language instructions into policies. To learn in a new environment, we search directly in the space of instructions to maximize the instruction-follower’s reward. Crucially, our approach do not require language data for new tasks: language is used only in pretraining to impose structure on subsequent learning. Results on both reinforcement learning and imitation learning show that, policies with a linguistic parameterization outperform those without.
+
+**URL:** https://drive.google.com/file/d/16SS8sfHPX5rgcRFoCjMDy57-heovYK-W/view
+
+**Notes:** paper from Levine's group, guys are using natural language instructions to create policy, and even more, in unknown environment they search for policy basing on instruction space
 
