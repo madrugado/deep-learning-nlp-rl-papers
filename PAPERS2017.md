@@ -254,6 +254,7 @@ Table of Contents
     * [2017\-12](#2017-12)
       * [Mastering Chess and Shogi by Self\-Play with a General Reinforcement  Learning Algorithm](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement--learning-algorithm)
       * [Natural Language Policy Search](#natural-language-policy-search)
+      * [Attentive Memory Networks: Efficient Machine Reading for Conversational  Search](#attentive-memory-networks-efficient-machine-reading-for-conversational--search)
 
 Articles
 ========
@@ -2659,6 +2660,13 @@ Articles
 
 **Notes:** paper from Levine's group, guys are using natural language instructions to create policy, and even more, in unknown environment they search for policy basing on instruction space
 
+### Attentive Memory Networks: Efficient Machine Reading for Conversational  Search
 
-https://arxiv.org/abs/1712.07229
-paper from de Rijke group; they introduce attentive memory networks; std attn on encoder states; requires less computations to achieve good (yet not SotA performance) on bAbI; it would be interesting to see it on actual diloag data
+**Authors:** Tom Kenter, Maarten de Rijke
+
+**Abstract:** Recent advances in conversational systems have changed the search paradigm. Traditionally, a user poses a query to a search engine that returns an answer based on its index, possibly leveraging external knowledge bases and conditioning the response on earlier interactions in the search session. In a natural conversation, there is an additional source of information to take into account: utterances produced earlier in a conversation can also be referred to and a conversational IR system has to keep track of information conveyed by the user during the conversation, even if it is implicit. We argue that the process of building a representation of the conversation can be framed as a machine reading task, where an automated system is presented with a number of statements about which it should answer questions. The questions should be answered solely by referring to the statements provided, without consulting external knowledge. The time is right for the information retrieval community to embrace this task, both as a stand-alone task and integrated in a broader conversational search setting. In this paper, we focus on machine reading as a stand-alone task and present the Attentive Memory Network (AMN), an end-to-end trainable machine reading algorithm. Its key contribution is in efficiency, achieved by having an hierarchical input encoder, iterating over the input only once. Speed is an important requirement in the setting of conversational search, as gaps between conversational turns have a detrimental effect on naturalness. On 20 datasets commonly used for evaluating machine reading algorithms we show that the AMN achieves performance comparable to the state-of-the-art models, while using considerably fewer computations.
+
+**URL:** https://arxiv.org/abs/1712.07229
+
+**Notes:** paper from de Rijke group; they introduce attentive memory networks; std attn on encoder states; requires less computations to achieve good (yet not SotA performance) on bAbI; it would be interesting to see it on actual diloag data
+
