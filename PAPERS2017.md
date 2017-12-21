@@ -2659,3 +2659,6 @@ Articles
 
 **Notes:** paper from Levine's group, guys are using natural language instructions to create policy, and even more, in unknown environment they search for policy basing on instruction space
 
+
+https://arxiv.org/abs/1712.07229
+paper from de Rijke group; they introduce attentive memory networks; std attn on encoder states; requires less computations to achieve good (yet not SotA performance) on bAbI; it would be interesting to see it on actual diloag data
