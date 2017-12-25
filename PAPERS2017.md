@@ -254,6 +254,7 @@ Table of Contents
     * [2017\-12](#2017-12)
       * [Mastering Chess and Shogi by Self\-Play with a General Reinforcement  Learning Algorithm](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement--learning-algorithm)
       * [Natural Language Policy Search](#natural-language-policy-search)
+      * [Deep Learning Scaling is Predictable, Empirically](#deep-learning-scaling-is-predictable-empirically)
 
 Articles
 ========
@@ -2658,4 +2659,14 @@ Articles
 **URL:** https://drive.google.com/file/d/16SS8sfHPX5rgcRFoCjMDy57-heovYK-W/view
 
 **Notes:** paper from Levine's group, guys are using natural language instructions to create policy, and even more, in unknown environment they search for policy basing on instruction space
+
+### Deep Learning Scaling is Predictable, Empirically
+
+**Authors:** Joel Hestness, Sharan Narang, Newsha Ardalani, Gregory Diamos, Heewoo Jun, Hassan Kianinejad, Md. Mostofa Ali Patwary, Yang Yang, Yanqi Zhou
+
+**Abstract:** Deep learning (DL) creates impactful advances following a virtuous recipe: model architecture search, creating large training data sets, and scaling computation. It is widely believed that growing training sets and models should improve accuracy and result in better products. As DL application domains grow, we would like a deeper understanding of the relationships between training set size, computational scale, and model accuracy improvements to advance the state-of-the-art. This paper presents a large scale empirical characterization of generalization error and model size growth as training sets grow. We introduce a methodology for this measurement and test four machine learning domains: machine translation, language modeling, image processing, and speech recognition. Our empirical results show power-law generalization error scaling across a breadth of factors, resulting in power-law exponents---the "steepness" of the learning curve---yet to be explained by theoretical work. Further, model improvements only shift the error but do not appear to affect the power-law exponent. We also show that model size scales sublinearly with data size. These scaling relationships have significant implications on deep learning research, practice, and systems. They can assist model debugging, setting accuracy targets, and decisions about data set growth. They can also guide computing system design and underscore the importance of continued computational scaling.
+
+**URL:** https://arxiv.org/abs/1712.00409
+
+**Notes:** Baidu's effort to develop predictable DL: NMT & LM models show sublinear growth rate meaning that they are far from saturation, we need much bigger datasets; growth rate for SGD is significantly lesser than one for Adam; experiments are of 50 GPU years
 
