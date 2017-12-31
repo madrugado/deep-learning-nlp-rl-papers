@@ -14,6 +14,7 @@ Table of Contents
     * [2013](#2013)
       * [Concurrent Reinforcement Learning from Customer Interactions\.](#concurrent-reinforcement-learning-from-customer-interactions)
       * [Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation](#estimating-or-propagating-gradients-through-stochastic-neurons-for-conditional-computation)
+      * [Learning word embeddings efficiently with noise\-contrastive estimation](#learning-word-embeddings-efficiently-with-noise-contrastive-estimation)
     * [2014](#2014)
       * [A Clockwork RNN](#a-clockwork-rnn)
       * [A Convolutional Neural Network for Modelling Sentences](#a-convolutional-neural-network-for-modelling-sentences)
@@ -349,6 +350,16 @@ Articles
 **URL:** https://arxiv.org/abs/1308.3432
 
 **Notes:** Straight-Through estimator is just threshold activation, which is considered identity for backprop; it is biased, but still ok for one such layer
+
+### Learning word embeddings efficiently with noise-contrastive estimation
+
+**Authors:** Andriy Mnih, Koray Kavukcuoglu
+
+**Abstract:** Continuous-valued word embeddings learned by neural language models have recently been shown to capture semantic and syntactic information about words very well, setting performance records on several word similarity tasks. The best results are obtained by learning high-dimensional embeddings from very large quantities of data, which makes scalability of the training method a critical factor. We propose a simple and scalable new approach to learning word embeddings based on training log-bilinear models with noise-contrastive estimation. Our approach is simpler, faster, and produces better results than the current state-of-the art method of Mikolov et al. (2013a). We achieve results comparable to the best ones reported, which were obtained on a cluster, using four times less data and more than an order of magnitude less computing time. We also investigate several model types and find that the embeddings learned by the simpler models perform at least as well as those learned by the more complex ones.
+
+**URL:** https://papers.nips.cc/paper/5165-learning-word-embeddings-efficiently-with-noise-contrastive-estimation
+
+**Notes:** long missing paper on noise-contrasice estimation; NCE for word vectors introduced here; also positional encoding for window
 
 ## 2014
 ### A Clockwork RNN

@@ -183,6 +183,7 @@ Table of Contents
       * [Emergence of Language with Multi\-agent Games: Learning to Communicate with Sequences of Symbols](#emergence-of-language-with-multi-agent-games-learning-to-communicate-with-sequences-of-symbols)
       * [Discourse\-Based Objectives for Fast Unsupervised Sentence Representation Learning](#discourse-based-objectives-for-fast-unsupervised-sentence-representation-learning)
       * [Emergent Language in a Multi\-Modal, Multi\-Step Referential Game](#emergent-language-in-a-multi-modal-multi-step-referential-game)
+      * [Supervised Learning of Universal Sentence Representations from Natural  Language Inference Data](#supervised-learning-of-universal-sentence-representations-from-natural--language-inference-data)
     * [2017\-06](#2017-06)
       * [On Unifying Deep Generative Models](#on-unifying-deep-generative-models)
       * [A simple neural network module for relational reasoning](#a-simple-neural-network-module-for-relational-reasoning)
@@ -256,6 +257,7 @@ Table of Contents
       * [Natural Language Policy Search](#natural-language-policy-search)
       * [Deep Learning Scaling is Predictable, Empirically](#deep-learning-scaling-is-predictable-empirically)
       * [Attentive Memory Networks: Efficient Machine Reading for Conversational  Search](#attentive-memory-networks-efficient-machine-reading-for-conversational--search)
+      * [Advances in Pre\-Training Distributed Word Representations](#advances-in-pre-training-distributed-word-representations)
 
 Articles
 ========
@@ -2014,6 +2016,16 @@ Articles
 
 **Notes:** one agent describe the picture to another and the other should guess referred object on the picture
 
+### Supervised Learning of Universal Sentence Representations from Natural  Language Inference Data
+
+**Authors:** Alexis Conneau, Douwe Kiela, Holger Schwenk, Loic Barrault, Antoine Bordes
+
+**Abstract:** Many modern NLP systems rely on word embeddings, previously trained in an unsupervised manner on large corpora, as base features. Efforts to obtain embeddings for larger chunks of text, such as sentences, have however not been so successful. Several attempts at learning unsupervised representations of sentences have not reached satisfactory enough performance to be widely adopted. In this paper, we show how universal sentence representations trained using the supervised data of the Stanford Natural Language Inference datasets can consistently outperform unsupervised methods like SkipThought vectors on a wide range of transfer tasks. Much like how computer vision uses ImageNet to obtain features, which can then be transferred to other tasks, our work tends to indicate the suitability of natural language inference for transfer learning to other NLP tasks. Our encoder is publicly available.
+
+**URL:** https://arxiv.org/abs/1705.02364
+
+**Notes:** comparison of some archs (hie. conv net, bi-LSTM with pooling, self-attentive net, std LSTM/GPU) on some phrase tasks, like entailment; also nice, that training details for archs are provided; with code for evaluation!
+
 ## 2017-06
 ### On Unifying Deep Generative Models
 
@@ -2680,4 +2692,14 @@ Articles
 **URL:** https://arxiv.org/abs/1712.07229
 
 **Notes:** paper from de Rijke group; they introduce attentive memory networks; std attn on encoder states; requires less computations to achieve good (yet not SotA performance) on bAbI; it would be interesting to see it on actual diloag data
+
+### Advances in Pre-Training Distributed Word Representations
+
+**Authors:** Tomas Mikolov, Edouard Grave, Piotr Bojanowski, Christian Puhrsch, Armand Joulin
+
+**Abstract:** Many Natural Language Processing applications nowadays rely on pre-trained word representations estimated from large text corpora such as news collections, Wikipedia and Web Crawl. In this paper, we show how to train high-quality word vector representations by using a combination of known tricks that are however rarely used together. The main result of our work is the new set of publicly available pre-trained models that outperform the current state of the art by a large margin on a number of tasks.
+
+**URL:** https://arxiv.org/abs/1712.09405
+
+**Notes:** short paper from Mikolov's group presenting significant details on fastText word vectors training; interesting results on comparison of pre-trained vectors on sentence datasets; also interesting usage of positional encoding
 
