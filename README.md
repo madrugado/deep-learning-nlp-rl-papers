@@ -2,11 +2,16 @@
 
 I think that other people's notes are rarely useful, so I'm listing the interesting for me papers with a few words about the main idea for me to make references in memory.
 
-If you're in such stuff, welcome: [papers list](./PAPERS2017.md).
+If you're in such stuff, welcome: [__papers list__](./PAPERS2018.md).
 
-I've decided to keep list size feasible, so I've created a new list for 2017. The old one could be accessed [here](./PAPERS.md). I should mention, that I'm updating it from time to time, when I found an "old" interesting paper.
+To keep list size feasible the each year papers are separated to specific file:
+* [2018](./PAPERS2018.md)
+* [2017](./PAPERS2017.md)
+* [2016 & earlier](./PAPERS.md)
 
-Also I've found that, there are some additional materials which are helpful for me or my students, so I've added a new list of miscellaneous [articles](./MISC.md).
+I'm not only adding recent papers, but also update lists for previous periods, if I find interesting "old" paper. To keep up with updates, you could follow me on [twitter](https://twitter.com/madrugad0).
+
+Also I've found that, there are some additional materials which are helpful for me or my students, so I've added a new list of miscellaneous [articles](./MISC.md). It is not sorted in chronological order, only by content type.
 
 ## License
 ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png)
