@@ -258,6 +258,7 @@ Table of Contents
       * [Deep Learning Scaling is Predictable, Empirically](#deep-learning-scaling-is-predictable-empirically)
       * [Attentive Memory Networks: Efficient Machine Reading for Conversational  Search](#attentive-memory-networks-efficient-machine-reading-for-conversational--search)
       * [Advances in Pre\-Training Distributed Word Representations](#advances-in-pre-training-distributed-word-representations)
+      * [A Deep Network Model for Paraphrase Detection in Short Text Messages](#a-deep-network-model-for-paraphrase-detection-in-short-text-messages)
 
 Articles
 ========
@@ -2702,4 +2703,14 @@ Articles
 **URL:** https://arxiv.org/abs/1712.09405
 
 **Notes:** short paper from Mikolov's group presenting significant details on fastText word vectors training; interesting results on comparison of pre-trained vectors on sentence datasets; also interesting usage of positional encoding
+
+### A Deep Network Model for Paraphrase Detection in Short Text Messages
+
+**Authors:** Basant Agarwal, Heri Ramampiaro, Helge Langseth, Massimiliano Ruocco
+
+**Abstract:** This paper is concerned with paraphrase detection. The ability to detect similar sentences written in natural language is crucial for several applications, such as text mining, text summarization, plagiarism detection, authorship authentication and question answering. Given two sentences, the objective is to detect whether they are semantically identical. An important insight from this work is that existing paraphrase systems perform well when applied on clean texts, but they do not necessarily deliver good performance against noisy texts. Challenges with paraphrase detection on user generated short texts, such as Twitter, include language irregularity and noise. To cope with these challenges, we propose a novel deep neural network-based approach that relies on coarse-grained sentence modeling using a convolutional neural network and a long short-term memory model, combined with a specific fine-grained word-level similarity matching model. Our experimental results show that the proposed approach outperforms existing state-of-the-art approaches on user-generated noisy social media data, such as Twitter texts, and achieves highly competitive performance on a cleaner corpus.
+
+**URL:** https://arxiv.org/abs/1712.02820
+
+**Notes:** paraphrase detecting architecture: CNN over word embeddings, LSTM on CNN feature vectors, word-to-word similarity matrix and CNN over it, some classic features, like TF-IDF and wordnets; new SotA on tweets
 
