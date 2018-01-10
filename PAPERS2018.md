@@ -5,6 +5,7 @@ Table of Contents
   * [Articles](#articles)
     * [2018\-01](#2018-01)
       * [Unsupervised Low\-Dimensional Vector Representations for Words, Phrases  and Text that are Transparent, Scalable, and produce Similarity Metrics that  are Complementary to Neural Embeddings](#unsupervised-low-dimensional-vector-representations-for-words-phrases--and-text-that-are-transparent-scalable-and-produce-similarity-metrics-that--are-complementary-to-neural-embeddings)
+      * [Knowledge\-based Word Sense Disambiguation using Topic Models](#knowledge-based-word-sense-disambiguation-using-topic-models)
 
 Articles
 ========
@@ -18,4 +19,14 @@ Articles
 **URL:** https://arxiv.org/abs/1801.01884
 
 **Notes:** medical-related paper on word embeddings; guys used few tricks over word2vec, like weighted score for 1- & 2-grams or list of important terms; results show their embedding actually improve relatedness of terms for humans; with code!
+
+### Knowledge-based Word Sense Disambiguation using Topic Models
+
+**Authors:** Devendra Singh Chaplot, Ruslan Salakhutdinov
+
+**Abstract:** Word Sense Disambiguation is an open problem in Natural Language Processing which is particularly challenging and useful in the unsupervised setting where all the words in any given text need to be disambiguated without using any labeled data. Typically WSD systems use the sentence or a small window of words around the target word as the context for disambiguation because their computational complexity scales exponentially with the size of the context. In this paper, we leverage the formalism of topic model to design a WSD system that scales linearly with the number of words in the context. As a result, our system is able to utilize the whole document as the context for a word to be disambiguated. The proposed method is a variant of Latent Dirichlet Allocation in which the topic proportions for a document are replaced by synset proportions. We further utilize the information in the WordNet by assigning a non-uniform prior to synset distribution over words and a logistic-normal prior for document distribution over synsets. We evaluate the proposed method on Senseval-2, Senseval-3, SemEval-2007, SemEval-2013 and SemEval-2015 English All-Word WSD datasets and show that it outperforms the state-of-the-art unsupervised knowledge-based WSD system by a significant margin.
+
+**URL:** https://arxiv.org/abs/1801.01900
+
+**Notes:** word sense disambiguation with wordnet, assigning prior as normal distribution; the parameters of normal distribution are determined from corpus at hand; the topics are being modelled by synset disrtibution instead of word themselves
 
