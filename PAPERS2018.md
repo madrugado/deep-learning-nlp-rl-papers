@@ -6,6 +6,7 @@ Table of Contents
     * [2018\-01](#2018-01)
       * [Unsupervised Low\-Dimensional Vector Representations for Words, Phrases  and Text that are Transparent, Scalable, and produce Similarity Metrics that  are Complementary to Neural Embeddings](#unsupervised-low-dimensional-vector-representations-for-words-phrases--and-text-that-are-transparent-scalable-and-produce-similarity-metrics-that--are-complementary-to-neural-embeddings)
       * [Knowledge\-based Word Sense Disambiguation using Topic Models](#knowledge-based-word-sense-disambiguation-using-topic-models)
+      * [Unsupervised Part\-of\-Speech Induction](#unsupervised-part-of-speech-induction)
 
 Articles
 ========
@@ -29,4 +30,14 @@ Articles
 **URL:** https://arxiv.org/abs/1801.01900
 
 **Notes:** word sense disambiguation with wordnet, assigning prior as normal distribution; the parameters of normal distribution are determined from corpus at hand; the topics are being modelled by synset disrtibution instead of word themselves
+
+### Unsupervised Part-of-Speech Induction
+
+**Authors:** Omid Kashefi
+
+**Abstract:** Part-of-Speech (POS) tagging is an old and fundamental task in natural language processing. While supervised POS taggers have shown promising accuracy, it is not always feasible to use supervised methods due to lack of labeled data. In this project, we attempt to unsurprisingly induce POS tags by iteratively looking for a recurring pattern of words through a hierarchical agglomerative clustering process. Our approach shows promising results when compared to the tagging results of the state-of-the-art unsupervised POS taggers.
+
+**URL:** https://arxiv.org/abs/1801.03564
+
+**Notes:** unsupervised PoS-tagging; the author use classic backward-forward algorithm to cluster tags produced by HMM; it shows promicing results - only 10% worse that SotA
 
