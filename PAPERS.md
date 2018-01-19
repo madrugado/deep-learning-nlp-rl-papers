@@ -9,6 +9,7 @@ Table of Contents
       * [A Scalable Hierarchical Distributed Language Model](#a-scalable-hierarchical-distributed-language-model)
     * [2011](#2011)
       * [On optimization methods for deep learning](#on-optimization-methods-for-deep-learning)
+      * [Natural Language Processing (almost) from Scratch](#natural-language-processing-almost-from-scratch)
     * [2012](#2012)
       * [A Fast and Simple Algorithm for Training Neural Probabilistic Language Models](#a-fast-and-simple-algorithm-for-training-neural-probabilistic-language-models)
     * [2013](#2013)
@@ -318,6 +319,16 @@ Articles
 **URL:** https://cs.stanford.edu/~acoates/papers/LeNgiCoaLahProNg11.pdf
 
 **Notes:** old paper from Quoc Le & Andrew Ng on usage of conjugate grad & L-BFGS; they do give faster convergence
+
+### Natural Language Processing (almost) from Scratch
+
+**Authors:** Ronan Collobert, Jason Weston, Leon Bottou, Michael Karlen, Koray Kavukcuoglu, Pavel Kuksa
+
+**Abstract:** We propose a unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including: part-of-speech tagging, chunking, named entity recognition, and semantic role labeling. This versatility is achieved by trying to avoid task-specific engineering and therefore disregarding a lot of prior knowledge. Instead of exploiting man-made input features carefully optimized for each task, our system learns internal representations on the basis of vast amounts of mostly unlabeled training data. This work is then used as a basis for building a freely available tagging system with good performance and minimal computational requirements.
+
+**URL:** https://arxiv.org/abs/1103.0398
+
+**Notes:** fundamental paper in Neural NLP, it has almost everything you can imagine: NER, PoS tagging, etc.; multi-tasking; models: linear, conv+maxpool; unusual now hard tanh; linear instead of softmax; strangely no RNNs; unsupervised training for word emb; SGD
 
 ## 2012
 ### A Fast and Simple Algorithm for Training Neural Probabilistic Language Models
