@@ -16,6 +16,7 @@ Table of Contents
       * [Concurrent Reinforcement Learning from Customer Interactions\.](#concurrent-reinforcement-learning-from-customer-interactions)
       * [Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation](#estimating-or-propagating-gradients-through-stochastic-neurons-for-conditional-computation)
       * [Learning word embeddings efficiently with noise\-contrastive estimation](#learning-word-embeddings-efficiently-with-noise-contrastive-estimation)
+      * [Exploiting Similarities among Languages for Machine Translation](#exploiting-similarities-among-languages-for-machine-translation)
     * [2014](#2014)
       * [A Clockwork RNN](#a-clockwork-rnn)
       * [A Convolutional Neural Network for Modelling Sentences](#a-convolutional-neural-network-for-modelling-sentences)
@@ -371,6 +372,16 @@ Articles
 **URL:** https://papers.nips.cc/paper/5165-learning-word-embeddings-efficiently-with-noise-contrastive-estimation
 
 **Notes:** long missing paper on noise-contrasice estimation; NCE for word vectors introduced here; also positional encoding for window
+
+### Exploiting Similarities among Languages for Machine Translation
+
+**Authors:** Tomas Mikolov, Quoc V. Le, Ilya Sutskever
+
+**Abstract:** Dictionaries and phrase tables are the basis of modern statistical machine translation systems. This paper develops a method that can automate the process of generating and extending dictionaries and phrase tables. Our method can translate missing word and phrase entries by learning language structures based on large monolingual data and mapping between languages from small bilingual data. It uses distributed representation of words and learns a linear mapping between vector spaces of languages. Despite its simplicity, our method is surprisingly effective: we can achieve almost 90% precision@5 for translation of words between English and Spanish. This method makes little assumption about the languages, so it can be used to extend and refine dictionaries and translation tables for any language pairs.
+
+**URL:** https://arxiv.org/abs/1309.4168
+
+**Notes:** first paper to the best of my knowledge where exploted the idea of a) automatic mapping of monolingual embeddings and и) matrix transfrom for that mapping; also it's from Mikolov
 
 ## 2014
 ### A Clockwork RNN
