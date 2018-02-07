@@ -8,6 +8,8 @@ Table of Contents
       * [Knowledge\-based Word Sense Disambiguation using Topic Models](#knowledge-based-word-sense-disambiguation-using-topic-models)
       * [Unsupervised Part\-of\-Speech Induction](#unsupervised-part-of-speech-induction)
       * [MaskGAN: Better Text Generation via Filling in the \_\_\_\_\_\_](#maskgan-better-text-generation-via-filling-in-the-______)
+    * [2018\-02](#2018-02)
+      * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
 
 Articles
 ========
@@ -51,4 +53,15 @@ Articles
 **URL:** https://arxiv.org/abs/1801.07736
 
 **Notes:** GAN on texts which actually makes sense; gererator is standard seq2seq; discriminator has the same architecture as generator, but it has two outputs: probability for a word to be real and value function, which is used as baseline in REINFORCE for generator
+
+## 2018-02
+### Improving Variational Encoder-Decoders in Dialogue Generation
+
+**Authors:** Xiaoyu Shen, Hui Su, Shuzi Niu, Vera Demberg
+
+**Abstract:** Variational encoder-decoders (VEDs) have shown promising results in dialogue generation. However, the latent variable distributions are usually approximated by a much simpler model than the powerful RNN structure used for encoding and decoding, yielding the KL-vanishing problem and inconsistent training objective. In this paper, we separate the training step into two phases: The first phase learns to autoencode discrete texts into continuous embeddings, from which the second phase learns to generalize latent representations by reconstructing the encoded embedding. In this case, latent variables are sampled by transforming Gaussian noise through multi-layer perceptrons and are trained with a separate VED model, which has the potential of realizing a much more flexible distribution. We compare our model with current popular models and the experiment demonstrates substantial improvement in both metric-based and human evaluations.
+
+**URL:** https://arxiv.org/abs/1802.02032
+
+**Notes:** combined arch for better dialog gen: auto-encoder entangled with conditional VAE; variational HRED for CVAE; CVAE is trained with scheduled sampling; training of the whole model is resembling of GANs: AE or CVAE is freezed while the other has being trained
 
