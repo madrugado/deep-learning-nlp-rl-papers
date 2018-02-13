@@ -10,6 +10,7 @@ Table of Contents
       * [MaskGAN: Better Text Generation via Filling in the \_\_\_\_\_\_](#maskgan-better-text-generation-via-filling-in-the-______)
     * [2018\-02](#2018-02)
       * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
+      * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
 
 Articles
 ========
@@ -64,4 +65,14 @@ Articles
 **URL:** https://arxiv.org/abs/1802.02032
 
 **Notes:** combined arch for better dialog gen: auto-encoder entangled with conditional VAE; variational HRED for CVAE; CVAE is trained with scheduled sampling; training of the whole model is resembling of GANs: AE or CVAE is freezed while the other has being trained
+
+### TextZoo, a New Benchmark for Reconsidering Text Classification
+
+**Authors:** Benyou Wang, Li Wang, Qikang Wei
+
+**Abstract:** Text representation is a fundamental concern in Natural Language Processing, especially in text classification. Recently, many neural network approaches with delicate representation model (e.g. FASTTEXT, CNN, RNN and many hybrid models with attention mechanisms) claimed that they achieved state-of-art in specific text classification datasets. However, it lacks an unified benchmark to compare these models and reveals the advantage of each sub-components for various settings. We re-implement more than 20 popular text representation models for classification in more than 10 datasets. In this paper, we reconsider the text classification task in the perspective of neural network and get serval effects with analysis of the above results.
+
+**URL:** https://arxiv.org/abs/1802.03656
+
+**Notes:** conceptually simple paper, but the code for it is really useful: guys reimplemented SotA text classification architectures in one manner
 
