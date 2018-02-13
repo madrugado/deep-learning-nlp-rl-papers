@@ -6,6 +6,7 @@ Table of Contents
     * [Lecture notes](#lecture-notes)
       * [Monte Carlo Methods and Importance Sampling](#monte-carlo-methods-and-importance-sampling)
       * [Kernel Canonical Correlation Analysis](#kernel-canonical-correlation-analysis)
+      * [The Matrix Calculus You Need For Deep Learning](#the-matrix-calculus-you-need-for-deep-learning)
     * [Blueprints](#blueprints)
       * [In\-Datacenter Performance Analysis of a Tensor Processing Unit​](#in-datacenter-performance-analysis-of-a-tensor-processing-unit)
       * [TensorFlow: Large\-Scale Machine Learning on Heterogeneous Distributed Systems](#tensorflow-large-scale-machine-learning-on-heterogeneous-distributed-systems)
@@ -48,6 +49,16 @@ Miscellaneous
 **URL:** http://www.ics.uci.edu/~welling/classnotes/papers_class/kCCA.pdf
 
 **Notes:** explanation of kernel Canonical Correlation Analysis from Max Welling
+
+### The Matrix Calculus You Need For Deep Learning
+
+**Authors:** Terence Parr, Jeremy Howard
+
+**Abstract:** This paper is an attempt to explain all the matrix calculus you need in order to understand the training of deep neural networks. We assume no math knowledge beyond what you learned in calculus 1, and provide links to help you refresh the necessary math where needed. Note that you do not need to understand this material before you start learning to train and use deep learning in practice; rather, this material is for those who are already familiar with the basics of neural networks, and wish to deepen their understanding of the underlying math. Don't worry if you get stuck at some point along the way---just go back and reread the previous section, and try writing down and working through some examples. And if you're still stuck, we're happy to answer your questions in the Theory category at forums.fast.ai. Note: There is a reference section at the end of the paper summarizing all the key matrix calculus rules and terminology discussed here.
+
+**URL:** https://arxiv.org/abs/1802.01528
+
+**Notes:** self-explaining title: The Matrix Calculus You Need For Deep Learning
 
 ## Blueprints
 ### In-Datacenter Performance Analysis of a Tensor Processing Unit​
