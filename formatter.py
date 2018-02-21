@@ -89,6 +89,16 @@ class ArticleFormatter:
             self.has_URL = True
             return
 
+        # special case of openreview link
+        if not self.has_title and not self.has_authors \
+                and self.buf[-1].startswith("http") and "openreview.net" in self.buf[-1]:
+            self.buf = list(parse_openreview(self.buf[-1])) + [self.buf[-1]]
+            self.has_title = True
+            self.has_authors = True
+            self.has_abstract = True
+            self.has_URL = True
+            return
+
         if not self.has_title:
             if 0 < len(self.buf[-1]) < 150:
                 self.has_title = True
@@ -166,6 +176,27 @@ def parse_arxiv(url):
         # FIXME: use actual text in <a>
         abstract = abstract[:url_position_start] + "[URL](" + abstract_url + ")" + abstract[link_stop:]
     abstract = re.sub("<[^>]*>", "", abstract)
+
+    return title, authors, abstract
+
+
+def parse_openreview(url):
+    resp = html.unescape(requests.get(url).content.decode())
+
+    # title
+    title_start = resp.find('class="note_content_title citation_title">')
+    title_start = resp.find("\n", title_start) + 1
+    title = resp[title_start:resp.find("\n", title_start)].strip()
+
+    # authors
+    authors_start = resp.find('author">') + 8
+    authors = resp[authors_start:resp.find("</h3>", authors_start)]
+
+    # abstract
+    abstract_start = resp.find("Abstract:")
+    abstract_start = resp.find('note-content-value">', abstract_start) + 20
+    abstract = resp[abstract_start:resp.find("</span>", abstract_start)]
+    abstract = " ".join(abstract.split("\n")).strip()
 
     return title, authors, abstract
 
