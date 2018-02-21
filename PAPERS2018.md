@@ -12,6 +12,7 @@ Table of Contents
       * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
       * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
       * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
+      * [Latent Topic Conversational Models](#latent-topic-conversational-models)
 
 Articles
 ========
@@ -86,4 +87,14 @@ Articles
 **URL:** https://arxiv.org/abs/1802.04730
 
 **Notes:** really hot engineering work from Facebook: DSL which is really close to mathematic notation, so a researcher could write in it directly, from this DSL an algorithm generates code in CUDA a few times, the best generated code is used for production
+
+### Latent Topic Conversational Models
+
+**Authors:** Tsung-Hsien Wen, Minh-Thang Luong
+
+**Abstract:** Despite much success in many large-scale language tasks, sequence-to-sequence (seq2seq) models have not been an ideal choice for conversational modeling as they tend to generate generic and repetitive responses. In this paper, we propose a Latent Topic Conversational Model (LTCM) that augments the seq2seq model with a neural topic component to better model human-human conversations. The neural topic component encodes information from the source sentence to build a global “topic” distribution over words, which is then consulted by the seq2seq model to improve generation at each time step. The experimental results show that the proposed LTCM can generate more diverse and interesting responses by sampling from its learnt latent representations. In a subjective human evaluation, the judges also confirm that LTCM is the preferred option comparing to competitive baseline models.
+
+**URL:** https://openreview.net/forum?id=S1GUgxgCW
+
+**Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
 
