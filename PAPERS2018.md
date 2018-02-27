@@ -13,6 +13,7 @@ Table of Contents
       * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
       * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
+      * [Deep contextualized word representations](#deep-contextualized-word-representations)
 
 Articles
 ========
@@ -97,4 +98,14 @@ Articles
 **URL:** https://arxiv.org/abs/1802.08636
 
 **Notes:** new SotA in summarization; CNN for feature extraction from sentences; LSTM for document embedding; embedding based ranking of sentences which are used for summarization; ranking trained by REINFORCE; beam search analog for RL training
+
+### Deep contextualized word representations
+
+**Authors:** Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer
+
+**Abstract:** We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.
+
+**URL:** https://arxiv.org/abs/1802.05365
+
+**Notes:** new SotA in NER & other tasks for embeddings; ELMo - n layers of bidirectional language model (4096 LSTM units each direction) and attn over layers, i.e embedding from each layer for each token is taken with softmax weight and summarized
 
