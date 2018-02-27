@@ -12,6 +12,7 @@ Table of Contents
       * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
       * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
       * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
+      * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
 
 Articles
 ========
@@ -86,4 +87,14 @@ Articles
 **URL:** https://arxiv.org/abs/1802.04730
 
 **Notes:** really hot engineering work from Facebook: DSL which is really close to mathematic notation, so a researcher could write in it directly, from this DSL an algorithm generates code in CUDA a few times, the best generated code is used for production
+
+### Ranking Sentences for Extractive Summarization with Reinforcement  Learning
+
+**Authors:** Shashi Narayan, Shay B. Cohen, Mirella Lapata
+
+**Abstract:** Single document summarization is the task of producing a shorter version of a document while preserving its principal information content. In this paper we conceptualize extractive summarization as a sentence ranking task and propose a novel training algorithm which globally optimizes the ROUGE evaluation metric through a reinforcement learning objective. We use our algorithm to train a neural summarization model on the CNN and DailyMail datasets and demonstrate experimentally that it outperforms state-of-the-art extractive and abstractive systems when evaluated automatically and by humans.
+
+**URL:** https://arxiv.org/abs/1802.08636
+
+**Notes:** new SotA in summarization; CNN for feature extraction from sentences; LSTM for document embedding; embedding based ranking of sentences which are used for summarization; ranking trained by REINFORCE; beam search analog for RL training
 
