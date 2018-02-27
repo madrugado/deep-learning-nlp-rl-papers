@@ -14,6 +14,7 @@ Table of Contents
       * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
       * [Deep contextualized word representations](#deep-contextualized-word-representations)
+      * [Latent Topic Conversational Models](#latent-topic-conversational-models)
 
 Articles
 ========
@@ -108,4 +109,14 @@ Articles
 **URL:** https://arxiv.org/abs/1802.05365
 
 **Notes:** new SotA in NER & other tasks for embeddings; ELMo - n layers of bidirectional language model (4096 LSTM units each direction) and attn over layers, i.e embedding from each layer for each token is taken with softmax weight and summarized
+
+### Latent Topic Conversational Models
+
+**Authors:** Tsung-Hsien Wen, Minh-Thang Luong
+
+**Abstract:** Despite much success in many large-scale language tasks, sequence-to-sequence (seq2seq) models have not been an ideal choice for conversational modeling as they tend to generate generic and repetitive responses. In this paper, we propose a Latent Topic Conversational Model (LTCM) that augments the seq2seq model with a neural topic component to better model human-human conversations. The neural topic component encodes information from the source sentence to build a global “topic” distribution over words, which is then consulted by the seq2seq model to improve generation at each time step. The experimental results show that the proposed LTCM can generate more diverse and interesting responses by sampling from its learnt latent representations. In a subjective human evaluation, the judges also confirm that LTCM is the preferred option comparing to competitive baseline models.
+
+**URL:** https://openreview.net/forum?id=S1GUgxgCW
+
+**Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
 
