@@ -13,6 +13,10 @@ Table of Contents
       * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
       * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+    * [2018\-03](#2018-03)
+      * [Achieving Human Parity on AutomaticChinese to English News Translation](#achieving-human-parity-on-automaticchinese-to-english-news-translation)
+      * [Fast Decoding in Sequence Models using Discrete Latent Variables](#fast-decoding-in-sequence-models-using-discrete-latent-variables)
+      * [An Analysis of Neural Language Modeling at Multiple Scales](#an-analysis-of-neural-language-modeling-at-multiple-scales)
 
 Articles
 ========
@@ -97,4 +101,35 @@ Articles
 **URL:** https://openreview.net/forum?id=S1GUgxgCW
 
 **Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
+
+## 2018-03
+### Achieving Human Parity on AutomaticChinese to English News Translation
+
+**Authors:** Hany Hassan, Anthony Aue, Chang Chen, Vishal Chowdhary, Jonathan Clark, Christian Federmann, Xuedong Huang, Marcin Junczys-Dowmunt, William Lewis, Mu Li, Shujie Liu, Tie-Yan Liu, Renqian Luo, Arul Menezes, Tao Qin, Frank Seide, Xu Tan, Fei Tian, Lijun Wu, Shuangzhi Wu, Yingce Xia, Dongdong Zhang, Zhirui Zhang, and Ming Zhou
+
+**Abstract:** Machine translation has made rapid advances in recent years. Millions of people are using it today in online translation systems and mobile applications in order to communicate across language barriers. The question naturally arises whether such systems can approach or achieve parity with human translations. In this paper, we first address the problem of how to define and accurately measure human parity in translation. We then describe Microsoft’s machine translation system and measure the quality of its translations on the widely used WMT 2017 news translation task from Chinese to English. We find that our latest neural machine translation system has reached a new state-of-the-art, and that the translation quality is at human parity when compared to professional human translations. We also find that it significantly exceeds the quality of crowd-sourced non-professional translations.
+
+**URL:** https://www.microsoft.com/en-us/research/uploads/prod/2018/03/final-achieving-human.pdf
+
+**Notes:** human level performance in MT from MSFT! really strong claim proved in reliefingly narrow domain of English/Chinese news; not sure if the reference-matching measures are good for MT; arch is Transformer with joint unservised training on monolingual corpora
+
+### Fast Decoding in Sequence Models using Discrete Latent Variables
+
+**Authors:** Łukasz Kaiser, Aurko Roy, Ashish Vaswani, Niki Parmar, Samy Bengio, Jakob Uszkoreit, Noam Shazeer
+
+**Abstract:** Autoregressive sequence models based on deep neural networks, such as RNNs, Wavenet and the Transformer attain state-of-the-art results on many tasks. However, they are difficult to parallelize and are thus slow at processing long sequences. RNNs lack parallelism both during training and decoding, while architectures like WaveNet and Transformer are much more parallelizable during training, yet still operate sequentially during decoding. Inspired by [arxiv:[URL](/abs/1711.00937)], we present a method to extend sequence models using discrete latent variables that makes decoding much more parallelizable. We first auto-encode the target sequence into a shorter sequence of discrete latent variables, which at inference time is generated autoregressively, and finally decode the output sequence from this shorter latent sequence in parallel. To this end, we introduce a novel method for constructing a sequence of discrete latent variables and compare it with previously introduced methods. Finally, we evaluate our model end-to-end on the task of neural machine translation, where it is an order of magnitude faster at decoding than comparable autoregressive models. While lower in BLEU than purely autoregressive models, our model achieves higher scores than previously proposed non-autogregressive translation models.
+
+**URL:** https://arxiv.org/abs/1803.03382
+
+**Notes:** great work from Google; like Non-Autoregressive Trasformer; vector quantization as projection on subspaces; the reconstruction loss for latent space and input with AE; convolutions instead of fully-connecteds; latent variables instead of fertility rate in NAT
+
+### An Analysis of Neural Language Modeling at Multiple Scales
+
+**Authors:** Stephen Merity, Nitish Shirish Keskar, Richard Socher
+
+**Abstract:** Many of the leading approaches in language modeling introduce novel, complex and specialized architectures. We take existing state-of-the-art word level language models based on LSTMs and QRNNs and extend them to both larger vocabularies as well as character-level granularity. When properly tuned, LSTMs and QRNNs achieve state-of-the-art results on character-level (Penn Treebank, enwik8) and word-level (WikiText-103) datasets, respectively. Results are obtained in only 12 hours (WikiText-103) to 2 days (enwik8) using a single modern GPU.
+
+**URL:** https://arxiv.org/abs/1803.08240
+
+**Notes:** new paper from Salesforce: larger well-tuned LSTM (and QRNN) are giving SotA results in language modelling; in addition they use longer BPTT (150) and tied adaptive softmax; interestingly they found that QRNN need to be deeper than LSTM for these tasks
 
