@@ -15,6 +15,7 @@ Table of Contents
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
       * [Deep contextualized word representations](#deep-contextualized-word-representations)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+      * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
 
 Articles
 ========
@@ -119,4 +120,14 @@ Articles
 **URL:** https://openreview.net/forum?id=S1GUgxgCW
 
 **Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
+
+### Simple random search provides a competitive approach to reinforcement  learning
+
+**Authors:** Horia Mania, Aurelia Guy, Benjamin Recht
+
+**Abstract:** A common belief in model-free reinforcement learning is that methods based on random search in the parameter space of policies exhibit significantly worse sample complexity than those that explore the space of actions. We dispel such beliefs by introducing a random search method for training static, linear policies for continuous control problems, matching state-of-the-art sample efficiency on the benchmark MuJoCo locomotion tasks. Our method also finds a nearly optimal controller for a challenging instance of the Linear Quadratic Regulator, a classical problem in control theory, when the dynamics are not known. Computationally, our random search algorithm is at least 15 times more efficient than the fastest competing model-free methods on these benchmarks. We take advantage of this computational efficiency to evaluate the performance of our method over hundreds of random seeds and many different hyperparameter configurations for each benchmark task. Our simulations highlight a high variability in performance in these benchmark tasks, suggesting that commonly used estimations of sample efficiency do not adequately evaluate the performance of RL algorithms.
+
+**URL:** https://arxiv.org/abs/1803.07055
+
+**Notes:** random search with a few optimizations achieve SotA on continous control tasks! essentially is is random search with scaling of update by reward std. deviation; much more sample efficient then Evolution Strategy; with code!
 
