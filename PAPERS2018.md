@@ -15,7 +15,11 @@ Table of Contents
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
       * [Deep contextualized word representations](#deep-contextualized-word-representations)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+    * [2018\-03](#2018-03)
       * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
+    * [2018\-04](#2018-04)
+      * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
+      * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
 
 Articles
 ========
@@ -121,6 +125,7 @@ Articles
 
 **Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
 
+## 2018-03
 ### Simple random search provides a competitive approach to reinforcement  learning
 
 **Authors:** Horia Mania, Aurelia Guy, Benjamin Recht
@@ -130,4 +135,25 @@ Articles
 **URL:** https://arxiv.org/abs/1803.07055
 
 **Notes:** random search with a few optimizations achieve SotA on continous control tasks! essentially is is random search with scaling of update by reward std. deviation; much more sample efficient then Evolution Strategy; with code!
+
+## 2018-04
+### Large scale distributed neural network training through online  distillation
+
+**Authors:** Rohan Anil, Gabriel Pereyra, Alexandre Passos, Robert Ormandi, George E. Dahl, Geoffrey E. Hinton
+
+**Abstract:** Techniques such as ensembling and distillation promise model quality improvements when paired with almost any base model. However, due to increased test-time cost (for ensembles) and increased complexity of the training pipeline (for distillation), these techniques are challenging to use in industrial settings. In this paper we explore a variant of distillation which is relatively straightforward to use as it does not require a complicated multi-stage setup or many new hyperparameters. Our first claim is that online distillation enables us to use extra parallelism to fit very large datasets about twice as fast. Crucially, we can still speed up training even after we have already reached the point at which additional parallelism provides no benefit for synchronous or asynchronous stochastic gradient descent. Two neural networks trained on disjoint subsets of the data can share knowledge by encouraging each model to agree with the predictions the other model would have made. These predictions can come from a stale version of the other model so they can be safely computed using weights that only rarely get transmitted. Our second claim is that online distillation is a cost-effective way to make the exact predictions of a model dramatically more reproducible. We support our claims using experiments on the Criteo Display Ad Challenge dataset, ImageNet, and the largest to-date dataset used for neural language modeling, containing $6\times 10^{11}$ tokens and based on the Common Crawl repository of web data.
+
+**URL:** https://arxiv.org/abs/1804.03235
+
+**Notes:** Google large scale language modelling. It is 20 _Terabytes_ of texts with 673 billion tokens. The algorithm they propose called codistillation: distributed learning of similar models with additional loss for each model to predist close to others results.
+
+### Frustratingly Easy Meta-Embedding -- Computing Meta-Embeddings by  Averaging Source Word Embeddings
+
+**Authors:** Joshua Coates, Danushka Bollegala
+
+**Abstract:** Creating accurate meta-embeddings from pre-trained source embeddings has received attention lately. Methods based on global and locally-linear transformation and concatenation have shown to produce accurate meta-embeddings. In this paper, we show that the arithmetic mean of two distinct word embedding sets yields a performant meta-embedding that is comparable or better than more complex meta-embedding learning methods. The result seems counter-intuitive given that vector spaces in different source embeddings are not comparable and cannot be simply averaged. We give insight into why averaging can still produce accurate meta-embedding despite the incomparability of the source vector spaces.
+
+**URL:** https://arxiv.org/abs/1804.05262
+
+**Notes:** really simple claim - averaging of different embedding makes them better; it is proved on datasets for semantic properties of words; interestingly averaging is slighly worse then concatenation but don't requires extra storage space
 
