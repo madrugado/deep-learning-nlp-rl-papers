@@ -20,6 +20,7 @@ Table of Contents
     * [2018\-04](#2018-04)
       * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
       * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
+      * [The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation](#the-best-of-both-worlds-combining-recent-advances-in-neural-machine--translation)
 
 Articles
 ========
@@ -156,4 +157,14 @@ Articles
 **URL:** https://arxiv.org/abs/1804.05262
 
 **Notes:** really simple claim - averaging of different embedding makes them better; it is proved on datasets for semantic properties of words; interestingly averaging is slighly worse then concatenation but don't requires extra storage space
+
+### The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation
+
+**Authors:** Mia Xu Chen, Orhan Firat, Ankur Bapna, Melvin Johnson, Wolfgang Macherey, George Foster, Llion Jones, Niki Parmar, Mike Schuster, Zhifeng Chen, Yonghui Wu, Macduff Hughes
+
+**Abstract:** The past year has witnessed rapid advances in sequence-to-sequence (seq2seq) modeling for Machine Translation (MT). The classic RNN-based approaches to MT were first out-performed by the convolutional seq2seq model, which was then out-performed by the more recent Transformer model. Each of these new approaches consists of a fundamental architecture accompanied by a set of modeling and training techniques that are in principle applicable to other seq2seq architectures. In this paper, we tease apart the new architectures and their accompanying techniques in two ways. First, we identify several key modeling and training techniques, and apply them to the RNN architecture, yielding a new RNMT+ model that outperforms all of the three fundamental architectures on the benchmark WMT'14 English to French and English to German tasks. Second, we analyze the properties of each fundamental seq2seq architecture and devise new hybrid architectures intended to combine their strengths. Our hybrid models obtain further improvements, outperforming the RNMT+ model on both benchmark datasets.
+
+**URL:** https://arxiv.org/abs/1804.09849
+
+**Notes:** Google's paper on combination of multi-head and ol' good RNNs; it's somewhat surprisingly better in NMT task; as reguralizers authors use Label Smoothing, Dropout and Weight Decay; an ablation study shows that LS is even more important for NMT than MH attn
 
