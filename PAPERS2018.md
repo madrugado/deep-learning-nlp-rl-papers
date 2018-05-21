@@ -21,6 +21,8 @@ Table of Contents
       * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
       * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
       * [The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation](#the-best-of-both-worlds-combining-recent-advances-in-neural-machine--translation)
+    * [2018\-05](#2018-05)
+      * [Paper Abstract Writing through Editing Mechanism](#paper-abstract-writing-through-editing-mechanism)
 
 Articles
 ========
@@ -167,4 +169,15 @@ Articles
 **URL:** https://arxiv.org/abs/1804.09849
 
 **Notes:** Google's paper on combination of multi-head and ol' good RNNs; it's somewhat surprisingly better in NMT task; as reguralizers authors use Label Smoothing, Dropout and Weight Decay; an ablation study shows that LS is even more important for NMT than MH attn
+
+## 2018-05
+### Paper Abstract Writing through Editing Mechanism
+
+**Authors:** Qingyun Wang, Zhihao Zhou, Lifu Huang, Spencer Whitehead, Boliang Zhang, Heng Ji, Kevin Knight
+
+**Abstract:** We present a paper abstract writing system based on an attentive neural sequence-to-sequence model that can take a title as input and automatically generate an abstract. We design a novel Writing-editing Network that can attend to both the title and the previously generated abstract drafts and then iteratively revise and polish the abstract. With two series of Turing tests, where the human judges are asked to distinguish the system-generated abstracts from human-written ones, our system passes Turing tests by junior domain experts at a rate up to 30% and by non-expert at a rate up to 80%.
+
+**URL:** https://arxiv.org/abs/1805.06064
+
+**Notes:** generate abstract from title; dataset id published; two networks: writing and editing ones, which relates to back-translation; Attentinve Revision Gate; ROUGE, METEOR and Turing tests (METEOR correlates with the latter, surprisingly)
 
