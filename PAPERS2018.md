@@ -15,6 +15,7 @@ Table of Contents
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
       * [Deep contextualized word representations](#deep-contextualized-word-representations)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+      * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
     * [2018\-03](#2018-03)
       * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
     * [2018\-04](#2018-04)
@@ -127,6 +128,16 @@ Articles
 **URL:** https://openreview.net/forum?id=S1GUgxgCW
 
 **Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
+
+### Disentangling Aspect and Opinion Words in Target-based Sentiment  Analysis using Lifelong Learning
+
+**Authors:** Shuai Wang, Mianwei Zhou, Sahisnu Mazumder, Bing Liu, Yi Chang
+
+**Abstract:** Given a target name, which can be a product aspect or entity, identifying its aspect words and opinion words in a given corpus is a fine-grained task in target-based sentiment analysis (TSA). This task is challenging, especially when we have no labeled data and we want to perform it for any given domain. To address it, we propose a general two-stage approach. Stage one extracts/groups the target-related words (call t-words) for a given target. This is relatively easy as we can apply an existing semantics-based learning technique. Stage two separates the aspect and opinion words from the grouped t-words, which is challenging because we often do not have enough word-level aspect and opinion labels. In this work, we formulate this problem in a PU learning setting and incorporate the idea of lifelong learning to solve it. Experimental results show the effectiveness of our approach.
+
+**URL:** https://arxiv.org/abs/1802.05818
+
+**Notes:** Authors are proposing nouvelle technique to extract opinion words from general vocabulary words. They use Amazon review dataset. The key idea here is to found opinion words as being close in multiple domains to base lexicon.
 
 ## 2018-03
 ### Simple random search provides a competitive approach to reinforcement  learning
