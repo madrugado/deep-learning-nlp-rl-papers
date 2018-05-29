@@ -24,6 +24,7 @@ Table of Contents
       * [The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation](#the-best-of-both-worlds-combining-recent-advances-in-neural-machine--translation)
     * [2018\-05](#2018-05)
       * [Paper Abstract Writing through Editing Mechanism](#paper-abstract-writing-through-editing-mechanism)
+      * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
 
 Articles
 ========
@@ -191,4 +192,14 @@ Articles
 **URL:** https://arxiv.org/abs/1805.06064
 
 **Notes:** generate abstract from title; dataset id published; two networks: writing and editing ones, which relates to back-translation; Attentinve Revision Gate; ROUGE, METEOR and Turing tests (METEOR correlates with the latter, surprisingly)
+
+### Zero-Shot Dual Machine Translation
+
+**Authors:** Lierni Sestorain, Massimiliano Ciaramita, Christian Buck, Thomas Hofmann
+
+**Abstract:** Neural Machine Translation (NMT) systems rely on large amounts of parallel data. This is a major challenge for low-resource languages. Building on recent work on unsupervised and semi-supervised methods, we present an approach that combines zero-shot and dual learning. The latter relies on reinforcement learning, to exploit the duality of the machine translation task, and requires only monolingual data for the target language pair. Experiments show that a zero-shot dual system, trained on English-French and English-Spanish, outperforms by large margins a standard NMT system in zero-shot translation performance on Spanish-French (both directions). The zero-shot dual method approaches the performance, within 2.2 BLEU points, of a comparable supervised setting. Our method can obtain improvements also on the setting where a small amount of parallel data for the zero-shot language pair is available. Adding Russian, to extend our experiments to jointly modeling 6 zero-shot translation directions, all directions improve between 4 and 15 BLEU points, again, reaching performance near that of the supervised setting.
+
+**URL:** https://arxiv.org/abs/1805.10338
+
+**Notes:** Google's fresh paper on semi-supervised NMT; zero-shot & back-translation inside; it is still pretty far from supervised models, but that approach adds 2-5 point to every language they tried (UN offial languages); and they opensourcing the model!
 
