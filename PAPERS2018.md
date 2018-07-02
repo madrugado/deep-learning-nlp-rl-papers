@@ -25,6 +25,8 @@ Table of Contents
     * [2018\-05](#2018-05)
       * [Paper Abstract Writing through Editing Mechanism](#paper-abstract-writing-through-editing-mechanism)
       * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
+    * [2018\-06](#2018-06)
+      * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
 
 Articles
 ========
@@ -202,4 +204,15 @@ Articles
 **URL:** https://arxiv.org/abs/1805.10338
 
 **Notes:** Google's fresh paper on semi-supervised NMT; zero-shot & back-translation inside; it is still pretty far from supervised models, but that approach adds 2-5 point to every language they tried (UN offial languages); and they opensourcing the model!
+
+## 2018-06
+### TextWorld: A Learning Environment for Text-based Games
+
+**Authors:** Marc-Alexandre Côté, Ákos Kádár, Xingdi Yuan, Ben Kybartas, Tavian Barnes, Emery Fine, James Moore, Matthew Hausknecht, Layla El Asri, Mahmoud Adada, Wendy Tay, Adam Trischler
+
+**Abstract:** We introduce TextWorld, a sandbox learning environment for the training and evaluation of RL agents on text-based games. TextWorld is a Python library that handles interactive play-through of text games, as well as backend functions like state tracking and reward assignment. It comes with a curated list of games whose features and challenges we have analyzed. More significantly, it enables users to handcraft or automatically generate new games. Its generative mechanisms give precise control over the difficulty, scope, and language of constructed games, and can be used to relax challenges inherent to commercial text games like partial observability and sparse rewards. By generating sets of varied but similar games, TextWorld can also be used to study generalization and transfer learning. We cast text-based games in the Reinforcement Learning formalism, use our framework to develop a set of benchmark games, and evaluate several baseline agents on this set and the curated list.
+
+**URL:** https://arxiv.org/abs/1806.11532
+
+**Notes:** oh, yes! I've been waiting for that: text quests environment for RL agents! Thanks to MSR and colleagues from McGill! They use classic text adventures from the 80s as a Pierian spring, they introduce fwd and bkwd generation using generative grammars
 
