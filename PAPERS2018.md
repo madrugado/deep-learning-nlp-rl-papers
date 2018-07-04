@@ -12,11 +12,28 @@ Table of Contents
       * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
       * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
       * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
+      * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
+      * [Deep contextualized word representations](#deep-contextualized-word-representations)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+<<<<<<< HEAD
     * [2018\-03](#2018-03)
       * [Achieving Human Parity on AutomaticChinese to English News Translation](#achieving-human-parity-on-automaticchinese-to-english-news-translation)
       * [Fast Decoding in Sequence Models using Discrete Latent Variables](#fast-decoding-in-sequence-models-using-discrete-latent-variables)
       * [An Analysis of Neural Language Modeling at Multiple Scales](#an-analysis-of-neural-language-modeling-at-multiple-scales)
+=======
+      * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
+    * [2018\-03](#2018-03)
+      * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
+    * [2018\-04](#2018-04)
+      * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
+      * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
+      * [The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation](#the-best-of-both-worlds-combining-recent-advances-in-neural-machine--translation)
+    * [2018\-05](#2018-05)
+      * [Paper Abstract Writing through Editing Mechanism](#paper-abstract-writing-through-editing-mechanism)
+      * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
+    * [2018\-06](#2018-06)
+      * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
+>>>>>>> 14fcfb61f67f4675d8079cca5e9ae89cd2003612
 
 Articles
 ========
@@ -92,6 +109,26 @@ Articles
 
 **Notes:** really hot engineering work from Facebook: DSL which is really close to mathematic notation, so a researcher could write in it directly, from this DSL an algorithm generates code in CUDA a few times, the best generated code is used for production
 
+### Ranking Sentences for Extractive Summarization with Reinforcement  Learning
+
+**Authors:** Shashi Narayan, Shay B. Cohen, Mirella Lapata
+
+**Abstract:** Single document summarization is the task of producing a shorter version of a document while preserving its principal information content. In this paper we conceptualize extractive summarization as a sentence ranking task and propose a novel training algorithm which globally optimizes the ROUGE evaluation metric through a reinforcement learning objective. We use our algorithm to train a neural summarization model on the CNN and DailyMail datasets and demonstrate experimentally that it outperforms state-of-the-art extractive and abstractive systems when evaluated automatically and by humans.
+
+**URL:** https://arxiv.org/abs/1802.08636
+
+**Notes:** new SotA in summarization; CNN for feature extraction from sentences; LSTM for document embedding; embedding based ranking of sentences which are used for summarization; ranking trained by REINFORCE; beam search analog for RL training
+
+### Deep contextualized word representations
+
+**Authors:** Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, Luke Zettlemoyer
+
+**Abstract:** We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.
+
+**URL:** https://arxiv.org/abs/1802.05365
+
+**Notes:** new SotA in NER & other tasks for embeddings; ELMo - n layers of bidirectional language model (4096 LSTM units each direction) and attn over layers, i.e embedding from each layer for each token is taken with softmax weight and summarized
+
 ### Latent Topic Conversational Models
 
 **Authors:** Tsung-Hsien Wen, Minh-Thang Luong
@@ -102,7 +139,27 @@ Articles
 
 **Notes:** generating utterances in dialogues with VAE and topic modelling: before generating a sentense we draw a topic proportion and generate phrase according to it
 
+### Disentangling Aspect and Opinion Words in Target-based Sentiment  Analysis using Lifelong Learning
+
+**Authors:** Shuai Wang, Mianwei Zhou, Sahisnu Mazumder, Bing Liu, Yi Chang
+
+**Abstract:** Given a target name, which can be a product aspect or entity, identifying its aspect words and opinion words in a given corpus is a fine-grained task in target-based sentiment analysis (TSA). This task is challenging, especially when we have no labeled data and we want to perform it for any given domain. To address it, we propose a general two-stage approach. Stage one extracts/groups the target-related words (call t-words) for a given target. This is relatively easy as we can apply an existing semantics-based learning technique. Stage two separates the aspect and opinion words from the grouped t-words, which is challenging because we often do not have enough word-level aspect and opinion labels. In this work, we formulate this problem in a PU learning setting and incorporate the idea of lifelong learning to solve it. Experimental results show the effectiveness of our approach.
+
+**URL:** https://arxiv.org/abs/1802.05818
+
+**Notes:** Authors are proposing nouvelle technique to extract opinion words from general vocabulary words. They use Amazon review dataset. The key idea here is to found opinion words as being close in multiple domains to base lexicon.
+
 ## 2018-03
+### Simple random search provides a competitive approach to reinforcement  learning
+
+**Authors:** Horia Mania, Aurelia Guy, Benjamin Recht
+
+**Abstract:** A common belief in model-free reinforcement learning is that methods based on random search in the parameter space of policies exhibit significantly worse sample complexity than those that explore the space of actions. We dispel such beliefs by introducing a random search method for training static, linear policies for continuous control problems, matching state-of-the-art sample efficiency on the benchmark MuJoCo locomotion tasks. Our method also finds a nearly optimal controller for a challenging instance of the Linear Quadratic Regulator, a classical problem in control theory, when the dynamics are not known. Computationally, our random search algorithm is at least 15 times more efficient than the fastest competing model-free methods on these benchmarks. We take advantage of this computational efficiency to evaluate the performance of our method over hundreds of random seeds and many different hyperparameter configurations for each benchmark task. Our simulations highlight a high variability in performance in these benchmark tasks, suggesting that commonly used estimations of sample efficiency do not adequately evaluate the performance of RL algorithms.
+
+**URL:** https://arxiv.org/abs/1803.07055
+
+**Notes:** random search with a few optimizations achieve SotA on continous control tasks! essentially is is random search with scaling of update by reward std. deviation; much more sample efficient then Evolution Strategy; with code!
+
 ### Achieving Human Parity on AutomaticChinese to English News Translation
 
 **Authors:** Hany Hassan, Anthony Aue, Chang Chen, Vishal Chowdhary, Jonathan Clark, Christian Federmann, Xuedong Huang, Marcin Junczys-Dowmunt, William Lewis, Mu Li, Shujie Liu, Tie-Yan Liu, Renqian Luo, Arul Menezes, Tao Qin, Frank Seide, Xu Tan, Fei Tian, Lijun Wu, Shuangzhi Wu, Yingce Xia, Dongdong Zhang, Zhirui Zhang, and Ming Zhou
@@ -132,4 +189,67 @@ Articles
 **URL:** https://arxiv.org/abs/1803.08240
 
 **Notes:** new paper from Salesforce: larger well-tuned LSTM (and QRNN) are giving SotA results in language modelling; in addition they use longer BPTT (150) and tied adaptive softmax; interestingly they found that QRNN need to be deeper than LSTM for these tasks
+
+## 2018-04
+### Large scale distributed neural network training through online  distillation
+
+**Authors:** Rohan Anil, Gabriel Pereyra, Alexandre Passos, Robert Ormandi, George E. Dahl, Geoffrey E. Hinton
+
+**Abstract:** Techniques such as ensembling and distillation promise model quality improvements when paired with almost any base model. However, due to increased test-time cost (for ensembles) and increased complexity of the training pipeline (for distillation), these techniques are challenging to use in industrial settings. In this paper we explore a variant of distillation which is relatively straightforward to use as it does not require a complicated multi-stage setup or many new hyperparameters. Our first claim is that online distillation enables us to use extra parallelism to fit very large datasets about twice as fast. Crucially, we can still speed up training even after we have already reached the point at which additional parallelism provides no benefit for synchronous or asynchronous stochastic gradient descent. Two neural networks trained on disjoint subsets of the data can share knowledge by encouraging each model to agree with the predictions the other model would have made. These predictions can come from a stale version of the other model so they can be safely computed using weights that only rarely get transmitted. Our second claim is that online distillation is a cost-effective way to make the exact predictions of a model dramatically more reproducible. We support our claims using experiments on the Criteo Display Ad Challenge dataset, ImageNet, and the largest to-date dataset used for neural language modeling, containing $6\times 10^{11}$ tokens and based on the Common Crawl repository of web data.
+
+**URL:** https://arxiv.org/abs/1804.03235
+
+**Notes:** Google large scale language modelling. It is 20 _Terabytes_ of texts with 673 billion tokens. The algorithm they propose called codistillation: distributed learning of similar models with additional loss for each model to predist close to others results.
+
+### Frustratingly Easy Meta-Embedding -- Computing Meta-Embeddings by  Averaging Source Word Embeddings
+
+**Authors:** Joshua Coates, Danushka Bollegala
+
+**Abstract:** Creating accurate meta-embeddings from pre-trained source embeddings has received attention lately. Methods based on global and locally-linear transformation and concatenation have shown to produce accurate meta-embeddings. In this paper, we show that the arithmetic mean of two distinct word embedding sets yields a performant meta-embedding that is comparable or better than more complex meta-embedding learning methods. The result seems counter-intuitive given that vector spaces in different source embeddings are not comparable and cannot be simply averaged. We give insight into why averaging can still produce accurate meta-embedding despite the incomparability of the source vector spaces.
+
+**URL:** https://arxiv.org/abs/1804.05262
+
+**Notes:** really simple claim - averaging of different embedding makes them better; it is proved on datasets for semantic properties of words; interestingly averaging is slighly worse then concatenation but don't requires extra storage space
+
+### The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation
+
+**Authors:** Mia Xu Chen, Orhan Firat, Ankur Bapna, Melvin Johnson, Wolfgang Macherey, George Foster, Llion Jones, Niki Parmar, Mike Schuster, Zhifeng Chen, Yonghui Wu, Macduff Hughes
+
+**Abstract:** The past year has witnessed rapid advances in sequence-to-sequence (seq2seq) modeling for Machine Translation (MT). The classic RNN-based approaches to MT were first out-performed by the convolutional seq2seq model, which was then out-performed by the more recent Transformer model. Each of these new approaches consists of a fundamental architecture accompanied by a set of modeling and training techniques that are in principle applicable to other seq2seq architectures. In this paper, we tease apart the new architectures and their accompanying techniques in two ways. First, we identify several key modeling and training techniques, and apply them to the RNN architecture, yielding a new RNMT+ model that outperforms all of the three fundamental architectures on the benchmark WMT'14 English to French and English to German tasks. Second, we analyze the properties of each fundamental seq2seq architecture and devise new hybrid architectures intended to combine their strengths. Our hybrid models obtain further improvements, outperforming the RNMT+ model on both benchmark datasets.
+
+**URL:** https://arxiv.org/abs/1804.09849
+
+**Notes:** Google's paper on combination of multi-head and ol' good RNNs; it's somewhat surprisingly better in NMT task; as reguralizers authors use Label Smoothing, Dropout and Weight Decay; an ablation study shows that LS is even more important for NMT than MH attn
+
+## 2018-05
+### Paper Abstract Writing through Editing Mechanism
+
+**Authors:** Qingyun Wang, Zhihao Zhou, Lifu Huang, Spencer Whitehead, Boliang Zhang, Heng Ji, Kevin Knight
+
+**Abstract:** We present a paper abstract writing system based on an attentive neural sequence-to-sequence model that can take a title as input and automatically generate an abstract. We design a novel Writing-editing Network that can attend to both the title and the previously generated abstract drafts and then iteratively revise and polish the abstract. With two series of Turing tests, where the human judges are asked to distinguish the system-generated abstracts from human-written ones, our system passes Turing tests by junior domain experts at a rate up to 30% and by non-expert at a rate up to 80%.
+
+**URL:** https://arxiv.org/abs/1805.06064
+
+**Notes:** generate abstract from title; dataset id published; two networks: writing and editing ones, which relates to back-translation; Attentinve Revision Gate; ROUGE, METEOR and Turing tests (METEOR correlates with the latter, surprisingly)
+
+### Zero-Shot Dual Machine Translation
+
+**Authors:** Lierni Sestorain, Massimiliano Ciaramita, Christian Buck, Thomas Hofmann
+
+**Abstract:** Neural Machine Translation (NMT) systems rely on large amounts of parallel data. This is a major challenge for low-resource languages. Building on recent work on unsupervised and semi-supervised methods, we present an approach that combines zero-shot and dual learning. The latter relies on reinforcement learning, to exploit the duality of the machine translation task, and requires only monolingual data for the target language pair. Experiments show that a zero-shot dual system, trained on English-French and English-Spanish, outperforms by large margins a standard NMT system in zero-shot translation performance on Spanish-French (both directions). The zero-shot dual method approaches the performance, within 2.2 BLEU points, of a comparable supervised setting. Our method can obtain improvements also on the setting where a small amount of parallel data for the zero-shot language pair is available. Adding Russian, to extend our experiments to jointly modeling 6 zero-shot translation directions, all directions improve between 4 and 15 BLEU points, again, reaching performance near that of the supervised setting.
+
+**URL:** https://arxiv.org/abs/1805.10338
+
+**Notes:** Google's fresh paper on semi-supervised NMT; zero-shot & back-translation inside; it is still pretty far from supervised models, but that approach adds 2-5 point to every language they tried (UN offial languages); and they opensourcing the model!
+
+## 2018-06
+### TextWorld: A Learning Environment for Text-based Games
+
+**Authors:** Marc-Alexandre Côté, Ákos Kádár, Xingdi Yuan, Ben Kybartas, Tavian Barnes, Emery Fine, James Moore, Matthew Hausknecht, Layla El Asri, Mahmoud Adada, Wendy Tay, Adam Trischler
+
+**Abstract:** We introduce TextWorld, a sandbox learning environment for the training and evaluation of RL agents on text-based games. TextWorld is a Python library that handles interactive play-through of text games, as well as backend functions like state tracking and reward assignment. It comes with a curated list of games whose features and challenges we have analyzed. More significantly, it enables users to handcraft or automatically generate new games. Its generative mechanisms give precise control over the difficulty, scope, and language of constructed games, and can be used to relax challenges inherent to commercial text games like partial observability and sparse rewards. By generating sets of varied but similar games, TextWorld can also be used to study generalization and transfer learning. We cast text-based games in the Reinforcement Learning formalism, use our framework to develop a set of benchmark games, and evaluate several baseline agents on this set and the curated list.
+
+**URL:** https://arxiv.org/abs/1806.11532
+
+**Notes:** oh, yes! I've been waiting for that: text quests environment for RL agents! Thanks to MSR and colleagues from McGill! They use classic text adventures from the 80s as a Pierian spring, they introduce fwd and bkwd generation using generative grammars
 

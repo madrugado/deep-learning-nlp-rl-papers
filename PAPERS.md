@@ -20,6 +20,7 @@ Table of Contents
     * [2014](#2014)
       * [A Clockwork RNN](#a-clockwork-rnn)
       * [A Convolutional Neural Network for Modelling Sentences](#a-convolutional-neural-network-for-modelling-sentences)
+      * [Neural Machine Translation by Jointly Learning to Align and Translate](#neural-machine-translation-by-jointly-learning-to-align-and-translate)
     * [2015](#2015)
       * [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](#show-attend-and-tell-neural-image-caption-generation-with-visual-attention)
       * [Cyclical Learning Rates for Training Neural Networks](#cyclical-learning-rates-for-training-neural-networks)
@@ -403,6 +404,16 @@ Articles
 **URL:** https://arxiv.org/abs/1404.2188
 
 **Notes:** very nice idea of dynamic k-max pooling, so we could produce trees (effectively) with convolutions
+
+### Neural Machine Translation by Jointly Learning to Align and Translate
+
+**Authors:** Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio
+
+**Abstract:** Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.
+
+**URL:** https://arxiv.org/abs/1409.0473
+
+**Notes:** missing for some unknown reason great paper from Bahdanau with introduction of attention mechanism; greatly improved NMT SotA then; attention itself is a sum of encoder outputs weighted by similarity of each output to current decoder context (hidden state)
 
 ## 2015
 ### Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
