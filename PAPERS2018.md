@@ -15,14 +15,11 @@ Table of Contents
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
       * [Deep contextualized word representations](#deep-contextualized-word-representations)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
-<<<<<<< HEAD
     * [2018\-03](#2018-03)
       * [Achieving Human Parity on AutomaticChinese to English News Translation](#achieving-human-parity-on-automaticchinese-to-english-news-translation)
       * [Fast Decoding in Sequence Models using Discrete Latent Variables](#fast-decoding-in-sequence-models-using-discrete-latent-variables)
       * [An Analysis of Neural Language Modeling at Multiple Scales](#an-analysis-of-neural-language-modeling-at-multiple-scales)
-=======
       * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
-    * [2018\-03](#2018-03)
       * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
     * [2018\-04](#2018-04)
       * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
@@ -33,7 +30,6 @@ Table of Contents
       * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
     * [2018\-06](#2018-06)
       * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
->>>>>>> 14fcfb61f67f4675d8079cca5e9ae89cd2003612
 
 Articles
 ========
