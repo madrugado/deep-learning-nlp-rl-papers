@@ -15,12 +15,12 @@ Table of Contents
       * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
       * [Deep contextualized word representations](#deep-contextualized-word-representations)
       * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+      * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
     * [2018\-03](#2018-03)
+      * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
       * [Achieving Human Parity on AutomaticChinese to English News Translation](#achieving-human-parity-on-automaticchinese-to-english-news-translation)
       * [Fast Decoding in Sequence Models using Discrete Latent Variables](#fast-decoding-in-sequence-models-using-discrete-latent-variables)
       * [An Analysis of Neural Language Modeling at Multiple Scales](#an-analysis-of-neural-language-modeling-at-multiple-scales)
-      * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
-      * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
     * [2018\-04](#2018-04)
       * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
       * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
@@ -30,6 +30,8 @@ Table of Contents
       * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
     * [2018\-06](#2018-06)
       * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
+    * [2018\-07](#2018-07)
+      * [Talk the Walk: Navigating New York City through Grounded Dialogue](#talk-the-walk-navigating-new-york-city-through-grounded-dialogue)
 
 Articles
 ========
@@ -248,4 +250,15 @@ Articles
 **URL:** https://arxiv.org/abs/1806.11532
 
 **Notes:** oh, yes! I've been waiting for that: text quests environment for RL agents! Thanks to MSR and colleagues from McGill! They use classic text adventures from the 80s as a Pierian spring, they introduce fwd and bkwd generation using generative grammars
+
+## 2018-07
+### Talk the Walk: Navigating New York City through Grounded Dialogue
+
+**Authors:** Harm de Vries, Kurt Shuster, Dhruv Batra, Devi Parikh, Jason Weston, Douwe Kiela
+
+**Abstract:** We introduce "Talk The Walk", the first large-scale dialogue dataset grounded in action and perception. The task involves two agents (a "guide" and a "tourist") that communicate via natural language in order to achieve a common goal: having the tourist navigate to a given target location. The task and dataset, which are described in detail, are challenging and their full solution is an open problem that we pose to the community. We (i) focus on the task of tourist localization and develop the novel Masked Attention for Spatial Convolutions (MASC) mechanism that allows for grounding tourist utterances into the guide's map, (ii) show it yields significant improvements for both emergent and natural language communication, and (iii) using this method, we establish non-trivial baselines on the full task.
+
+**URL:** https://arxiv.org/abs/1807.03367
+
+**Notes:** the next step in grounding natural language: now it's dialog-based orientation in virtual environment (Google StreetView); NLP, CV and RL mix; innovative MASC - transformation of landmark embeddings to directions for a "tourist"-agent
 
