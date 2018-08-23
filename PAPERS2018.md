@@ -32,6 +32,8 @@ Table of Contents
       * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
     * [2018\-07](#2018-07)
       * [Talk the Walk: Navigating New York City through Grounded Dialogue](#talk-the-walk-navigating-new-york-city-through-grounded-dialogue)
+    * [2018\-08](#2018-08)
+      * [Fake Sentence Detection as a Training Task for Sentence Encoding](#fake-sentence-detection-as-a-training-task-for-sentence-encoding)
 
 Articles
 ========
@@ -261,4 +263,15 @@ Articles
 **URL:** https://arxiv.org/abs/1807.03367
 
 **Notes:** the next step in grounding natural language: now it's dialog-based orientation in virtual environment (Google StreetView); NLP, CV and RL mix; innovative MASC - transformation of landmark embeddings to directions for a "tourist"-agent
+
+## 2018-08
+### Fake Sentence Detection as a Training Task for Sentence Encoding
+
+**Authors:** Viresh Ranjan, Heeyoung Kwon, Niranjan Balasubramanian, Minh Hoai
+
+**Abstract:** Sentence encoders are typically trained on language modeling tasks which enable them to use large unlabeled datasets. While these models achieve state-of-the-art results on many sentence-level tasks, they are difficult to train with long training cycles. We introduce fake sentence detection as a new training task for learning sentence encodings. We automatically generate fake sentences by corrupting some original sentence and train the encoders to produce representations that are effective at detecting fake sentences. This binary classification task allows for efficient training and forces the encoder to learn the distinctions introduced by a small edit to sentences. We train a basic BiLSTM encoder to produce sentence representations and find that it outperforms a strong sentence encoding model trained on language modeling tasks, while also training much faster on smaller amount of data (20 hours instead of weeks). Further analysis shows the learned representations capture many syntactic and semantic properties expected from good sentence representations.
+
+**URL:** https://arxiv.org/abs/1808.03840
+
+**Notes:** really nice work on transfer learning in NLP; authors improve SotA results on 5 classification and 1 retrieve tasks with usage of additional goal for a learning - the detection of fake sentences produced by word drop and word shuffle
 
