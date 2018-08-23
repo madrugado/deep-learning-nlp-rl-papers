@@ -34,6 +34,8 @@ Table of Contents
       * [Talk the Walk: Navigating New York City through Grounded Dialogue](#talk-the-walk-navigating-new-york-city-through-grounded-dialogue)
     * [2018\-08](#2018-08)
       * [Fake Sentence Detection as a Training Task for Sentence Encoding](#fake-sentence-detection-as-a-training-task-for-sentence-encoding)
+      * [Dynamic Self\-Attention : Computing Attention over Words Dynamically for  Sentence Embedding](#dynamic-self-attention--computing-attention-over-words-dynamically-for--sentence-embedding)
+      * [TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering](#taxogen-unsupervised-topic-taxonomy-construction-by-adaptive-term-embedding-and-clustering)
 
 Articles
 ========
@@ -274,4 +276,24 @@ Articles
 **URL:** https://arxiv.org/abs/1808.03840
 
 **Notes:** really nice work on transfer learning in NLP; authors improve SotA results on 5 classification and 1 retrieve tasks with usage of additional goal for a learning - the detection of fake sentences produced by word drop and word shuffle
+
+### Dynamic Self-Attention : Computing Attention over Words Dynamically for  Sentence Embedding
+
+**Authors:** Deunsol Yoon, Dongbok Lee, SangKeun Lee
+
+**Abstract:** In this paper, we propose Dynamic Self-Attention (DSA), a new self-attention mechanism for sentence embedding. We design DSA by modifying dynamic routing in capsule network (Sabouretal.,2017) for natural language processing. DSA attends to informative words with a dynamic weight vector. We achieve new state-of-the-art results among sentence encoding methods in Stanford Natural Language Inference (SNLI) dataset with the least number of parameters, while showing comparative results in Stanford Sentiment Treebank (SST) dataset.
+
+**URL:** https://arxiv.org/abs/1808.07383
+
+**Notes:** dynamic sentence embeddings with usage of dense CNN and (interesting!) simplified capsules; dynamic attention is an algorithm of iterative recomputation of simple attention with addition nonlinearity applied; new SotA on SNLI
+
+### TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering
+
+**Authors:** Chao Zhang, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, and Jiawei Han
+
+**Abstract:** Taxonomy construction is not only a fundamental task for semantic analysis of text corpora, but also an important step for applications such as information filtering, recommendation, and Web search. Existing pattern-based methods extract hypernym-hyponym term pairs and then organize these pairs into a taxonomy. However, by considering each term as an independent concept node, they overlook the topical proximity and the semantic correlations among terms. In this paper, we propose a method for constructing topic taxonomies, wherein every node represents a conceptual topic and is defined as a cluster of semantically coherent concept terms. Our method, TaxoGen, uses term embeddings and hierarchical clustering to construct a topic taxonomy in a recursive fashion. To ensure the quality of the recursive process, it consists of: (1) an adaptive spherical clustering module for allocating terms to proper levels when splitting a coarse topic into fine-grained ones; (2) a local embedding module for learning term embeddings that maintain strong discriminative power at different levels of the taxonomy. Our experiments on two real datasets demonstrate the effectiveness of TaxoGen compared with baseline methods.
+
+**URL:** https://research.fb.com/wp-content/uploads/2018/08/TaxoGen-Unsupervised-Topic-Taxonomy-Construction-by-Adaptive-Term-Embedding-and-Clustering.pdf
+
+**Notes:** taxonomy generation w/o supervision; authors use spherical K-means, a relevance and the local embeddings for sub-topic construction; the relevance is more sophisticated TF-IDF; the local embs are constructed from subcorpora from (again) clustering
 
