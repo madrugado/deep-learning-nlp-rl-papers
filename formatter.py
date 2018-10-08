@@ -214,7 +214,7 @@ def parse_args():
         if not os.path.isfile(known_args.toc_maker):
             s = cmd.getoutput("uname -s").lower()
             f = "gh-md-toc.%s.amd64.tgz" % s
-            URL = "https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.6.0/%s" % f
+            URL = "https://github.com/ekalinin/github-markdown-toc.go/releases/download/0.8.0/%s" % f
             if not os.path.isfile(f):
                 if cmd.getstatusoutput("wget %s" % URL)[0] != 0:
                     raise EnvironmentError("Cannot download toc maker from URL: %s" % URL)

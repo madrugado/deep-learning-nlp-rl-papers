@@ -13,6 +13,8 @@ I'm not only adding recent papers, but also update lists for previous periods, i
 
 Also I've found that, there are some additional materials which are helpful for me or my students, so I've added a new list of miscellaneous [articles](./MISC.md). It is not sorted in chronological order, only by content type.
 
+To make the tool work you need Table-of-Content creation tool, which is integrated with this software; you only need `wget` available for download. This tool has an option of twitter integration, which need to be installed and configured before usage. The tool was tested to work on Ubuntu Linux 16.04 & MacOS X 10.6; it should work on newer versions of these operating systems.
+
 ## License
 ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png)
 
