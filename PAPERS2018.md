@@ -2,40 +2,45 @@
 Table of Contents
 =================
 
-  * [Articles](#articles)
-    * [2018\-01](#2018-01)
-      * [Unsupervised Low\-Dimensional Vector Representations for Words, Phrases  and Text that are Transparent, Scalable, and produce Similarity Metrics that  are Complementary to Neural Embeddings](#unsupervised-low-dimensional-vector-representations-for-words-phrases--and-text-that-are-transparent-scalable-and-produce-similarity-metrics-that--are-complementary-to-neural-embeddings)
-      * [Knowledge\-based Word Sense Disambiguation using Topic Models](#knowledge-based-word-sense-disambiguation-using-topic-models)
-      * [Unsupervised Part\-of\-Speech Induction](#unsupervised-part-of-speech-induction)
-      * [MaskGAN: Better Text Generation via Filling in the \_\_\_\_\_\_](#maskgan-better-text-generation-via-filling-in-the-______)
-    * [2018\-02](#2018-02)
-      * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
-      * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
-      * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
-      * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
-      * [Deep contextualized word representations](#deep-contextualized-word-representations)
-      * [Latent Topic Conversational Models](#latent-topic-conversational-models)
-      * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
-    * [2018\-03](#2018-03)
-      * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
-      * [Achieving Human Parity on AutomaticChinese to English News Translation](#achieving-human-parity-on-automaticchinese-to-english-news-translation)
-      * [Fast Decoding in Sequence Models using Discrete Latent Variables](#fast-decoding-in-sequence-models-using-discrete-latent-variables)
-      * [An Analysis of Neural Language Modeling at Multiple Scales](#an-analysis-of-neural-language-modeling-at-multiple-scales)
-    * [2018\-04](#2018-04)
-      * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
-      * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
-      * [The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation](#the-best-of-both-worlds-combining-recent-advances-in-neural-machine--translation)
-    * [2018\-05](#2018-05)
-      * [Paper Abstract Writing through Editing Mechanism](#paper-abstract-writing-through-editing-mechanism)
-      * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
-    * [2018\-06](#2018-06)
-      * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
-    * [2018\-07](#2018-07)
-      * [Talk the Walk: Navigating New York City through Grounded Dialogue](#talk-the-walk-navigating-new-york-city-through-grounded-dialogue)
-    * [2018\-08](#2018-08)
-      * [Fake Sentence Detection as a Training Task for Sentence Encoding](#fake-sentence-detection-as-a-training-task-for-sentence-encoding)
-      * [Dynamic Self\-Attention : Computing Attention over Words Dynamically for  Sentence Embedding](#dynamic-self-attention--computing-attention-over-words-dynamically-for--sentence-embedding)
-      * [TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering](#taxogen-unsupervised-topic-taxonomy-construction-by-adaptive-term-embedding-and-clustering)
+* [Articles](#articles)
+  * [2018\-01](#2018-01)
+    * [Unsupervised Low\-Dimensional Vector Representations for Words, Phrases  and Text that are Transparent, Scalable, and produce Similarity Metrics that  are Complementary to Neural Embeddings](#unsupervised-low-dimensional-vector-representations-for-words-phrases--and-text-that-are-transparent-scalable-and-produce-similarity-metrics-that--are-complementary-to-neural-embeddings)
+    * [Knowledge\-based Word Sense Disambiguation using Topic Models](#knowledge-based-word-sense-disambiguation-using-topic-models)
+    * [Unsupervised Part\-of\-Speech Induction](#unsupervised-part-of-speech-induction)
+    * [MaskGAN: Better Text Generation via Filling in the \_\_\_\_\_\_](#maskgan-better-text-generation-via-filling-in-the-______)
+  * [2018\-02](#2018-02)
+    * [Improving Variational Encoder\-Decoders in Dialogue Generation](#improving-variational-encoder-decoders-in-dialogue-generation)
+    * [TextZoo, a New Benchmark for Reconsidering Text Classification](#textzoo-a-new-benchmark-for-reconsidering-text-classification)
+    * [Tensor Comprehensions: Framework\-Agnostic High\-Performance Machine  Learning Abstractions](#tensor-comprehensions-framework-agnostic-high-performance-machine--learning-abstractions)
+    * [Ranking Sentences for Extractive Summarization with Reinforcement  Learning](#ranking-sentences-for-extractive-summarization-with-reinforcement--learning)
+    * [Deep contextualized word representations](#deep-contextualized-word-representations)
+    * [Latent Topic Conversational Models](#latent-topic-conversational-models)
+    * [Disentangling Aspect and Opinion Words in Target\-based Sentiment  Analysis using Lifelong Learning](#disentangling-aspect-and-opinion-words-in-target-based-sentiment--analysis-using-lifelong-learning)
+  * [2018\-03](#2018-03)
+    * [Simple random search provides a competitive approach to reinforcement  learning](#simple-random-search-provides-a-competitive-approach-to-reinforcement--learning)
+    * [Achieving Human Parity on AutomaticChinese to English News Translation](#achieving-human-parity-on-automaticchinese-to-english-news-translation)
+    * [Fast Decoding in Sequence Models using Discrete Latent Variables](#fast-decoding-in-sequence-models-using-discrete-latent-variables)
+    * [An Analysis of Neural Language Modeling at Multiple Scales](#an-analysis-of-neural-language-modeling-at-multiple-scales)
+  * [2018\-04](#2018-04)
+    * [Large scale distributed neural network training through online  distillation](#large-scale-distributed-neural-network-training-through-online--distillation)
+    * [Frustratingly Easy Meta\-Embedding \-\- Computing Meta\-Embeddings by  Averaging Source Word Embeddings](#frustratingly-easy-meta-embedding----computing-meta-embeddings-by--averaging-source-word-embeddings)
+    * [The Best of Both Worlds: Combining Recent Advances in Neural Machine  Translation](#the-best-of-both-worlds-combining-recent-advances-in-neural-machine--translation)
+  * [2018\-05](#2018-05)
+    * [Paper Abstract Writing through Editing Mechanism](#paper-abstract-writing-through-editing-mechanism)
+    * [Zero\-Shot Dual Machine Translation](#zero-shot-dual-machine-translation)
+  * [2018\-06](#2018-06)
+    * [TextWorld: A Learning Environment for Text\-based Games](#textworld-a-learning-environment-for-text-based-games)
+  * [2018\-07](#2018-07)
+    * [Talk the Walk: Navigating New York City through Grounded Dialogue](#talk-the-walk-navigating-new-york-city-through-grounded-dialogue)
+  * [2018\-08](#2018-08)
+    * [Fake Sentence Detection as a Training Task for Sentence Encoding](#fake-sentence-detection-as-a-training-task-for-sentence-encoding)
+    * [Dynamic Self\-Attention : Computing Attention over Words Dynamically for  Sentence Embedding](#dynamic-self-attention--computing-attention-over-words-dynamically-for--sentence-embedding)
+    * [TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering](#taxogen-unsupervised-topic-taxonomy-construction-by-adaptive-term-embedding-and-clustering)
+  * [2018\-10](#2018-10)
+    * [Phrase\-Based Attentions](#phrase-based-attentions)
+    * [BERT: Pre\-training of Deep Bidirectional Transformers for Language  Understanding](#bert-pre-training-of-deep-bidirectional-transformers-for-language--understanding)
+  * [2018\-11](#2018-11)
+    * [CALCS: Continuously Approximating Longest Common Subsequence for Sequence Level Optimization](#calcs-continuously-approximating-longest-common-subsequence-for-sequence-level-optimization)
 
 Articles
 ========
@@ -296,4 +301,36 @@ Articles
 **URL:** https://research.fb.com/wp-content/uploads/2018/08/TaxoGen-Unsupervised-Topic-Taxonomy-Construction-by-Adaptive-Term-Embedding-and-Clustering.pdf
 
 **Notes:** taxonomy generation w/o supervision; authors use spherical K-means, a relevance and the local embeddings for sub-topic construction; the relevance is more sophisticated TF-IDF; the local embs are constructed from subcorpora from (again) clustering
+
+## 2018-10
+### Phrase-Based Attentions
+
+**Authors:** Phi Xuan Nguyen, Shafiq Joty
+
+**Abstract:** Most state-of-the-art neural machine translation systems, despite being different in architectural skeletons (e.g. recurrence, convolutional), share an indispensable feature: the Attention. However, most existing attention methods are token-based and ignore the importance of phrasal alignments, the key ingredient for the success of phrase-based statistical machine translation. In this paper, we propose novel phrase-based attention methods to model n-grams of tokens as attention entities. We incorporate our phrase-based attentions into the recently proposed Transformer network, and demonstrate that our approach yields improvements of 1.3 BLEU for English-to-German and 0.5 BLEU for German-to-English translation tasks on WMT newstest2014 using WMT'16 training data.
+
+**URL:** https://arxiv.org/abs/1810.03444
+
+**Notes:** convolutional attention prings back multi-word expressions to machine translation; the core idea is to produce one vector from each n-gram and combine it with traditional [multi-head] attention; new SotA on En-De & De-En
+
+### BERT: Pre-training of Deep Bidirectional Transformers for Language  Understanding
+
+**Authors:** Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
+
+**Abstract:** We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT representations can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE benchmark to 80.4% (7.6% absolute improvement), MultiNLI accuracy to 86.7 (5.6% absolute improvement) and the SQuAD v1.1 question answering Test F1 to 93.2 (1.5% absolute improvement), outperforming human performance by 2.0%.
+
+**URL:** https://arxiv.org/abs/1810.04805
+
+**Notes:** new SotA on many tasks from Google; bidirectional transformer language model, which is trained for 1M steps with 128k words/batch; for downstream tasks they train additional output layer with small lr; closely resembles OpenAI GPT, but bigger & better
+
+## 2018-11
+### CALCS: Continuously Approximating Longest Common Subsequence for Sequence Level Optimization
+
+**Authors:** Semih Yavuz, Chung-Cheng Chiu, Patrick Nguyen, Yonghui Wu
+
+**Abstract:** Maximum-likelihood estimation (MLE) is one of the most widely used approaches for training structured prediction models for textgeneration based natural language processing applications. However, besides exposure bias, models trained with MLE suffer from wrong objective problem where they are trained to maximize the word-level correct next step prediction, but are evaluated with respect to sequence-level discrete metrics such as ROUGE and BLEU. Several variants of policy-gradient methods address some of these problems by optimizing for final discrete evaluation metrics and showing improvements over MLE training for downstream tasks like text summarization and machine translation. However, policy-gradient methods suffers from high sample variance, making the training process very difficult and unstable. In this paper, we present an alternative direction towards mitigating this problem by introducing a new objective (CALCS) based on a differentiable surrogate of longest common subsequence (LCS) measure that captures sequence-level structure similarity. Experimental results on abstractive summarization and machine translation validate the effectiveness of the proposed approach.
+
+**URL:** http://aclweb.org/anthology/D18-1406
+
+**Notes:** continuous approximation of longest common subsequence (LCS) from Google; nice math proof as for me; shows improvement in machine translation and abstractive summarization on transformer and pointer-nets
 
