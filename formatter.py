@@ -15,11 +15,13 @@ if sys.version_info[0] == 2:
     if sys.version_info[1] > 5:
         from HTMLParser import HTMLParser
         html = HTMLParser()
+        from urllib import urlopen
     else:
         raise ImportError("Cannot import HTMLParser")
 else:  # assuming that it is python 3
     import subprocess as cmd
     from urllib.parse import urlencode
+    from urllib.request import urlopen
     if sys.version_info[1] > 3:
         import html
     else:
@@ -148,12 +150,12 @@ def shorten_url(url):
 
 
 def parse_arxiv(url):
-    resp = html.unescape(requests.get(url).content.decode())
+    resp = html.unescape(urlopen(url).read())
 
     # title
-    title_start = resp.find("Title:")
-    title_start = resp.find("\n", title_start) + 1
+    title_start = resp.find("Title:") + 6
     title = resp[title_start:resp.find("</h1>", title_start)].strip()
+    title = re.sub("<[^>]*>", "", title).strip()
 
     # authors
     authors_start = resp.find("Authors:") + 8
@@ -181,7 +183,7 @@ def parse_arxiv(url):
 
 
 def parse_openreview(url):
-    resp = html.unescape(requests.get(url).content.decode())
+    resp = html.unescape(urlopen(url).read())
 
     # title
     title_start = resp.find('class="note_content_title citation_title">')
