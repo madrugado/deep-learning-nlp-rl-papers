@@ -337,6 +337,13 @@ Articles
 **Notes:** continuous approximation of longest common subsequence (LCS) from Google; nice math proof as for me; shows improvement in machine translation and abstractive summarization on transformer and pointer-nets
 
 ## 2018-12
-https://arxiv.org/abs/1812.04616
-long avaited SoftMax replacement: predicting a word emb instead of a vocab index; computation of NLLvMF loss is 2x faster than SM; interestingly, this loss became possible only two years back when the tight lower bound for Bessel's functions was proven
+### Von Mises-Fisher Loss for Training Sequence to Sequence Models with Continuous Outputs
+
+**Authors:** Sachin Kumar, Yulia Tsvetkov
+
+**Abstract:** The Softmax function is used in the final layer of nearly all existing sequence-to-sequence models for language generation. However, it is usually the slowest layer to compute which limits the vocabulary size to a subset of most frequent types; and it has a large memory footprint. We propose a general technique for replacing the softmax layer with a continuous embedding layer. Our primary innovations are a novel probabilistic loss, and a training and inference procedure in which we generate a probability distribution over pre-trained word embeddings, instead of a multinomial distribution over the vocabulary obtained via softmax. We evaluate this new class of sequence-to-sequence models with continuous outputs on the task of neural machine translation. We show that our models obtain upto 2.5x speed-up in training time while performing on par with the state-of-the-art models in terms of translation quality. These models are capable of handling very large vocabularies without compromising on translation quality. They also produce more meaningful errors than in the softmax-based models, as these errors typically lie in a subspace of the vector space of the reference translations.
+
+**URL:** https://arxiv.org/abs/1812.04616
+
+**Notes:** long avaited SoftMax replacement: predicting a word emb instead of a vocab index; computation of NLLvMF loss is 2x faster than SM; interestingly, this loss became possible only two years back when the tight lower bound for Bessel's functions was proven
 
