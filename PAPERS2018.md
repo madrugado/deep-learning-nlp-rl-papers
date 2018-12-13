@@ -41,6 +41,8 @@ Table of Contents
     * [BERT: Pre\-training of Deep Bidirectional Transformers for Language  Understanding](#bert-pre-training-of-deep-bidirectional-transformers-for-language--understanding)
   * [2018\-11](#2018-11)
     * [CALCS: Continuously Approximating Longest Common Subsequence for Sequence Level Optimization](#calcs-continuously-approximating-longest-common-subsequence-for-sequence-level-optimization)
+  * [2018\-12](#2018-12)
+    * [Von Mises\-Fisher Loss for Training Sequence to Sequence Models with Continuous Outputs](#von-mises-fisher-loss-for-training-sequence-to-sequence-models-with-continuous-outputs)
 
 Articles
 ========
@@ -333,4 +335,8 @@ Articles
 **URL:** http://aclweb.org/anthology/D18-1406
 
 **Notes:** continuous approximation of longest common subsequence (LCS) from Google; nice math proof as for me; shows improvement in machine translation and abstractive summarization on transformer and pointer-nets
+
+## 2018-12
+https://arxiv.org/abs/1812.04616
+long avaited SoftMax replacement: predicting a word emb instead of a vocab index; computation of NLLvMF loss is 2x faster than SM; interestingly, this loss became possible only two years back when the tight lower bound for Bessel's functions was proven
 
