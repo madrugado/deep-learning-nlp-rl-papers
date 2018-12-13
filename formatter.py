@@ -18,6 +18,7 @@ if sys.version_info[0] == 2:
         from urllib import urlopen
     else:
         raise ImportError("Cannot import HTMLParser")
+    to_str = str
 else:  # assuming that it is python 3
     import subprocess as cmd
     from urllib.parse import urlencode
@@ -27,6 +28,7 @@ else:  # assuming that it is python 3
     else:
         from html.parser import HTMLParser
         html = HTMLParser()
+    to_str = lambda x: str(x, encoding="utf-8")
 
 
 TWEET_LIMIT = 280
@@ -150,7 +152,7 @@ def shorten_url(url):
 
 
 def parse_arxiv(url):
-    resp = html.unescape(urlopen(url).read())
+    resp = html.unescape(to_str(urlopen(url).read()))
 
     # title
     title_start = resp.find("Title:") + 6
@@ -183,7 +185,7 @@ def parse_arxiv(url):
 
 
 def parse_openreview(url):
-    resp = html.unescape(urlopen(url).read())
+    resp = html.unescape(to_str(urlopen(url).read()))
 
     # title
     title_start = resp.find('class="note_content_title citation_title">')
