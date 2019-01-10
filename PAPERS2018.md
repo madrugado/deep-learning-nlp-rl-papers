@@ -345,5 +345,5 @@ Articles
 
 **URL:** https://arxiv.org/abs/1812.04616
 
-**Notes:** long avaited SoftMax replacement: predicting a word emb instead of a vocab index; computation of NLLvMF loss is 2x faster than SM; interestingly, this loss became possible only two years back when the tight lower bound for Bessel's functions was proven
+**Notes:** long awaited SoftMax replacement: predicting a word emb instead of a vocab index; computation of NLLvMF loss is 2x faster than SM; interestingly, this loss became possible only two years back when the tight lower bound for Bessel's functions was proven
 
