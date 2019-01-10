@@ -2,9 +2,10 @@
 
 I think that other people's notes are rarely useful, so I'm listing the interesting for me papers with a few words about the main idea for me to make references in memory.
 
-If you're in such stuff, welcome: [__papers list__](./PAPERS2018.md).
+If you're in such stuff, welcome: [__papers list__](./PAPERS2019.md).
 
 To keep list size feasible the each year papers are separated to specific file:
+* [2019](./PAPERS2019.md)
 * [2018](./PAPERS2018.md)
 * [2017](./PAPERS2017.md)
 * [2016 & earlier](./PAPERS.md)
