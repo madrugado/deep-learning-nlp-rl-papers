@@ -6,6 +6,8 @@ Table of Contents
   * [2019\-01](#2019-01)
     * [Pull out all the stops: Textual analysis via punctuation sequences](#pull-out-all-the-stops-textual-analysis-via-punctuation-sequences)
     * [Assessing BERT’s Syntactic Abilities](#assessing-berts-syntactic-abilities)
+    * [Human few\-shot learning of compositional instructions](#human-few-shot-learning-of-compositional-instructions)
+    * [No Training Required: Exploring Random Encoders for Sentence Classification](#no-training-required-exploring-random-encoders-for-sentence-classification)
 
 Articles
 ========
@@ -29,4 +31,24 @@ Articles
 **URL:** http://u.cs.biu.ac.il/~yogo/bert-syntax.pdf
 
 **Notes:** I like the idea of this small and concise research, it answers clear question clearly; I think more research could be done in this direction
+
+### Human few-shot learning of compositional instructions
+
+**Authors:** Brenden M. Lake, Tal Linzen, Marco Baroni
+
+**Abstract:** People learn in fast and flexible ways that have not been emulated by machines. Once a person learns a new verb "dax," he or she can effortlessly understand how to "dax twice," "walk and dax," or "dax vigorously." There have been striking recent improvements in machine learning for natural language processing, yet the best algorithms require vast amounts of experience and struggle to generalize new concepts in compositional ways. To better understand these distinctively human abilities, we study the compositional skills of people through language-like instruction learning tasks. Our results show that people can learn and use novel functional concepts from very few examples (few-shot learning), successfully applying familiar functions to novel inputs. People can also compose concepts in complex ways that go beyond the provided demonstrations. Two additional experiments examined the assumptions and inductive biases that people make when solving these tasks, revealing three biases: mutual exclusivity, one-to-one mappings, and iconic concatenation. We discuss the implications for cognitive modeling and the potential for building machines with more human-like language learning capabilities.
+
+**URL:** https://arxiv.org/abs/1901.04587
+
+**Notes:** interesting work on few shot learning in language; a person should "translate" from unknown constructed language to visual language; some flaws: there are only United State residents (so English-speaking) and proposed tasks could influence each other
+
+### No Training Required: Exploring Random Encoders for Sentence Classification
+
+**Authors:** John Wieting, Douwe Kiela
+
+**Abstract:** We explore various methods for computing sentence representations from pre-trained word embeddings without any training, i.e., using nothing but random parameterizations. Our aim is to put sentence embeddings on more solid footing by 1) looking at how much modern sentence embeddings gain over random methods---as it turns out, surprisingly little; and by 2) providing the field with more appropriate baselines going forward---which are, as it turns out, quite strong. We also make important observations about proper experimental protocol for sentence classification evaluation, together with recommendations for future research.
+
+**URL:** https://arxiv.org/abs/1901.10444
+
+**Notes:** new work from FAIR about random encoders for text clf; pooling over random projection of word emb, randomly init'ed (and never updated) LSTMs, and analog of simple RNN, also random; LSTM even reach a SotA on TREC, and they all are really good in all tasks
 
