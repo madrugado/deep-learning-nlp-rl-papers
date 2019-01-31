@@ -8,6 +8,7 @@ Table of Contents
     * [Assessing BERT’s Syntactic Abilities](#assessing-berts-syntactic-abilities)
     * [Human few\-shot learning of compositional instructions](#human-few-shot-learning-of-compositional-instructions)
     * [No Training Required: Exploring Random Encoders for Sentence Classification](#no-training-required-exploring-random-encoders-for-sentence-classification)
+    * [Pay Less Attention with Lightweight and Dynamic Convolutions](#pay-less-attention-with-lightweight-and-dynamic-convolutions)
 
 Articles
 ========
@@ -51,4 +52,14 @@ Articles
 **URL:** https://arxiv.org/abs/1901.10444
 
 **Notes:** new work from FAIR about random encoders for text clf; pooling over random projection of word emb, randomly init'ed (and never updated) LSTMs, and analog of simple RNN, also random; LSTM even reach a SotA on TREC, and they all are really good in all tasks
+
+### Pay Less Attention with Lightweight and Dynamic Convolutions
+
+**Authors:** Felix Wu, Angela Fan, Alexei Baevski, Yann N. Dauphin, Michael Auli
+
+**Abstract:** Self-attention is a useful mechanism to build generative models for language and images. It determines the importance of context elements by comparing each element to the current time step. In this paper, we show that a very lightweight convolution can perform competitively to the best reported self-attention results. Next, we introduce dynamic convolutions which are simpler and more efficient than self-attention. We predict separate convolution kernels based solely on the current time-step in order to determine the importance of context elements. The number of operations required by this approach scales linearly in the input length, whereas self-attention is quadratic. Experiments on large-scale machine translation, language modeling and abstractive summarization show that dynamic convolutions improve over strong self-attention models. On the WMT'14 English-German test set dynamic convolutions achieve a new state of the art of 29.7 BLEU.
+
+**URL:** https://arxiv.org/abs/1901.10430
+
+**Notes:** Facebook takes a next step in quasi-RNNs: lightweight convs are using softmax pooling over time, and dynamic convs use position encoding to shift weights for particular timestep; this work achieves new SotA on En-De MT and also they're close in other tasks
 
