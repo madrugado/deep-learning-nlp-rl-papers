@@ -36,6 +36,8 @@ Table of Contents
     * [Fake Sentence Detection as a Training Task for Sentence Encoding](#fake-sentence-detection-as-a-training-task-for-sentence-encoding)
     * [Dynamic Self\-Attention : Computing Attention over Words Dynamically for  Sentence Embedding](#dynamic-self-attention--computing-attention-over-words-dynamically-for--sentence-embedding)
     * [TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering](#taxogen-unsupervised-topic-taxonomy-construction-by-adaptive-term-embedding-and-clustering)
+  * [2018\-09](#2018-09)
+    * [Adaptive Input Representations for Neural Language Modeling](#adaptive-input-representations-for-neural-language-modeling)
   * [2018\-10](#2018-10)
     * [Phrase\-Based Attentions](#phrase-based-attentions)
     * [BERT: Pre\-training of Deep Bidirectional Transformers for Language  Understanding](#bert-pre-training-of-deep-bidirectional-transformers-for-language--understanding)
@@ -303,6 +305,17 @@ Articles
 **URL:** https://research.fb.com/wp-content/uploads/2018/08/TaxoGen-Unsupervised-Topic-Taxonomy-Construction-by-Adaptive-Term-Embedding-and-Clustering.pdf
 
 **Notes:** taxonomy generation w/o supervision; authors use spherical K-means, a relevance and the local embeddings for sub-topic construction; the relevance is more sophisticated TF-IDF; the local embs are constructed from subcorpora from (again) clustering
+
+## 2018-09
+### Adaptive Input Representations for Neural Language Modeling
+
+**Authors:** Alexei Baevski, Michael Auli
+
+**Abstract:** We introduce adaptive input representations for neural language modeling which extend the adaptive softmax of Grave et al. (2017) to input representations of variable capacity. There are several choices on how to factorize the input and output layers, and whether to model words, characters or sub-word units. We perform a systematic comparison of popular choices for a self-attentional architecture. Our experiments show that models equipped with adaptive embeddings are more than twice as fast to train than the popular character input CNN while having a lower number of parameters. On the WikiText-103 benchmark we achieve 18.7 perplexity, an improvement of 10.5 perplexity compared to the previously best published result and on the Billion Word benchmark, we achieve 23.02 perplexity.
+
+**URL:** https://arxiv.org/abs/1809.10853
+
+**Notes:** Transformer is definitely ground breaking, next step in word embeddings - different number of dimensions for different frequency bins; a Transformer decoder with a few tweaks projects its hidden state to different capacity embeddings
 
 ## 2018-10
 ### Phrase-Based Attentions
