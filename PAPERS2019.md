@@ -9,6 +9,8 @@ Table of Contents
     * [Human few\-shot learning of compositional instructions](#human-few-shot-learning-of-compositional-instructions)
     * [No Training Required: Exploring Random Encoders for Sentence Classification](#no-training-required-exploring-random-encoders-for-sentence-classification)
     * [Pay Less Attention with Lightweight and Dynamic Convolutions](#pay-less-attention-with-lightweight-and-dynamic-convolutions)
+  * [2019\-05](#2019-05)
+    * [Controlled CNN\-based Sequence Labeling for Aspect Extraction](#controlled-cnn-based-sequence-labeling-for-aspect-extraction)
 
 Articles
 ========
@@ -62,4 +64,15 @@ Articles
 **URL:** https://arxiv.org/abs/1901.10430
 
 **Notes:** Facebook takes a next step in quasi-RNNs: lightweight convs are using softmax pooling over time, and dynamic convs use position encoding to shift weights for particular timestep; this work achieves new SotA on En-De MT and also they're close in other tasks
+
+## 2019-05
+### Controlled CNN-based Sequence Labeling for Aspect Extraction
+
+**Authors:** Lei Shu, Hu Xu, Bing Liu
+
+**Abstract:** One key task of fine-grained sentiment analysis on reviews is to extract aspects or features that users have expressed opinions on. This paper focuses on supervised aspect extraction using a modified CNN called controlled CNN (Ctrl). The modified CNN has two types of control modules. Through asynchronous parameter updating, it prevents over-fitting and boosts CNN's performance significantly. This model achieves state-of-the-art results on standard aspect extraction datasets. To the best of our knowledge, this is the first paper to apply control modules to aspect extraction.
+
+**URL:** https://arxiv.org/abs/1905.06407
+
+**Notes:** CNN with gates proves its effectiveness for aspect extraction task (sequence labelling); interestingly, BERT out of the box gives result better than in original works on the corpora (SemEval-2014&2016)
 
