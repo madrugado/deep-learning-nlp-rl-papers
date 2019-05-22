@@ -11,6 +11,7 @@ Table of Contents
     * [Pay Less Attention with Lightweight and Dynamic Convolutions](#pay-less-attention-with-lightweight-and-dynamic-convolutions)
   * [2019\-05](#2019-05)
     * [Controlled CNN\-based Sequence Labeling for Aspect Extraction](#controlled-cnn-based-sequence-labeling-for-aspect-extraction)
+    * [Behavior Sequence Transformer for E\-commerce Recommendation in Alibaba](#behavior-sequence-transformer-for-e-commerce-recommendation-in-alibaba)
 
 Articles
 ========
@@ -75,4 +76,14 @@ Articles
 **URL:** https://arxiv.org/abs/1905.06407
 
 **Notes:** CNN with gates proves its effectiveness for aspect extraction task (sequence labelling); interestingly, BERT out of the box gives result better than in original works on the corpora (SemEval-2014&2016)
+
+### Behavior Sequence Transformer for E-commerce Recommendation in Alibaba
+
+**Authors:** Qiwei Chen, Huan Zhao, Wei Li, Pipei Huang, Wenwu Ou
+
+**Abstract:** Deep learning based methods have been widely used in industrial recommendation systems (RSs). Previous works adopt an Embedding&MLP paradigm: raw features are embedded into low-dimensional vectors, which are then fed on to MLP for final recommendations. However, most of these works just concatenate different features, ignoring the sequential nature of users' behaviors. In this paper, we propose to use the powerful Transformer model to capture the sequential signals underlying users' behavior sequences for recommendation in Alibaba. Experimental results demonstrate the superiority of the proposed model, which is then deployed online at Taobao and obtain significant improvements in online Click-Through-Rate (CTR) comparing to two baselines.
+
+**URL:** https://arxiv.org/abs/1905.06874
+
+**Notes:** Alibaba's successor to famous word2vec introduction to a RecSys field; the Transformer is adopted to item recommendations, authors modified embedding & positional encoding to comply with a setting, but the transformer block is the same;
 
