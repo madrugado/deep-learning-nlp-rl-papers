@@ -36,8 +36,10 @@ Table of Contents
     * [Fake Sentence Detection as a Training Task for Sentence Encoding](#fake-sentence-detection-as-a-training-task-for-sentence-encoding)
     * [Dynamic Self\-Attention : Computing Attention over Words Dynamically for  Sentence Embedding](#dynamic-self-attention--computing-attention-over-words-dynamically-for--sentence-embedding)
     * [TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering](#taxogen-unsupervised-topic-taxonomy-construction-by-adaptive-term-embedding-and-clustering)
+    * [Summarizing Opinions: Aspect Extraction Meets Sentiment Prediction and They Are Both Weakly Supervised](#summarizing-opinions-aspect-extraction-meets-sentiment-prediction-and-they-are-both-weakly-supervised)
   * [2018\-09](#2018-09)
     * [Adaptive Input Representations for Neural Language Modeling](#adaptive-input-representations-for-neural-language-modeling)
+    * [Weakly\-Supervised Neural Text Classification](#weakly-supervised-neural-text-classification)
   * [2018\-10](#2018-10)
     * [Phrase\-Based Attentions](#phrase-based-attentions)
     * [BERT: Pre\-training of Deep Bidirectional Transformers for Language  Understanding](#bert-pre-training-of-deep-bidirectional-transformers-for-language--understanding)
@@ -306,6 +308,16 @@ Articles
 
 **Notes:** taxonomy generation w/o supervision; authors use spherical K-means, a relevance and the local embeddings for sub-topic construction; the relevance is more sophisticated TF-IDF; the local embs are constructed from subcorpora from (again) clustering
 
+### Summarizing Opinions: Aspect Extraction Meets Sentiment Prediction and They Are Both Weakly Supervised
+
+**Authors:** Stefanos Angelidis, Mirella Lapata
+
+**Abstract:** We present a neural framework for opinion summarization from online product reviews which is knowledge-lean and only requires light supervision (e.g., in the form of product domain labels and user-provided ratings). Our method combines two weakly supervised components to identify salient opinions and form extractive summaries from multiple reviews: an aspect extractor trained under a multi-task objective, and a sentiment predictor based on multiple instance learning. We introduce an opinion summarization dataset that includes a training set of product reviews from six diverse domains and human-annotated development and test sets with gold standard aspect annotations, salience labels, and opinion summaries. Automatic evaluation shows significant improvements over baselines, and a large-scale study indicates that our opinion summaries are preferred by human judges according to multiple criteria.
+
+**URL:** https://arxiv.org/abs/1808.08858
+
+**Notes:** interesting approach to summarization of user reviews: authors use aspect extraction, sentiment analysis and semantic duplication removal to produce a summary of user opinions on one item; with code & data!
+
 ## 2018-09
 ### Adaptive Input Representations for Neural Language Modeling
 
@@ -316,6 +328,16 @@ Articles
 **URL:** https://arxiv.org/abs/1809.10853
 
 **Notes:** Transformer is definitely ground breaking, next step in word embeddings - different number of dimensions for different frequency bins; a Transformer decoder with a few tweaks projects its hidden state to different capacity embeddings
+
+### Weakly-Supervised Neural Text Classification
+
+**Authors:** Yu Meng, Jiaming Shen, Chao Zhang, Jiawei Han
+
+**Abstract:** Deep neural networks are gaining increasing popularity for the classic text classification task, due to their strong expressive power and less requirement for feature engineering. Despite such attractiveness, neural text classification models suffer from the lack of training data in many real-world applications. Although many semi-supervised and weakly-supervised text classification models exist, they cannot be easily applied to deep neural models and meanwhile support limited supervision types. In this paper, we propose a weakly-supervised method that addresses the lack of training data in neural text classification. Our method consists of two modules: (1) a pseudo-document generator that leverages seed information to generate pseudo-labeled documents for model pre-training, and (2) a self-training module that bootstraps on real unlabeled data for model refinement. Our method has the flexibility to handle different types of weak supervision and can be easily integrated into existing deep neural models for text classification. We have performed extensive experiments on three real-world datasets from different domains. The results demonstrate that our proposed method achieves inspiring performance without requiring excessive training data and outperforms baseline methods significantly.
+
+**URL:** https://arxiv.org/abs/1809.01478
+
+**Notes:** authors construct vMF distribution to sample word vectors for keywords and generate pseudo-docs using these keywords for clf; the procedure itself is closely related to LDA motivation but its samples whole embeddings instead; with code!
 
 ## 2018-10
 ### Phrase-Based Attentions
