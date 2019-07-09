@@ -40,6 +40,7 @@ Table of Contents
   * [2018\-09](#2018-09)
     * [Adaptive Input Representations for Neural Language Modeling](#adaptive-input-representations-for-neural-language-modeling)
     * [Weakly\-Supervised Neural Text Classification](#weakly-supervised-neural-text-classification)
+    * [Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction](#accelerated-reinforcement-learning-for-sentence-generation-by-vocabulary-prediction)
   * [2018\-10](#2018-10)
     * [Phrase\-Based Attentions](#phrase-based-attentions)
     * [BERT: Pre\-training of Deep Bidirectional Transformers for Language  Understanding](#bert-pre-training-of-deep-bidirectional-transformers-for-language--understanding)
@@ -338,6 +339,16 @@ Articles
 **URL:** https://arxiv.org/abs/1809.01478
 
 **Notes:** authors construct vMF distribution to sample word vectors for keywords and generate pseudo-docs using these keywords for clf; the procedure itself is closely related to LDA motivation but its samples whole embeddings instead; with code!
+
+### Accelerated Reinforcement Learning for Sentence Generation by Vocabulary Prediction
+
+**Authors:** Kazuma Hashimoto, Yoshimasa Tsuruoka
+
+**Abstract:** A major obstacle in reinforcement learning-based sentence generation is the large action space whose size is equal to the vocabulary size of the target-side language. To improve the efficiency of reinforcement learning, we present a novel approach for reducing the action space based on dynamic vocabulary prediction. Our method first predicts a fixed-size small vocabulary for each input to generate its target sentence. The input-specific vocabularies are then used at supervised and reinforcement learning steps, and also at test time. In our experiments on six machine translation and two image captioning datasets, our method achieves faster reinforcement learning ($\sim$2.7x faster) with less GPU memory ($\sim$2.3x less) than the full-vocabulary counterpart. The reinforcement learning with our method consistently leads to significant improvement of BLEU scores, and the scores are equal to or better than those of baselines using the full vocabularies, with faster decoding time ($\sim$3x faster) on CPUs.
+
+**URL:** https://arxiv.org/abs/1809.01694
+
+**Notes:** a technique to select important words from a dictionary for sentence generation task; authors use this cherry-picked dictionary to form an action space for reinforcement algorithms and get faster training, inference and less memory consumption; with code!
 
 ## 2018-10
 ### Phrase-Based Attentions
