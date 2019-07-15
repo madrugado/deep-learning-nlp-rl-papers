@@ -16,6 +16,8 @@ Table of Contents
   * [2019\-05](#2019-05)
     * [Controlled CNN\-based Sequence Labeling for Aspect Extraction](#controlled-cnn-based-sequence-labeling-for-aspect-extraction)
     * [Behavior Sequence Transformer for E\-commerce Recommendation in Alibaba](#behavior-sequence-transformer-for-e-commerce-recommendation-in-alibaba)
+  * [2019\-07](#2019-07)
+    * [R\-Transformer: Recurrent Neural Network Enhanced Transformer](#r-transformer-recurrent-neural-network-enhanced-transformer)
 
 Articles
 ========
@@ -112,4 +114,15 @@ Articles
 **URL:** https://arxiv.org/abs/1905.06874
 
 **Notes:** Alibaba's successor to famous word2vec introduction to a RecSys field; the Transformer is adopted to item recommendations, authors modified embedding & positional encoding to comply with a setting, but the transformer block is the same;
+
+## 2019-07
+### R-Transformer: Recurrent Neural Network Enhanced Transformer
+
+**Authors:** Zhiwei Wang, Yao Ma, Zitao Liu, Jiliang Tang
+
+**Abstract:** Recurrent Neural Networks have long been the dominating choice for sequence modeling. However, it severely suffers from two issues: impotent in capturing very long-term dependencies and unable to parallelize the sequential computation procedure. Therefore, many non-recurrent sequence models that are built on convolution and attention operations have been proposed recently. Notably, models with multi-head attention such as Transformer have demonstrated extreme effectiveness in capturing long-term dependencies in a variety of sequence modeling tasks. Despite their success, however, these models lack necessary components to model local structures in sequences and heavily rely on position embeddings that have limited effects and require a considerable amount of design efforts. In this paper, we propose the R-Transformer which enjoys the advantages of both RNNs and the multi-head attention mechanism while avoids their respective drawbacks. The proposed model can effectively capture both local structures and global long-term dependencies in sequences without any use of position embeddings. We evaluate R-Transformer through extensive experiments with data from a wide range of domains and the empirical results show that R-Transformer outperforms the state-of-the-art methods by a large margin in most of the tasks. We have made the code publicly available at \url{this https URL}.
+
+**URL:** https://arxiv.org/abs/1907.05572
+
+**Notes:** RNNs kinda strike back: authors use RNN to read local context similarly to TCN; these representations then are fed to transformer blocks; the results are good for various sequence tasks, not only NLP; with code!
 
