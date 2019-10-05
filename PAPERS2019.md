@@ -2,22 +2,26 @@
 Table of Contents
 =================
 
-* [Articles](#articles)
-  * [2019\-01](#2019-01)
-    * [Pull out all the stops: Textual analysis via punctuation sequences](#pull-out-all-the-stops-textual-analysis-via-punctuation-sequences)
-    * [Assessing BERT’s Syntactic Abilities](#assessing-berts-syntactic-abilities)
-    * [Human few\-shot learning of compositional instructions](#human-few-shot-learning-of-compositional-instructions)
-    * [No Training Required: Exploring Random Encoders for Sentence Classification](#no-training-required-exploring-random-encoders-for-sentence-classification)
-    * [Pay Less Attention with Lightweight and Dynamic Convolutions](#pay-less-attention-with-lightweight-and-dynamic-convolutions)
-  * [2019\-02](#2019-02)
-    * [Rethinking Action Spaces for Reinforcement Learning in End\-to\-end Dialog Agents with Latent Variable Models](#rethinking-action-spaces-for-reinforcement-learning-in-end-to-end-dialog-agents-with-latent-variable-models)
-  * [2019\-04](#2019-04)
-    * [Unsupervised Data Augmentation](#unsupervised-data-augmentation)
-  * [2019\-05](#2019-05)
-    * [Controlled CNN\-based Sequence Labeling for Aspect Extraction](#controlled-cnn-based-sequence-labeling-for-aspect-extraction)
-    * [Behavior Sequence Transformer for E\-commerce Recommendation in Alibaba](#behavior-sequence-transformer-for-e-commerce-recommendation-in-alibaba)
-  * [2019\-07](#2019-07)
-    * [R\-Transformer: Recurrent Neural Network Enhanced Transformer](#r-transformer-recurrent-neural-network-enhanced-transformer)
+  * [Articles](#articles)
+    * [2019\-01](#2019-01)
+      * [Pull out all the stops: Textual analysis via punctuation sequences](#pull-out-all-the-stops-textual-analysis-via-punctuation-sequences)
+      * [Assessing BERT’s Syntactic Abilities](#assessing-berts-syntactic-abilities)
+      * [Human few\-shot learning of compositional instructions](#human-few-shot-learning-of-compositional-instructions)
+      * [No Training Required: Exploring Random Encoders for Sentence Classification](#no-training-required-exploring-random-encoders-for-sentence-classification)
+      * [Pay Less Attention with Lightweight and Dynamic Convolutions](#pay-less-attention-with-lightweight-and-dynamic-convolutions)
+    * [2019\-02](#2019-02)
+      * [Rethinking Action Spaces for Reinforcement Learning in End\-to\-end Dialog Agents with Latent Variable Models](#rethinking-action-spaces-for-reinforcement-learning-in-end-to-end-dialog-agents-with-latent-variable-models)
+    * [2019\-04](#2019-04)
+      * [Unsupervised Data Augmentation](#unsupervised-data-augmentation)
+    * [2019\-05](#2019-05)
+      * [Controlled CNN\-based Sequence Labeling for Aspect Extraction](#controlled-cnn-based-sequence-labeling-for-aspect-extraction)
+      * [Behavior Sequence Transformer for E\-commerce Recommendation in Alibaba](#behavior-sequence-transformer-for-e-commerce-recommendation-in-alibaba)
+    * [2019\-06](#2019-06)
+      * [Hierarchical Decision Making by Generating and Following Natural Language Instructions](#hierarchical-decision-making-by-generating-and-following-natural-language-instructions)
+    * [2019\-07](#2019-07)
+      * [R\-Transformer: Recurrent Neural Network Enhanced Transformer](#r-transformer-recurrent-neural-network-enhanced-transformer)
+    * [2019\-08](#2019-08)
+      * [Neural Code Search Evaluation Dataset](#neural-code-search-evaluation-dataset)
 
 Articles
 ========
@@ -115,6 +119,17 @@ Articles
 
 **Notes:** Alibaba's successor to famous word2vec introduction to a RecSys field; the Transformer is adopted to item recommendations, authors modified embedding & positional encoding to comply with a setting, but the transformer block is the same;
 
+## 2019-06
+### Hierarchical Decision Making by Generating and Following Natural Language Instructions
+
+**Authors:** Hengyuan Hu, Denis Yarats, Qucheng Gong, Yuandong Tian, Mike Lewis
+
+**Abstract:** We explore using latent natural language instructions as an expressive and compositional representation of complex actions for hierarchical decision making. Rather than directly selecting micro-actions, our agent first generates a latent plan in natural language, which is then executed by a separate model. We introduce a challenging real-time strategy game environment in which the actions of a large number of units must be coordinated across long time scales. We gather a dataset of 76 thousand pairs of instructions and executions from human play, and train instructor and executor models. Experiments show that models using natural language as a latent variable significantly outperform models that directly imitate human actions. The compositional structure of language proves crucial to its effectiveness for action representation. We also release our code, models and data.
+
+**URL:** https://arxiv.org/abs/1906.00744
+
+**Notes:** great effort from Facebook: two networks, one generates an order, another is following it to achieve a goal in RTS setting; authors explore simple RNNs with softmax choice; I think this is the first step in a wide field
+
 ## 2019-07
 ### R-Transformer: Recurrent Neural Network Enhanced Transformer
 
@@ -125,4 +140,15 @@ Articles
 **URL:** https://arxiv.org/abs/1907.05572
 
 **Notes:** RNNs kinda strike back: authors use RNN to read local context similarly to TCN; these representations then are fed to transformer blocks; the results are good for various sequence tasks, not only NLP; with code!
+
+## 2019-08
+### Neural Code Search Evaluation Dataset
+
+**Authors:** Hongyu Li, Seohyun Kim, Satish Chandra
+
+**Abstract:** There has been an increase of interest in code search using natural language. Assessing the performance of such code search models can be difficult without a readily available evaluation suite. In this paper, we present an evaluation dataset consisting of natural language query and code snippet pairs, with the hope that future work in this area can use this dataset as a common benchmark. We also provide the results of two code search models ([1] and [6]) from recent work. The evaluation dataset is available at this https URL
+
+**URL:** https://arxiv.org/abs/1908.09804
+
+**Notes:** Facebook's benchmark on code search; alongside with GitHub one: https://github.com/github/CodeSearchNet ; these two have been released a few days apart; there are interesting new opportunities for research in NLP-on-code field https://is.gd/y8J1QL
 
